@@ -1,0 +1,30 @@
+{
+  "id": "catalogue/source.cat-medievalists-2010",
+  "kind": "source",
+  "source": {
+    "key": "CAT-MEDIEVALISTS-2010",
+    "title": "British Economic Growth, 1270-1870 (Medievalists.net summary)",
+    "author": "Medievalists.net",
+    "year": 2010,
+    "gives": "Growth rate 0.20 per cent a year 1270-1700; no level",
+    "url": "https://www.medievalists.net/2010/12/british-economic-growth-1270-%e2%80%93-1870/",
+    "rights": "Summary of the CAT-BCKOVL-2010 paper; licence not read, cited only"
+  },
+  "names": [
+    {
+      "text": "British Economic Growth, 1270-1870 (Medievalists.net summary)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": []
+}

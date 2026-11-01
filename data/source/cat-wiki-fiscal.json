@@ -1,0 +1,30 @@
+{
+  "id": "catalogue/source.cat-wiki-fiscal",
+  "kind": "source",
+  "source": {
+    "key": "CAT-WIKI-FISCAL",
+    "title": "History of the English fiscal system (Wikipedia)",
+    "author": "Wikipedia contributors",
+    "year": 2026,
+    "gives": "Single-tax yields and customs, no total crown revenue 1270-1700",
+    "url": "https://en.wikipedia.org/wiki/History_of_the_English_fiscal_system",
+    "rights": "Wikipedia text is CC BY-SA; licence line not re-read, confirm before N4"
+  },
+  "names": [
+    {
+      "text": "History of the English fiscal system (Wikipedia)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": []
+}

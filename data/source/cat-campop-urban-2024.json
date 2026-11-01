@@ -1,0 +1,30 @@
+{
+  "id": "catalogue/source.cat-campop-urban-2024",
+  "kind": "source",
+  "source": {
+    "key": "CAT-CAMPOP-URBAN-2024",
+    "title": "The first urban society (CAMPOP blog)",
+    "author": "Romola Davenport",
+    "year": 2024,
+    "gives": "London share 1600 and 1700; England urban chart 1550-2011 is an image, no values in text",
+    "url": "https://www.campop.geog.cam.ac.uk/blog/2024/10/31/urban-society/",
+    "rights": "Blog text; licence not read, cited only"
+  },
+  "names": [
+    {
+      "text": "The first urban society (CAMPOP blog)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": []
+}

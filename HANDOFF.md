@@ -14,7 +14,9 @@ Done/Blocked headings instead of the template's State/Next/Blocked/Gotchas.
 - 2026-11-01: 5173 NATIVE-PLAN: H1 rows A1-A8, rulings (a)-(e), V5, API, N1-N10; 5195 ruling (f) `from: null`; 5174-5204 N1-N10 built (V5, native ingest, H1 sheet/records, AUDIT-H1, label, date, build, coverage, README, Log).
 - 2026-11-01: 5205 kernel pin v0.1.1 (b6f95bf); 5243 1752 gap hard-code removed (5e30d62); 5252 rulings B3 paths, (g) precision.
 - 2026-11-01: 5232 AUDIT-H1 fixes (9625068); 5233 AUDIT-H1-2 fail 2/6, rule (c) tightened (6eb8e88); 5245 lady-day precision back to year, BCKOvL url, gap fixture (5b6ce99); 5246 AUDIT-H1-3 pass 24/24 (37ac8ee); 5254 (5252) tags fixed, step 2 signed off.
+- 2026-11-01 5311: open rows U46, U122, U123, U124 now name the sources searched (4 new cat-* records); rows stay open, no value found.
 
 ## Blocked
 
 - SHEET S8: find a CAT- source for Julian reckoning in England before 1752; when found, set `calendar_of_source: julian` on both lady-day-year-start attestations.
+- SHEET-3 open rows U46 (GDP per head level), U122 (crown revenue), U123 (urban share), U124 (enclosed share before 1700): searched in 5311, no usable value in readable pages; settled, not retried (I-1028).

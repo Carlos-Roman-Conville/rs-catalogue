@@ -1512,7 +1512,10 @@
       "unit": "1990 international dollars or pounds (unread)",
       "place": "catalogue/region.england",
       "date": null,
-      "sources": [],
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21",
+        "catalogue/source.cat-medievalists-2010"
+      ],
       "label": "open",
       "confidence": {
         "level": "low",
@@ -2821,7 +2824,10 @@
       "unit": "pounds",
       "place": "catalogue/region.england",
       "date": null,
-      "sources": [],
+      "sources": [
+        "catalogue/source.cat-wiki-fiscal",
+        "catalogue/source.cat-wiki-taxuk"
+      ],
       "label": "open",
       "confidence": {
         "level": "low",
@@ -2834,7 +2840,10 @@
       "unit": "fraction",
       "place": "catalogue/region.england",
       "date": null,
-      "sources": [],
+      "sources": [
+        "catalogue/source.cat-campop-urban-2024",
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
       "label": "open",
       "confidence": {
         "level": "low",
@@ -2847,7 +2856,11 @@
       "unit": "fraction",
       "place": "catalogue/region.england",
       "date": null,
-      "sources": [],
+      "sources": [
+        "catalogue/source.cat-campop-common-2025",
+        "catalogue/source.cat-wiki-enclosure",
+        "catalogue/source.cat-wiki-inclosure"
+      ],
       "label": "open",
       "confidence": {
         "level": "low",

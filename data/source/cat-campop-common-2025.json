@@ -1,0 +1,30 @@
+{
+  "id": "catalogue/source.cat-campop-common-2025",
+  "kind": "source",
+  "source": {
+    "key": "CAT-CAMPOP-COMMON-2025",
+    "title": "Who had access to common land? (CAMPOP blog)",
+    "author": "Leigh Shaw-Taylor",
+    "year": 2025,
+    "gives": "Common land about 50 per cent of England and Wales in 1500; no enclosure share",
+    "url": "https://www.campop.geog.cam.ac.uk/blog/tag/enclosure/",
+    "rights": "Blog text; licence not read, cited only"
+  },
+  "names": [
+    {
+      "text": "Who had access to common land? (CAMPOP blog)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": []
+}
