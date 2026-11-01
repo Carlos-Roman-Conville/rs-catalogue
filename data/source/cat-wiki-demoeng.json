@@ -1,0 +1,30 @@
+{
+  "id": "catalogue/source.cat-wiki-demoeng",
+  "kind": "source",
+  "source": {
+    "key": "CAT-WIKI-DEMOENG",
+    "title": "Demography of England (Wikipedia)",
+    "author": "Wikipedia contributors",
+    "year": 2026,
+    "gives": "National population at 1279 (T28)",
+    "url": "https://en.wikipedia.org/wiki/Demography_of_England",
+    "rights": "Wikipedia text is CC BY-SA; licence line not re-read this session, so confirm before N4"
+  },
+  "names": [
+    {
+      "text": "Demography of England (Wikipedia)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": []
+}

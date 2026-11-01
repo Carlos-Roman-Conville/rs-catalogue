@@ -48,6 +48,249 @@
       },
       "note": "Ten-year average 1270/79, 4.40 million persons (CAT-BCKOVL-2010 full text, Table 23 p. 59, Population (mlns)).",
       "benchmark_role": "development"
+    },
+    {
+      "quantity": "land.arable-area",
+      "value": 11520000,
+      "unit": "acres",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1270
+        },
+        "to": {
+          "year": 1270
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction (Overton and Campbell tables, Medieval Accounts Database); secondary"
+      },
+      "note": "CAT-BCKOVL-2010 Table 1 p. 35, \"Total arable\", 1270: 11.52 million acres",
+      "benchmark_role": "development"
+    },
+    {
+      "quantity": "land.sown-area",
+      "value": 6770000,
+      "unit": "acres",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1270
+        },
+        "to": {
+          "year": 1270
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as T1; the five crop columns add to 6.78, the table prints 6.77 (rounding)"
+      },
+      "note": "CAT-BCKOVL-2010 Table 1 p. 35, \"Total sown\", 1270: 6.77",
+      "benchmark_role": "development"
+    },
+    {
+      "quantity": "land.fallow-area",
+      "value": 4750000,
+      "unit": "acres",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1270
+        },
+        "to": {
+          "year": 1270
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as T1"
+      },
+      "note": "CAT-BCKOVL-2010 Table 1 p. 35, \"Fallow arable\", 1270: 4.75",
+      "benchmark_role": "development"
+    },
+    {
+      "quantity": "livestock.units-per-100-acres",
+      "value": 44.07,
+      "unit": "livestock units per 100 acres",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1270
+        },
+        "to": {
+          "year": 1279
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "the column header says only \"per 100 acres\" (which acreage was not read); units weight cattle 1.2, calves 0.8, sheep and swine 0.1 (Campbell 2000, cited)"
+      },
+      "note": "CAT-BCKOVL-2010 Table 4 p. 40, last column and note",
+      "benchmark_role": "development"
+    },
+    {
+      "quantity": "wage.annual-earnings",
+      "value": 1.64,
+      "unit": "pounds per year (the extract prints the pound sign as a broken character; header \"Annual Earnings\")",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1270
+        },
+        "to": {
+          "year": 1279
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-clark-earn-2011"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "Clark's own series for England; the table runs the UK/Britain/England series, and for this period the paper says it uses English wages; Table 17 mixes day-wage building and farm series by period (not read in full)"
+      },
+      "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 31, 1270: Annual Earnings 1.64",
+      "benchmark_role": "development"
+    },
+    {
+      "quantity": "price.cost-of-living-index",
+      "value": 0.152,
+      "unit": "index (base year not read; the header says \"Cost of Living\")",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1270
+        },
+        "to": {
+          "year": 1279
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-clark-earn-2011"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as T21; base year not read"
+      },
+      "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 31, 1270: Cost of Living 0.152",
+      "benchmark_role": "development"
+    },
+    {
+      "quantity": "wage.real-earnings",
+      "value": 1084,
+      "unit": "pounds of 2010 per year (header \"Real earnings (pound, 2010)\")",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1270
+        },
+        "to": {
+          "year": 1279
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-clark-earn-2011"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as T21"
+      },
+      "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 31, 1270: Real earnings 1,084",
+      "benchmark_role": "development"
+    },
+    {
+      "quantity": "urban.share",
+      "value": 0.04,
+      "unit": "fraction of population (4.0 per cent), settlements of at least 10,000",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1300
+        },
+        "to": {
+          "year": 1300
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "BCKOvL text reports Malanima (2009a) rather than its own estimate (cited through another work, rule a); 1300 is not 1270; the paper does not say how Malanima's cut-off matches medieval towns"
+      },
+      "note": "CAT-BCKOVL-2010 text pp. 30-31, \"urbanisation ratio for England rising from 4.0 per cent in 1300 to 13.2 per cent by 1700\"",
+      "benchmark_role": "development"
+    },
+    {
+      "quantity": "population.total",
+      "value": 4430000,
+      "unit": "persons",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1279
+        },
+        "to": {
+          "year": 1279
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-demoeng"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia table \"Population 1086-1700\", source line names Broadberry et al. 2010 (\"English Medieval Population: Reconciling Time Series and Cross Sectional Evidence\", a different paper from CAT-BCKOVL-2010) and Wrigley and Schofield; the cited paper itself was not opened, so cited-through. It differs from S1 (4.40 M, 1270/79 average), hence its own row"
+      },
+      "note": "CAT-WIKI-DEMOENG \"Population 1086-1700\" table, 1279: 4,430,000",
+      "benchmark_role": "development"
     }
   ],
   "relations": [
@@ -57,7 +300,9 @@
     }
   ],
   "sources": [
-    "catalogue/source.cat-bckovl-2010"
+    "catalogue/source.cat-bckovl-2010",
+    "catalogue/source.cat-clark-earn-2011",
+    "catalogue/source.cat-wiki-demoeng"
   ],
   "derived_from": [
     {

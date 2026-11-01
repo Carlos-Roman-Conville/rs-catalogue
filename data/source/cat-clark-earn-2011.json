@@ -1,0 +1,30 @@
+{
+  "id": "catalogue/source.cat-clark-earn-2011",
+  "kind": "source",
+  "source": {
+    "key": "CAT-CLARK-EARN-2011",
+    "title": "Average Earnings and Retail Prices, UK, 1209-2010 (Measuring Worth documentation), Table 17",
+    "author": "Gregory Clark",
+    "year": 2011,
+    "gives": "Decadal annual earnings, cost of living and real earnings for the 1270s (T21-T23)",
+    "url": "https://www.measuringworth.com/datasets/ukearncpi/earnstudynew2017.pdf",
+    "rights": "in copyright, cited only; no copyright or licence statement found in the text read (searched the extract for copyright, licence, reproduction, permission)"
+  },
+  "names": [
+    {
+      "text": "Average Earnings and Retail Prices, UK, 1209-2010 (Measuring Worth documentation), Table 17",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": []
+}

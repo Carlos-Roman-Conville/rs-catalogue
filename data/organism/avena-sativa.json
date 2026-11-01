@@ -1,0 +1,90 @@
+{
+  "id": "catalogue/organism.avena-sativa",
+  "kind": "organism",
+  "names": [
+    {
+      "text": "Oats",
+      "lang": "en",
+      "use": "preferred"
+    },
+    {
+      "text": "Avena sativa",
+      "lang": "la",
+      "use": "scientific"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "organism"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [
+    {
+      "quantity": "crop.sown-area",
+      "value": 2710000,
+      "unit": "acres",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1270
+        },
+        "to": {
+          "year": 1270
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as T1"
+      },
+      "note": "CAT-BCKOVL-2010 Table 1 p. 35, Oats, 1270: 2.71",
+      "benchmark_role": "development"
+    },
+    {
+      "quantity": "crop.yield-per-acre",
+      "value": 6.61,
+      "unit": "bushels per acre, gross of tithes, net of seed",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1270
+        },
+        "to": {
+          "year": 1279
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as T9"
+      },
+      "note": "CAT-BCKOVL-2010 Table 2 p. 36, Oats, 1270-1279: 6.61",
+      "benchmark_role": "development"
+    }
+  ],
+  "sources": [
+    "catalogue/source.cat-bckovl-2010"
+  ],
+  "derived_from": []
+}

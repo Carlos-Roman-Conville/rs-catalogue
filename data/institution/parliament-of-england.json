@@ -1,0 +1,80 @@
+{
+  "id": "catalogue/institution.parliament-of-england",
+  "kind": "institution",
+  "names": [
+    {
+      "text": "Parliament of England",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "institution"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1265,
+          "month": 1
+        },
+        "to": {
+          "year": 1265,
+          "month": 1
+        },
+        "precision": "month",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-parleng"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "Parliament met with burgesses summoned (CAT-WIKI-PARLENG sections on 1265 and 1295). January 1265 (Simon de Montfort's parliament, burgesses were summoned along with knights of the shire for the first time)."
+    },
+    {
+      "what": "adoption",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1295,
+          "month": 11
+        },
+        "to": null,
+        "precision": "month",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-parleng"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "as T33"
+      },
+      "note": "Model Parliament of 1295 (two knights per shire, two burgesses per borough) (CAT-WIKI-PARLENG sections on 1265 and 1295). November 1295; after the 1270 benchmark, so only for the later series."
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.cat-wiki-parleng"
+  ],
+  "derived_from": []
+}

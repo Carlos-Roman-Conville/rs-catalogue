@@ -1,0 +1,58 @@
+{
+  "id": "catalogue/organism.cattle-beef",
+  "kind": "organism",
+  "names": [
+    {
+      "text": "Beef cattle",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "organism"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [
+    {
+      "quantity": "livestock.count",
+      "value": 540000,
+      "unit": "head",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1270
+        },
+        "to": {
+          "year": 1279
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as T14"
+      },
+      "note": "CAT-BCKOVL-2010 Table 4 p. 40, Beef cattle: 0.54 million",
+      "benchmark_role": "development"
+    }
+  ],
+  "sources": [
+    "catalogue/source.cat-bckovl-2010"
+  ],
+  "derived_from": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "catalogue/source.cat-wiki-parleng",
+  "kind": "source",
+  "source": {
+    "key": "CAT-WIKI-PARLENG",
+    "title": "Parliament of England (Wikipedia)",
+    "author": "Wikipedia contributors",
+    "year": 2026,
+    "gives": "1265 burgesses, 1295 Model Parliament (T33, T34)",
+    "url": "https://en.wikipedia.org/wiki/Parliament_of_England",
+    "rights": "as CAT-WIKI-DEMOENG"
+  },
+  "names": [
+    {
+      "text": "Parliament of England (Wikipedia)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": []
+}

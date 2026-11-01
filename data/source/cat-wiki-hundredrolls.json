@@ -1,0 +1,30 @@
+{
+  "id": "catalogue/source.cat-wiki-hundredrolls",
+  "kind": "source",
+  "source": {
+    "key": "CAT-WIKI-HUNDREDROLLS",
+    "title": "Hundred Rolls (Wikipedia)",
+    "author": "Wikipedia contributors",
+    "year": 2026,
+    "gives": "Survey dates 1274-5 and 1279-80 (T35)",
+    "url": "https://en.wikipedia.org/wiki/Hundred_Rolls",
+    "rights": "as CAT-WIKI-DEMOENG"
+  },
+  "names": [
+    {
+      "text": "Hundred Rolls (Wikipedia)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": []
+}

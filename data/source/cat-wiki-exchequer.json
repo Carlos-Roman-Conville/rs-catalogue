@@ -1,0 +1,30 @@
+{
+  "id": "catalogue/source.cat-wiki-exchequer",
+  "kind": "source",
+  "source": {
+    "key": "CAT-WIKI-EXCHEQUER",
+    "title": "Exchequer (Wikipedia)",
+    "author": "Wikipedia contributors",
+    "year": 2026,
+    "gives": "First record 1110, plea rolls 1236 (T32)",
+    "url": "https://en.wikipedia.org/wiki/Exchequer",
+    "rights": "as CAT-WIKI-DEMOENG"
+  },
+  "names": [
+    {
+      "text": "Exchequer (Wikipedia)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": []
+}

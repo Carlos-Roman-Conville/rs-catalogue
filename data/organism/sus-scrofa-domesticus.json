@@ -1,0 +1,63 @@
+{
+  "id": "catalogue/organism.sus-scrofa-domesticus",
+  "kind": "organism",
+  "names": [
+    {
+      "text": "Swine",
+      "lang": "en",
+      "use": "preferred"
+    },
+    {
+      "text": "Sus scrofa domesticus",
+      "lang": "la",
+      "use": "scientific"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "organism"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [
+    {
+      "quantity": "livestock.count",
+      "value": 700000,
+      "unit": "head",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1270
+        },
+        "to": {
+          "year": 1279
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as T14"
+      },
+      "note": "CAT-BCKOVL-2010 Table 4 p. 40, Swine: 0.70 million",
+      "benchmark_role": "development"
+    }
+  ],
+  "sources": [
+    "catalogue/source.cat-bckovl-2010"
+  ],
+  "derived_from": []
+}

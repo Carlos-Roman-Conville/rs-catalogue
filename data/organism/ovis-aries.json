@@ -1,0 +1,63 @@
+{
+  "id": "catalogue/organism.ovis-aries",
+  "kind": "organism",
+  "names": [
+    {
+      "text": "Sheep",
+      "lang": "en",
+      "use": "preferred"
+    },
+    {
+      "text": "Ovis aries",
+      "lang": "la",
+      "use": "scientific"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "organism"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [
+    {
+      "quantity": "livestock.count",
+      "value": 10990000,
+      "unit": "head",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1270
+        },
+        "to": {
+          "year": 1279
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as T14; the text says sheep numbers are assumed stationary in the long term"
+      },
+      "note": "CAT-BCKOVL-2010 Table 4 p. 40, Sheep: 10.99 million",
+      "benchmark_role": "development"
+    }
+  ],
+  "sources": [
+    "catalogue/source.cat-bckovl-2010"
+  ],
+  "derived_from": []
+}

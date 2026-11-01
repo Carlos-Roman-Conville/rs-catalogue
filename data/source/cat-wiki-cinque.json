@@ -1,0 +1,30 @@
+{
+  "id": "catalogue/source.cat-wiki-cinque",
+  "kind": "source",
+  "source": {
+    "key": "CAT-WIKI-CINQUE",
+    "title": "Cinque Ports (Wikipedia)",
+    "author": "Wikipedia contributors",
+    "year": 2026,
+    "gives": "1155 charter, 57 ships for 15 days (T29)",
+    "url": "https://en.wikipedia.org/wiki/Cinque_Ports",
+    "rights": "as CAT-WIKI-DEMOENG"
+  },
+  "names": [
+    {
+      "text": "Cinque Ports (Wikipedia)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": []
+}

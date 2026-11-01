@@ -1,0 +1,55 @@
+{
+  "id": "catalogue/institution.hundred-rolls",
+  "kind": "institution",
+  "names": [
+    {
+      "text": "Hundred Rolls",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "institution"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1274
+        },
+        "to": {
+          "year": 1280
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-hundredrolls"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; page says nothing on manors, so S6 stays `open`"
+      },
+      "note": "Royal surveys of liberties (1274-5) and land ownership (1279-80) (CAT-WIKI-HUNDREDROLLS lead)."
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.cat-wiki-hundredrolls"
+  ],
+  "derived_from": []
+}

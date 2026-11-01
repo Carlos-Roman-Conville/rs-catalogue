@@ -1,0 +1,90 @@
+{
+  "id": "catalogue/organism.triticum-aestivum",
+  "kind": "organism",
+  "names": [
+    {
+      "text": "Wheat",
+      "lang": "en",
+      "use": "preferred"
+    },
+    {
+      "text": "Triticum aestivum",
+      "lang": "la",
+      "use": "scientific"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "organism"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [
+    {
+      "quantity": "crop.sown-area",
+      "value": 2010000,
+      "unit": "acres",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1270
+        },
+        "to": {
+          "year": 1270
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as T1"
+      },
+      "note": "CAT-BCKOVL-2010 Table 1 p. 35, Wheat, 1270: 2.01",
+      "benchmark_role": "development"
+    },
+    {
+      "quantity": "crop.yield-per-acre",
+      "value": 8.54,
+      "unit": "bushels per acre, gross of tithes, net of seed",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1270
+        },
+        "to": {
+          "year": 1279
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as T9"
+      },
+      "note": "CAT-BCKOVL-2010 Table 2 p. 36, Wheat, 1270-1279: 8.54",
+      "benchmark_role": "development"
+    }
+  ],
+  "sources": [
+    "catalogue/source.cat-bckovl-2010"
+  ],
+  "derived_from": []
+}

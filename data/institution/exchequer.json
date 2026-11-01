@@ -1,0 +1,53 @@
+{
+  "id": "catalogue/institution.exchequer",
+  "kind": "institution",
+  "names": [
+    {
+      "text": "Exchequer",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "institution"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1110
+        },
+        "to": null,
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-exchequer"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; the first 100,000 characters of the page were read, the rest not"
+      },
+      "note": "Exchequer existed (CAT-WIKI-EXCHEQUER lead and history sections: \"The existence of an Exchequer in England was first recorded in 1110\"; \"the earliest plea rolls of the Exchequer date from 1236\")."
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.cat-wiki-exchequer"
+  ],
+  "derived_from": []
+}
