@@ -20,6 +20,8 @@ adds one dated line under Done, and parks a disagreement with DESIGN.md under Bl
 - 2026-11-01: 2993 region anchoring exceptions in DESIGN.md §4: atlantic passes as a bare container; jamaica cites STL-LAW, date null; new-providence drops part_of England until a row exists; DESIGN cites exempt from check 7.
 - 2026-11-01: 2994 fixture audit 6: AUDIT-6 says fail, 2 of 66 records (region.jamaica, region.new-providence); atlantic and commercial-brewing now pass; no record edited.
 - 2026-11-01: 3040 DESIGN.md §4 exception (a) reworded: sea/ocean/island-group name, no dated `part_of`, undated unsourced `part_of` only; region.atlantic still meets it. 2026-10-31 lines folded.
+- 2026-11-01: 3041 (Composer) AUDIT-6 region exception (b) fixes (c6dff84): region.jamaica adds STL-LAW as an anchor, england `part_of` undated; region.new-providence drops england `part_of`.
+- 2026-11-01: 3042 fixture audit 7: AUDIT-7 says pass, 66 of 66 records; jamaica and new-providence now pass; AUDIT-6's TWN-ROG pardon note corrected to TWN-NAS; 1682–1692 referent-bound reading left open (AUDIT-7 open question); no record edited.
 
 ## Blocked
 
