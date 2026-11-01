@@ -38,10 +38,9 @@
           "month": 12,
           "day": 31
         },
-        "precision": "year",
+        "precision": "day",
         "circa": false,
-        "calendar_of_source": "unknown",
-        "year_start_of_source": "mar-25"
+        "calendar_of_source": "unknown"
       },
       "sources": [
         "catalogue/source.cat-cathen-1908",
@@ -66,10 +65,9 @@
           "month": 12,
           "day": 31
         },
-        "precision": "year",
+        "precision": "day",
         "circa": false,
-        "calendar_of_source": "unknown",
-        "year_start_of_source": "mar-25"
+        "calendar_of_source": "unknown"
       },
       "sources": [
         "catalogue/source.cat-lboro-2026",

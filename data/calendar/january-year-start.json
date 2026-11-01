@@ -32,7 +32,7 @@
         },
         "precision": "day",
         "circa": false,
-        "calendar_of_source": "gregorian"
+        "calendar_of_source": "julian"
       },
       "sources": [
         "catalogue/source.cat-act-1750"
