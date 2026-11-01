@@ -1,0 +1,63 @@
+{
+  "id": "catalogue/practice.charcoal-making",
+  "kind": "practice",
+  "names": [
+    {
+      "text": "Charcoal making",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "practice"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [
+    {
+      "quantity": "yield.output_per_input",
+      "value": "35–40",
+      "unit": "bushel charcoal/cord wood",
+      "place": null,
+      "date": {
+        "from": {
+          "year": 1700
+        },
+        "to": {
+          "year": 1899
+        },
+        "precision": "century",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.econ-hof"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "35–40 bushels charcoal a cord of wood, good collier; iron furnaces (ECON-HOF; RESEARCH.md §5 Wood → charcoal)."
+      },
+      "note": "a good collier; 18th–19th c. iron furnaces"
+    }
+  ],
+  "sources": [
+    "catalogue/source.econ-hof"
+  ],
+  "derived_from": [
+    {
+      "file": "../economy/RESEARCH.md",
+      "anchor": "## 5. ECON-5: recipe quantities where period yields are documented | Wood → charcoal",
+      "sha256": "68ca9f4aee850d303f0eb946b069a7344ad6815f43f10ad1b06c3c8f4c11f651"
+    }
+  ]
+}

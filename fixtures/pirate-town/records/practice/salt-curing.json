@@ -1,0 +1,70 @@
+{
+  "id": "catalogue/practice.salt-curing",
+  "kind": "practice",
+  "names": [
+    {
+      "text": "Salt curing",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "practice"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [
+    {
+      "quantity": "yield.input_per_output",
+      "value": 2,
+      "unit": "bushel salt/1,000 lb pork",
+      "place": null,
+      "date": null,
+      "sources": [
+        "catalogue/source.econ-salt"
+      ],
+      "label": "estimate",
+      "confidence": {
+        "level": "low",
+        "reason": "About two bushels salt per 1,000 lb pork; secondary account (ECON-SALT; RESEARCH.md §5 Pork, beef → salt meat)."
+      },
+      "note": "beef needing more"
+    },
+    {
+      "quantity": "yield.input_per_output",
+      "value": 2,
+      "unit": "bushel salt/barrel herring",
+      "place": null,
+      "date": null,
+      "sources": [
+        "catalogue/source.econ-smi"
+      ],
+      "label": "estimate",
+      "confidence": {
+        "level": "medium",
+        "reason": "British excise assumption two bushels salt per barrel herring (ECON-SMI; RESEARCH.md §5 Pork, beef → salt meat)."
+      },
+      "note": "the British excise assumption (Adam Smith)"
+    }
+  ],
+  "sources": [
+    "catalogue/source.econ-salt",
+    "catalogue/source.econ-smi"
+  ],
+  "derived_from": [
+    {
+      "file": "../economy/RESEARCH.md",
+      "anchor": "## 5. ECON-5: recipe quantities where period yields are documented | Pork, beef → salt meat",
+      "sha256": "68ca9f4aee850d303f0eb946b069a7344ad6815f43f10ad1b06c3c8f4c11f651"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "catalogue/practice.tobacco-cultivation",
+  "kind": "practice",
+  "names": [
+    {
+      "text": "Tobacco cultivation",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "practice"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [
+    {
+      "quantity": "yield.output_per_worker",
+      "value": 1710,
+      "unit": "lb/worker/year",
+      "place": null,
+      "date": {
+        "from": {
+          "year": 1680
+        },
+        "to": {
+          "year": 1699
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.econ-tob"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "Tobacco about 1,710 lb a worker a year 1680–99 (ECON-TOB; RESEARCH.md §5 Tobacco)."
+      }
+    },
+    {
+      "quantity": "land.area_per_worker",
+      "value": 3,
+      "unit": "acre/worker",
+      "place": null,
+      "date": null,
+      "sources": [
+        "catalogue/source.econ-cm"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "About three acres of tobacco a worker (ECON-CM; RESEARCH.md §5 Tobacco)."
+      }
+    },
+    {
+      "quantity": "yield.output_per_area",
+      "value": 570,
+      "unit": "lb/acre",
+      "place": null,
+      "date": null,
+      "sources": [
+        "catalogue/source.econ-cm",
+        "catalogue/source.econ-tob"
+      ],
+      "label": "estimate",
+      "confidence": {
+        "level": "low",
+        "reason": "570 lb an acre derived from 1,710 lb and three acres (ECON-TOB, ECON-CM; RESEARCH.md §5 Tobacco)."
+      },
+      "note": "the row's derivation from 1,710 lb and three acres"
+    }
+  ],
+  "sources": [
+    "catalogue/source.econ-cm",
+    "catalogue/source.econ-tob"
+  ],
+  "derived_from": [
+    {
+      "file": "../economy/RESEARCH.md",
+      "anchor": "## 5. ECON-5: recipe quantities where period yields are documented | Tobacco",
+      "sha256": "68ca9f4aee850d303f0eb946b069a7344ad6815f43f10ad1b06c3c8f4c11f651"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "catalogue/practice.rum-distilling",
+  "kind": "practice",
+  "names": [
+    {
+      "text": "Rum distilling",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "practice"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [
+    {
+      "quantity": "yield.input_per_output",
+      "value": 1.5,
+      "unit": "gal molasses/gal rum",
+      "place": null,
+      "date": null,
+      "sources": [
+        "catalogue/source.econ-wes"
+      ],
+      "label": "estimate",
+      "confidence": {
+        "level": "low",
+        "reason": "Teaching text molasses-to-rum ratio; no period citation (ECON-WES; RESEARCH.md §5 Molasses → rum)."
+      }
+    },
+    {
+      "quantity": "yield.output_per_input",
+      "value": 0.77,
+      "unit": "gal rum/gal molasses",
+      "place": "catalogue/region.new-england",
+      "date": {
+        "from": {
+          "year": 1770
+        },
+        "to": {
+          "year": 1770
+        },
+        "precision": "year",
+        "circa": true,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.econ-cmt"
+      ],
+      "label": "estimate",
+      "confidence": {
+        "level": "medium",
+        "reason": "New England 1770 molasses import and rum output totals (ECON-CMT; RESEARCH.md §5 Molasses → rum)."
+      },
+      "note": "6.5 million gallons imported, about 5 million made"
+    }
+  ],
+  "sources": [
+    "catalogue/source.econ-cmt",
+    "catalogue/source.econ-wes"
+  ],
+  "derived_from": [
+    {
+      "file": "../economy/RESEARCH.md",
+      "anchor": "## 5. ECON-5: recipe quantities where period yields are documented | Molasses → rum",
+      "sha256": "68ca9f4aee850d303f0eb946b069a7344ad6815f43f10ad1b06c3c8f4c11f651"
+    }
+  ]
+}

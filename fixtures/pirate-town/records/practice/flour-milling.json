@@ -1,0 +1,53 @@
+{
+  "id": "catalogue/practice.flour-milling",
+  "kind": "practice",
+  "names": [
+    {
+      "text": "Flour milling",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "practice"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [
+    {
+      "quantity": "yield.input_per_output",
+      "value": "5–5½",
+      "unit": "bushel wheat/196-lb barrel fine flour",
+      "place": null,
+      "date": null,
+      "sources": [
+        "catalogue/source.econ-tj"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "Wheat to fine flour barrel yield from Jefferson's Farm Book (ECON-TJ; RESEARCH.md §5 Wheat → flour)."
+      },
+      "note": "late (Jefferson's Farm Book); FL has no source record"
+    }
+  ],
+  "sources": [
+    "catalogue/source.econ-tj"
+  ],
+  "derived_from": [
+    {
+      "file": "../economy/RESEARCH.md",
+      "anchor": "## 5. ECON-5: recipe quantities where period yields are documented | Wheat → flour",
+      "sha256": "68ca9f4aee850d303f0eb946b069a7344ad6815f43f10ad1b06c3c8f4c11f651"
+    }
+  ]
+}
