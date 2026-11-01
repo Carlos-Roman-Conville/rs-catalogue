@@ -1,0 +1,47 @@
+import { describe, expect, it } from 'vitest'
+import { isCatalogueRecord, kinds, validateRecord } from '../src/schema.ts'
+import { attestation, date, observation, record } from './helpers.ts'
+
+describe('record schema', () => {
+  it.each(kinds)('accepts kind %s and requires source metadata for source', kind => {
+    const r = { ...record(), kind, ...(kind === 'source' ? { source: { key: 'TEST', title: 'Test', gives: 'Fixture', rights: 'Test only' } } : {}) }
+    expect(isCatalogueRecord(r)).toBe(true)
+  })
+  it('requires source object for source kind', () => expect(validateRecord({ ...record(), kind: 'source' }).join()).toContain('record.source'))
+  it('reserves source metadata for source records', () => expect(validateRecord({ ...record(), source: {} }).join()).toContain('only allowed for kind source'))
+  it('rejects missing required fields and malformed nested values', () => {
+    expect(validateRecord({}).length).toBeGreaterThan(0)
+    expect(validateRecord({ ...record(), names: [null], observations: [{ ...observation(), value: Infinity }] }).join()).toContain('finite number')
+  })
+  it('requires a non-empty provenance set', () => {
+    for (const provenance of [[], ['real', 'real']]) expect(validateRecord({ ...record(), provenance }).join()).toContain('non-empty set')
+  })
+  it.each([
+    { kind: 'bad' }, { provenance: ['bad'] }, { scope: 'game:Bad' },
+    { names: [{ text: 'Test', lang: 'en', use: 'bad' }] },
+    { relations: [{ rel: 'bad', to: 'test' }] },
+    { attestations: [{ ...attestation(), what: 'bad' }] },
+    { attestations: [{ ...attestation(), label: 'bad' }] },
+    { attestations: [{ ...attestation(), confidence: { level: 'bad', reason: 'Test' } }] },
+    { observations: [{ ...observation(), benchmark_role: 'bad' }] },
+    ...['precision', 'calendar_of_source', 'year_start_of_source'].map(field => ({ attestations: [{ ...attestation(), date: { ...date(), [field]: 'bad' } }] })),
+  ])('rejects bad enum values: %j', patch => expect(validateRecord({ ...record(), ...patch }).length).toBeGreaterThan(0))
+  it('accepts astronomical year zero and negative years', () => {
+    const d = { ...date(), from: { year: -100 }, to: { year: 0, month: 2, day: 29 } }
+    expect(validateRecord({ ...record(), attestations: [{ ...attestation(), date: d }] })).toEqual([])
+  })
+  it('rejects from > to in attestations, observations and relations', () => {
+    const d = { ...date(), from: { year: 2 }, to: { year: 1 } }
+    const r = { ...record(), attestations: [{ ...attestation(), date: d }], observations: [{ ...observation(), date: d }], relations: [{ rel: 'part_of', to: 'test', date: d }] }
+    expect(validateRecord(r).filter(line => line.includes('from > to'))).toHaveLength(3)
+  })
+  it('rejects reversed days within the same month', () => {
+    const d = { ...date(), from: { year: 0, month: 2, day: 2 }, to: { year: 0, month: 2, day: 1 } }
+    expect(validateRecord({ ...record(), attestations: [{ ...attestation(), date: d }] }).join()).toContain('from > to')
+  })
+  it('rejects impossible Gregorian dates and fractional years', () => {
+    for (const from of [{ year: 1900, month: 2, day: 29 }, { year: 1, month: 13 }, { year: 1, day: 2 }, { year: 1.5 }]) {
+      expect(validateRecord({ ...record(), attestations: [{ ...attestation(), date: { ...date(), from } }] }).length).toBeGreaterThan(0)
+    }
+  })
+})

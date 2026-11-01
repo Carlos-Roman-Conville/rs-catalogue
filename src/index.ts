@@ -1,5 +1,8 @@
 // @rex/catalogue: the public surface grows unit by unit (DESIGN §2.2).
 import { qualify } from '@rex/kernel'
+export * from './schema.ts'
+export * from './load.ts'
+export * from './check.ts'
 
 /** The engine prefix every catalogue id carries (DESIGN §2.1). */
 export const ENGINE = 'catalogue'
