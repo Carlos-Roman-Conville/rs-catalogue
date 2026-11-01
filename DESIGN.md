@@ -237,8 +237,16 @@ mechanism and nothing at run time. A mechanism may declare a read of `CatalogueR
 `get` are for configuration code (adapters, scenario builders, the History harness), which V2 checks.
 
 **Replay (Kernel keeper's note b):** a run reproduces only against the same catalogue content, so each run records
-`catalogue_hash`, the sha256 of the compiled `dist/catalogue.json`, in the Kernel snapshot's `kernel` block; the
-Kernel keeper drafts that field.
+`catalogue_hash`, the sha256 of the compiled `dist/catalogue.json`, in the Kernel snapshot's `kernel` block. Kernel unit 2805
+(snapshot version 1 to 2) adds `catalogue_hash: string | null` (64 lowercase hex, supplied by the host; the kernel
+never reads the catalogue), makes `epoch: number | null` a decimal astronomical year on this catalogue's axis (1 BCE =
+0; History maps sim time as `epoch + t / TROPICAL_YEAR`), and keeps the old free text as `epochLabel?`.
+
+**Registry (registry keeper, 2026-10-31):** the seven rows are registered (domain `infra`, planned). Quantities, all
+written by `catalogue.reference.ingest`: `catalogue.record` (get), `catalogue.label` (the only one a mechanism may
+read), `catalogue.window_bundle` (configuration code only), `catalogue.date`. Overlaps in batch 2c: DUP-63 date-gated
+availability (feasibility to `knowledge.capability.state`), DUP-64 aggregation with the pirate journal label, DUP-65
+shared part with `economy.recipe.definition`.
 
 ### 2.3 Storage
 
