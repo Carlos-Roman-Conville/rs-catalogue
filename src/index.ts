@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url'
 import { filterWithheldRecord, createWithholdGuard } from './benchmark.ts'
 import { checkRecords } from './check.ts'
 import { createIdResolver, loadRecordsSync } from './load.ts'
+import { createDateReader } from './date-reader.ts'
 import { createLabeler } from './label.ts'
 import { createWindowQuery } from './window.ts'
 export * from './schema.ts'
@@ -38,6 +39,7 @@ export function openCatalogue(
   const guard = createWithholdGuard(catalogue, heldOut)
   const records = new Map(catalogue.records.map(record => [record.id, record]))
   const { label } = createLabeler(catalogue)
+  const { date } = createDateReader(catalogue)
   return {
     get(id: string) {
       const record = records.get(resolve(id) ?? '')
@@ -47,5 +49,6 @@ export function openCatalogue(
     },
     window: createWindowQuery(catalogue, { heldOut }),
     label,
+    date,
   }
 }

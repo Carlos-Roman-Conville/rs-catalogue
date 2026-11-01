@@ -14,6 +14,19 @@ describe('ids (DESIGN §2.1)', () => {
 it('opens the default repository synchronously', () => {
   expect(typeof openCatalogue().window).toBe('function')
 })
+
+it('reads 1691-01-10 in England per DESIGN §2.2', () => {
+  const cat = openCatalogue()
+  expect(cat.date('1691-01-10', { place: 'catalogue/region.england' })).toEqual({
+    date: { year: 1692, month: 1, day: 20 },
+    shifted: true,
+    approximate: false,
+    calendar: 'julian',
+    yearStart: 'mar-25',
+    basis: ['catalogue/calendar.julian', 'catalogue/calendar.lady-day-year-start'],
+    conflict: false,
+  })
+})
 it('fails opening malformed catalogue data instead of silently omitting records', async () => {
   const f = await fixture()
   try {
