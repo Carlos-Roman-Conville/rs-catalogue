@@ -1,0 +1,55 @@
+{
+  "id": "catalogue/region.jamaica",
+  "kind": "region",
+  "names": [
+    {
+      "text": "Jamaica",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "region"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "observations": [],
+  "relations": [
+    {
+      "rel": "part_of",
+      "to": "catalogue/region.greater-antilles"
+    },
+    {
+      "rel": "part_of",
+      "to": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1655
+        },
+        "to": {
+          "year": 9999
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "gregorian"
+      }
+    }
+  ],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
+      "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | Q6 pattern",
+      "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
+    }
+  ],
+  "notes": "English Crown from 1655 (estimate; no TWN or STL key in the pirate files); relation end open."
+}

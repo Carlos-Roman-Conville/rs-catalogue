@@ -1,0 +1,68 @@
+{
+  "id": "catalogue/period.nassau-pirate-haven",
+  "kind": "period",
+  "names": [
+    {
+      "text": "Nassau pirate haven",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "period"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": null,
+      "date": {
+        "from": {
+          "year": 1713
+        },
+        "to": {
+          "year": 1718
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "gregorian"
+      },
+      "sources": [
+        "catalogue/source.twn-nas",
+        "catalogue/source.twn-rog"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "high",
+        "reason": "From pirate-ship source row or task window."
+      },
+      "note": "Pirate base from 1713 until Rogers 1718."
+    }
+  ],
+  "relations": [
+    {
+      "rel": "part_of",
+      "to": "catalogue/region.nassau"
+    }
+  ],
+  "observations": [],
+  "sources": [
+    "catalogue/source.twn-nas",
+    "catalogue/source.twn-rog"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Town sources (town keeper, 2026-10-30) | TWN-NAS",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

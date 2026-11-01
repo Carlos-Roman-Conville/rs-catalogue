@@ -1,0 +1,66 @@
+{
+  "id": "catalogue/period.port-royal-before-1692",
+  "kind": "period",
+  "names": [
+    {
+      "text": "Port Royal before 1692",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "period"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": null,
+      "date": {
+        "from": {
+          "year": 1670
+        },
+        "to": {
+          "year": 1691
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "gregorian"
+      },
+      "sources": [
+        "catalogue/source.twn-pr"
+      ],
+      "label": "estimate",
+      "confidence": {
+        "level": "medium",
+        "reason": "From pirate-ship source row or task window."
+      },
+      "note": "Rich haven in the 1670s–1692 referents; end year before the earthquake."
+    }
+  ],
+  "relations": [
+    {
+      "rel": "part_of",
+      "to": "catalogue/region.port-royal"
+    }
+  ],
+  "observations": [],
+  "sources": [
+    "catalogue/source.twn-pr"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
+      "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | The referents",
+      "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
+    }
+  ]
+}

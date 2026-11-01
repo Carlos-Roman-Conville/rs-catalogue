@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.stl-king",
+  "kind": "source",
+  "source": {
+    "key": "STL-KING",
+    "title": "Parish Histories of Jamaica, \"A history of Kingston\"",
+    "gives": "parish vestry and custos; Kingston's corporation 1802",
+    "url": "https://www.parishhistoriesofjamaica.org/wp-content/uploads/2022/03/A-HISTORY-OF-KINGSTON-completed_compressed-1_compressed-1.pdf",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "STL-KING",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Settlement sources (settlement keeper, 2026-10-30) | STL-KING",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

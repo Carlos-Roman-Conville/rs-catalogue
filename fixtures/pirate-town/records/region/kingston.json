@@ -1,0 +1,66 @@
+{
+  "id": "catalogue/region.kingston",
+  "kind": "region",
+  "names": [
+    {
+      "text": "Kingston",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "region"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.kingston",
+      "date": {
+        "from": {
+          "year": 1692
+        },
+        "to": {
+          "year": 9999
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "gregorian"
+      },
+      "sources": [
+        "catalogue/source.stl-king"
+      ],
+      "label": "estimate",
+      "confidence": {
+        "level": "medium",
+        "reason": "Kingston rose after the 1692 earthquake; STL-KING not opened."
+      },
+      "note": "Merchants' capital after Port Royal's 1692 earthquake (ATLANTIC-MAP summary)."
+    }
+  ],
+  "observations": [],
+  "relations": [
+    {
+      "rel": "part_of",
+      "to": "catalogue/region.jamaica"
+    }
+  ],
+  "sources": [
+    "catalogue/source.stl-king"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Settlement sources (settlement keeper, 2026-10-30) | STL-KING",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

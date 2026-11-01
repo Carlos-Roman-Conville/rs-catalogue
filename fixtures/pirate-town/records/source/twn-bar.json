@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.twn-bar",
+  "kind": "source",
+  "source": {
+    "key": "TWN-BAR",
+    "title": "The 1679 Barbados census (bajanthings.com)",
+    "gives": "households listed with family, servants and the enslaved; the three-tier labour order",
+    "url": "https://bajanthings.com/the-1679-barbados-census/",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "TWN-BAR",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Town sources (town keeper, 2026-10-30) | TWN-BAR",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

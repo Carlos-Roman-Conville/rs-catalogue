@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.twn-nas",
+  "kind": "source",
+  "source": {
+    "key": "TWN-NAS",
+    "title": "Wikipedia, Benjamin Hornigold; Flying Gang; Republic of Pirates summaries",
+    "gives": "Nassau a pirate base from 1713; Charles Town burned 1703 and 1706; loose rule by the pirate code; Jennings and Hornigold dominant; Blackbeard a magistrate; Rogers's pardon 1718",
+    "url": "https://en.wikipedia.org/wiki/Flying_Gang",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "TWN-NAS",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Town sources (town keeper, 2026-10-30) | TWN-NAS",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

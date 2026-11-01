@@ -1,0 +1,41 @@
+{
+  "id": "catalogue/region.barbados",
+  "kind": "region",
+  "names": [
+    {
+      "text": "Barbados",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "region"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "observations": [],
+  "relations": [
+    {
+      "rel": "part_of",
+      "to": "catalogue/region.lesser-antilles"
+    }
+  ],
+  "sources": [
+    "catalogue/source.twn-bar"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
+      "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | Q1 household",
+      "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
+    }
+  ]
+}

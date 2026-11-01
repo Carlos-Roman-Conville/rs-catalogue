@@ -1,0 +1,66 @@
+{
+  "id": "catalogue/region.port-royal",
+  "kind": "region",
+  "names": [
+    {
+      "text": "Port Royal",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "region"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.port-royal",
+      "date": {
+        "from": {
+          "year": 1692
+        },
+        "to": {
+          "year": 1692
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "gregorian"
+      },
+      "sources": [
+        "catalogue/source.twn-pr"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "high",
+        "reason": "TWN-PR cites the 1692 earthquake effects."
+      },
+      "note": "1692 earthquake attestation; not a change of membership in Jamaica."
+    }
+  ],
+  "observations": [],
+  "relations": [
+    {
+      "rel": "part_of",
+      "to": "catalogue/region.jamaica"
+    }
+  ],
+  "sources": [
+    "catalogue/source.twn-pr"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
+      "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | The referents",
+      "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
+    }
+  ]
+}
