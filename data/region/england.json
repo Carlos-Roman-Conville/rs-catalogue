@@ -718,7 +718,7 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "modern reconstruction, secondary (WP 21's own population estimates: manorial tenants and Wrigley et al. 1997, as Table 16 is sourced; Table 19's source note names no population series, so that it is the Table 16 series is inferred from the shared decade labels and the text's 4.72 million average for 1300/09, not stated); this is the table's decade column (Table 19 'Population (mlns)'), a separate series from Table 16, so e.g. 1300/09 4.72 and the 1300 annual 4.73 are two rows"
+        "reason": "modern reconstruction, secondary (the WP 21 population series, manorial tenants and Wrigley et al. 1997, as Table 16 is sourced); this is the table's decade column (Table 19 'Population (mlns)'), a separate series from Table 16, so e.g. 1300/09 4.72 and the 1300 annual 4.73 are two rows"
       },
       "benchmark_role": "development",
       "note": "Table 19, p. 55 (PDF p. 56), 1300/09: 4.72 million (CAT-BCKOVL-2010-WP21)"
@@ -2571,7 +2571,7 @@
       "label": "researched",
       "confidence": {
         "level": "low",
-        "reason": "Wikipedia, secondary; the page gives the 1471 sentence without naming an author but cites Gottfried 1983, p. 131 for it, so the figure is Gottfried's reported through the page (rule a)"
+        "reason": "Wikipedia reporting other authors (cited through, rule a); authors differ so each is its own row; the page's own pre-plague population range is 3 to 7 million"
       },
       "benchmark_role": "development",
       "note": "CAT-WIKI-BLACKDEATHENG 'the death rate was around 10-15 per cent'"
@@ -2598,7 +2598,7 @@
       "label": "researched",
       "confidence": {
         "level": "low",
-        "reason": "Wikipedia reporting other authors (cited through, rule a); authors differ so each is its own row; the page's own pre-plague population range is 3 to 7 million"
+        "reason": "Wikipedia, secondary; the page gives the 1471 sentence without naming an author but cites Gottfried 1983 p. 131 for it, so the figure is Gottfried's reported through the page (rule a)"
       },
       "benchmark_role": "development",
       "note": "CAT-WIKI-BLACKDEATHENG 'as much as 10-15 per cent of the population'"
@@ -2832,7 +2832,7 @@
       "label": "open",
       "confidence": {
         "level": "low",
-        "reason": "no opened work gives English crown revenue for any year in 1270-1700 (CAT-WIKI-TAXUK was read to its end through the fetch tool and gives no English crown revenue total for any year from 1270 to 1700; CAT-WIKI-FISCAL was read the same way and gives the 1558-59 figure of £160,000, a combined grant of two fifteenths and tenths plus a subsidy, not a crown revenue total, and 'just under £900,000' as the king's annual revenue 'before the Civil War', with no year stated, so no value is taken); poll-tax yields above are single taxes, not total revenue"
+        "reason": "no opened work gives English crown revenue for any year in 1270-1700: CAT-WIKI-TAXUK and CAT-WIKI-FISCAL give no English crown revenue total for any year from 1270 to 1700; the fiscal page's 1558-59 figure of 160,000 pounds is a combined grant of two fifteenths and tenths plus a subsidy, not a crown revenue total, and its 'just under 900,000 pounds' is the king's annual revenue 'before the Civil War', with no year stated, so no value is taken"
       },
       "benchmark_role": "development"
     },
@@ -2849,7 +2849,7 @@
       "label": "open",
       "confidence": {
         "level": "low",
-        "reason": "WP 21 text says the urban share series for 1490-1700 is from Malanima (2009) but prints no urban-share value in the extracted text searched (not read in full); CAT-CAMPOP-URBAN-2024 (London share c. 1600 and c. 1700 only; the England chart's values are not in the text) was also read"
+        "reason": "WP 21 text says the urban share series for 1490-1700 is from Malanima (2009) but prints no urban-share value in the extracted text searched (not read in full); CAT-CAMPOP-URBAN-2024 (the blog post at campop.geog.cam.ac.uk/blog/2024/10/31/urban-society/) was fetched and read in full, and gives London's share c. 1600 and c. 1700 only; the England chart is an image with no values in the text"
       },
       "benchmark_role": "development"
     },
@@ -2867,7 +2867,7 @@
       "label": "open",
       "confidence": {
         "level": "low",
-        "reason": "CAT-CAMPOP-COMMON-2025 (common land about 50 per cent in 1500, not an enclosure share; only the tag page's excerpt of the post was seen), CAT-WIKI-ENCLOSURE and CAT-WIKI-INCLOSURE were read through the fetch tool and give no enclosure share before 1604 or 1700 (the Enclosure page gives only 6.8 million acres, about one fifth of England, enclosed over 1604-1914)"
+        "reason": "CAT-CAMPOP-COMMON-2025 (common land about 50 per cent in 1500, not an enclosure share) was seen only as the tag page's excerpt of one post, cut off at '(more...)', not the post itself; CAT-WIKI-ENCLOSURE was fetched and read in full (characters 0-100000, then 100000 to the end) and CAT-WIKI-INCLOSURE was fetched and read in full, and neither gives an enclosure share before 1604 or 1700 (the Enclosure page gives only 6.8 million acres, about one fifth of England, enclosed over 1604-1914)"
       },
       "benchmark_role": "development"
     }
