@@ -58,8 +58,9 @@ export function observationInBenchmarkWindow(
   regions: RegionIndex,
   resolve: (id: string) => string | undefined,
 ): boolean {
-  if (observation.place === null || observation.date === null) return false
+  if (observation.place === null) return false
   if (!placeInWindowRegion(observation.place, window, regions, resolve)) return false
+  if (observation.date === null) return true
   return !!intersectDates(dateRange(window.from, window.to), dateRange(observation.date.from, observation.date.to))
 }
 

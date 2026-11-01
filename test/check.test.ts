@@ -131,6 +131,20 @@ it('rejects a benchmark_role outside every active window', async () => {
   })).toContain('outside every benchmark window')
 })
 
+it('passes benchmark_role on an undated observation in a development region', async () => {
+  await writeEnglandRegion()
+  expect(await checkRecord({
+    observations: [{
+      ...observation(),
+      place: 'catalogue/region.england',
+      date: null,
+      value: null,
+      label: 'open',
+      benchmark_role: 'development',
+    }],
+  })).toBe('')
+})
+
 it('rejects a benchmark_role mismatch inside a development window', async () => {
   await writeEnglandRegion()
   expect(await checkRecord({ observations: [englandObs({ benchmark_role: 'held_out' })] })).toContain('mismatch with H1')
