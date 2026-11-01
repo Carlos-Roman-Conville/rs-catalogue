@@ -84,6 +84,11 @@ N4 appends one sentence to its `notes` naming the native rows and NATIVE-PLAN (b
   N2 makes the script keep native rows; otherwise the next ingest deletes it and `--check` fails.
 - **(e) A year-start style the code lacks** is added to `src/dates.ts` and to `year_start_of_source` in
   `src/schema.ts` by a code unit (N7) with tests from the cited source, before any row uses it.
+- **(f) An open start** (task 5195) is written `from: null`: the interval holds before any date a source states,
+  as an omitted or null `to` holds after. The key stays required, so a forgotten `from` still fails V1. Both ends
+  null means always. Never stand in a one-day `from` for an unknown start (5177 wrote `calendar.julian` as present
+  only on 2 September 1752). S7 is written `from: null, to: 1752-09-02`; when S8 finds a start, `from` takes it.
+  An open-start absence window reaches back without limit; an open-start invention is never inside one.
 
 ### `benchmark_role` and V5
 

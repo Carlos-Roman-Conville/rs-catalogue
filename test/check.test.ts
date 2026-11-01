@@ -263,6 +263,18 @@ it('rejects an absence window that contains the record\'s own dated invention', 
   })).toContain('attestations[0]: absence window contains attestations[1] (invention)')
 })
 
+it('an open-start absence window contains an earlier invention; an open-start invention is never contained', async () => {
+  await writeCheckSource()
+  const src = 'catalogue/source.fix'
+  const rows = (window: object, invention: object) => ({ attestations: [
+    { ...attestation(), what: 'absence', label: 'estimate', date: window, sources: [src] },
+    { ...attestation(), what: 'invention', label: 'researched', date: invention, sources: [src] },
+  ] })
+  const open = { ...date(), from: null, to: { year: 1730 } }
+  expect(await checkRecord(rows(open, { ...date(), from: { year: 1000 }, to: { year: 1000 } }))).toContain('absence window contains attestations[1]')
+  expect(await checkRecord(rows(open, { ...date(), from: null, to: { year: 1000 } }))).toBe('')
+})
+
 it('rejects a dated cycle only when all edges share a date, including a shared endpoint', async () => {
   const interval = (from: number, to: number) => ({ ...date(), from: { year: from }, to: { year: to } })
   await f.write('data/material/a.json', { ...record('a'), relations: [{ rel: 'part_of', to: record('b').id, date: interval(1600, 1655) }] })

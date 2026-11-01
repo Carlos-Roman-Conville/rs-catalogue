@@ -1,6 +1,6 @@
 import { afterEach, beforeEach, expect, it } from 'vitest'
 import { loadRecords, createIdResolver } from '../src/load.ts'
-import { createRegionIndex } from '../src/regions.ts'
+import { createRegionIndex, dateRange, intersectDates } from '../src/regions.ts'
 import type { CatalogueRecord, Relation } from '../src/schema.ts'
 import { date, fixture, record } from './helpers.ts'
 
@@ -15,6 +15,15 @@ it.each([undefined, null])('open-ended membership includes from and later window
   for (const year of [1655, 1700, 10000]) {
     expect(await descendants('caribbean', year)).toEqual(['caribbean', 'jamaica'].map(id))
   }
+})
+it('open-start membership includes every window up to to, and both ends open is always', async () => {
+  await region('caribbean')
+  await region('jamaica', [{ rel: 'part_of', to: id('caribbean'), date: { ...date(), from: null, to: { year: 1700 } } }])
+  await region('cuba', [{ rel: 'part_of', to: id('caribbean'), date: { ...date(), from: null, to: null } }])
+  for (const year of [-10000, 1700]) expect(await descendants('caribbean', year)).toEqual(['caribbean', 'cuba', 'jamaica'].map(id))
+  expect(await descendants('caribbean', 1701)).toEqual(['caribbean', 'cuba'].map(id))
+  expect(dateRange(null, null)).toEqual([-Infinity, Infinity])
+  expect(intersectDates(dateRange(null, { year: 1752, month: 9, day: 2 }), dateRange({ year: 1752, month: 9, day: 14 }))).toBeUndefined()
 })
 const during = (from: number, to: number) => ({ ...date(), from: { year: from }, to: { year: to } })
 const part = (slug: string, from?: number, to?: number): Relation => ({ rel: 'part_of', to: id(slug), ...(from === undefined ? {} : { date: during(from, to!) }) })

@@ -45,6 +45,18 @@ it('open-ended omitted and null ends have identical canonical JSON for all inter
   }
   expect(await snapshot(undefined)).toBe(await snapshot(null))
 })
+it('open-start evidence matches windows at and before to, never after, and sorts deterministically', async () => {
+  const d = { ...interval(), from: null, to: { year: 1700 } }
+  await material('old-style', { attestations: [evidence({ date: interval(1690) }), evidence({ date: d })] })
+  await material('always', { attestations: [evidence({ date: { ...interval(), from: null, to: null } })] })
+  const cat = openCatalogue(f.root)
+  for (const year of [-5000, 1700]) {
+    expect(ids(cat.window({ ...query, from: { year }, to: { year } }).present)).toEqual(['always', 'old-style'].map(materialId))
+  }
+  expect(ids(cat.window({ ...query, from: { year: 1701 }, to: { year: 1701 } }).present)).toEqual([materialId('always')])
+  const rows = cat.window(query).present.find(r => r.id === materialId('old-style'))!.attestations
+  expect(rows.map(row => row.date?.from)).toEqual([null, { year: 1690 }])
+})
 it('open-ended support leaves closed intervals bounded and their dates unchanged', async () => {
   const d = interval(1700, 1720)
   await material('closed', { attestations: [evidence({ date: d })] })

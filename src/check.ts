@@ -13,7 +13,7 @@ function absenceWindowYear(d: DateInterval, end: 'from' | 'to'): number {
 }
 
 function absenceWindowContainsInvention(absence: Attestation, invention: Attestation): boolean {
-  if (absence.date == null || invention.date == null || invention.date.to == null) return false
+  if (absence.date == null || invention.date == null || invention.date.from == null || invention.date.to == null) return false
   return (
     absenceWindowYear(absence.date, 'from') <= invention.date.from.year
     && invention.date.to.year <= absenceWindowYear(absence.date, 'to')

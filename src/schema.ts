@@ -4,7 +4,8 @@ export const provenanceClasses = ['real', 'prehistoric', 'mythological', 'fantas
 export type Provenance = typeof provenanceClasses[number]
 export type DatePoint = { year: number; month?: number; day?: number }
 export interface DateInterval {
-  from: DatePoint
+  /** Null means an open start: in force before any date a source states. */
+  from: DatePoint | null
   /** Omitted or null means the interval still holds, with no end date. */
   to?: DatePoint | null
   precision: 'day' | 'month' | 'year' | 'decade' | 'century' | 'millennium'
@@ -74,13 +75,13 @@ const point: Validator = (v, p, e) => {
 }
 const interval: Validator = (v, p, e) => {
   const before = e.length
-  object({ from: point, to: optional(nullable(point)), precision: enumeration(['day', 'month', 'year', 'decade', 'century', 'millennium']),
+  object({ from: nullable(point), to: optional(nullable(point)), precision: enumeration(['day', 'month', 'year', 'decade', 'century', 'millennium']),
     circa: (v, p, e) => { if (typeof v !== 'boolean') fail(p, 'boolean', e) },
     calendar_of_source: enumeration(['gregorian', 'julian', 'unknown', 'other']),
     year_start_of_source: optional(enumeration(['jan-1', 'mar-25'])) })(v, p, e)
   if (e.length !== before) return
   const { from, to } = v as DateInterval
-  if (to == null) return
+  if (from == null || to == null) return
   // Missing components denote the beginning of the stated year/month; no JS Date epoch limits.
   const a = [from.year, from.month ?? 1, from.day ?? 1]
   const b = [to.year, to.month ?? 1, to.day ?? 1]

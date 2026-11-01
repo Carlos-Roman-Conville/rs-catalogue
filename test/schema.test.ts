@@ -35,6 +35,14 @@ describe('record schema', () => {
     const r = { ...record(), attestations: [{ ...attestation(), date: d }], observations: [{ ...observation(), date: d }], relations: [{ rel: 'part_of', to: 'test', date: d }] }
     expect(validateRecord(r).filter(line => line.includes('from > to'))).toHaveLength(3)
   })
+  it('accepts an open start, alone or with an open end, and still requires the from key', () => {
+    for (const to of [{ year: 1752, month: 9, day: 2 }, null, undefined]) {
+      const d = { ...date(), from: null, to }
+      expect(validateRecord({ ...record(), attestations: [{ ...attestation(), date: d }], relations: [{ rel: 'part_of', to: 'test', date: d }] })).toEqual([])
+    }
+    const { from: _, ...missing } = date()
+    expect(validateRecord({ ...record(), attestations: [{ ...attestation(), date: missing }] }).length).toBeGreaterThan(0)
+  })
   it('rejects reversed days within the same month', () => {
     const d = { ...date(), from: { year: 0, month: 2, day: 2 }, to: { year: 0, month: 2, day: 1 } }
     expect(validateRecord({ ...record(), attestations: [{ ...attestation(), date: d }] }).join()).toContain('from > to')
