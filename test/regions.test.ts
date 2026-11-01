@@ -35,6 +35,10 @@ async function descendants(slug: string, from: number, to = from) {
   const loaded = await loadRecords(f.root)
   return createRegionIndex(loaded.records, createIdResolver(loaded)).descendantsDuring(id(slug), { year: from }, { year: to })
 }
+async function ancestors(slug: string, from: number, to = from) {
+  const loaded = await loadRecords(f.root)
+  return createRegionIndex(loaded.records, createIdResolver(loaded)).ancestorsDuring(id(slug), { year: from }, { year: to })
+}
 
 it('includes the region and nested Port Royal in Jamaica in the Caribbean, sorted by id', async () => {
   await region('port-royal', [part('jamaica')])
@@ -73,4 +77,19 @@ it('rejects unknown regions and reversed windows and terminates even on cyclic i
   expect(await descendants('caribbean', 1700)).toEqual(['caribbean', 'jamaica'].map(id))
   await expect(descendants('missing', 1700)).rejects.toThrow('Unknown region')
   await expect(descendants('caribbean', 1700, 1600)).rejects.toThrow('from > to')
+})
+it('lists ancestors on both sides of a dated part_of membership', async () => {
+  await region('caribbean')
+  await region('jamaica', [part('caribbean', 1655, 1700)])
+  expect(await ancestors('jamaica', 1654)).toEqual([id('jamaica')])
+  expect(await ancestors('jamaica', 1655)).toEqual(['caribbean', 'jamaica'].map(id))
+  expect(await ancestors('jamaica', 1700)).toEqual(['caribbean', 'jamaica'].map(id))
+  expect(await ancestors('jamaica', 1701)).toEqual([id('jamaica')])
+})
+it('walks ancestors along a transitive dated path', async () => {
+  await region('caribbean')
+  await region('jamaica', [part('caribbean', 1600, 1700)])
+  await region('port-royal', [part('jamaica', 1650, 1710)])
+  expect(await ancestors('port-royal', 1660)).toEqual(['caribbean', 'jamaica', 'port-royal'].map(id))
+  expect(await ancestors('port-royal', 1590)).toEqual([id('port-royal')])
 })

@@ -63,13 +63,21 @@ function reachable(graph: Graph, start: string, range: DateRange, includeStart: 
 
 /** Region ids, including the root, with simultaneous containment somewhere in the window. */
 export function createRegionIndex(records: readonly CatalogueRecord[], resolve: (id: string) => string | undefined = id => id) {
-  const graph = graphOf(records.filter(record => record.kind === 'region'), resolve, true)
+  const regionRecords = records.filter(record => record.kind === 'region')
+  const descendantsGraph = graphOf(regionRecords, resolve, true)
+  const ancestorsGraph = graphOf(regionRecords, resolve, false)
   return {
     descendantsDuring(regionId: string, from: DatePoint, to: DatePoint): string[] {
       const range = dateRange(from, to)
       const id = resolve(regionId)
-      if (id === undefined || !graph.has(id)) throw new RangeError(`Unknown region: ${regionId}`)
-      return [...reachable(graph, id, range, true)].sort()
+      if (id === undefined || !descendantsGraph.has(id)) throw new RangeError(`Unknown region: ${regionId}`)
+      return [...reachable(descendantsGraph, id, range, true)].sort()
+    },
+    ancestorsDuring(regionId: string, from: DatePoint, to: DatePoint): string[] {
+      const range = dateRange(from, to)
+      const id = resolve(regionId)
+      if (id === undefined || !ancestorsGraph.has(id)) throw new RangeError(`Unknown region: ${regionId}`)
+      return [...reachable(ancestorsGraph, id, range, true)].sort()
     },
   }
 }
