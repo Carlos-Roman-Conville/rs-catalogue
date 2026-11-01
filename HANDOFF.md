@@ -33,6 +33,7 @@ adds one dated line under Done, and parks a disagreement with DESIGN.md under Bl
 - 2026-11-01: 2970 AUDIT-4 region and practice anchor fixes (f001049): region nest and practice anchors fixed after fixture audit 4.
 - 2026-11-01: 2971 unknown-presence note in DESIGN.md §1.1: `what: presence`, `label: open`, `confidence: low`, reason in `notes`; no `unknown` label.
 - 2026-11-01: 2972 fixture audit 5: AUDIT-5 says fail, 4 of 66 records (region.atlantic, region.jamaica, region.new-providence, practice.commercial-brewing); no record edited.
+- 2026-11-01: 2993 region anchoring exceptions in DESIGN.md §4: atlantic passes as a bare container; jamaica cites STL-LAW, date null; new-providence drops part_of England until a row exists; DESIGN cites exempt from check 7.
 
 ## Blocked
 

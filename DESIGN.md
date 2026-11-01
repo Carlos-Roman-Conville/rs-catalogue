@@ -72,7 +72,7 @@ One record per thing. Fields (proposed):
 discovery, invention, identification, adoption, presence, absence, spread_to; `place` a region id; `date` a §1.3
 interval; `label` researched / estimate / fiction; `confidence` high / medium / low with a reason. **Absence of
 evidence is never recorded as absence**: `absence` needs a source that says the thing was not there (e.g. "no brewer
-in any source read" stays `presence: unknown` with a note, not `absence`).
+in any source read" is written as unknown presence, the next paragraph, with a note, not `absence`).
 
 Unknown presence is written within the label enum (`src/schema.ts`: researched / estimate / fiction / open): an
 attestation with `what: presence`, `label: open` and `confidence: low`, the reason (what was searched, what was not
@@ -305,6 +305,40 @@ the record's `notes` names it and says no anchor states it (the schema has no re
 relation is never deleted only because no row states it: keep the evidence and say the doubt in `notes`. A dated
 or political relation (New Providence `part_of` England from 1718) is not geographic nesting and follows rule (a).
 
+**Region anchoring exceptions** (2026-11-01, review 1101-0223 fixes 1, 2 and 4; AUDIT-5 fails on
+`region.atlantic`, `region.jamaica`, `region.new-providence`, `practice.commercial-brewing`).
+
+- **(a) A geographic container no row names** (`region.atlantic`). A region record that is only a step in the
+  geographic nesting (a sea, an ocean, an island group) may pass on the referents paragraph alone, as an exception
+  to rule (b), when all of these hold: its kind is physical; it carries only names, kind and undated geographic
+  `part_of` relations (no attestation, observation, date or source key); and its `notes` say "no row names X"
+  (X the place). The reason is the nesting rule's: this package holds no gazetteer and invents none, and a container
+  the referents' places sit in is evidence enough for a name with no claim attached. Any attestation, observation,
+  date, source key or political relation on such a record needs an anchored row as usual, and without one it is
+  removed (the doubt goes in `notes`). `region.atlantic` as AUDIT-5 read it meets the terms and passes on its next
+  audit with no change, provided its notes carry the "no row names" line.
+- **(b) A political `part_of`** (`region.jamaica` to England 1655, `region.new-providence` to England 1718). A
+  political relation is a dated claim and gets no exception: it holds only where an anchored row states the polity
+  over the place, and each date bound follows rule (a). `circa: true` is a date precision, not a source, and a note
+  "no anchored row states England" does not anchor it. A search of the whole pirate-ship SOURCES.md (2026-11-01)
+  for English rule of Jamaica or the Bahamas found:
+  - **STL-LAW** ("English law in Jamaica: primogeniture, dower, Statute of Distributions 1670"; standard reference,
+    not opened) states English law in Jamaica. No row states the 1655 bound (MED-BURN's "1655-1780" is the span of a
+    mortality study, not a conquest). Fix for the next task: `region.jamaica` adds STL-LAW as a further
+    `derived_from` anchor and keeps `part_of` England with `date: null`, its `notes` naming the relation, that the
+    1655 bound is in no anchored row, and that STL-LAW was not opened.
+  - **No row** states English rule of New Providence or the Bahamas (TWN-NAS states the 1718 pardon, not England;
+    TWN-LAW states English law in "the colonies", naming no place). Fix for the next task:
+    `region.new-providence` removes its political `part_of` England and says in `notes` that English rule from
+    1718 waits for a source row; the geographic nesting stays. A row on the Bahamas' Crown status is a research
+    request for pirate-ship SOURCES.md (another repo; not written from here).
+- **(c) Check 7 and this package's DESIGN.md.** Check 7 counts keys and documents offered as evidence. DESIGN.md
+  is this package's rulebook, not evidence, and the rule names check 7 already exempts are its sections, so a
+  citation of DESIGN.md (`DESIGN §1.1`) is exempt like a rule name, on one condition: it points at a convention
+  (how a value is written), never supports a value, date or place. `practice.commercial-brewing`'s "(DESIGN §1.1)"
+  points at the unknown-presence convention, so it passes; no record changes. Any other document (`TOWNS.md`,
+  another repo's design file) is still counted.
+
 "Validated" for a reference catalogue means: a value's source was re-checked by someone other than its writer (V4)
 and, where a second independent source exists, the two agree within the interval stated. Disagreement is kept as two
 attestations, never averaged (PLATFORM §4: competing explanations are kept).
@@ -335,7 +369,7 @@ Sources (all stay in place, PLATFORM §10):
 | `Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md` (town, settlement and economy keeper research tables) | observations (Port Royal 1688 houses and acreage, household size, trades present, wages, hours), institutions (vestry, governor-magistrate, escheat, freehold), regions (Port Royal, Nassau, Jamaica, New Providence, Barbados) | ~40 |
 | `.../town/CULTURE.md` | practices and institutions with attestations (Anglican parish, the Jewish community and burial ground, the 1711 office bar, burial at sea, night burials and wakes, matelotage, pirate articles, the tavern as parlour), mythological records (duppy, jumbee, Rolling Calf) and their real belief practices | ~35 |
 | `.../science/TECHNOLOGY.md` | nothing as records; its world profile becomes the pirate plugin's overlay definition (fields stay the plugin's) | 0 (mapping only) |
-| `.../science/SCIENTIFIC_EQUIPMENT.md` and `.../body/data/equipment.json` (314 rows: id, skill, 1650–1730 availability, mark) | technology records with presence attestations; "none (anomaly)" rows are **not** absence: they become `presence: unknown` for the window plus their invention attestation | 314 |
+| `.../science/SCIENTIFIC_EQUIPMENT.md` and `.../body/data/equipment.json` (314 rows: id, skill, 1650–1730 availability, mark) | technology records with presence attestations; "none (anomaly)" rows are **not** absence: they become an unknown presence for the window (§1.1, "Unknown presence" paragraph: `what: presence`, `label: open`) plus their invention attestation | 314 |
 | `.../SOURCES.md` (keys `TWN-*`, `STL-*`, `EQ-*`) | source records | ~100 |
 | `Toolchain/economy/RESEARCH.md` | observations (prices, wages per trade, money: the piece of eight), source keys `ECON-*` | ~30 |
 
