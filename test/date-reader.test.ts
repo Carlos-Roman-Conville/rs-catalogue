@@ -77,7 +77,7 @@ async function writeEnglandCalendars() {
       what: 'adoption',
       place: england,
       date: {
-        from: { year: 1752, month: 1, day: 1 },
+        from: { year: 1752, month: 9, day: 14 },
         to: null,
         precision: 'day',
         circa: false,
@@ -124,6 +124,24 @@ it('marks 1752-09-05 unknown in England reform gap (B2)', async () => {
     approximate: true,
     calendar: 'unknown',
     yearStart: 'unknown',
+    basis: [],
+    conflict: false,
+  })
+})
+
+it('shifts 1752-09-05 when calendar and year start are explicit (B2, no England gap override)', async () => {
+  await writeEnglandCalendars()
+  const cat = openCatalogue(f.root)
+  expect(cat.date('1752-09-05', {
+    place: regionId('england'),
+    calendar: 'julian',
+    yearStart: 'jan-1',
+  })).toEqual({
+    date: { year: 1752, month: 9, day: 16 },
+    shifted: true,
+    approximate: false,
+    calendar: 'julian',
+    yearStart: 'jan-1',
     basis: [],
     conflict: false,
   })

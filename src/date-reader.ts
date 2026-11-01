@@ -29,8 +29,6 @@ const CALENDAR_RECORDS: Record<string, { calendar?: Calendar; yearStart?: YearSt
   'catalogue/calendar.january-year-start': { yearStart: 'jan-1' },
 }
 
-const ENGLAND = 'catalogue/region.england'
-
 function parseSource(source: string | DatePoint): DatePoint {
   if (typeof source !== 'string') return { ...source }
   const match = /^(-?\d+)(?:-(\d{1,2})(?:-(\d{1,2}))?)?$/.exec(source)
@@ -52,10 +50,6 @@ function attestationCovers(attestation: Attestation, point: DatePoint): boolean 
   return intersectDates(dateRange(attestation.date.from, attestation.date.to), writtenRange(point)) !== undefined
 }
 
-function englandGap(point: DatePoint): boolean {
-  return point.year === 1752 && point.month === 9 && point.day !== undefined && point.day >= 3 && point.day <= 13
-}
-
 export function createDateReader(catalogue: LoadedCatalogue) {
   const resolve = createIdResolver(catalogue)
   const regions = createRegionIndex(catalogue.records, resolve)
@@ -70,14 +64,6 @@ export function createDateReader(catalogue: LoadedCatalogue) {
     if (attestationPlace === undefined || at === undefined) return false
     if (at === attestationPlace) return true
     return regions.ancestorsDuring(at, point, point).includes(attestationPlace)
-  }
-
-  function underEngland(place: string, point: DatePoint): boolean {
-    const at = resolve(place)
-    const england = resolve(ENGLAND)
-    if (at === undefined || england === undefined) return false
-    if (at === england) return true
-    return regions.ancestorsDuring(at, point, point).includes(england)
   }
 
   function applicableRecordIds(place: string, point: DatePoint): string[] {
@@ -127,10 +113,6 @@ export function createDateReader(catalogue: LoadedCatalogue) {
 
   function date(source: string | DatePoint, opts: DateOptions): DateReading {
     const point = parseSource(source)
-    if (underEngland(opts.place, point) && englandGap(point)) {
-      return unknownReading(point, [], false)
-    }
-
     if (opts.calendar !== undefined && opts.yearStart !== undefined) {
       const normalised = fromSource(point, { calendar: opts.calendar, yearStart: opts.yearStart })
       return {
