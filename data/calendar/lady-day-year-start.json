@@ -38,7 +38,7 @@
           "month": 12,
           "day": 31
         },
-        "precision": "day",
+        "precision": "year",
         "circa": false,
         "calendar_of_source": "unknown"
       },
@@ -65,7 +65,7 @@
           "month": 12,
           "day": 31
         },
-        "precision": "day",
+        "precision": "year",
         "circa": false,
         "calendar_of_source": "unknown"
       },

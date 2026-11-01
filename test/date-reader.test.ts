@@ -77,7 +77,7 @@ async function writeEnglandCalendars() {
       what: 'adoption',
       place: england,
       date: {
-        from: { year: 1752, month: 9, day: 14 },
+        from: { year: 1752, month: 1, day: 1 },
         to: null,
         precision: 'day',
         circa: false,
@@ -124,7 +124,7 @@ it('marks 1752-09-05 unknown in England reform gap (B2)', async () => {
     approximate: true,
     calendar: 'unknown',
     yearStart: 'unknown',
-    basis: [],
+    basis: [calendarId('january-year-start')],
     conflict: false,
   })
 })

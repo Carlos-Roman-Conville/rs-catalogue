@@ -27,6 +27,13 @@ it('reads 1691-01-10 in England per DESIGN §2.2', () => {
     conflict: false,
   })
 })
+
+it('marks 1752-09-05 unknown calendar in England reform gap (B2)', () => {
+  const cat = openCatalogue()
+  expect(cat.date('1752-09-05', { place: 'catalogue/region.england' })).toMatchObject({
+    calendar: 'unknown',
+  })
+})
 it('fails opening malformed catalogue data instead of silently omitting records', async () => {
   const f = await fixture()
   try {
