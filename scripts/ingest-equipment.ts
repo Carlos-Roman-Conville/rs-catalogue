@@ -8,8 +8,7 @@ const MD_FILE = "../../Games/RPG's/pirate-ship/files/pirate-ship/science/SCIENTI
 const JSON_FILE = "../../Games/RPG's/pirate-ship/files/pirate-ship/body/data/equipment.json"
 const SOURCES_FILE = "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md"
 const MANIFEST = 'fixtures/pirate-town/manifest.json'
-const FIXTURE_ROOT = 'fixtures/pirate-town'
-const FIXTURE_RECORDS = 'fixtures/pirate-town/records'
+const DEFAULT_OUT = 'data'
 const SKIP_IDS = new Set(['tagged'])
 
 /** Classifier overrides keyed by slug; fixtures/pirate-town/ABSENCE-RULINGS.md (DESIGN §1.6). */
@@ -195,7 +194,7 @@ function parseBodySources(text: string): { order: string[]; rows: Map<string, So
 }
 
 function existingTechnologySlugs(root: string): Set<string> {
-  const dir = join(root, FIXTURE_RECORDS, 'technology')
+  const dir = join(root, DEFAULT_OUT, 'technology')
   if (!existsSync(dir)) return new Set()
   return new Set(readdirSync(dir).filter(f => f.endsWith('.json')).map(f => f.replace(/\.json$/, '')))
 }
@@ -331,7 +330,7 @@ function recordPath(outDir: string, record: CatalogueRecord): string {
   const slash = local.indexOf('/')
   const kind = local.slice(0, slash)
   const file = local.slice(slash + 1)
-  return join(outDir, 'records', kind, `${file}.json`)
+  return join(outDir, kind, `${file}.json`)
 }
 
 export function ingestEquipment(options: IngestOptions): IngestResult {
@@ -423,7 +422,7 @@ if (isMain) {
   const outRaw = outIdx === -1 ? undefined : args[outIdx + 1]
   if (outIdx !== -1 && !outRaw) usage()
   const root = catalogueRootFromImportMeta(import.meta.url)
-  const outRel = outRaw ?? FIXTURE_ROOT
+  const outRel = outRaw ?? DEFAULT_OUT
   const outDir = outRel.startsWith('/') || /^[A-Za-z]:[\\/]/.test(outRel) ? outRel : join(root, outRel)
   const result = ingestEquipment({ catalogueRoot: root, outDir, check: check || undefined })
   if (result.diffs.length) {

@@ -40,7 +40,6 @@ it('availability classes sum to 313 (184 + 59 + 69 + 1)', () => {
 })
 
 async function recordJsonPaths(base: string): Promise<string[]> {
-  const recordsDir = join(base, 'records')
   const paths: string[] = []
   async function walk(dir: string) {
     for (const entry of await readdir(dir, { withFileTypes: true })) {
@@ -49,7 +48,7 @@ async function recordJsonPaths(base: string): Promise<string[]> {
       else if (entry.isFile() && entry.name.endsWith('.json')) paths.push(path)
     }
   }
-  await walk(recordsDir)
+  await walk(base)
   return paths.sort()
 }
 

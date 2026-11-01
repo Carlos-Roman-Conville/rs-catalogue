@@ -243,7 +243,8 @@ Kernel keeper drafts that field.
 ### 2.3 Storage
 
 `Toolchain/catalogue/data/<kind>/<slug>.json` one record per file (small diffs, Composer-friendly units),
-`data/sources.json` (source keys: author, title, year, what it gives, rights), `data/aliases.json`. A build step
+source records at `data/source/<slug>.json` (kind `source`, with key, title, gives, rights, url; no separate
+`data/sources.json`, PROMOTE-PLAN (d)), `data/aliases.json`. A build step
 compiles an index (`dist/catalogue.json`) that the library loads. Fixtures under `fixtures/<name>/` with their
 manifest; their records are kept apart from `data/` until a keeper promotes them (§6).
 
@@ -269,7 +270,7 @@ It proves the Catalogue alone; no pirate slice runs.
 
 ## 4. Validation plan (§11a: implemented ≠ integrated ≠ validated)
 
-The full validation plan (V4 rules, tests V1–V7, and lettered exceptions (a)–(k)) lives in [DESIGN-V4.md](DESIGN-V4.md).
+The full validation plan (V4 rules, tests V1–V7, and lettered exceptions (a)–(l)) lives in [DESIGN-V4.md](DESIGN-V4.md).
 
 ## 5. Registry: rows found and proposed
 
