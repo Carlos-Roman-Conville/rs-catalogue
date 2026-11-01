@@ -297,7 +297,7 @@ It proves the Catalogue alone; no pirate slice runs.
 **AUDIT-H1-3 pass 24/24** (`native/h1-england/AUDIT-H1-3.md`). D1 steps 1-3 hold.
 
 **Next stage** (2026-11-01, task 5254; NATIVE-PLAN "After D1"). One session each, in order; composer for anything a
-test or `scripts/check.ts` gates, opus for audits and rulings, sonnet for sourcing sheets. Records only from a sheet;
+test or `scripts/check.ts` gates, haiku for audits, sonnet for sourcing sheets; rulings and the stage sign-off are the keeper's, in session (PRODUCTION.md §2). Records only from a sheet;
 every audit by a model that wrote neither the rows nor the fix; a failed audit gets a fix unit and a re-audit before
 the next row. `CHECK` below is `node --experimental-strip-types scripts/check.ts`.
 
@@ -305,17 +305,17 @@ the next row. `CHECK` below is `node --experimental-strip-types scripts/check.ts
 |---|---|---|---|
 | X1 | sonnet | H1 sheet 2, England 1270: land use, livestock, wages and prices (Clark), towns, ships, climate, royal institutions; and S8 (a `CAT-` source for Julian reckoning in England before 1752) | `grep -q 'CAT-' native/h1-england/SHEET-2.md && grep -q 'S8' native/h1-england/SHEET-2.md` |
 | X2 | composer | records from SHEET-2 (S8 found: `calendar_of_source: julian` on both lady-day attestations) | `CHECK && node --experimental-strip-types scripts/ingest-equipment.ts --check && npx vitest run test/demo.test.ts` |
-| X3 | opus | AUDIT-H1-4 of every X2 row | `grep -qE 'AUDIT-H1-4 [a-z]+ [0-9]+/[0-9]+' native/h1-england/AUDIT-H1-4.md` |
+| X3 | haiku | AUDIT-H1-4 of every X2 row | `grep -qE 'AUDIT-H1-4 [a-z]+ [0-9]+/[0-9]+' native/h1-england/AUDIT-H1-4.md` |
 | X4 | sonnet | H1 sheet 3, trajectory 1270-1700: population, real wages, GDP per head, urban share, enclosure, tax revenue, plague mortality, wars, regime changes | `grep -q 'CAT-' native/h1-england/SHEET-3.md` |
 | X5 | composer | records from SHEET-3, all `development` | `CHECK && npx vitest run test/demo.test.ts` |
-| X6 | opus | AUDIT-H1-5 of X5 (10 % sample if over 60 rows) | `grep -qE 'AUDIT-H1-5 [a-z]+ [0-9]+/[0-9]+' native/h1-england/AUDIT-H1-5.md` |
+| X6 | haiku | AUDIT-H1-5 of X5 (10 % sample if over 60 rows) | `grep -qE 'AUDIT-H1-5 [a-z]+ [0-9]+/[0-9]+' native/h1-england/AUDIT-H1-5.md` |
 | X7 | sonnet | H2 sheet, Japan 1600 (Tokugawa), rows as A1-A8, `region.japan` if none exists | `grep -q 'CAT-' native/h2-japan/SHEET.md` |
 | X8 | composer | H2 records, `development` | `CHECK && npx vitest run test/benchmark.test.ts` |
-| X9 | opus | AUDIT-H2 of X8 | `grep -qE 'AUDIT-H2 [a-z]+ [0-9]+/[0-9]+' native/h2-japan/AUDIT-H2.md` |
-| X10-X12 | sonnet, composer, opus | H5 Iceland 874: sheet, records (`reserve`), AUDIT-H5, as X7-X9 under `native/h5-iceland/` | as X7-X9 |
-| X13 | opus | H3/H4 ruling: who may write and audit `held_out` rows (no tuning unit reads them; V5 guard) | `grep -q '(h) Held-out rows' NATIVE-PLAN.md` |
-| X14-X19 | sonnet, composer, opus | H3 Greenland 985, then H4 Copán 400: sheet, records (`held_out`), audit each, as X7-X9 | `CHECK && npx vitest run test/benchmark.test.ts` |
-| X20 | opus | keeper sign-off of the stage: DESIGN Log, HANDOFF | `grep -q 'AUDIT-H4' DESIGN.md` |
+| X9 | haiku | AUDIT-H2 of X8 | `grep -qE 'AUDIT-H2 [a-z]+ [0-9]+/[0-9]+' native/h2-japan/AUDIT-H2.md` |
+| X10-X12 | sonnet, composer, haiku | H5 Iceland 874: sheet, records (`reserve`), AUDIT-H5, as X7-X9 under `native/h5-iceland/` | as X7-X9 |
+| X13 | keeper | H3/H4 ruling: who may write and audit `held_out` rows (no tuning unit reads them; V5 guard) (ruled in session; applied by 5265) | `grep -q '(h) Held-out rows' NATIVE-PLAN.md` |
+| X14-X19 | sonnet, composer, haiku | H3 Greenland 985, then H4 Copán 400: sheet, records (`held_out`), audit each, as X7-X9 | `CHECK && npx vitest run test/benchmark.test.ts` |
+| X20 | keeper | keeper sign-off of the stage: DESIGN Log, HANDOFF | `grep -q 'AUDIT-H4' DESIGN.md` |
 
 ## 4. Validation plan (§11a: implemented ≠ integrated ≠ validated)
 

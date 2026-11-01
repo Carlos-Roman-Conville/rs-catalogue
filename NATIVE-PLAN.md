@@ -98,6 +98,21 @@ N4 appends one sentence to its `notes` naming the native rows and NATIVE-PLAN (b
   R3 (`from: {year: 1155}`, `to: 1751-12-31`, `precision: year`) are right: the sources give 1155 as a year only, so
   `day` would assert 1 January 1155, which no source states. The `to` keeps the day the 1750 Act names, since a bound
   finer than the stated precision asserts nothing false. No data change.
+- **(h) Held-out rows** (5265) (keeper ruling, catalogue session 2026-11-01; DESIGN §3 X13). (1) *Writers.* A held-out
+  sheet (`native/h3-greenland/`, `native/h4-copan/`) is written by a sonnet sourcing unit and its records by a composer
+  data unit, both in the catalogue lane; they copy facts from sources and tune nothing, so they may read those rows. No
+  unit that sets or tunes a mechanism, constant or weight against the benchmark may read them, in any lane: its WORK
+  file lists neither those folders nor `data/` under Read (it reads the catalogue through `openCatalogue`, default
+  `withhold`), and only the P11 harness (`HARNESS_PATHS`) opens the catalogue with `heldOut: 'include'`. (2) *Audits.*
+  By haiku, which writes neither sheets nor records, under DESIGN §3's audit rule; the audit file sits in the same
+  held-out folder and may print values, since that folder is under the same read ban. (3) *Where the rows live.* In
+  `data/`, in the same records as every other row: an H3 or H4 row is an attestation or observation on a shared record
+  (`organism.hordeum-vulgare`, say), so a separate folder would split records; `check.ts`'s V5 rules, `withhold` in
+  `get()` and `window()`, and `nogate.ts` already keep the rows from code, and the Read rule in (1) keeps them from
+  sessions. (4) *Gates for X14-X19.* Sheet: `grep -q 'CAT-' native/<region>/SHEET.md && git diff --quiet HEAD -- data
+  src test scripts`. Records: `CHECK && npx vitest run test/benchmark.test.ts && git diff --quiet HEAD -- src test
+  scripts` (check.ts already fails an in-window observation without `held_out`). Audit: `grep -qE 'AUDIT-H[34] pass
+  [0-9]+/[0-9]+' native/<region>/AUDIT-H[34].md && git diff --quiet HEAD -- data src test scripts`.
 
 ### `benchmark_role` and V5
 
