@@ -22,6 +22,7 @@ adds one dated line under Done, and parks a disagreement with DESIGN.md under Bl
 - 2026-10-31: 2881 open-ended intervals (322ca2c): `to` omitted or null.
 - 2026-10-31: 2882 region fixtures open-ended (8a84675): three year-9999 ends are now `to: null`.
 - 2026-10-31: 2883 fixture review fixes (d8474de): no same_as on the three creatures, no game observation on chattel-slavery, port-royal counts are estimates.
+- 2026-11-01: 2905 V4 anchoring rule in DESIGN.md §4: referent-window dates are `estimate` with the referents paragraph as a second anchor; keys only from anchored rows; relation doubt in `notes`.
 
 ## Blocked
 

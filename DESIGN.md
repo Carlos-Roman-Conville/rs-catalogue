@@ -268,6 +268,26 @@ It proves the Catalogue alone; no pirate slice runs.
 | V6 | fixture drift: every `derived_from` sha256 still matches its source; mismatches listed for re-ingest | every unit touching a fixture | the check script |
 | V7 | coverage report per benchmark window (H1–H5, Caribbean 1690–1720): records per kind, share researched / estimate / fiction | on demand | — |
 
+**V4 anchoring rule** (2026-11-01, after AUDIT-1 failed 64 of 66 records on check 2). What a V4 audit holds an
+ingested record to:
+
+- **(a) Dates and places.** A record takes only the dates and places its anchored row or that row's section
+  states. Beyond them it may take the referent window, and only the bounds that window states: Port Royal before
+  1692 (to 1692) and Nassau 1703–1718 ("The referents" paragraph of `STARTING_TOWN.md`, repeated in the Q5
+  section intro), and the game's period c. 1690–1720 that step 1 of the same section states. An attestation or observation that uses the referent window is labelled
+  `estimate`, whatever the row's label is, and the referents paragraph is added as a second `derived_from` anchor.
+  A bound that no anchor states, such as Port Royal's 1670 start or a trade's 1680 start, is never written: cite a
+  row that states it as a further anchor, or set `date: null` and put the missing bound in `note`.
+- **(b) Prose anchors.** The referents paragraph is the only prose anchor allowed, and only as that second anchor
+  beside a row; never alone. Any other bold lead-in or paragraph is not an anchor (AUDIT-1 check 1).
+- **(c) Source keys.** A record cites a source key only if one of its anchored rows names that key. A row that
+  says only "`TWN-*`" names no key. To cite another key, add a second `derived_from` to a row that names it.
+- **(d) Relations.** A relation has no `label` or `confidence` in the schema (`src/schema.ts`, `relations`), so
+  uncertainty about a relation is written in the record's `notes`, naming the relation.
+- **(e) The audit.** V4 check 2 (values, dates, places) and check 4 (source keys) follow (a) to (c): a value is
+  supported if any of the record's anchors states it under these terms, and the label check accepts `estimate`
+  for anything taken from the referent window.
+
 "Validated" for a reference catalogue means: a value's source was re-checked by someone other than its writer (V4)
 and, where a second independent source exists, the two agree within the interval stated. Disagreement is kept as two
 attestations, never averaged (PLATFORM §4: competing explanations are kept).
