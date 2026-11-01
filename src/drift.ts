@@ -25,6 +25,17 @@ function manifest(value: unknown): value is Manifest {
       && typeof row.sha256 === 'string' && /^[a-fA-F0-9]{64}$/.test(row.sha256))
 }
 
+interface FixtureManifest {
+  name: string
+  manifestPath: string
+  value: Manifest
+  hashes: Map<string, string>
+}
+
+function isDataAliases(file: string, repoRoot: string): boolean {
+  return relative(repoRoot, file).replaceAll('\\', '/') === 'data/aliases.json'
+}
+
 /** V6: inspect source bytes and provenance, optionally refreshing only manifest hashes. */
 export function inspectDrift(repoRoot: string, update = false): DriftReport {
   const report: DriftReport = { files: 0, records: 0, failures: [] }
@@ -34,7 +45,10 @@ export function inspectDrift(repoRoot: string, update = false): DriftReport {
     try { return JSON.parse(readFileSync(file, 'utf8')) as unknown }
     catch (error) { fail(file, error instanceof SyntaxError ? 'bad JSON' : `cannot read (${(error as NodeJS.ErrnoException).code})`); return undefined }
   }
+
   const fixtures = join(repoRoot, 'fixtures')
+  const fixtureManifests: FixtureManifest[] = []
+
   for (const name of children(fixtures).filter(entry => entry.isDirectory()).map(entry => entry.name).sort()) {
     const dir = join(fixtures, name), manifestPath = join(dir, 'manifest.json')
     const value = parse(manifestPath)
@@ -54,22 +68,66 @@ export function inspectDrift(repoRoot: string, update = false): DriftReport {
       }
       // Do not partially refresh a manifest when one of its sources cannot be read.
       if (update && report.failures.length === before) writeFileSync(manifestPath, JSON.stringify(value, null, 2) + '\n')
+      fixtureManifests.push({ name, manifestPath, value, hashes })
     }
+  }
+
+  const pathOwners = new Map<string, { sha256: string; fixtures: string[] }>()
+  for (const { name, manifestPath, hashes } of fixtureManifests) {
+    for (const [path, sha256] of hashes) {
+      const existing = pathOwners.get(path)
+      if (existing === undefined) pathOwners.set(path, { sha256, fixtures: [name] })
+      else if (existing.sha256 !== sha256) {
+        const a = existing.fixtures[0]!
+        fail(join(fixtures, a, 'manifest.json'), `listed by fixtures/${a} and fixtures/${name} with different sha256`)
+        fail(manifestPath, `listed by fixtures/${a} and fixtures/${name} with different sha256`)
+        existing.fixtures.push(name)
+      } else existing.fixtures.push(name)
+    }
+  }
+
+  const sharedMap = new Map<string, string>()
+  for (const [path, { sha256 }] of pathOwners) sharedMap.set(path, sha256)
+
+  const checkDerivedFrom = (
+    file: string,
+    record: Record<string, unknown>,
+    hashLookup: Map<string, string>,
+    missingMessage: string,
+  ) => {
+    if (!Array.isArray(record.derived_from)) { fail(file, 'expected derived_from array'); return }
+    for (const [i, source] of record.derived_from.entries()) {
+      if (!object(source) || typeof source.file !== 'string' || typeof source.sha256 !== 'string') {
+        fail(file, `derived_from[${i}]: expected file and sha256`); continue
+      }
+      const expected = hashLookup.get(source.file)
+      if (expected === undefined) fail(file, `${source.file}: ${missingMessage}`)
+      else if (source.sha256.toLowerCase() !== expected) fail(file, `${source.file}: sha256 differs from manifest; re-ingest record`)
+    }
+  }
+
+  for (const { dir, hashes } of fixtureManifests.map(({ name, hashes }) => ({
+    dir: join(fixtures, name),
+    hashes,
+  }))) {
     for (const file of jsonFiles(join(dir, 'records'))) {
       report.records++
       const record = parse(file)
       if (record === undefined) continue
-      if (!object(record) || !Array.isArray(record.derived_from)) { fail(file, 'expected derived_from array'); continue }
-      for (const [i, source] of record.derived_from.entries()) {
-        if (!object(source) || typeof source.file !== 'string' || typeof source.sha256 !== 'string') {
-          fail(file, `derived_from[${i}]: expected file and sha256`); continue
-        }
-        const expected = hashes.get(source.file)
-        if (expected === undefined) fail(file, `${source.file}: not in fixture manifest; re-ingest record`)
-        else if (source.sha256.toLowerCase() !== expected) fail(file, `${source.file}: sha256 differs from manifest; re-ingest record`)
-      }
+      if (!object(record)) { fail(file, 'expected derived_from array'); continue }
+      checkDerivedFrom(file, record, hashes, 'not in fixture manifest; re-ingest record')
     }
   }
+
+  for (const file of jsonFiles(join(repoRoot, 'data'))) {
+    if (isDataAliases(file, repoRoot)) continue
+    report.records++
+    const record = parse(file)
+    if (record === undefined) continue
+    if (!object(record)) { fail(file, 'expected derived_from array'); continue }
+    checkDerivedFrom(file, record, sharedMap, 'not in any fixture manifest; re-ingest record')
+  }
+
   report.failures.sort()
   return report
 }

@@ -62,3 +62,57 @@ it('V6 update does not partially rewrite a manifest with a missing source', asyn
   expect(inspectDrift(root, true).failures.join()).toContain('cannot read source')
   expect(await readFile(join(root, manifestPath), 'utf8')).toBe(original)
 })
+
+it('V6 accepts a data/ record when derived_from matches the shared manifest map', async () => {
+  await write('data/material/promoted.json', {
+    id: 'catalogue/material.promoted',
+    derived_from: [{ file: 'source.md', sha256: hash('original\r\n') }],
+  })
+  expect(inspectDrift(root)).toEqual({ files: 1, records: 2, failures: [] })
+})
+
+it('V6 reports stale sha256 on a data/ record against the shared manifest map', async () => {
+  await write('data/material/stale.json', {
+    derived_from: [{ file: 'source.md', sha256: hash('wrong') }],
+  })
+  expect(checkDrift(root).join()).toContain('sha256 differs from manifest; re-ingest record')
+})
+
+it('V6 reports a data/ record whose derived_from file is in no fixture manifest', async () => {
+  await write('data/material/orphan.json', {
+    derived_from: [{ file: 'missing-from-all-manifests.md', sha256: hash('x') }],
+  })
+  expect(checkDrift(root).join()).toContain('not in any fixture manifest; re-ingest record')
+})
+
+it('V6 accepts a data/ record with an empty derived_from as a native record', async () => {
+  await write('data/material/native.json', { id: 'catalogue/material.native', derived_from: [] })
+  expect(inspectDrift(root)).toEqual({ files: 1, records: 2, failures: [] })
+})
+
+it('V6 skips data/aliases.json and does not count it as a record', async () => {
+  await write('data/aliases.json', { 'catalogue/material.example': 'alias' })
+  expect(inspectDrift(root)).toEqual({ files: 1, records: 1, failures: [] })
+})
+
+it('V6 reports conflicting manifest hashes for the same source path in two fixtures', async () => {
+  await write('fixtures/other/manifest.json', {
+    name: 'other',
+    files: [{ path: 'source.md', sha256: hash('different') }],
+  })
+  const failures = checkDrift(root)
+  expect(failures.filter(line => line.includes('with different sha256'))).toHaveLength(2)
+  expect(failures.join()).toContain('fixtures/demo/manifest.json')
+  expect(failures.join()).toContain('fixtures/other/manifest.json')
+})
+
+it('V6 update refreshes manifests but leaves data/ records untouched', async () => {
+  await write('data/material/from-data.json', {
+    derived_from: [{ file: 'source.md', sha256: hash('stale-not-updated') }],
+  })
+  await write('source.md', 'changed', true)
+  const dataRecordPath = join(root, 'data/material/from-data.json')
+  const original = await readFile(dataRecordPath, 'utf8')
+  expect(inspectDrift(root, true).failures.join()).toContain('re-ingest record')
+  expect(await readFile(dataRecordPath, 'utf8')).toBe(original)
+})
