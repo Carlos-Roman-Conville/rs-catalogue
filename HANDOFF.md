@@ -24,7 +24,9 @@ Done/Blocked headings instead of the template's State/Next/Blocked/Gotchas.
 - 2026-11-01: 3041 (Composer) AUDIT-6 region exception (b) fixes (c6dff84): region.jamaica adds STL-LAW as an anchor, england `part_of` undated; region.new-providence drops england `part_of`.
 - 2026-11-01: 3042 fixture audit 7: AUDIT-7 says pass, 66 of 66 records; jamaica and new-providence now pass; AUDIT-6's TWN-ROG pardon note corrected to TWN-NAS; 1682–1692 referent-bound reading left open (AUDIT-7 open question); no record edited.
 - 2026-11-01: 3048 three rulings in DESIGN.md §4 exceptions: political relation = `part_of` to a polity record (region.atlantic still qualifies); 1692 end of the 11 Q5 trade records is the referent window (`estimate` + referents anchor); no unsourced attestation. Plan: FIXES-audit7-plan.md, 12 records.
+- 2026-11-01: 3049 (Composer) DESIGN §4 (d), (e) fixes (5cb5610): 11 Q5 trade records `estimate` with referents anchor; sugar-grade unsourced attestation removed.
+- 2026-11-01: 3050 fixture audit 8: AUDIT-8 says fail, 1 of 66 (practice.faction-burial-alternatives, §4(e)); 11 Q5 records pass; no record edited.
 
 ## Blocked
 
-(none)
+- practice.faction-burial-alternatives: remove the unsourced attestation, keep its claim in `notes` (AUDIT-8 check 10).
