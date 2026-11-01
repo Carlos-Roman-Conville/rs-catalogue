@@ -121,6 +121,16 @@ it('rejects universal references to game-scoped records', async () => {
   await f.write('fixtures/demo/records/game-only.json', { ...record('game-only'), scope: 'game:demo' })
   expect(await checkRecord({ relations: [{ rel: 'same_as', to: gameId }] })).toContain('universal record references game-scoped')
 })
+it('rejects a universal reference to a game-scoped record through sources', async () => {
+  const gameId = 'catalogue/material.game-only'
+  await f.write('fixtures/demo/records/game-only.json', { ...record('game-only'), scope: 'game:demo' })
+  expect(await checkRecord({ sources: [gameId] })).toContain('universal record references game-scoped')
+})
+it('rejects a universal reference to a game-scoped record through attestation place', async () => {
+  const gameId = 'catalogue/material.game-only'
+  await f.write('fixtures/demo/records/game-only.json', { ...record('game-only'), scope: 'game:demo' })
+  expect(await checkRecord({ attestations: [{ ...attestation(), place: gameId }] })).toContain('universal record references game-scoped')
+})
 
 it('passes when a dated invention lies outside the absence window', async () => {
   await writeCheckSource()
