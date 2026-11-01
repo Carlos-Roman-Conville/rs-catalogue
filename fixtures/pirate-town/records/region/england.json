@@ -34,7 +34,12 @@
       "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
       "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | The referents",
       "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Settlement sources (settlement keeper, 2026-10-30) | STL-MOR",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
     }
   ],
-  "notes": "Political region for colonial membership edges. part_of world: no anchor states it (V4 nesting rule). Q10 hours observation removed: that row names London, not England; no catalogue/region.london record."
+  "notes": "Political region for colonial membership edges. STL-MOR row names England (1700 wages). part_of world: no anchor states it (V4 nesting rule). Q10 hours observation removed: that row names London, not England; no catalogue/region.london record."
 }

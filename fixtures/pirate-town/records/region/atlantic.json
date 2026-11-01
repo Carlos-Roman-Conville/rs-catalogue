@@ -36,5 +36,5 @@
       "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
     }
   ],
-  "notes": "Geographic nesting estimate. part_of world: no anchor states it (V4 nesting rule)."
+  "notes": "no row names Atlantic Ocean; anchored on referents only. Geographic nesting estimate. part_of world: no anchor states it (V4 nesting rule)."
 }

@@ -28,9 +28,9 @@
       "sources": [
         "catalogue/source.stl-psj"
       ],
-      "label": "researched",
+      "label": "open",
       "confidence": {
-        "level": "medium",
+        "level": "low",
         "reason": "Imported wine, brandy and rum punch; no brewer in any source read (STL-PSJ; STARTING_TOWN Q5 tavern brewhouse)."
       },
       "note": "Presence unknown: no commercial brewer attested in sources read (DESIGN §1.1)."

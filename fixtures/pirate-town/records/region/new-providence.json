@@ -51,7 +51,7 @@
         },
         "to": null,
         "precision": "year",
-        "circa": false,
+        "circa": true,
         "calendar_of_source": "gregorian"
       },
       "sources": [
@@ -80,5 +80,5 @@
       "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
     }
   ],
-  "notes": "Referents name Nassau, New Providence. part_of bahamas: no anchor states it (V4 nesting rule). part_of england from 1718: no anchored row states England or 1718; relation kept on TWN-ROG source key only."
+  "notes": "Referents name Nassau, New Providence. part_of bahamas: no anchor states it (V4 nesting rule). part_of england from 1718: no anchored row states England; relation kept on TWN-ROG source key only."
 }
