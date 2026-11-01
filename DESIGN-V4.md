@@ -49,7 +49,8 @@ political relation (a `part_of` to a polity record, dated or not, such as New Pr
 **Region anchoring exceptions** (2026-11-01, review 1101-0223 fixes 1, 2 and 4; AUDIT-5 fails on
 `region.atlantic`, `region.jamaica`, `region.new-providence`, `practice.commercial-brewing`; (a) reworded and (d),
 (e) added 2026-11-01, review 1101-0317 fixes 1, 2 and 6, after AUDIT-7; (f) to (i) added 2026-11-01, review
-1101-0406 fixes 1 and 3, after AUDIT-8; (j) and (k) added 2026-11-01, review 1101-0630 fix 2, after AUDIT-C4).
+1101-0406 fixes 1 and 3, after AUDIT-8; (j) and (k) added 2026-11-01, review 1101-0630 fix 2, after AUDIT-C4; (l) added 2026-11-01, review 1101-0757
+fix 1, after AUDIT-C4-2).
 
 - **(a) A geographic container no row names** (`region.atlantic`). A region record that is only a step in the
   geographic nesting (a sea, an ocean, an island group) may pass on the referents paragraph alone, as an exception
@@ -144,6 +145,21 @@ political relation (a `part_of` to a polity record, dated or not, such as New Pr
   not opened or verified. V4 check 3 reads the row's label word (`researched`), and its qualifier ("unverified",
   "late", "not opened") as a confidence ceiling of `low`. `region.port-royal` (low, "page not opened") and
   `region.jamaica` (low, "EKU thesis not opened") pass with no change.
+- **(l) Context in a `note`** (`entity.piece-of-eight`, 1704 note "the plantations"; added 2026-11-01, review
+  1101-0757 fix 1, after AUDIT-C4-2). An observation's or attestation's `note` is part of the record, so it is
+  held to the record's anchors like any other field: it may carry only what an anchored row (or that row's
+  section, or the referent window, on rule (a)'s terms) states, and context from prose outside those anchors is
+  not written there, even with `place` or `date` left null. Rule (a): "A record takes only the dates and places
+  its anchored row or that row's section states"; a place or date in `note` is still taken by the record, because
+  a reader takes it from the note as readily as from `place`. §1.3 stores values "never false points": a field
+  left null so as to claim nothing is false precision if the note then claims it. Rule (b) means such prose cannot
+  be anchored instead (only the referents paragraph is a prose anchor). What a `note` may still carry: the
+  anchored row's own words (qualifiers kept verbatim, exception (j)), the doubt or the missing bound (rule (a)
+  "put the missing bound in `note`"), and where the rows sit (exception (g)). V4 check 2 enforces it: "every
+  value, date, place is in the row" includes the words of `note`, so an unanchored place or date in a note fails
+  check 2, and a file a note names but no anchor cites is counted by check 7. `entity.piece-of-eight`'s 1704 note
+  drops "the plantations" and "re-enacted", which come from RESEARCH §3 prose; see
+  `fixtures/pirate-town/NOTE-RULINGS.md`.
 
 "Validated" for a reference catalogue means: a value's source was re-checked by someone other than its writer (V4)
 and, where a second independent source exists, the two agree within the interval stated. Disagreement is kept as two
