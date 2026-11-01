@@ -32,8 +32,7 @@
         },
         "precision": "day",
         "circa": false,
-        "calendar_of_source": "gregorian",
-        "year_start_of_source": "jan-1"
+        "calendar_of_source": "gregorian"
       },
       "sources": [
         "catalogue/source.cat-act-1750"

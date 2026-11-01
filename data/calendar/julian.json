@@ -25,11 +25,7 @@
       "what": "presence",
       "place": "catalogue/region.england",
       "date": {
-        "from": {
-          "year": 1752,
-          "month": 9,
-          "day": 2
-        },
+        "from": null,
         "to": {
           "year": 1752,
           "month": 9,
@@ -37,8 +33,7 @@
         },
         "precision": "day",
         "circa": false,
-        "calendar_of_source": "julian",
-        "year_start_of_source": "mar-25"
+        "calendar_of_source": "julian"
       },
       "sources": [
         "catalogue/source.cat-act-1750"
@@ -48,7 +43,7 @@
         "level": "high",
         "reason": "Act text opened and read; it names the last old-style day and says the next is 14 September"
       },
-      "note": "Julian reckoning in use; last old-style day (Act s. 1 and preamble, CAT-ACT-1750). Interval start open (native/h1-england/SHEET.md S8)."
+      "note": "Julian reckoning in use to 2 September 1752, the last old-style day (Julian per the Act's preamble, CAT-ACT-1750 s. 1 and preamble). Interval start open (native/h1-england/SHEET.md S8)."
     }
   ],
   "relations": [],
