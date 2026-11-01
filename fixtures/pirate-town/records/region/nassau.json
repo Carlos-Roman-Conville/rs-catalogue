@@ -29,31 +29,27 @@
       "place": "catalogue/region.nassau",
       "date": {
         "from": {
-          "year": 1690
+          "year": 1703
         },
         "to": {
-          "year": 1720
+          "year": 1718
         },
         "precision": "year",
-        "circa": true,
+        "circa": false,
         "calendar_of_source": "gregorian"
       },
       "sources": [
         "catalogue/source.twn-diet"
       ],
-      "label": "researched",
+      "label": "estimate",
       "confidence": {
         "level": "medium",
-        "reason": "Period Caribbean diet standard reference (TWN-DIET); butcher and farm detail is game fiction in CULTURE §6."
-      }
+        "reason": "Period diet staples (Food row, TWN-DIET); 1703–1718 from referents."
+      },
+      "note": "Butcher and farm detail is game fiction in CULTURE §6."
     }
   ],
-  "relations": [
-    {
-      "rel": "part_of",
-      "to": "catalogue/region.new-providence"
-    }
-  ],
+  "relations": [],
   "sources": [
     "catalogue/source.twn-nas",
     "catalogue/source.twn-rog",
@@ -61,14 +57,15 @@
   ],
   "derived_from": [
     {
-      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
-      "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | The referents",
-      "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
-    },
-    {
       "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/town/CULTURE.md",
       "anchor": "## 6. Local practices | Food",
       "sha256": "80837fd0f68bfdf4890c954463aafa84f2ca4aabeb1ffe6e77ca9602d679a51b"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
+      "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | The referents",
+      "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
     }
-  ]
+  ],
+  "notes": "part_of new-providence removed (no keeper row)."
 }

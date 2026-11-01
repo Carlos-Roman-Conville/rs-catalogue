@@ -23,38 +23,15 @@
   "attestations": [
     {
       "what": "presence",
-      "place": "catalogue/region.port-royal",
-      "date": {
-        "from": {
-          "year": 1670
-        },
-        "to": {
-          "year": 1692
-        },
-        "precision": "year",
-        "circa": false,
-        "calendar_of_source": "gregorian"
-      },
-      "sources": [
-        "catalogue/source.twn-pr"
-      ],
-      "label": "researched",
-      "confidence": {
-        "level": "high",
-        "reason": "Parish church and vestry pattern for English Caribbean towns (TWN-PR)."
-      }
-    },
-    {
-      "what": "presence",
-      "place": "catalogue/region.jamaica",
+      "place": null,
       "date": null,
       "sources": [
         "catalogue/source.twn-pr"
       ],
       "label": "researched",
       "confidence": {
-        "level": "medium",
-        "reason": "Colonial Jamaica parish governance pattern (TWN-PR)."
+        "level": "high",
+        "reason": "Parish church and vestry pattern for English Caribbean towns (Established church row; TWN-PR)."
       }
     }
   ],

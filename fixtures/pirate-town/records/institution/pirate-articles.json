@@ -28,25 +28,15 @@
   "attestations": [
     {
       "what": "presence",
-      "place": "catalogue/region.caribbean",
-      "date": {
-        "from": {
-          "year": 1690
-        },
-        "to": {
-          "year": 1720
-        },
-        "precision": "year",
-        "circa": true,
-        "calendar_of_source": "gregorian"
-      },
+      "place": null,
+      "date": null,
       "sources": [
         "catalogue/source.twn-code"
       ],
       "label": "researched",
       "confidence": {
         "level": "high",
-        "reason": "Articles per cruise; elected officers and shares (TWN-CODE; CULTURE §6 Justice)."
+        "reason": "A pirate crew's own articles at sea (Justice row; TWN-CODE)."
       }
     }
   ],

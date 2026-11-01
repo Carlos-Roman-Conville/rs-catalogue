@@ -24,33 +24,20 @@
     {
       "what": "presence",
       "place": "catalogue/region.kingston",
-      "date": {
-        "from": {
-          "year": 1692
-        },
-        "to": null,
-        "precision": "year",
-        "circa": false,
-        "calendar_of_source": "gregorian"
-      },
+      "date": null,
       "sources": [
         "catalogue/source.stl-king"
       ],
       "label": "estimate",
       "confidence": {
         "level": "medium",
-        "reason": "Kingston rose after the 1692 earthquake; STL-KING not opened."
+        "reason": "Kingston source row (STL-KING); dated bounds not taken from the row."
       },
-      "note": "Merchants' capital after Port Royal's 1692 earthquake (ATLANTIC-MAP summary)."
+      "note": "Merchants' capital after Port Royal's 1692 earthquake (ATLANTIC-MAP summary); 1692 start not in STL-KING row."
     }
   ],
   "observations": [],
-  "relations": [
-    {
-      "rel": "part_of",
-      "to": "catalogue/region.jamaica"
-    }
-  ],
+  "relations": [],
   "sources": [
     "catalogue/source.stl-king"
   ],
@@ -60,5 +47,6 @@
       "anchor": "## Settlement sources (settlement keeper, 2026-10-30) | STL-KING",
       "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
     }
-  ]
+  ],
+  "notes": "part_of jamaica removed (STL-KING row does not state the edge)."
 }

@@ -22,12 +22,7 @@
   "scope": "universal",
   "attestations": [],
   "observations": [],
-  "relations": [
-    {
-      "rel": "part_of",
-      "to": "catalogue/region.lesser-antilles"
-    }
-  ],
+  "relations": [],
   "sources": [
     "catalogue/source.twn-bar"
   ],
@@ -37,5 +32,6 @@
       "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | Q1 household",
       "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
     }
-  ]
+  ],
+  "notes": "part_of lesser-antilles removed (Q1 household row does not state the edge)."
 }

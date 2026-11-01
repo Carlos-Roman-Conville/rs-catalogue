@@ -42,7 +42,7 @@
       "label": "researched",
       "confidence": {
         "level": "high",
-        "reason": "From pirate-ship source row or task window."
+        "reason": "Pirate base from 1713 until Rogers 1718 (TWN-NAS row; TWN-ROG for Crown return)."
       },
       "note": "Pirate base from 1713 until Rogers 1718."
     }
@@ -62,6 +62,11 @@
     {
       "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
       "anchor": "## Town sources (town keeper, 2026-10-30) | TWN-NAS",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Town sources (town keeper, 2026-10-30) | TWN-ROG",
       "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
     }
   ]

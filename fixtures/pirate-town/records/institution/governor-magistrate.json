@@ -39,16 +39,16 @@
         "catalogue/source.twn-nas",
         "catalogue/source.twn-rog"
       ],
-      "label": "researched",
+      "label": "estimate",
       "confidence": {
         "level": "medium",
-        "reason": "Crown governor distant; loose local rule and magistrates in the pirate years (TWN-NAS, TWN-ROG)."
+        "reason": "Crown governor distant; loose local rule in the pirate years (Political system row; TWN-NAS, TWN-ROG); 1703–1718 from referents."
       },
       "note": "Town-hall contest and Imperial faction overlay are game fiction (STARTING_TOWN Q11)."
     },
     {
       "what": "presence",
-      "place": "catalogue/region.jamaica",
+      "place": null,
       "date": null,
       "sources": [
         "catalogue/source.twn-law"
@@ -56,7 +56,7 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "Captured pirates sent to the governor under colonial law (TWN-LAW)."
+        "reason": "Captured pirates sent to the governor under colonial law (Justice row; TWN-LAW)."
       }
     }
   ],
@@ -72,6 +72,16 @@
       "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/town/CULTURE.md",
       "anchor": "## 3. The economic and political arrangement (an institutional structure, not the culture) | Political system",
       "sha256": "80837fd0f68bfdf4890c954463aafa84f2ca4aabeb1ffe6e77ca9602d679a51b"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/town/CULTURE.md",
+      "anchor": "## 6. Local practices | Justice",
+      "sha256": "80837fd0f68bfdf4890c954463aafa84f2ca4aabeb1ffe6e77ca9602d679a51b"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
+      "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | The referents",
+      "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
     }
   ]
 }

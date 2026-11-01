@@ -26,7 +26,7 @@
       "quantity": "labour.hours_per_day",
       "value": 11,
       "unit": "hour",
-      "place": "catalogue/region.england",
+      "place": null,
       "date": {
         "from": {
           "year": 1750
@@ -46,29 +46,24 @@
         "level": "medium",
         "reason": "London 1750s: a 12-hour day less meals (STL-VOTH; STARTING_TOWN Q10 hours)."
       },
-      "note": "Applied to colonial labour benchmarks via Settlement SET-12; not a Jamaica-specific figure."
+      "note": "Q10 row names London, not England; applied to colonial labour benchmarks via Settlement SET-12."
     }
   ],
-  "relations": [
-    {
-      "rel": "part_of",
-      "to": "catalogue/region.world"
-    }
-  ],
+  "relations": [],
   "sources": [
     "catalogue/source.stl-voth"
   ],
   "derived_from": [
     {
       "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
-      "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | The referents",
+      "anchor": "## Settlement keeper research (2026-10-30; Q5, Q10, Q15, Q7 rows) | Q10 hours",
       "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
     },
     {
       "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
-      "anchor": "## Settlement keeper research (2026-10-30; Q5, Q10, Q15, Q7 rows) | Q10 hours",
+      "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | The referents",
       "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
     }
   ],
-  "notes": "Political region for colonial membership edges."
+  "notes": "Political region for colonial membership edges; part_of world removed (no keeper row)."
 }

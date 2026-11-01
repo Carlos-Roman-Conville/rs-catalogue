@@ -38,10 +38,10 @@
       "sources": [
         "catalogue/source.twn-pr"
       ],
-      "label": "researched",
+      "label": "estimate",
       "confidence": {
         "level": "high",
-        "reason": "TWN-PR cites the 1692 earthquake effects."
+        "reason": "TWN-PR cites the 1692 earthquake effects (Q1 section; referents window)."
       },
       "note": "1692 earthquake attestation; not a change of membership in Jamaica."
     }

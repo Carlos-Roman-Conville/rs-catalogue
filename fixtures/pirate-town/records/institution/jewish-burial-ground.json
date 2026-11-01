@@ -23,30 +23,7 @@
   "attestations": [
     {
       "what": "presence",
-      "place": "catalogue/region.port-royal",
-      "date": {
-        "from": {
-          "year": 1670
-        },
-        "to": {
-          "year": 1692
-        },
-        "precision": "year",
-        "circa": false,
-        "calendar_of_source": "gregorian"
-      },
-      "sources": [
-        "catalogue/source.twn-jew"
-      ],
-      "label": "researched",
-      "confidence": {
-        "level": "high",
-        "reason": "Burials apart, carried by boat to Hunt's Bay (TWN-JEW)."
-      }
-    },
-    {
-      "what": "presence",
-      "place": "catalogue/region.jamaica",
+      "place": null,
       "date": null,
       "sources": [
         "catalogue/source.twn-jew"
@@ -54,7 +31,7 @@
       "label": "researched",
       "confidence": {
         "level": "high",
-        "reason": "Port Royal and Kingston Jewish burials apart (TWN-JEW)."
+        "reason": "Jewish ground apart; burials carried by boat to Hunt's Bay (Burial place row; TWN-JEW)."
       }
     }
   ],

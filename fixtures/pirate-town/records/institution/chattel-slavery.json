@@ -23,18 +23,8 @@
   "attestations": [
     {
       "what": "presence",
-      "place": "catalogue/region.caribbean",
-      "date": {
-        "from": {
-          "year": 1670
-        },
-        "to": {
-          "year": 1720
-        },
-        "precision": "year",
-        "circa": true,
-        "calendar_of_source": "gregorian"
-      },
+      "place": null,
+      "date": null,
       "sources": [
         "catalogue/source.twn-bar",
         "catalogue/source.twn-dunn"
@@ -42,7 +32,7 @@
       "label": "researched",
       "confidence": {
         "level": "high",
-        "reason": "Enslaved labour attested in the English Caribbean labour order; period fact only (TWN-BAR, TWN-DUNN)."
+        "reason": "Enslaved labour attested in the colonial labour order; period fact only (Labour row; TWN-BAR, TWN-DUNN)."
       }
     }
   ],

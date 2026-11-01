@@ -22,32 +22,19 @@
   "scope": "universal",
   "attestations": [],
   "observations": [],
-  "relations": [
-    {
-      "rel": "part_of",
-      "to": "catalogue/region.greater-antilles"
-    },
-    {
-      "rel": "part_of",
-      "to": "catalogue/region.england",
-      "date": {
-        "from": {
-          "year": 1655
-        },
-        "to": null,
-        "precision": "year",
-        "circa": false,
-        "calendar_of_source": "gregorian"
-      }
-    }
-  ],
+  "relations": [],
   "sources": [],
   "derived_from": [
     {
       "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
       "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | Q6 pattern",
       "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
+      "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | The referents",
+      "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
     }
   ],
-  "notes": "English Crown from 1655 (estimate; no TWN or STL key in the pirate files); relation end open."
+  "notes": "Referents name Port Royal, Jamaica. part_of greater-antilles and part_of england from 1655 removed (no keeper row); 1655 not written."
 }

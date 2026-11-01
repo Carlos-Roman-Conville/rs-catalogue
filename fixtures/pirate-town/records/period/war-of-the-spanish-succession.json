@@ -26,25 +26,25 @@
       "place": null,
       "date": {
         "from": {
-          "year": 1701
+          "year": 1690
         },
         "to": {
-          "year": 1714
+          "year": 1720
         },
         "precision": "year",
-        "circa": false,
+        "circa": true,
         "calendar_of_source": "gregorian"
       },
       "sources": [
         "catalogue/source.twn-nas",
         "catalogue/source.twn-rog"
       ],
-      "label": "estimate",
+      "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "From pirate-ship source row or task window."
+        "reason": "War named in the Caribbean haven model window c. 1690–1720 (Model row; TWN-NAS, TWN-ROG)."
       },
-      "note": "1701–1714 interval from standard chronology; CULTURE names the war only."
+      "note": "Standard chronology 1701–1714 is not in the Model row; kept here as note only."
     }
   ],
   "relations": [],

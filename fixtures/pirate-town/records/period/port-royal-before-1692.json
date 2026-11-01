@@ -24,26 +24,16 @@
     {
       "what": "presence",
       "place": null,
-      "date": {
-        "from": {
-          "year": 1670
-        },
-        "to": {
-          "year": 1691
-        },
-        "precision": "year",
-        "circa": false,
-        "calendar_of_source": "gregorian"
-      },
+      "date": null,
       "sources": [
         "catalogue/source.twn-pr"
       ],
       "label": "estimate",
       "confidence": {
         "level": "medium",
-        "reason": "From pirate-ship source row or task window."
+        "reason": "Rich haven before the 1692 earthquake (referents; Q1 Port Royal 1688 context; TWN-PR)."
       },
-      "note": "Rich haven in the 1670s–1692 referents; end year before the earthquake."
+      "note": "Referents name Port Royal before 1692; start year 1670 is not in an anchor row; end before earthquake not written as a bound."
     }
   ],
   "relations": [
@@ -57,6 +47,11 @@
     "catalogue/source.twn-pr"
   ],
   "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
+      "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | Q1 household",
+      "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
+    },
     {
       "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
       "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | The referents",

@@ -23,7 +23,7 @@
   "attestations": [
     {
       "what": "presence",
-      "place": "catalogue/region.new-providence",
+      "place": null,
       "date": null,
       "sources": [
         "catalogue/source.twn-nas"
@@ -31,17 +31,13 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "TWN-NAS names Lords Proprietors' land tenure."
+        "reason": "Nassau land under the Lords Proprietors (Q6 pattern; TWN-NAS)."
       },
-      "note": "Under the Lords Proprietors until Crown administration from 1718 (TWN-NAS, TWN-ROG)."
+      "note": "Under the Lords Proprietors until Crown administration from 1718 (TWN-ROG)."
     }
   ],
   "observations": [],
   "relations": [
-    {
-      "rel": "part_of",
-      "to": "catalogue/region.bahamas"
-    },
     {
       "rel": "part_of",
       "to": "catalogue/region.england",
@@ -68,6 +64,12 @@
       "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
       "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | Q6 pattern",
       "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Town sources (town keeper, 2026-10-30) | TWN-ROG",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
     }
-  ]
+  ],
+  "notes": "part_of england from 1718 anchored on TWN-ROG; part_of bahamas removed (no keeper row)."
 }

@@ -23,7 +23,7 @@
   "attestations": [
     {
       "what": "presence",
-      "place": "catalogue/region.jamaica",
+      "place": null,
       "date": null,
       "sources": [
         "catalogue/source.twn-law"
@@ -31,38 +31,14 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "Justices handle small matters alongside the parish vestry (TWN-LAW; CULTURE §6 Justice)."
-      }
-    },
-    {
-      "what": "presence",
-      "place": "catalogue/region.nassau",
-      "date": {
-        "from": {
-          "year": 1703
-        },
-        "to": {
-          "year": 1718
-        },
-        "precision": "year",
-        "circa": false,
-        "calendar_of_source": "gregorian"
-      },
-      "sources": [
-        "catalogue/source.twn-nas"
-      ],
-      "label": "estimate",
-      "confidence": {
-        "level": "low",
-        "reason": "Parish vestry and justices pattern applied to the run-down port (TWN-NAS pattern)."
+        "reason": "Justices handle small matters alongside the parish vestry (Justice row; TWN-LAW, TWN-CODE)."
       }
     }
   ],
   "relations": [],
   "observations": [],
   "sources": [
-    "catalogue/source.twn-law",
-    "catalogue/source.twn-nas"
+    "catalogue/source.twn-law"
   ],
   "derived_from": [
     {
