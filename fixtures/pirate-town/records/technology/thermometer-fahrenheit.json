@@ -38,11 +38,11 @@
         "catalogue/source.eq-meas-wiki"
       ],
       "note": "none in the Atlantic colonies 1650 to 1730: Dutch and German instrument makers only",
-      "what": "absence",
-      "label": "estimate",
+      "what": "presence",
+      "label": "open",
       "confidence": {
-        "level": "medium",
-        "reason": "the row states none for 1650-1730 and its keys date or explain it; the window statement is the keeper's reading of the source, hence estimate"
+        "level": "low",
+        "reason": "date \"1714 mercury thermometer; scale proposed 1724\", inside the window; \"Dutch and German instrument makers only\" says where it was made, not that it could not reach the Atlantic colonies by 1730"
       }
     },
     {
@@ -77,5 +77,5 @@
       "sha256": "90e4b22328a99f8b855970f076a64f3bdbe09e5f82d622ea87001da98ccc70b8"
     }
   ],
-  "notes": "Ingested by scripts/ingest-equipment.ts from SCIENTIFIC_EQUIPMENT.md §2 and equipment.json row thermometer_fahrenheit. Credited to: Fahrenheit. Skill: Apothecary. Capability columns stay with the game (CAT-Q1)."
+  "notes": "Ingested by scripts/ingest-equipment.ts from SCIENTIFIC_EQUIPMENT.md §2 and equipment.json row thermometer_fahrenheit. Credited to: Fahrenheit. Skill: Apothecary. Capability columns stay with the game (CAT-Q1). date \"1714 mercury thermometer; scale proposed 1724\", inside the window; \"Dutch and German instrument makers only\" says where it was made, not that it could not reach the Atlantic colonies by 1730"
 }

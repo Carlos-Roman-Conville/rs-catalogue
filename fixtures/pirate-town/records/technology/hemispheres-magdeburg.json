@@ -38,11 +38,11 @@
         "catalogue/source.eq-pres-hemi"
       ],
       "note": "none (a demonstration piece)",
-      "what": "absence",
-      "label": "estimate",
+      "what": "presence",
+      "label": "open",
       "confidence": {
-        "level": "medium",
-        "reason": "the row states none for 1650-1730 and its keys date or explain it; the window statement is the keeper's reading of the source, hence estimate"
+        "level": "low",
+        "reason": "date \"8 May 1654 Regensburg; repeated 1656 Magdeburg; Berlin 1663\", inside the window; \"none (a demonstration piece)\" names no later date or missing requirement"
       }
     },
     {
@@ -77,5 +77,5 @@
       "sha256": "90e4b22328a99f8b855970f076a64f3bdbe09e5f82d622ea87001da98ccc70b8"
     }
   ],
-  "notes": "Ingested by scripts/ingest-equipment.ts from SCIENTIFIC_EQUIPMENT.md §2 and equipment.json row hemispheres_magdeburg. Credited to: von Guericke. Skill: Natural philosophy. Capability columns stay with the game (CAT-Q1)."
+  "notes": "Ingested by scripts/ingest-equipment.ts from SCIENTIFIC_EQUIPMENT.md §2 and equipment.json row hemispheres_magdeburg. Credited to: von Guericke. Skill: Natural philosophy. Capability columns stay with the game (CAT-Q1). date \"8 May 1654 Regensburg; repeated 1656 Magdeburg; Berlin 1663\", inside the window; \"none (a demonstration piece)\" names no later date or missing requirement"
 }

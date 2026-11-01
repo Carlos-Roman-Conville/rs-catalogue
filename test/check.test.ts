@@ -88,6 +88,49 @@ it('rejects undated part_of cycles, including self loops and aliased edges', asy
   await f.write('data/aliases.json', [{ old: 'old-b', new: record('b').id }])
   expect((await check()).filter(line => line.includes('part_of cycle'))).toHaveLength(3)
 })
+async function writeCheckSource() {
+  await f.write('data/source/fix.json', {
+    id: 'catalogue/source.fix',
+    kind: 'source',
+    source: { key: 'FIX', title: 'Fix', gives: 'g', rights: 'r' },
+    names: [{ text: 'Fix', lang: 'en', use: 'preferred' }],
+    classification: [],
+    provenance: ['original_fiction'],
+    scope: 'universal',
+    attestations: [],
+    observations: [],
+    relations: [],
+    sources: [],
+    derived_from: [],
+  })
+}
+
+it('passes when a dated invention lies outside the absence window', async () => {
+  await writeCheckSource()
+  const src = 'catalogue/source.fix'
+  const window = { ...date(), from: { year: 1650 }, to: { year: 1730 } }
+  const invention = { ...date(), from: { year: 1740 }, to: { year: 1740 } }
+  expect(await checkRecord({
+    attestations: [
+      { ...attestation(), what: 'absence', label: 'estimate', date: window, sources: [src] },
+      { ...attestation(), what: 'invention', label: 'researched', date: invention, sources: [src] },
+    ],
+  })).toBe('')
+})
+
+it('rejects an absence window that contains the record\'s own dated invention', async () => {
+  await writeCheckSource()
+  const src = 'catalogue/source.fix'
+  const window = { ...date(), from: { year: 1650 }, to: { year: 1730 } }
+  const invention = { ...date(), from: { year: 1727 }, to: { year: 1727 } }
+  expect(await checkRecord({
+    attestations: [
+      { ...attestation(), what: 'absence', label: 'estimate', date: window, sources: [src] },
+      { ...attestation(), what: 'invention', label: 'researched', date: invention, sources: [src] },
+    ],
+  })).toContain('attestations[0]: absence window contains attestations[1] (invention)')
+})
+
 it('rejects a dated cycle only when all edges share a date, including a shared endpoint', async () => {
   const interval = (from: number, to: number) => ({ ...date(), from: { year: from }, to: { year: to } })
   await f.write('data/a.json', { ...record('a'), relations: [{ rel: 'part_of', to: record('b').id, date: interval(1600, 1655) }] })

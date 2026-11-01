@@ -38,11 +38,11 @@
         "catalogue/source.eq-elec-gen"
       ],
       "note": "none (no sign of it on the Atlantic)",
-      "what": "absence",
-      "label": "estimate",
+      "what": "presence",
+      "label": "open",
       "confidence": {
-        "level": "medium",
-        "reason": "the row states none for 1650-1730 and its keys date or explain it; the window statement is the keeper's reading of the source, hence estimate"
+        "level": "low",
+        "reason": "date \"1663\", inside the window (the record's own invention date); \"none (no sign of it on the Atlantic)\" is absence of evidence (§1.1)"
       }
     },
     {
@@ -87,5 +87,5 @@
       "sha256": "90e4b22328a99f8b855970f076a64f3bdbe09e5f82d622ea87001da98ccc70b8"
     }
   ],
-  "notes": "Ingested by scripts/ingest-equipment.ts from SCIENTIFIC_EQUIPMENT.md §2 and equipment.json row globe_guericke. Credited to: von Guericke. Skill: Natural philosophy. Capability columns stay with the game (CAT-Q1)."
+  "notes": "Ingested by scripts/ingest-equipment.ts from SCIENTIFIC_EQUIPMENT.md §2 and equipment.json row globe_guericke. Credited to: von Guericke. Skill: Natural philosophy. Capability columns stay with the game (CAT-Q1). date \"1663\", inside the window (the record's own invention date); \"none (no sign of it on the Atlantic)\" is absence of evidence (§1.1)"
 }

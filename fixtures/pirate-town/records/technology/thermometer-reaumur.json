@@ -38,11 +38,11 @@
         "catalogue/source.eq-meas-wiki"
       ],
       "note": "none: 1730 is the end of the window; a French academy instrument",
-      "what": "absence",
-      "label": "estimate",
+      "what": "presence",
+      "label": "open",
       "confidence": {
-        "level": "medium",
-        "reason": "the row states none for 1650-1730 and its keys date or explain it; the window statement is the keeper's reading of the source, hence estimate"
+        "level": "low",
+        "reason": "date \"1730 (Wikipedia)\", the window's last year; \"1730 is the end of the window; a French academy instrument\" gives no later date and no missing requirement for the Atlantic in 1730"
       }
     },
     {
@@ -87,5 +87,5 @@
       "sha256": "90e4b22328a99f8b855970f076a64f3bdbe09e5f82d622ea87001da98ccc70b8"
     }
   ],
-  "notes": "Ingested by scripts/ingest-equipment.ts from SCIENTIFIC_EQUIPMENT.md §2 and equipment.json row thermometer_reaumur. Credited to: Reaumur. Skill: Apothecary. Capability columns stay with the game (CAT-Q1)."
+  "notes": "Ingested by scripts/ingest-equipment.ts from SCIENTIFIC_EQUIPMENT.md §2 and equipment.json row thermometer_reaumur. Credited to: Reaumur. Skill: Apothecary. Capability columns stay with the game (CAT-Q1). date \"1730 (Wikipedia)\", the window's last year; \"1730 is the end of the window; a French academy instrument\" gives no later date and no missing requirement for the Atlantic in 1730"
 }

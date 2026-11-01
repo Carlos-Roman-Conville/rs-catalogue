@@ -12,6 +12,16 @@ const FIXTURE_ROOT = 'fixtures/pirate-town'
 const FIXTURE_RECORDS = 'fixtures/pirate-town/records'
 const SKIP_IDS = new Set(['tagged'])
 
+/** Classifier overrides keyed by slug; fixtures/pirate-town/ABSENCE-RULINGS.md (DESIGN §1.6). */
+const ABSENCE_RULINGS_UNKNOWN_PRESENCE = new Map<string, string>([
+  ['thermometer-reaumur', 'date "1730 (Wikipedia)", the window\'s last year; "1730 is the end of the window; a French academy instrument" gives no later date and no missing requirement for the Atlantic in 1730'],
+  ['pneumatic-trough', 'date "1727 (Hales, Vegetable Staticks)", inside the window; the cell says "1727 is the period\'s last year" and "a tub and inverted bottle were makeable in 1700", so no requirement was missing'],
+  ['globe-guericke', 'date "1663", inside the window (the record\'s own invention date); "none (no sign of it on the Atlantic)" is absence of evidence (§1.1)'],
+  ['hemispheres-magdeburg', 'date "8 May 1654 Regensburg; repeated 1656 Magdeburg; Berlin 1663", inside the window; "none (a demonstration piece)" names no later date or missing requirement'],
+  ['clock-candle', 'date "520 AD: You Jiangu\'s poem ... al-Jazari 1206", long before the window; "none in the sources for 1650 to 1730; sandglasses and watches did the job (open)" is absence of evidence, and the row itself marks it open'],
+  ['thermometer-fahrenheit', 'date "1714 mercury thermometer; scale proposed 1724", inside the window; "Dutch and German instrument makers only" says where it was made, not that it could not reach the Atlantic colonies by 1730'],
+])
+
 const COL = {
   id: 0, equipment: 1, dateUsual: 4, credited: 5, skill: 14, availability: 16, confHistory: 17, mark: 19,
 } as const
@@ -225,6 +235,15 @@ function windowAttestation(rowId: string, availability: string, cls: Availabilit
   }
 }
 
+function unknownPresenceFromAbsenceRuling(window: Attestation, reason: string): Attestation {
+  return {
+    ...window,
+    what: 'presence',
+    label: 'open',
+    confidence: { level: 'low', reason },
+  }
+}
+
 function datedAttestation(rowId: string, cols: string[], sourceIds: string[]): Attestation | null {
   const dateCell = cols[COL.dateUsual]!
   if (dateCell.trim().toLowerCase().startsWith('open')) return null
@@ -249,12 +268,17 @@ function buildTechnologyRecord(
   const recordSources = extractEqKeys(cols.join(' '), jsonRow.join(' ')).map(sourceId)
   const availability = cols[COL.availability]!
   const cls = classifyAvailability(availability)
-  const attestations = [windowAttestation(rowId, availability, cls, cols[COL.confHistory]!, markKeys)]
+  const rulingReason = ABSENCE_RULINGS_UNKNOWN_PRESENCE.get(slug)
+  let window = windowAttestation(rowId, availability, cls, cols[COL.confHistory]!, markKeys)
+  if (rulingReason && cls === 'none_plain') {
+    window = unknownPresenceFromAbsenceRuling(window, rulingReason)
+  }
+  const attestations = [window]
   const dated = datedAttestation(rowId, cols, markKeys)
   if (dated) attestations.push(dated)
 
   let notes = `Ingested by scripts/ingest-equipment.ts from SCIENTIFIC_EQUIPMENT.md §2 and equipment.json row ${rowId}. Credited to: ${cols[COL.credited]!.trim()}. Skill: ${cols[COL.skill]!.trim()}. Capability columns stay with the game (CAT-Q1).`
-  if (cls === 'open' || cls === 'none_anomaly') {
+  if (cls === 'open' || cls === 'none_anomaly' || rulingReason) {
     notes += ` ${attestations[0]!.confidence.reason}`
   }
 

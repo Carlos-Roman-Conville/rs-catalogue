@@ -66,6 +66,15 @@ it('two runs to the same directory are byte-identical', async () => {
   }
 })
 
+it('ABSENCE-RULINGS unknown-presence slug thermometer-reaumur gets open presence on the window', () => {
+  const { technology } = ingestEquipment({ catalogueRoot: root, outDir })
+  const row = technology.find(r => r.id === 'catalogue/technology.thermometer-reaumur')!
+  const window = row.attestations[0]!
+  expect(window.what).toBe('presence')
+  expect(window.label).toBe('open')
+  expect(window.confidence.level).toBe('low')
+})
+
 it('plain-none row bunsen gets absence attestation with estimate label', () => {
   const { technology } = ingestEquipment({ catalogueRoot: root, outDir })
   const bunsen = technology.find(r => r.id === 'catalogue/technology.bunsen')!

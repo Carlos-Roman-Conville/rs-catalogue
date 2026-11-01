@@ -1,6 +1,23 @@
 import type { LoadedCatalogue } from './load.ts'
 import { createIdResolver } from './load.ts'
 import { partOfCycleIds } from './regions.ts'
+import type { Attestation, DateInterval } from './schema.ts'
+
+const INVENTION_ATTESTATION_WHATS = new Set<Attestation['what']>(['invention', 'earliest_evidence'])
+
+function absenceWindowYear(d: DateInterval, end: 'from' | 'to'): number {
+  if (end === 'from') return d.from?.year ?? Number.NEGATIVE_INFINITY
+  if (d.to == null) return Number.POSITIVE_INFINITY
+  return d.to.year
+}
+
+function absenceWindowContainsInvention(absence: Attestation, invention: Attestation): boolean {
+  if (absence.date == null || invention.date == null || invention.date.to == null) return false
+  return (
+    absenceWindowYear(absence.date, 'from') <= invention.date.from.year
+    && invention.date.to.year <= absenceWindowYear(absence.date, 'to')
+  )
+}
 
 /** V1 integrity checks. All references follow aliases, including multi-hop historical ids. */
 export function checkRecords(catalogue: LoadedCatalogue): string[] {
@@ -50,6 +67,15 @@ export function checkRecords(catalogue: LoadedCatalogue): string[] {
         sources(row.sources, `${path}.sources`)
       })
     }
+    r.attestations.forEach((absence, ai) => {
+      if (absence.what !== 'absence' || absence.date == null) return
+      r.attestations.forEach((invention, ii) => {
+        if (ai === ii || !INVENTION_ATTESTATION_WHATS.has(invention.what)) return
+        if (absenceWindowContainsInvention(absence, invention)) {
+          report(`attestations[${ai}]: absence window contains attestations[${ii}] (${invention.what})`)
+        }
+      })
+    })
   }
   for (const id of partOfCycleIds(catalogue.records, createIdResolver(catalogue))) {
     failures.push(`${id}: part_of cycle at an overlapping date`)
