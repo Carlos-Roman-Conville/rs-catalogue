@@ -1,0 +1,65 @@
+{
+  "id": "catalogue/entity.piece-of-eight",
+  "kind": "entity",
+  "names": [
+    {
+      "text": "Piece of eight",
+      "lang": "en",
+      "use": "preferred"
+    },
+    {
+      "text": "Real de a ocho",
+      "lang": "es",
+      "use": "period"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "entity"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.caribbean",
+      "date": {
+        "from": {
+          "year": 1690
+        },
+        "to": {
+          "year": 1720
+        },
+        "precision": "year",
+        "circa": true,
+        "calendar_of_source": "gregorian"
+      },
+      "sources": [
+        "catalogue/source.stl-e"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "high",
+        "reason": "Pieces of eight the common money unit; coin scarce, barter common (CULTURE §4 Money; STL-E wages in pieces of eight)."
+      }
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.stl-e"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/town/CULTURE.md",
+      "anchor": "## 4. The economic situation at the start | Money",
+      "sha256": "80837fd0f68bfdf4890c954463aafa84f2ca4aabeb1ffe6e77ca9602d679a51b"
+    }
+  ]
+}

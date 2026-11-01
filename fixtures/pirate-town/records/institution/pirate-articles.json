@@ -1,0 +1,65 @@
+{
+  "id": "catalogue/institution.pirate-articles",
+  "kind": "institution",
+  "names": [
+    {
+      "text": "Pirate articles",
+      "lang": "en",
+      "use": "preferred"
+    },
+    {
+      "text": "Cruise articles",
+      "lang": "en",
+      "use": "alternate"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "institution"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.caribbean",
+      "date": {
+        "from": {
+          "year": 1690
+        },
+        "to": {
+          "year": 1720
+        },
+        "precision": "year",
+        "circa": true,
+        "calendar_of_source": "gregorian"
+      },
+      "sources": [
+        "catalogue/source.twn-code"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "high",
+        "reason": "Articles per cruise; elected officers and shares (TWN-CODE; CULTURE §6 Justice)."
+      }
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.twn-code"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/town/CULTURE.md",
+      "anchor": "## 6. Local practices | Justice",
+      "sha256": "80837fd0f68bfdf4890c954463aafa84f2ca4aabeb1ffe6e77ca9602d679a51b"
+    }
+  ]
+}

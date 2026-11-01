@@ -1,0 +1,77 @@
+{
+  "id": "catalogue/institution.chattel-slavery",
+  "kind": "institution",
+  "names": [
+    {
+      "text": "Chattel slavery",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "institution"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.caribbean",
+      "date": {
+        "from": {
+          "year": 1670
+        },
+        "to": {
+          "year": 1720
+        },
+        "precision": "year",
+        "circa": true,
+        "calendar_of_source": "gregorian"
+      },
+      "sources": [
+        "catalogue/source.twn-bar",
+        "catalogue/source.twn-dunn"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "high",
+        "reason": "Enslaved labour attested in the English Caribbean labour order; period fact only (TWN-BAR, TWN-DUNN)."
+      }
+    }
+  ],
+  "relations": [],
+  "observations": [
+    {
+      "quantity": "game.trade-in-enslaved-people",
+      "value": null,
+      "unit": null,
+      "place": null,
+      "date": null,
+      "sources": [],
+      "label": "open",
+      "confidence": {
+        "level": "low",
+        "reason": "GOODS Open 1 (Rex): whether the trade in enslaved people is in the game."
+      }
+    }
+  ],
+  "sources": [
+    "catalogue/source.twn-bar",
+    "catalogue/source.twn-dunn"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/town/CULTURE.md",
+      "anchor": "## 3. The economic and political arrangement (an institutional structure, not the culture) | Labour",
+      "sha256": "80837fd0f68bfdf4890c954463aafa84f2ca4aabeb1ffe6e77ca9602d679a51b"
+    }
+  ],
+  "notes": "Records the historical institution only; game inclusion of the trade remains open."
+}

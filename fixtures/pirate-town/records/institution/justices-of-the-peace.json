@@ -1,0 +1,74 @@
+{
+  "id": "catalogue/institution.justices-of-the-peace",
+  "kind": "institution",
+  "names": [
+    {
+      "text": "Justices of the peace",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "institution"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.jamaica",
+      "date": null,
+      "sources": [
+        "catalogue/source.twn-law"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "Justices handle small matters alongside the parish vestry (TWN-LAW; CULTURE §6 Justice)."
+      }
+    },
+    {
+      "what": "presence",
+      "place": "catalogue/region.nassau",
+      "date": {
+        "from": {
+          "year": 1703
+        },
+        "to": {
+          "year": 1718
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "gregorian"
+      },
+      "sources": [
+        "catalogue/source.twn-nas"
+      ],
+      "label": "estimate",
+      "confidence": {
+        "level": "low",
+        "reason": "Parish vestry and justices pattern applied to the run-down port (TWN-NAS pattern)."
+      }
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.twn-law",
+    "catalogue/source.twn-nas"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/town/CULTURE.md",
+      "anchor": "## 6. Local practices | Justice",
+      "sha256": "80837fd0f68bfdf4890c954463aafa84f2ca4aabeb1ffe6e77ca9602d679a51b"
+    }
+  ]
+}
