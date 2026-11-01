@@ -1,0 +1,60 @@
+{
+  "id": "catalogue/practice.burial-at-sea",
+  "kind": "practice",
+  "names": [
+    {
+      "text": "Burial at sea",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "practice"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.caribbean",
+      "date": {
+        "from": {
+          "year": 1690
+        },
+        "to": {
+          "year": 1720
+        },
+        "precision": "year",
+        "circa": true,
+        "calendar_of_source": "gregorian"
+      },
+      "sources": [
+        "catalogue/source.twn-code"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "high",
+        "reason": "Sailors sewn in a hammock with a shot at the feet when death is at sea (TWN-CODE period)."
+      }
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.twn-code"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/town/CULTURE.md",
+      "anchor": "## 2. Customs, including burial and death | Sailors",
+      "sha256": "80837fd0f68bfdf4890c954463aafa84f2ca4aabeb1ffe6e77ca9602d679a51b"
+    }
+  ]
+}

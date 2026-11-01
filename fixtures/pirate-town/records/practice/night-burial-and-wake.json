@@ -1,0 +1,51 @@
+{
+  "id": "catalogue/practice.night-burial-and-wake",
+  "kind": "practice",
+  "names": [
+    {
+      "text": "Night burial, grave goods, and wake",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "practice"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.jamaica",
+      "date": null,
+      "sources": [
+        "catalogue/source.twn-afr"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "African-Caribbean death customs; period form uncertain (TWN-AFR)."
+      },
+      "note": "Antecedent of the later Nine Night."
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.twn-afr"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/town/CULTURE.md",
+      "anchor": "## 2. Customs, including burial and death | African-Caribbean",
+      "sha256": "80837fd0f68bfdf4890c954463aafa84f2ca4aabeb1ffe6e77ca9602d679a51b"
+    }
+  ]
+}

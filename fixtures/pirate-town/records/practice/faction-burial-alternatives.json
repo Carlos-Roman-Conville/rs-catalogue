@@ -1,0 +1,47 @@
+{
+  "id": "catalogue/practice.faction-burial-alternatives",
+  "kind": "practice",
+  "names": [
+    {
+      "text": "Faction burial alternatives",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "practice"
+      ]
+    }
+  ],
+  "provenance": [
+    "original_fiction"
+  ],
+  "scope": "game:pirate-ship",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.nassau",
+      "date": null,
+      "sources": [],
+      "label": "fiction",
+      "confidence": {
+        "level": "low",
+        "reason": "Holy Order, Free Pirates, cults, Atlanteans, Ghost Fleet alternatives (Rex 2026-10-30)."
+      }
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/town/CULTURE.md",
+      "anchor": "## 2. Customs, including burial and death | Alternatives the factions add",
+      "sha256": "80837fd0f68bfdf4890c954463aafa84f2ca4aabeb1ffe6e77ca9602d679a51b"
+    }
+  ],
+  "notes": "Game fiction overlay; not a universal historical fact."
+}

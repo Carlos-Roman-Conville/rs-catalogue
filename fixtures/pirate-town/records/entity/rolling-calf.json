@@ -1,0 +1,55 @@
+{
+  "id": "catalogue/entity.rolling-calf",
+  "kind": "entity",
+  "names": [
+    {
+      "text": "Rolling Calf",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "entity"
+      ]
+    }
+  ],
+  "provenance": [
+    "mythological"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.jamaica",
+      "date": null,
+      "sources": [
+        "catalogue/source.twn-afr"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "Mythological figure in attested Jamaican folk belief (CULTURE.md)."
+      }
+    }
+  ],
+  "relations": [
+    {
+      "rel": "same_as",
+      "to": "catalogue/practice.belief-in-rolling-calf"
+    }
+  ],
+  "observations": [],
+  "sources": [
+    "catalogue/source.twn-afr"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/town/CULTURE.md",
+      "anchor": "## 1. Starting beliefs and religious preference | Folk belief",
+      "sha256": "80837fd0f68bfdf4890c954463aafa84f2ca4aabeb1ffe6e77ca9602d679a51b"
+    }
+  ]
+}

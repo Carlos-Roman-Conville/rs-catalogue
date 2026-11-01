@@ -1,0 +1,84 @@
+{
+  "id": "catalogue/practice.low-sunday-observance",
+  "kind": "practice",
+  "names": [
+    {
+      "text": "Low Sunday observance",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "practice"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.port-royal",
+      "date": {
+        "from": {
+          "year": 1670
+        },
+        "to": {
+          "year": 1692
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "gregorian"
+      },
+      "sources": [
+        "catalogue/source.twn-pr"
+      ],
+      "label": "estimate",
+      "confidence": {
+        "level": "medium",
+        "reason": "Port Royal reputation and tavern count imply low church attendance (TWN-PR)."
+      }
+    },
+    {
+      "what": "presence",
+      "place": "catalogue/region.nassau",
+      "date": {
+        "from": {
+          "year": 1703
+        },
+        "to": {
+          "year": 1718
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "gregorian"
+      },
+      "sources": [
+        "catalogue/source.twn-nas"
+      ],
+      "label": "estimate",
+      "confidence": {
+        "level": "low",
+        "reason": "Run-down pirate port poorer still than Port Royal (CULTURE.md)."
+      }
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.twn-pr",
+    "catalogue/source.twn-nas"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/town/CULTURE.md",
+      "anchor": "## 1. Starting beliefs and religious preference | Observance",
+      "sha256": "80837fd0f68bfdf4890c954463aafa84f2ca4aabeb1ffe6e77ca9602d679a51b"
+    }
+  ]
+}

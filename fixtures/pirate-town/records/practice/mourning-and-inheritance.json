@@ -1,0 +1,52 @@
+{
+  "id": "catalogue/practice.mourning-and-inheritance",
+  "kind": "practice",
+  "names": [
+    {
+      "text": "Mourning and inheritance on death",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "practice"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.jamaica",
+      "date": null,
+      "sources": [
+        "catalogue/source.twn-law",
+        "catalogue/source.twn-burn"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "high",
+        "reason": "Will read; else primogeniture, widow's dower, escheat (TWN-LAW, TWN-BURN)."
+      }
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.twn-law",
+    "catalogue/source.twn-burn"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/town/CULTURE.md",
+      "anchor": "## 2. Customs, including burial and death | Mourning and inheritance",
+      "sha256": "80837fd0f68bfdf4890c954463aafa84f2ca4aabeb1ffe6e77ca9602d679a51b"
+    }
+  ]
+}

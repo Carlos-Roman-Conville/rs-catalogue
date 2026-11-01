@@ -1,0 +1,86 @@
+{
+  "id": "catalogue/institution.anglican-parish-church",
+  "kind": "institution",
+  "names": [
+    {
+      "text": "Anglican parish church",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "institution"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.port-royal",
+      "date": {
+        "from": {
+          "year": 1670
+        },
+        "to": {
+          "year": 1692
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "gregorian"
+      },
+      "sources": [
+        "catalogue/source.twn-pr"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "high",
+        "reason": "English Caribbean towns nominally Anglican with a parish church (TWN-PR)."
+      },
+      "note": "Resident priest in the game seed is original fiction (istj-m)."
+    },
+    {
+      "what": "presence",
+      "place": "catalogue/region.nassau",
+      "date": {
+        "from": {
+          "year": 1703
+        },
+        "to": {
+          "year": 1718
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "gregorian"
+      },
+      "sources": [
+        "catalogue/source.twn-nas"
+      ],
+      "label": "estimate",
+      "confidence": {
+        "level": "medium",
+        "reason": "Nassau had no resident clergy in its pirate years (CULTURE.md note)."
+      }
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.twn-pr",
+    "catalogue/source.twn-nas"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/town/CULTURE.md",
+      "anchor": "## 1. Starting beliefs and religious preference | Established church",
+      "sha256": "80837fd0f68bfdf4890c954463aafa84f2ca4aabeb1ffe6e77ca9602d679a51b"
+    }
+  ],
+  "notes": "Anglican-type rite tied to the Imperial Crown + Church faction in the game overlay."
+}
