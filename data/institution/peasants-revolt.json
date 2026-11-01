@@ -1,0 +1,58 @@
+{
+  "id": "catalogue/institution.peasants-revolt",
+  "kind": "institution",
+  "names": [
+    {
+      "text": "Peasants' Revolt",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "institution"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1381,
+          "month": 5,
+          "day": 30
+        },
+        "to": {
+          "year": 1381,
+          "month": 11
+        },
+        "precision": "month",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-peasants"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "Revolt against the poll tax (CAT-WIKI-PEASANTS infobox). 30 May - November 1381 (infobox)."
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.cat-wiki-peasants"
+  ],
+  "derived_from": []
+}

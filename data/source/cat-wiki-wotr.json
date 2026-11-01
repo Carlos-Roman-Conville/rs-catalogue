@@ -1,0 +1,30 @@
+{
+  "id": "catalogue/source.cat-wiki-wotr",
+  "kind": "source",
+  "source": {
+    "key": "CAT-WIKI-WOTR",
+    "title": "Wars of the Roses (Wikipedia)",
+    "author": "Wikipedia contributors",
+    "year": 2026,
+    "gives": "War dates, 1461, 1470, 1485",
+    "url": "https://en.wikipedia.org/wiki/Wars_of_the_Roses",
+    "rights": "Wikipedia text is CC BY-SA; licence line not re-read, confirm before N4"
+  },
+  "names": [
+    {
+      "text": "Wars of the Roses (Wikipedia)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": []
+}

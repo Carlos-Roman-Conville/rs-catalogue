@@ -1,0 +1,113 @@
+{
+  "id": "catalogue/institution.glorious-revolution",
+  "kind": "institution",
+  "names": [
+    {
+      "text": "Glorious Revolution",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "institution"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1688,
+          "month": 11,
+          "day": 5
+        },
+        "to": {
+          "year": 1688,
+          "month": 11,
+          "day": 5
+        },
+        "precision": "day",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-glorious"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "William landed with an army in Devon (CAT-WIKI-GLORIOUS text). 5 November 1688."
+    },
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1688,
+          "month": 12,
+          "day": 23
+        },
+        "to": {
+          "year": 1688,
+          "month": 12,
+          "day": 23
+        },
+        "precision": "day",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-glorious"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "James II went into exile in France (CAT-WIKI-GLORIOUS text). 23 December 1688."
+    },
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1689,
+          "month": 4
+        },
+        "to": {
+          "year": 1689,
+          "month": 4
+        },
+        "precision": "month",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-glorious"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "A Convention made William and Mary joint monarchs of England and Ireland (CAT-WIKI-GLORIOUS text). April 1689 (no day on the page)."
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.cat-wiki-glorious"
+  ],
+  "derived_from": []
+}

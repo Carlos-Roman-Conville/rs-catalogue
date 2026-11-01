@@ -291,6 +291,2568 @@
       },
       "note": "CAT-WIKI-DEMOENG \"Population 1086-1700\" table, 1279: 4,430,000",
       "benchmark_role": "development"
+    },
+    {
+      "quantity": "population.total",
+      "value": 4230000,
+      "unit": "persons",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1250
+        },
+        "to": {
+          "year": 1250
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary (medieval: manorial tenants; Wrigley et al. 1997 interpolated with Wrigley and Schofield 1989 from 1541); printed in millions, converted. Wikipedia's Demography of England table (read) prints the same value where it has the year (it has no 1300 row)"
+      },
+      "note": "Table 16 A, p. 50 (PDF p. 51), 1250 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "population.total",
+      "value": 4750000,
+      "unit": "persons",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1290
+        },
+        "to": {
+          "year": 1290
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary (medieval: manorial tenants; Wrigley et al. 1997 interpolated with Wrigley and Schofield 1989 from 1541); printed in millions, converted. Wikipedia's Demography of England table (read) prints the same value where it has the year (it has no 1300 row)"
+      },
+      "benchmark_role": "development",
+      "note": "Table 16 A, p. 50 (PDF p. 51), 1290 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "population.total",
+      "value": 4730000,
+      "unit": "persons",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1300
+        },
+        "to": {
+          "year": 1300
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary (medieval: manorial tenants; Wrigley et al. 1997 interpolated with Wrigley and Schofield 1989 from 1541); printed in millions, converted. Wikipedia's Demography of England table (read) prints the same value where it has the year (it has no 1300 row)"
+      },
+      "benchmark_role": "development",
+      "note": "Table 16 A, p. 50 (PDF p. 51), 1300 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "population.total",
+      "value": 4690000,
+      "unit": "persons",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1315
+        },
+        "to": {
+          "year": 1315
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary (medieval: manorial tenants; Wrigley et al. 1997 interpolated with Wrigley and Schofield 1989 from 1541); printed in millions, converted. Wikipedia's Demography of England table (read) prints the same value where it has the year (it has no 1300 row)"
+      },
+      "benchmark_role": "development",
+      "note": "Table 16 A, p. 50 (PDF p. 51), 1315 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "population.total",
+      "value": 4810000,
+      "unit": "persons",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1348
+        },
+        "to": {
+          "year": 1348
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary (medieval: manorial tenants; Wrigley et al. 1997 interpolated with Wrigley and Schofield 1989 from 1541); printed in millions, converted. Wikipedia's Demography of England table (read) prints the same value where it has the year (it has no 1300 row)"
+      },
+      "benchmark_role": "development",
+      "note": "Table 16 A, p. 50 (PDF p. 51), 1348 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "population.total",
+      "value": 2600000,
+      "unit": "persons",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1351
+        },
+        "to": {
+          "year": 1351
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary (medieval: manorial tenants; Wrigley et al. 1997 interpolated with Wrigley and Schofield 1989 from 1541); printed in millions, converted. Wikipedia's Demography of England table (read) prints the same value where it has the year (it has no 1300 row)"
+      },
+      "benchmark_role": "development",
+      "note": "Table 16 A, p. 50 (PDF p. 51), 1351 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "population.total",
+      "value": 2500000,
+      "unit": "persons",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1377
+        },
+        "to": {
+          "year": 1377
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary (medieval: manorial tenants; Wrigley et al. 1997 interpolated with Wrigley and Schofield 1989 from 1541); printed in millions, converted. Wikipedia's Demography of England table (read) prints the same value where it has the year (it has no 1300 row)"
+      },
+      "benchmark_role": "development",
+      "note": "Table 16 A, p. 50 (PDF p. 51), 1377 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "population.total",
+      "value": 2080000,
+      "unit": "persons",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1400
+        },
+        "to": {
+          "year": 1400
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary (medieval: manorial tenants; Wrigley et al. 1997 interpolated with Wrigley and Schofield 1989 from 1541); printed in millions, converted. Wikipedia's Demography of England table (read) prints the same value where it has the year (it has no 1300 row)"
+      },
+      "benchmark_role": "development",
+      "note": "Table 16 A, p. 50 (PDF p. 51), 1400 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "population.total",
+      "value": 1900000,
+      "unit": "persons",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1450
+        },
+        "to": {
+          "year": 1450
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary (medieval: manorial tenants; Wrigley et al. 1997 interpolated with Wrigley and Schofield 1989 from 1541); printed in millions, converted. Wikipedia's Demography of England table (read) prints the same value where it has the year (it has no 1300 row)"
+      },
+      "benchmark_role": "development",
+      "note": "Table 16 A, p. 50 (PDF p. 51), 1450 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "population.total",
+      "value": 2140000,
+      "unit": "persons",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1490
+        },
+        "to": {
+          "year": 1490
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary (medieval: manorial tenants; Wrigley et al. 1997 interpolated with Wrigley and Schofield 1989 from 1541); printed in millions, converted. Wikipedia's Demography of England table (read) prints the same value where it has the year (it has no 1300 row)"
+      },
+      "benchmark_role": "development",
+      "note": "Table 16 A, p. 50 (PDF p. 51), 1490 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "population.total",
+      "value": 3020000,
+      "unit": "persons",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1560
+        },
+        "to": {
+          "year": 1560
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary (medieval: manorial tenants; Wrigley et al. 1997 interpolated with Wrigley and Schofield 1989 from 1541); printed in millions, converted. Wikipedia's Demography of England table (read) prints the same value where it has the year (it has no 1300 row)"
+      },
+      "benchmark_role": "development",
+      "note": "Table 16 A, p. 50 (PDF p. 51), 1560 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "population.total",
+      "value": 4110000,
+      "unit": "persons",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1600
+        },
+        "to": {
+          "year": 1600
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary (medieval: manorial tenants; Wrigley et al. 1997 interpolated with Wrigley and Schofield 1989 from 1541); printed in millions, converted. Wikipedia's Demography of England table (read) prints the same value where it has the year (it has no 1300 row)"
+      },
+      "benchmark_role": "development",
+      "note": "Table 16 A, p. 50 (PDF p. 51), 1600 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "population.total",
+      "value": 5310000,
+      "unit": "persons",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1650
+        },
+        "to": {
+          "year": 1650
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary (medieval: manorial tenants; Wrigley et al. 1997 interpolated with Wrigley and Schofield 1989 from 1541); printed in millions, converted. Wikipedia's Demography of England table (read) prints the same value where it has the year (it has no 1300 row)"
+      },
+      "benchmark_role": "development",
+      "note": "Table 16 A, p. 50 (PDF p. 51), 1650 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "population.total",
+      "value": 5200000,
+      "unit": "persons",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1700
+        },
+        "to": {
+          "year": 1700
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary (medieval: manorial tenants; Wrigley et al. 1997 interpolated with Wrigley and Schofield 1989 from 1541); printed in millions, converted. Wikipedia's Demography of England table (read) prints the same value where it has the year (it has no 1300 row)"
+      },
+      "benchmark_role": "development",
+      "note": "Table 16 A, p. 50 (PDF p. 51), 1700 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "population.total",
+      "value": 4400000,
+      "unit": "persons",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1270
+        },
+        "to": {
+          "year": 1279
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as above; this is the table's decade column (Table 19 'Population (mlns)'), a separate series from Table 16, so e.g. 1300/09 4.72 and the 1300 annual 4.73 are two rows"
+      },
+      "benchmark_role": "development",
+      "note": "Table 19, p. 55 (PDF p. 56), 1270/79: 4.40 million (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "population.total",
+      "value": 4720000,
+      "unit": "persons",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1300
+        },
+        "to": {
+          "year": 1309
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as above; this is the table's decade column (Table 19 'Population (mlns)'), a separate series from Table 16, so e.g. 1300/09 4.72 and the 1300 annual 4.73 are two rows"
+      },
+      "benchmark_role": "development",
+      "note": "Table 19, p. 55 (PDF p. 56), 1300/09: 4.72 million (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "population.total",
+      "value": 4630000,
+      "unit": "persons",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1310
+        },
+        "to": {
+          "year": 1319
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as above; this is the table's decade column (Table 19 'Population (mlns)'), a separate series from Table 16, so e.g. 1300/09 4.72 and the 1300 annual 4.73 are two rows"
+      },
+      "benchmark_role": "development",
+      "note": "Table 19, p. 55 (PDF p. 56), 1310/19: 4.63 million (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "population.total",
+      "value": 2360000,
+      "unit": "persons",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1380
+        },
+        "to": {
+          "year": 1389
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as above; this is the table's decade column (Table 19 'Population (mlns)'), a separate series from Table 16, so e.g. 1300/09 4.72 and the 1300 annual 4.73 are two rows"
+      },
+      "benchmark_role": "development",
+      "note": "Table 19, p. 55 (PDF p. 56), 1380/89: 2.36 million (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "population.total",
+      "value": 2030000,
+      "unit": "persons",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1420
+        },
+        "to": {
+          "year": 1429
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as above; this is the table's decade column (Table 19 'Population (mlns)'), a separate series from Table 16, so e.g. 1300/09 4.72 and the 1300 annual 4.73 are two rows"
+      },
+      "benchmark_role": "development",
+      "note": "Table 19, p. 55 (PDF p. 56), 1420/29: 2.03 million (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "population.total",
+      "value": 1930000,
+      "unit": "persons",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1450
+        },
+        "to": {
+          "year": 1459
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as above; this is the table's decade column (Table 19 'Population (mlns)'), a separate series from Table 16, so e.g. 1300/09 4.72 and the 1300 annual 4.73 are two rows"
+      },
+      "benchmark_role": "development",
+      "note": "Table 19, p. 55 (PDF p. 56), 1450/59: 1.93 million (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "population.total",
+      "value": 4270000,
+      "unit": "persons",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1600
+        },
+        "to": {
+          "year": 1609
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as above; this is the table's decade column (Table 19 'Population (mlns)'), a separate series from Table 16, so e.g. 1300/09 4.72 and the 1300 annual 4.73 are two rows"
+      },
+      "benchmark_role": "development",
+      "note": "Table 19, p. 55 (PDF p. 56), 1600/09: 4.27 million (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "population.total",
+      "value": 5140000,
+      "unit": "persons",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1691
+        },
+        "to": {
+          "year": 1700
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as above; this is the table's decade column (Table 19 'Population (mlns)'), a separate series from Table 16, so e.g. 1300/09 4.72 and the 1300 annual 4.73 are two rows"
+      },
+      "benchmark_role": "development",
+      "note": "Table 19, p. 55 (PDF p. 56), 1691/1700: 5.14 million (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "land.arable-area",
+      "value": 11520000,
+      "unit": "acres",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1300
+        },
+        "to": {
+          "year": 1300
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary; printed in million acres; the 1270 value (11.52) is T1 of SHEET-2 from the 2010 CAGE WP 35, this is a different working paper (WP 21) whose Table 1 gives the same 1270 row"
+      },
+      "benchmark_role": "development",
+      "note": "Table 1, last column 'Total arable', 1300 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "land.arable-area",
+      "value": 8730000,
+      "unit": "acres",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1380
+        },
+        "to": {
+          "year": 1380
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary; printed in million acres; the 1270 value (11.52) is T1 of SHEET-2 from the 2010 CAGE WP 35, this is a different working paper (WP 21) whose Table 1 gives the same 1270 row"
+      },
+      "benchmark_role": "development",
+      "note": "Table 1, last column 'Total arable', 1380 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "land.arable-area",
+      "value": 7760000,
+      "unit": "acres",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1420
+        },
+        "to": {
+          "year": 1420
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary; printed in million acres; the 1270 value (11.52) is T1 of SHEET-2 from the 2010 CAGE WP 35, this is a different working paper (WP 21) whose Table 1 gives the same 1270 row"
+      },
+      "benchmark_role": "development",
+      "note": "Table 1, last column 'Total arable', 1420 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "land.arable-area",
+      "value": 7640000,
+      "unit": "acres",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1450
+        },
+        "to": {
+          "year": 1450
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary; printed in million acres; the 1270 value (11.52) is T1 of SHEET-2 from the 2010 CAGE WP 35, this is a different working paper (WP 21) whose Table 1 gives the same 1270 row"
+      },
+      "benchmark_role": "development",
+      "note": "Table 1, last column 'Total arable', 1450 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "land.arable-area",
+      "value": 7810000,
+      "unit": "acres",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1500
+        },
+        "to": {
+          "year": 1500
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary; printed in million acres; the 1270 value (11.52) is T1 of SHEET-2 from the 2010 CAGE WP 35, this is a different working paper (WP 21) whose Table 1 gives the same 1270 row"
+      },
+      "benchmark_role": "development",
+      "note": "Table 1, last column 'Total arable', 1500 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "land.arable-area",
+      "value": 8870000,
+      "unit": "acres",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1600
+        },
+        "to": {
+          "year": 1600
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary; printed in million acres; the 1270 value (11.52) is T1 of SHEET-2 from the 2010 CAGE WP 35, this is a different working paper (WP 21) whose Table 1 gives the same 1270 row"
+      },
+      "benchmark_role": "development",
+      "note": "Table 1, last column 'Total arable', 1600 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "land.arable-area",
+      "value": 9790000,
+      "unit": "acres",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1650
+        },
+        "to": {
+          "year": 1650
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary; printed in million acres; the 1270 value (11.52) is T1 of SHEET-2 from the 2010 CAGE WP 35, this is a different working paper (WP 21) whose Table 1 gives the same 1270 row"
+      },
+      "benchmark_role": "development",
+      "note": "Table 1, last column 'Total arable', 1650 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "land.arable-area",
+      "value": 9700000,
+      "unit": "acres",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1700
+        },
+        "to": {
+          "year": 1700
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary; printed in million acres; the 1270 value (11.52) is T1 of SHEET-2 from the 2010 CAGE WP 35, this is a different working paper (WP 21) whose Table 1 gives the same 1270 row"
+      },
+      "benchmark_role": "development",
+      "note": "Table 1, last column 'Total arable', 1700 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "land.sown-area",
+      "value": 7400000,
+      "unit": "acres",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1300
+        },
+        "to": {
+          "year": 1300
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as the arable rows"
+      },
+      "benchmark_role": "development",
+      "note": "Table 1, 'Total sown', 1300 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "land.sown-area",
+      "value": 5210000,
+      "unit": "acres",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1380
+        },
+        "to": {
+          "year": 1380
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as the arable rows"
+      },
+      "benchmark_role": "development",
+      "note": "Table 1, 'Total sown', 1380 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "land.sown-area",
+      "value": 4510000,
+      "unit": "acres",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1420
+        },
+        "to": {
+          "year": 1420
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as the arable rows"
+      },
+      "benchmark_role": "development",
+      "note": "Table 1, 'Total sown', 1420 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "land.sown-area",
+      "value": 4550000,
+      "unit": "acres",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1450
+        },
+        "to": {
+          "year": 1450
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as the arable rows"
+      },
+      "benchmark_role": "development",
+      "note": "Table 1, 'Total sown', 1450 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "land.sown-area",
+      "value": 4850000,
+      "unit": "acres",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1500
+        },
+        "to": {
+          "year": 1500
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as the arable rows"
+      },
+      "benchmark_role": "development",
+      "note": "Table 1, 'Total sown', 1500 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "land.sown-area",
+      "value": 6720000,
+      "unit": "acres",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1600
+        },
+        "to": {
+          "year": 1600
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as the arable rows"
+      },
+      "benchmark_role": "development",
+      "note": "Table 1, 'Total sown', 1600 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "land.sown-area",
+      "value": 7870000,
+      "unit": "acres",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1650
+        },
+        "to": {
+          "year": 1650
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as the arable rows"
+      },
+      "benchmark_role": "development",
+      "note": "Table 1, 'Total sown', 1650 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "land.sown-area",
+      "value": 7760000,
+      "unit": "acres",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1700
+        },
+        "to": {
+          "year": 1700
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as the arable rows"
+      },
+      "benchmark_role": "development",
+      "note": "Table 1, 'Total sown', 1700 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "gdp.nominal",
+      "value": 2900000,
+      "unit": "pounds (current prices)",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1270
+        },
+        "to": {
+          "year": 1270
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "the extracted table places the 'annual data' figure first and a ten-year average second, with Snooks and Mayhew columns beside; I read the first number as the annual-data column, which the extract does not prove (1300 and 1688 print extra numbers). Modern reconstruction, secondary"
+      },
+      "benchmark_role": "development",
+      "note": "Table 18, p. 53 (PDF p. 54), 1270 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "gdp.nominal",
+      "value": 4070000,
+      "unit": "pounds (current prices)",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1300
+        },
+        "to": {
+          "year": 1300
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "the extracted table places the 'annual data' figure first and a ten-year average second, with Snooks and Mayhew columns beside; I read the first number as the annual-data column, which the extract does not prove (1300 and 1688 print extra numbers). Modern reconstruction, secondary"
+      },
+      "benchmark_role": "development",
+      "note": "Table 18, p. 53 (PDF p. 54), 1300 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "gdp.nominal",
+      "value": 4000000,
+      "unit": "pounds (current prices)",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1381
+        },
+        "to": {
+          "year": 1381
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "the extracted table places the 'annual data' figure first and a ten-year average second, with Snooks and Mayhew columns beside; I read the first number as the annual-data column, which the extract does not prove (1300 and 1688 print extra numbers). Modern reconstruction, secondary"
+      },
+      "benchmark_role": "development",
+      "note": "Table 18, p. 53 (PDF p. 54), 1381 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "gdp.nominal",
+      "value": 3400000,
+      "unit": "pounds (current prices)",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1500
+        },
+        "to": {
+          "year": 1500
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "the extracted table places the 'annual data' figure first and a ten-year average second, with Snooks and Mayhew columns beside; I read the first number as the annual-data column, which the extract does not prove (1300 and 1688 print extra numbers). Modern reconstruction, secondary"
+      },
+      "benchmark_role": "development",
+      "note": "Table 18, p. 53 (PDF p. 54), 1500 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "gdp.nominal",
+      "value": 20000000,
+      "unit": "pounds (current prices)",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1600
+        },
+        "to": {
+          "year": 1600
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "the extracted table places the 'annual data' figure first and a ten-year average second, with Snooks and Mayhew columns beside; I read the first number as the annual-data column, which the extract does not prove (1300 and 1688 print extra numbers). Modern reconstruction, secondary"
+      },
+      "benchmark_role": "development",
+      "note": "Table 18, p. 53 (PDF p. 54), 1600 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "gdp.nominal",
+      "value": 50800000,
+      "unit": "pounds (current prices)",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1688
+        },
+        "to": {
+          "year": 1688
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "the extracted table places the 'annual data' figure first and a ten-year average second, with Snooks and Mayhew columns beside; I read the first number as the annual-data column, which the extract does not prove (1300 and 1688 print extra numbers). Modern reconstruction, secondary"
+      },
+      "benchmark_role": "development",
+      "note": "Table 18, p. 53 (PDF p. 54), 1688 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "gdp.nominal",
+      "value": 53300000,
+      "unit": "pounds (current prices)",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1700
+        },
+        "to": {
+          "year": 1700
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "the extracted table places the 'annual data' figure first and a ten-year average second, with Snooks and Mayhew columns beside; I read the first number as the annual-data column, which the extract does not prove (1300 and 1688 print extra numbers). Modern reconstruction, secondary"
+      },
+      "benchmark_role": "development",
+      "note": "Table 18, p. 53 (PDF p. 54), 1700 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "gdp.per-head",
+      "value": null,
+      "unit": "1990 international dollars or pounds (unread)",
+      "place": "catalogue/region.england",
+      "date": null,
+      "sources": [],
+      "label": "open",
+      "confidence": {
+        "level": "low",
+        "reason": "WP 21 prints only growth rates (Table 17) and a chart (Fig. 10, index 1700=100); the level is not in the pages read, and a value derived by dividing Table 18 by Table 16 is not a source value (rule a). The 1270 level 638 is in CAT-BCKOVL-2010 Table 24 (SHEET-2 note), not opened this session"
+      }
+    },
+    {
+      "quantity": "gdp.per-head-growth",
+      "value": 0.29,
+      "unit": "per cent per year",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1270
+        },
+        "to": {
+          "year": 1309
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary; real GDP per capita, output side"
+      },
+      "benchmark_role": "development",
+      "note": "Table 17, p. 51 (PDF p. 52), 1270/79 - 1300/09 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "gdp.per-head-growth",
+      "value": 0.21,
+      "unit": "per cent per year",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1300
+        },
+        "to": {
+          "year": 1348
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary; real GDP per capita, output side"
+      },
+      "benchmark_role": "development",
+      "note": "Table 17, p. 51 (PDF p. 52), 1300/09 - 1340/48 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "gdp.per-head-growth",
+      "value": 0.73,
+      "unit": "per cent per year",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1340
+        },
+        "to": {
+          "year": 1409
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary; real GDP per capita, output side"
+      },
+      "benchmark_role": "development",
+      "note": "Table 17, p. 51 (PDF p. 52), 1340/48 - 1400/09 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "gdp.per-head-growth",
+      "value": 0.1,
+      "unit": "per cent per year",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1400
+        },
+        "to": {
+          "year": 1459
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary; real GDP per capita, output side"
+      },
+      "benchmark_role": "development",
+      "note": "Table 17, p. 51 (PDF p. 52), 1400/09 - 1450/59 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "gdp.per-head-growth",
+      "value": -0.44,
+      "unit": "per cent per year",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1450
+        },
+        "to": {
+          "year": 1489
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary; real GDP per capita, output side"
+      },
+      "benchmark_role": "development",
+      "note": "Table 17, p. 51 (PDF p. 52), 1450/59 - 1480/89 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "gdp.per-head-growth",
+      "value": -0.06,
+      "unit": "per cent per year",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1480
+        },
+        "to": {
+          "year": 1559
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary; real GDP per capita, output side"
+      },
+      "benchmark_role": "development",
+      "note": "Table 17, p. 51 (PDF p. 52), 1480/89 - 1553/59 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "gdp.per-head-growth",
+      "value": 0.12,
+      "unit": "per cent per year",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1553
+        },
+        "to": {
+          "year": 1609
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary; real GDP per capita, output side"
+      },
+      "benchmark_role": "development",
+      "note": "Table 17, p. 51 (PDF p. 52), 1553/59 - 1600/09 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "gdp.per-head-growth",
+      "value": 0.05,
+      "unit": "per cent per year",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1600
+        },
+        "to": {
+          "year": 1659
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary; real GDP per capita, output side"
+      },
+      "benchmark_role": "development",
+      "note": "Table 17, p. 51 (PDF p. 52), 1600/09 - 1650/59 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "gdp.per-head-growth",
+      "value": 0.57,
+      "unit": "per cent per year",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1650
+        },
+        "to": {
+          "year": 1700
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary; real GDP per capita, output side"
+      },
+      "benchmark_role": "development",
+      "note": "Table 17, p. 51 (PDF p. 52), 1650/59 - 1691/1700 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "gdp.per-head-growth",
+      "value": 0.2,
+      "unit": "per cent per year",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1270
+        },
+        "to": {
+          "year": 1700
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-bckovl-2010-wp21"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "modern reconstruction, secondary; real GDP per capita, output side"
+      },
+      "benchmark_role": "development",
+      "note": "Table 17, p. 51 (PDF p. 52), 1270/79 - 1691/1700 (CAT-BCKOVL-2010-WP21)"
+    },
+    {
+      "quantity": "wage.annual-earnings",
+      "value": 1.74,
+      "unit": "pounds per year (the extract prints the pound sign broken)",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1300
+        },
+        "to": {
+          "year": 1309
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-clark-earn-2011"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "Clark's series, secondary; mixes day-wage building and farm series by period (not read in full)"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 31, 1300: Annual Earnings 1.74"
+    },
+    {
+      "quantity": "wage.real-earnings",
+      "value": 1154,
+      "unit": "pounds of 2010 per year",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1300
+        },
+        "to": {
+          "year": 1309
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-clark-earn-2011"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as above"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 31, 1300: Real earnings 1,154"
+    },
+    {
+      "quantity": "wage.annual-earnings",
+      "value": 1.87,
+      "unit": "pounds per year (the extract prints the pound sign broken)",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1340
+        },
+        "to": {
+          "year": 1349
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-clark-earn-2011"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "Clark's series, secondary; mixes day-wage building and farm series by period (not read in full)"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 31, 1340: Annual Earnings 1.87"
+    },
+    {
+      "quantity": "wage.real-earnings",
+      "value": 1323,
+      "unit": "pounds of 2010 per year",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1340
+        },
+        "to": {
+          "year": 1349
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-clark-earn-2011"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as above"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 31, 1340: Real earnings 1,323"
+    },
+    {
+      "quantity": "wage.annual-earnings",
+      "value": 3.2,
+      "unit": "pounds per year (the extract prints the pound sign broken)",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1350
+        },
+        "to": {
+          "year": 1359
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-clark-earn-2011"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "Clark's series, secondary; mixes day-wage building and farm series by period (not read in full)"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 31, 1350: Annual Earnings 3.2"
+    },
+    {
+      "quantity": "wage.real-earnings",
+      "value": 1803,
+      "unit": "pounds of 2010 per year",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1350
+        },
+        "to": {
+          "year": 1359
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-clark-earn-2011"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as above"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 31, 1350: Real earnings 1,803"
+    },
+    {
+      "quantity": "wage.annual-earnings",
+      "value": 3.98,
+      "unit": "pounds per year (the extract prints the pound sign broken)",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1400
+        },
+        "to": {
+          "year": 1409
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-clark-earn-2011"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "Clark's series, secondary; mixes day-wage building and farm series by period (not read in full)"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 31, 1400: Annual Earnings 3.98"
+    },
+    {
+      "quantity": "wage.real-earnings",
+      "value": 2365,
+      "unit": "pounds of 2010 per year",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1400
+        },
+        "to": {
+          "year": 1409
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-clark-earn-2011"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as above"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 31, 1400: Real earnings 2,365"
+    },
+    {
+      "quantity": "wage.annual-earnings",
+      "value": 4.43,
+      "unit": "pounds per year (the extract prints the pound sign broken)",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1450
+        },
+        "to": {
+          "year": 1459
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-clark-earn-2011"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "Clark's series, secondary; mixes day-wage building and farm series by period (not read in full)"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 31, 1450: Annual Earnings 4.43"
+    },
+    {
+      "quantity": "wage.real-earnings",
+      "value": 2786,
+      "unit": "pounds of 2010 per year",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1450
+        },
+        "to": {
+          "year": 1459
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-clark-earn-2011"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as above"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 31, 1450: Real earnings 2,786"
+    },
+    {
+      "quantity": "wage.annual-earnings",
+      "value": 4.02,
+      "unit": "pounds per year (the extract prints the pound sign broken)",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1500
+        },
+        "to": {
+          "year": 1509
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-clark-earn-2011"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "Clark's series, secondary; mixes day-wage building and farm series by period (not read in full)"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 31, 1500: Annual Earnings 4.02"
+    },
+    {
+      "quantity": "wage.real-earnings",
+      "value": 2433,
+      "unit": "pounds of 2010 per year",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1500
+        },
+        "to": {
+          "year": 1509
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-clark-earn-2011"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as above"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 31, 1500: Real earnings 2,433"
+    },
+    {
+      "quantity": "wage.annual-earnings",
+      "value": 5.99,
+      "unit": "pounds per year (the extract prints the pound sign broken)",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1550
+        },
+        "to": {
+          "year": 1559
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-clark-earn-2011"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "Clark's series, secondary; mixes day-wage building and farm series by period (not read in full)"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 32, 1550: Annual Earnings 5.99"
+    },
+    {
+      "quantity": "wage.real-earnings",
+      "value": 1743,
+      "unit": "pounds of 2010 per year",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1550
+        },
+        "to": {
+          "year": 1559
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-clark-earn-2011"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as above"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 32, 1550: Real earnings 1,743"
+    },
+    {
+      "quantity": "wage.annual-earnings",
+      "value": 8.87,
+      "unit": "pounds per year (the extract prints the pound sign broken)",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1600
+        },
+        "to": {
+          "year": 1609
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-clark-earn-2011"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "Clark's series, secondary; mixes day-wage building and farm series by period (not read in full)"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 32, 1600: Annual Earnings 8.87"
+    },
+    {
+      "quantity": "wage.real-earnings",
+      "value": 1511,
+      "unit": "pounds of 2010 per year",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1600
+        },
+        "to": {
+          "year": 1609
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-clark-earn-2011"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as above"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 32, 1600: Real earnings 1,511"
+    },
+    {
+      "quantity": "wage.annual-earnings",
+      "value": 12.41,
+      "unit": "pounds per year (the extract prints the pound sign broken)",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1650
+        },
+        "to": {
+          "year": 1659
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-clark-earn-2011"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "Clark's series, secondary; mixes day-wage building and farm series by period (not read in full)"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 32, 1650: Annual Earnings 12.41"
+    },
+    {
+      "quantity": "wage.real-earnings",
+      "value": 1537,
+      "unit": "pounds of 2010 per year",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1650
+        },
+        "to": {
+          "year": 1659
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-clark-earn-2011"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as above"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 32, 1650: Real earnings 1,537"
+    },
+    {
+      "quantity": "wage.annual-earnings",
+      "value": 12.48,
+      "unit": "pounds per year (the extract prints the pound sign broken)",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1690
+        },
+        "to": {
+          "year": 1699
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-clark-earn-2011"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "Clark's series, secondary; mixes day-wage building and farm series by period (not read in full)"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 32, 1690: Annual Earnings 12.48"
+    },
+    {
+      "quantity": "wage.real-earnings",
+      "value": 1457,
+      "unit": "pounds of 2010 per year",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1690
+        },
+        "to": {
+          "year": 1699
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-clark-earn-2011"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as above"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 32, 1690: Real earnings 1,457"
+    },
+    {
+      "quantity": "wage.annual-earnings",
+      "value": 12.75,
+      "unit": "pounds per year (the extract prints the pound sign broken)",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1700
+        },
+        "to": {
+          "year": 1709
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-clark-earn-2011"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "Clark's series, secondary; mixes day-wage building and farm series by period (not read in full)"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 33, 1700: Annual Earnings 12.75"
+    },
+    {
+      "quantity": "wage.real-earnings",
+      "value": 1596,
+      "unit": "pounds of 2010 per year",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1700
+        },
+        "to": {
+          "year": 1709
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-clark-earn-2011"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "as above"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 33, 1700: Real earnings 1,596"
+    },
+    {
+      "quantity": "plague.mortality-share",
+      "value": "0.40 to 0.60",
+      "unit": "fraction of population",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1348
+        },
+        "to": {
+          "year": 1349
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-blackdeatheng"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia reporting other authors (cited through, rule a); authors differ so each is its own row; the page's own pre-plague population range is 3 to 7 million"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-WIKI-BLACKDEATHENG 'a figure of 40-60% of the population is widely accepted'"
+    },
+    {
+      "quantity": "plague.mortality-share",
+      "value": 0.236,
+      "unit": "fraction of population",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1348
+        },
+        "to": {
+          "year": 1349
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-blackdeatheng"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia reporting other authors (cited through, rule a); authors differ so each is its own row; the page's own pre-plague population range is 3 to 7 million"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-WIKI-BLACKDEATHENG Russell 'arrived at an estimate of 23.6% of the entire population'"
+    },
+    {
+      "quantity": "plague.mortality-share",
+      "value": 0.333,
+      "unit": "fraction of population",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1348
+        },
+        "to": {
+          "year": 1349
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-blackdeatheng"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia reporting other authors (cited through, rule a); authors differ so each is its own row; the page's own pre-plague population range is 3 to 7 million"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-WIKI-BLACKDEATHENG 'around one third of the population'"
+    },
+    {
+      "quantity": "plague.mortality-share",
+      "value": 0.45,
+      "unit": "fraction of population",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1348
+        },
+        "to": {
+          "year": 1349
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-blackdeatheng"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia reporting other authors (cited through, rule a); authors differ so each is its own row; the page's own pre-plague population range is 3 to 7 million"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-WIKI-BLACKDEATHENG 'closer to 45 per cent would be more realistic'"
+    },
+    {
+      "quantity": "plague.mortality-share",
+      "value": 0.625,
+      "unit": "fraction of population",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1348
+        },
+        "to": {
+          "year": 1349
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-blackdeatheng"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia reporting other authors (cited through, rule a); authors differ so each is its own row; the page's own pre-plague population range is 3 to 7 million"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-WIKI-BLACKDEATHENG '62.5 per cent'; same source implies 3,750,000 deaths on a population of 6 million"
+    },
+    {
+      "quantity": "plague.mortality-share",
+      "value": 0.2,
+      "unit": "fraction of population",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1361
+        },
+        "to": {
+          "year": 1362
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-blackdeatheng"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia reporting other authors (cited through, rule a); authors differ so each is its own row; the page's own pre-plague population range is 3 to 7 million"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-WIKI-BLACKDEATHENG 'may have had a mortality of around 20 per cent'"
+    },
+    {
+      "quantity": "plague.mortality-share",
+      "value": "0.10 to 0.15",
+      "unit": "fraction of population",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1369
+        },
+        "to": {
+          "year": 1369
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-blackdeatheng"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia reporting other authors (cited through, rule a); authors differ so each is its own row; the page's own pre-plague population range is 3 to 7 million"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-WIKI-BLACKDEATHENG 'the death rate was around 10-15 per cent'"
+    },
+    {
+      "quantity": "plague.mortality-share",
+      "value": "0.10 to 0.15",
+      "unit": "fraction of population",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1471
+        },
+        "to": {
+          "year": 1471
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-blackdeatheng"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia reporting other authors (cited through, rule a); authors differ so each is its own row; the page's own pre-plague population range is 3 to 7 million"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-WIKI-BLACKDEATHENG 'as much as 10-15 per cent of the population'"
+    },
+    {
+      "quantity": "plague.mortality-share",
+      "value": 0.2,
+      "unit": "fraction of population",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1479
+        },
+        "to": {
+          "year": 1480
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-blackdeatheng"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia reporting other authors (cited through, rule a); authors differ so each is its own row; the page's own pre-plague population range is 3 to 7 million"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-WIKI-BLACKDEATHENG 'could have been as high as 20 per cent'"
+    },
+    {
+      "quantity": "plague.mortality-share",
+      "value": 0.2,
+      "unit": "fraction of population",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1665
+        },
+        "to": {
+          "year": 1666
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-blackdeatheng"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia reporting other authors (cited through, rule a); authors differ so each is its own row; the page's own pre-plague population range is 3 to 7 million"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-WIKI-BLACKDEATHENG 'killed 100,000 people (20 per cent of the population) in the capital' (London only)"
+    },
+    {
+      "quantity": "war.deaths",
+      "value": "127000 non-combat deaths (about 40,000 civilians); combatant killed 34,130 and 50,700 on the two sides",
+      "unit": "persons",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1642
+        },
+        "to": {
+          "year": 1651
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-ecw"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "the excerpt does not say which side each figure belongs to; Wikipedia infobox, secondary"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-WIKI-ECW infobox"
+    },
+    {
+      "quantity": "enclosure.acts-affected-area",
+      "value": 28000,
+      "unit": "square kilometres (5,200 acts)",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1604
+        },
+        "to": {
+          "year": 1914
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-inclosure"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; covers 1604-1914, not 1700 only; differs from the Enclosure page (next row)"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-WIKI-INCLOSURE 'Between 1604 and 1914 over 5,200 individual acts enclosing public land were passed, affecting 28,000 km2'"
+    },
+    {
+      "quantity": "enclosure.acts-affected-area",
+      "value": 6800000,
+      "unit": "acres (more than 5,200 bills)",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1604
+        },
+        "to": {
+          "year": 1914
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-enclosure"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; says about one fifth of England; a different page from the row above, so a separate row"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-WIKI-ENCLOSURE 'Between 1604 and 1914 there were more than 5,200 inclosure bills which amounted to 6,800,000 acres'"
+    },
+    {
+      "quantity": "tax.yield",
+      "value": 22000,
+      "unit": "pounds",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1377
+        },
+        "to": {
+          "year": 1377
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-peasants"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; fourpence per person over 14; the article does not state the year directly (inferred from context there)"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-WIKI-PEASANTS poll tax section: 'raised £22,000'"
+    },
+    {
+      "quantity": "tax.yield",
+      "value": 18600,
+      "unit": "pounds",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1379
+        },
+        "to": {
+          "year": 1379
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-peasants"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "as above; hoped for £50,000"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-WIKI-PEASANTS poll tax section: 'only raised £18,600'"
+    },
+    {
+      "quantity": "tax.yield-estimate",
+      "value": 66666,
+      "unit": "pounds (Parliament's estimate, not a yield)",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1380
+        },
+        "to": {
+          "year": 1381
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-peasants"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "as above; twelve pence per person over 15; the Crown asked £160,000 in new taxes in November 1380"
+      },
+      "benchmark_role": "development",
+      "note": "CAT-WIKI-PEASANTS poll tax section"
+    },
+    {
+      "quantity": "tax.crown-revenue",
+      "value": null,
+      "unit": "pounds",
+      "place": "catalogue/region.england",
+      "date": null,
+      "sources": [],
+      "label": "open",
+      "confidence": {
+        "level": "low",
+        "reason": "no opened work gives English crown revenue for any year in 1270-1700 (TAXUK page read has none before 1799); poll-tax yields above are single taxes, not total revenue"
+      }
+    },
+    {
+      "quantity": "urban.share",
+      "value": null,
+      "unit": "fraction",
+      "place": "catalogue/region.england",
+      "date": null,
+      "sources": [],
+      "label": "open",
+      "confidence": {
+        "level": "low",
+        "reason": "WP 21 text says the urban share series for 1490-1700 is from Malanima (2009) but prints no value in the pages searched; the 1300 4.0 and 1700 13.2 per cent in SHEET-2 T26 came from CAT-BCKOVL-2010, not re-opened here"
+      }
+    },
+    {
+      "quantity": "enclosure.share",
+      "value": null,
+      "unit": "fraction",
+      "place": "catalogue/region.england",
+      "date": null,
+      "sources": [],
+      "label": "open",
+      "confidence": {
+        "level": "low",
+        "reason": "neither Wikipedia page gives a share before 1604"
+      }
     }
   ],
   "relations": [
@@ -302,7 +2864,14 @@
   "sources": [
     "catalogue/source.cat-bckovl-2010",
     "catalogue/source.cat-clark-earn-2011",
-    "catalogue/source.cat-wiki-demoeng"
+    "catalogue/source.cat-wiki-demoeng",
+    "catalogue/source.cat-bckovl-2010-wp21",
+    "catalogue/source.cat-wiki-blackdeatheng",
+    "catalogue/source.cat-wiki-hyw",
+    "catalogue/source.cat-wiki-peasants",
+    "catalogue/source.cat-wiki-ecw",
+    "catalogue/source.cat-wiki-inclosure",
+    "catalogue/source.cat-wiki-enclosure"
   ],
   "derived_from": [
     {

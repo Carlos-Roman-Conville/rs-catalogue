@@ -1,0 +1,224 @@
+{
+  "id": "catalogue/institution.enclosure-england",
+  "kind": "institution",
+  "names": [
+    {
+      "text": "Enclosure in England",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "institution"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": null,
+        "to": null,
+        "precision": "century",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-inclosure"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "Enclosure acts for small areas passed sporadically (CAT-WIKI-INCLOSURE text). from the 12th century (no count)."
+    },
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1488
+        },
+        "to": {
+          "year": 1488
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-enclosure"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "First tillage act (4 Hen. 7 c. 19) (CAT-WIKI-ENCLOSURE text). 1488 (page also writes 1489)."
+    },
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1489
+        },
+        "to": {
+          "year": 1597
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-enclosure"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "Tillage acts passed (CAT-WIKI-ENCLOSURE text). 1489-1597."
+    },
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1517
+        },
+        "to": {
+          "year": 1636
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-enclosure"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "Eight royal commissions appointed (CAT-WIKI-ENCLOSURE text). 1517-1636."
+    },
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1533
+        },
+        "to": {
+          "year": 1533
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-enclosure"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "Flocks of sheep limited to 2,400 (CAT-WIKI-ENCLOSURE text). 1533."
+    },
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1549
+        },
+        "to": {
+          "year": 1549
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-enclosure"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "Taxation Act imposed a poll tax on sheep (CAT-WIKI-ENCLOSURE text). 1549."
+    },
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1604
+        },
+        "to": {
+          "year": 1604
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-enclosure"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "Radipole, Dorset (CAT-WIKI-ENCLOSURE text). 1604. First enclosure by act of Parliament."
+    },
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1607,
+          "month": 6,
+          "day": 8
+        },
+        "to": {
+          "year": 1607,
+          "month": 6,
+          "day": 8
+        },
+        "precision": "day",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-enclosure"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "Newton Rebellion: pitched battle, 40-50 killed (CAT-WIKI-ENCLOSURE text). 8 June 1607."
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.cat-wiki-inclosure",
+    "catalogue/source.cat-wiki-enclosure"
+  ],
+  "derived_from": []
+}

@@ -1,0 +1,57 @@
+{
+  "id": "catalogue/institution.black-death-in-england",
+  "kind": "institution",
+  "names": [
+    {
+      "text": "Black Death in England",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "institution"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1348,
+          "month": 6
+        },
+        "to": {
+          "year": 1349,
+          "month": 12
+        },
+        "precision": "month",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-blackdeatheng"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters of the page were read or the page was read by WebFetch summary; the page says the arrival may have been about 8 May if the chronicle records the first outbreak"
+      },
+      "note": "Black Death reached England: a seaman arrived at Weymouth, Dorset, from Gascony (CAT-WIKI-BLACKDEATHENG Background and spread sections). London autumn 1348; across southern England by March 1349; York May 1349; whole country by summer 1349, dying down by December 1349."
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.cat-wiki-blackdeatheng"
+  ],
+  "derived_from": []
+}

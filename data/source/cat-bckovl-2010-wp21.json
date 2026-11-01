@@ -1,0 +1,30 @@
+{
+  "id": "catalogue/source.cat-bckovl-2010-wp21",
+  "kind": "source",
+  "source": {
+    "key": "CAT-BCKOVL-2010-WP21",
+    "title": "English economic growth, 1270-1700 (CAGE Working Paper 21)",
+    "author": "S. N. Broadberry, B. M. S. Campbell, A. Klein, M. Overton, B. van Leeuwen",
+    "year": 2010,
+    "gives": "Tables 1, 16, 17, 18, 19: population, arable land, GDP and GDP per head growth",
+    "url": "https://warwick.ac.uk/fac/soc/economics/research/centres/cage/manage/publications/21.2010_broadberry_complete.pdf",
+    "rights": "in copyright, cited only; hosted openly by the University of Warwick"
+  },
+  "names": [
+    {
+      "text": "English economic growth, 1270-1700 (CAGE Working Paper 21)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": []
+}

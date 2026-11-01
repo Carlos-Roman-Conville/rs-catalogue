@@ -1,0 +1,30 @@
+{
+  "id": "catalogue/source.cat-wiki-ecw",
+  "kind": "source",
+  "source": {
+    "key": "CAT-WIKI-ECW",
+    "title": "English Civil War (Wikipedia)",
+    "author": "Wikipedia contributors",
+    "year": 2026,
+    "gives": "War dates, 1649, 1653, 1660, deaths",
+    "url": "https://en.wikipedia.org/wiki/English_Civil_War",
+    "rights": "Wikipedia text is CC BY-SA; licence line not re-read, confirm before N4"
+  },
+  "names": [
+    {
+      "text": "English Civil War (Wikipedia)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": []
+}

@@ -1,0 +1,79 @@
+{
+  "id": "catalogue/institution.english-taxation",
+  "kind": "institution",
+  "names": [
+    {
+      "text": "Taxation in England",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "institution"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1692
+        },
+        "to": {
+          "year": 1692
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-taxuk"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "Parliament of England introduced its national land tax (CAT-WIKI-TAXUK text). 1692 (no amount given)."
+    },
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1695
+        },
+        "to": {
+          "year": 1695
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-taxuk"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "Flat house tax of 2 shillings per house plus window charges (CAT-WIKI-TAXUK text). 1695."
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.cat-wiki-taxuk"
+  ],
+  "derived_from": []
+}

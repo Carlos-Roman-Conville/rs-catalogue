@@ -1,0 +1,129 @@
+{
+  "id": "catalogue/institution.hundred-years-war",
+  "kind": "institution",
+  "names": [
+    {
+      "text": "Hundred Years' War",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "institution"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1337,
+          "month": 5,
+          "day": 24
+        },
+        "to": {
+          "year": 1453,
+          "month": 10,
+          "day": 19
+        },
+        "precision": "day",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-hyw"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "War between England and France (CAT-WIKI-HYW infobox). 24 May 1337 - 19 October 1453 (intermittent; infobox, calendar not stated)."
+    },
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1360
+        },
+        "to": {
+          "year": 1360
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-hyw"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "Treaty signed (CAT-WIKI-HYW text). 1360 (calendar not stated)."
+    },
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1453
+        },
+        "to": {
+          "year": 1453
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-hyw"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "Battle ending the war (CAT-WIKI-HYW text). 1453 (calendar not stated)."
+    },
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": null,
+        "to": {
+          "year": 1558
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-hyw"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "England held Calais until the Siege of Calais (CAT-WIKI-HYW text). to 1558 (the page does not call it a loss)."
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.cat-wiki-hyw"
+  ],
+  "derived_from": []
+}

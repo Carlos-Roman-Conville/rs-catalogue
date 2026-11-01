@@ -1,0 +1,30 @@
+{
+  "id": "catalogue/source.cat-wiki-glorious",
+  "kind": "source",
+  "source": {
+    "key": "CAT-WIKI-GLORIOUS",
+    "title": "Glorious Revolution (Wikipedia)",
+    "author": "Wikipedia contributors",
+    "year": 2026,
+    "gives": "1688-89 dates",
+    "url": "https://en.wikipedia.org/wiki/Glorious_Revolution",
+    "rights": "Wikipedia text is CC BY-SA; licence line not re-read, confirm before N4"
+  },
+  "names": [
+    {
+      "text": "Glorious Revolution (Wikipedia)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": []
+}

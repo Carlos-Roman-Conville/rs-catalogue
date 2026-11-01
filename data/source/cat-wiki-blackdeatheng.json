@@ -1,0 +1,30 @@
+{
+  "id": "catalogue/source.cat-wiki-blackdeatheng",
+  "kind": "source",
+  "source": {
+    "key": "CAT-WIKI-BLACKDEATHENG",
+    "title": "Black Death in England (Wikipedia)",
+    "author": "Wikipedia contributors",
+    "year": 2026,
+    "gives": "Arrival, spread and mortality estimates",
+    "url": "https://en.wikipedia.org/wiki/Black_Death_in_England",
+    "rights": "Wikipedia text is CC BY-SA; licence line not re-read, confirm before N4"
+  },
+  "names": [
+    {
+      "text": "Black Death in England (Wikipedia)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": []
+}

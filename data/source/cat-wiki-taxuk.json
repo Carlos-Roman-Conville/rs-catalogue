@@ -1,0 +1,30 @@
+{
+  "id": "catalogue/source.cat-wiki-taxuk",
+  "kind": "source",
+  "source": {
+    "key": "CAT-WIKI-TAXUK",
+    "title": "History of taxation in the United Kingdom (Wikipedia)",
+    "author": "Wikipedia contributors",
+    "year": 2026,
+    "gives": "1692 land tax, 1695 window tax",
+    "url": "https://en.wikipedia.org/wiki/History_of_taxation_in_the_United_Kingdom",
+    "rights": "Wikipedia text is CC BY-SA; licence line not re-read, confirm before N4"
+  },
+  "names": [
+    {
+      "text": "History of taxation in the United Kingdom (Wikipedia)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": []
+}

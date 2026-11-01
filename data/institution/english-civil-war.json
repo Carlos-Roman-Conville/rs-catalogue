@@ -1,0 +1,131 @@
+{
+  "id": "catalogue/institution.english-civil-war",
+  "kind": "institution",
+  "names": [
+    {
+      "text": "English Civil War",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "institution"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1642,
+          "month": 8
+        },
+        "to": {
+          "year": 1651,
+          "month": 9
+        },
+        "precision": "month",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-ecw"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "Civil war (CAT-WIKI-ECW infobox). August 1642 - September 1651 (infobox)."
+    },
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1649,
+          "month": 1
+        },
+        "to": {
+          "year": 1649,
+          "month": 1
+        },
+        "precision": "month",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-ecw"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "Charles I executed; Commonwealth of England established (CAT-WIKI-ECW lead). January 1649 (no day in the text read)."
+    },
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1653
+        },
+        "to": {
+          "year": 1653
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-ecw"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "Cromwell became Lord Protector (CAT-WIKI-ECW caption). 1653."
+    },
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1660
+        },
+        "to": {
+          "year": 1660
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-ecw"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "Stuart Restoration (CAT-WIKI-ECW lead). 1660."
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.cat-wiki-ecw"
+  ],
+  "derived_from": []
+}

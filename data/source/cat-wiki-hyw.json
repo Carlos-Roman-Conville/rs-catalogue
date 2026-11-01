@@ -1,0 +1,30 @@
+{
+  "id": "catalogue/source.cat-wiki-hyw",
+  "kind": "source",
+  "source": {
+    "key": "CAT-WIKI-HYW",
+    "title": "Hundred Years' War (Wikipedia)",
+    "author": "Wikipedia contributors",
+    "year": 2026,
+    "gives": "War dates, Bretigny, Castillon, Calais",
+    "url": "https://en.wikipedia.org/wiki/Hundred_Years%27_War",
+    "rights": "Wikipedia text is CC BY-SA; licence line not re-read, confirm before N4"
+  },
+  "names": [
+    {
+      "text": "Hundred Years' War (Wikipedia)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": []
+}

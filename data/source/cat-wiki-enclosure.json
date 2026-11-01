@@ -1,0 +1,30 @@
+{
+  "id": "catalogue/source.cat-wiki-enclosure",
+  "kind": "source",
+  "source": {
+    "key": "CAT-WIKI-ENCLOSURE",
+    "title": "Enclosure (Wikipedia)",
+    "author": "Wikipedia contributors",
+    "year": 2026,
+    "gives": "Tillage acts, commissions, 1604 first act",
+    "url": "https://en.wikipedia.org/wiki/Enclosure",
+    "rights": "Wikipedia text is CC BY-SA; licence line not re-read, confirm before N4"
+  },
+  "names": [
+    {
+      "text": "Enclosure (Wikipedia)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": []
+}

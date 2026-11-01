@@ -1,0 +1,133 @@
+{
+  "id": "catalogue/institution.wars-of-the-roses",
+  "kind": "institution",
+  "names": [
+    {
+      "text": "Wars of the Roses",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "institution"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1455,
+          "month": 5,
+          "day": 22
+        },
+        "to": {
+          "year": 1487,
+          "month": 6,
+          "day": 16
+        },
+        "precision": "day",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-wotr"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "Dynastic civil war (CAT-WIKI-WOTR infobox). 22 May 1455 - 16 June 1487 (infobox)."
+    },
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1461,
+          "month": 6
+        },
+        "to": {
+          "year": 1461,
+          "month": 6
+        },
+        "precision": "month",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-wotr"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "Edward IV formally crowned (CAT-WIKI-WOTR text). June 1461."
+    },
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1470
+        },
+        "to": {
+          "year": 1470
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-wotr"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "Henry VI restored as king (CAT-WIKI-WOTR text). 1470 (Edward fled to Flanders in 1470)."
+    },
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1485
+        },
+        "to": {
+          "year": 1485
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.cat-wiki-wotr"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Wikipedia, secondary; first 100,000 characters read"
+      },
+      "note": "Henry Tudor defeated Richard at Bosworth Field and took the throne as Henry VII (CAT-WIKI-WOTR text). 1485 (year only; no day on the page)."
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.cat-wiki-wotr"
+  ],
+  "derived_from": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "catalogue/source.cat-wiki-peasants",
+  "kind": "source",
+  "source": {
+    "key": "CAT-WIKI-PEASANTS",
+    "title": "Peasants' Revolt (Wikipedia)",
+    "author": "Wikipedia contributors",
+    "year": 2026,
+    "gives": "Revolt dates; 1377, 1379 and 1380 poll taxes",
+    "url": "https://en.wikipedia.org/wiki/Peasants%27_Revolt",
+    "rights": "Wikipedia text is CC BY-SA; licence line not re-read, confirm before N4"
+  },
+  "names": [
+    {
+      "text": "Peasants' Revolt (Wikipedia)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": []
+}
