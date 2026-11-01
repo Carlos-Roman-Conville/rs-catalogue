@@ -20,19 +20,7 @@
     "original_fiction"
   ],
   "scope": "game:pirate-ship",
-  "attestations": [
-    {
-      "what": "presence",
-      "place": null,
-      "date": null,
-      "sources": [],
-      "label": "fiction",
-      "confidence": {
-        "level": "low",
-        "reason": "Holy Order, Free Pirates, cults, Atlanteans, Ghost Fleet alternatives (Rex 2026-10-30)."
-      }
-    }
-  ],
+  "attestations": [],
   "relations": [],
   "observations": [],
   "sources": [],
@@ -43,5 +31,5 @@
       "sha256": "80837fd0f68bfdf4890c954463aafa84f2ca4aabeb1ffe6e77ca9602d679a51b"
     }
   ],
-  "notes": "Game fiction overlay; not a universal historical fact."
+  "notes": "Game fiction overlay; not a universal historical fact. Claim, attestation removed under DESIGN §4 (e) and (f): the factions add burial alternatives (consecrated ground, Holy Order; burial at sea, Free Pirates; bodies preserved or transformed, the cults, the Atlanteans, the Ghost Fleet), label fiction; the Alternatives row cites Rex (2026-10-30) and `../combat/COMBAT.md` §4e and names no source key."
 }
