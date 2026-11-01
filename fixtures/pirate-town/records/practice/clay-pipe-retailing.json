@@ -42,7 +42,7 @@
       "label": "estimate",
       "confidence": {
         "level": "high",
-        "reason": "Pipe shop in harbour excavation (STL-INA; STARTING_TOWN Q5 trades).; 1682 is Hanson's list year (STL-CUN), not a statement about the pipe shop; 1692 from the referents"
+        "reason": "Pipe shop in harbour excavation (STL-INA; STARTING_TOWN Q5 trades); 1682 is Hanson's list year (STL-CUN), not a statement about the pipe shop; 1692 from the referents"
       }
     }
   ],
