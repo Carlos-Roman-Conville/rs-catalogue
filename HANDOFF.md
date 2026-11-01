@@ -17,7 +17,11 @@ Done/Blocked headings instead of the template's State/Next/Blocked/Gotchas.
 - 2026-11-01: 5004 ingest plan (fixtures/pirate-town/INGEST-PLAN.md): equipment by one script (313 technology + 216 EQ-* source records; plain "none" = absence/estimate, "none (anomaly)" = unknown presence), economy 31 observations in 3 Composer units + audit; no src/ change; DESIGN §6: promotion after the whole fixture.
 - 2026-11-01: 5005 scripts/demo.ts (`npm run demo`): prints the Caribbean 1690-1720 and England 1270 windows, coverage, no-gate.
 - 2026-11-01: 5041-5042 equipment ingest script (scripts/ingest-equipment.ts) run: 313 technology and 216 EQ-* source records.
+- 2026-11-01: 5043 economy ingest unit C1 (wages): 11 observations.
+- 2026-11-01: 5044 economy ingest unit C2 (money and prices): 11 observations.
+- 2026-11-01: 5045 economy ingest unit C3 (yields): 9 observations.
 - 2026-11-01: 5046 fixture audit E3 (fixtures/pirate-town/AUDIT-E3.md): pass, 54 of 54 sampled (32 technology, 22 EQ-*); the 8 plain-none rows and 6 anomaly rows checked; no record edited.
+- 2026-11-01: 5070 absence rulings (fixtures/pirate-town/ABSENCE-RULINGS.md): of 11 plain-none rows, 5 keep absence, 6 unknown presence; check.ts to flag an absence window containing the record's own dated invention; DESIGN §1.6 classifier rulings go in the script's per-row list, never record hand edits. Next task applies them.
 
 ## Blocked
 
