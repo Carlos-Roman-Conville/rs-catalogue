@@ -98,7 +98,7 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "as T1; the five crop columns add to 6.78, the table prints 6.77 (rounding)"
+        "reason": "modern reconstruction (Overton and Campbell tables, Medieval Accounts Database); secondary; the five crop columns add to 6.78, the table prints 6.77 (rounding)"
       },
       "note": "CAT-BCKOVL-2010 Table 1 p. 35, \"Total sown\", 1270: 6.77",
       "benchmark_role": "development"
@@ -125,7 +125,7 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "as T1"
+        "reason": "modern reconstruction (Overton and Campbell tables, Medieval Accounts Database); secondary"
       },
       "note": "CAT-BCKOVL-2010 Table 1 p. 35, \"Fallow arable\", 1270: 4.75",
       "benchmark_role": "development"
@@ -206,7 +206,7 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "as T21; base year not read"
+        "reason": "Clark's own series for England; the table runs the UK/Britain/England series, and for this period the paper says it uses English wages; Table 17 mixes day-wage building and farm series by period (not read in full); base year not read"
       },
       "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 31, 1270: Cost of Living 0.152",
       "benchmark_role": "development"
@@ -233,7 +233,7 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "as T21"
+        "reason": "Clark's own series for England; the table runs the UK/Britain/England series, and for this period the paper says it uses English wages; Table 17 mixes day-wage building and farm series by period (not read in full)"
       },
       "note": "CAT-CLARK-EARN-2011 Table 17, PDF p. 31, 1270: Real earnings 1,084",
       "benchmark_role": "development"

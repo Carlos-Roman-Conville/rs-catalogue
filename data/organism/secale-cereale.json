@@ -50,7 +50,7 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "as T1"
+        "reason": "modern reconstruction (Overton and Campbell tables, Medieval Accounts Database); secondary"
       },
       "note": "CAT-BCKOVL-2010 Table 1 p. 35, Rye/Maslin, 1270: 0.67",
       "benchmark_role": "development"
@@ -77,7 +77,7 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "as T9 (the rye figure is higher than wheat in the table; the paper's text was not read for why)"
+        "reason": "modern reconstruction (Overton and Campbell tables, Medieval Accounts Database); secondary (the rye figure is higher than wheat in the table; the paper's text was not read for why)"
       },
       "note": "CAT-BCKOVL-2010 Table 2 p. 36, Rye, 1270-1279: 13.32",
       "benchmark_role": "development"

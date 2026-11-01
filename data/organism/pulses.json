@@ -45,7 +45,7 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "as T1; the table's \"Pulses\" column does not split peas from beans"
+        "reason": "modern reconstruction (Overton and Campbell tables, Medieval Accounts Database); secondary; the table's \"Pulses\" column does not split peas from beans"
       },
       "note": "CAT-BCKOVL-2010 Table 1 p. 35, Pulses, 1270: 0.26",
       "benchmark_role": "development"
@@ -72,7 +72,7 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "as T9"
+        "reason": "modern reconstruction (Overton and Campbell tables, Medieval Accounts Database); secondary"
       },
       "note": "CAT-BCKOVL-2010 Table 2 p. 36, Pulses, 1270-1279: 3.81",
       "benchmark_role": "development"

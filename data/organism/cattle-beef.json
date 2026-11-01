@@ -45,7 +45,7 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "as T14"
+        "reason": "derived estimate (probate and accounts databases, slaughter ratios); secondary"
       },
       "note": "CAT-BCKOVL-2010 Table 4 p. 40, Beef cattle: 0.54 million",
       "benchmark_role": "development"

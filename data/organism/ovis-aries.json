@@ -50,7 +50,7 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "as T14; the text says sheep numbers are assumed stationary in the long term"
+        "reason": "derived estimate (probate and accounts databases, slaughter ratios); secondary; the text says sheep numbers are assumed stationary in the long term"
       },
       "note": "CAT-BCKOVL-2010 Table 4 p. 40, Sheep: 10.99 million",
       "benchmark_role": "development"

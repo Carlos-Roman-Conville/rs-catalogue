@@ -20,3 +20,4 @@
 10. Never edit the pirate repo or any other repo; fixtures read files where they are.
 11. One commit, not pushed, ending with `Co-Authored-By: Cursor Composer <composer@cursor.com>`. Nothing left uncommitted.
     Close with a short report: done or parked, tests, commit hash.
+12. Record-writing tasks write every confidence reason out in full, never `as Tn`.

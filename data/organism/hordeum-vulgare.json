@@ -50,7 +50,7 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "as T1"
+        "reason": "modern reconstruction (Overton and Campbell tables, Medieval Accounts Database); secondary"
       },
       "note": "CAT-BCKOVL-2010 Table 1 p. 35, Barley/Dredge, 1270: 1.13",
       "benchmark_role": "development"
@@ -77,7 +77,7 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "as T9"
+        "reason": "modern reconstruction (Overton and Campbell tables, Medieval Accounts Database); secondary"
       },
       "note": "CAT-BCKOVL-2010 Table 2 p. 36, Barley, 1270-1279: 10.47",
       "benchmark_role": "development"
