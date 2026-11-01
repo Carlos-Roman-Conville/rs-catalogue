@@ -13,7 +13,8 @@ Done/Blocked headings instead of the template's State/Next/Blocked/Gotchas.
 - 2026-11-01 promotion P1-P4 (5130-5133, 5160, 5161): P1 V6 drift reads `data/` against shared manifests (e5a6fa6); P2 V1 rules for `data/` kind paths, universal scope and game refs were built by 5160 (f8e1779), not 5131, which built nothing (skipped by a stale Already-done-if); P3 moved 663 universal records to `data/<kind>/` as 663 R100 renames, repointed the equipment ingest, dropped `data/sources/.gitkeep` (85470b6); P4 AUDIT-P (5133), completed by 5161: Check 2 detail table of the 70 sampled ids (re-derived, 5133 logged none), method sentence corrected, V1 and V6 rerun after P2 (664 records, 0 failures): AUDIT-P pass 70/70. The game-scoped `practice.faction-burial-alternatives` stays under fixtures/. No audit edited a record.
 - 2026-11-01 plan: 5173 NATIVE-PLAN (plan only, no record or code): H1 England 1270 rows A1-A8 (population on `region.england`, six crops, plough and draught animals, mills, manor, Julian, Lady Day, the 1752 reform), each sourced or `open`; native rulings (a)-(e) (`CAT-` sources, mixed records, open rows cite the work searched); V5 (role check, `heldOut` guard, static scan); API `label`, `date`, `dist/catalogue.json` build with `catalogue_hash`, V7 report; units N1-N10.
 - 2026-11-01: 5195 NATIVE-PLAN ruling (f) open start: `DateInterval.from` nullable (schema, regions `dateRange`, check), tests; N4 redo writes S7 julian as `from: null`.
+- 2026-11-01: 5174-5204 N1-N10: V5 heldOut, ingest keeps native rows, H1 sheet and records, AUDIT-H1, `label`, `date`, `catalogue_hash`/`{ compiled }`/build, coverage; 5204 README API, DESIGN Log; step 2 not signed off.
 
 ## Blocked
 
-- none
+- D1 step 2: AUDIT-H1 fail 4/6 (R2, R3 year start; R5 calendar; R6 1270 population). Next: fix unit, re-audit, N10 again (DESIGN §3).

@@ -278,6 +278,13 @@ It proves the Catalogue alone; no pirate slice runs.
 
 **Next stage** (2026-11-01, task 5173): [NATIVE-PLAN.md](NATIVE-PLAN.md) plans step 2's native seed (H1 England 1270, rows sourced or `open`, never filled), V5 and `benchmark_role`, and the §2.2 gaps (`label`, `date`, the `dist/catalogue.json` build with `catalogue_hash`, the V7 coverage report), units N1-N10.
 
+**Step 2 not signed off** (2026-11-01, task 5204): N1-N9 are built, but AUDIT-H1 failed 4/6 (Log). Next units, in
+order: N5a fix (composer, from AUDIT-H1's "Fixes" list: R2/R3 drop `year_start_of_source`, R5 `calendar_of_source:
+julian`, R6 the 1270/79 population 4,400,000 researched / medium, sheet S1/S9/S10/S12, `cat-bckovl-2010` `gives`
+and PDF locator, the manor out of England's notes sentence); N5b re-audit AUDIT-H1-2 of the changed rows (a model
+that wrote neither the rows nor the fix); then N10 again, which signs off step 2 and plans H1 beyond D1, H2, H5,
+H3/H4.
+
 ## 4. Validation plan (§11a: implemented ≠ integrated ≠ validated)
 
 The full validation plan (V4 rules, tests V1–V7, and lettered exceptions (a)–(l)) lives in [DESIGN-V4.md](DESIGN-V4.md).
@@ -344,3 +351,4 @@ universal record moves to `data/` at once, because the economy units add observa
 | 2026-10-31 | History keeper agreed the calendar split (epoch as a decimal year on the stored axis; benchmark roles development / held_out / reserve; harness units may read held-out rows). Requests logged: staple-good mass per period unit (HIST-10), technology ids for I5 |
 | 2026-10-31 | Kernel keeper agreed the id scheme and K-O1 split; §2.2 gains consumer-declared ports, the load-time writer `catalogue.reference.ingest` and `catalogue_hash` in the snapshot |
 | 2026-10-31 | **Approved by Rex** through the controller, CAT-Q1–Q6 as proposed; repo and lane opened |
+| 2026-11-01 | Task 5204 (N10): **AUDIT-H1 fail 4/6** (`native/h1-england/AUDIT-H1.md`, task 5200), so D1 step 2 is not signed off. Pass: R1 `calendar.julian` to 1752-09-02, R4 `calendar.gregorian` from 1752-09-14. Fail: R2, R3 `calendar.lady-day-year-start` state `year_start_of_source: mar-25` for a 1908 encyclopedia and a 2026 press release that number years from 1 January; R5 `calendar.january-year-start` gives 1752-01-01 as `gregorian`, but the Act's date is old style (julian); R6 `region.england` 1270 population is `open`, but CAT-BCKOVL-2010 Table 23 gives 4.40 M for 1270/79. API built: `label` (N6), `date` (N7), `catalogue_hash` and `{ compiled }` (N8), `{ heldOut }` (N1), coverage (N9). Next: fix unit, re-audit by a model that wrote neither, then N10 again (§3) |
