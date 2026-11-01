@@ -1,0 +1,70 @@
+import { mkdtemp, readFile, rm } from 'node:fs/promises'
+import { join } from 'node:path'
+import { tmpdir } from 'node:os'
+import { afterEach, beforeEach, expect, it } from 'vitest'
+import {
+  catalogueRootFromImportMeta,
+  classifyAvailability,
+  ingestEquipment,
+} from '../scripts/ingest-equipment.ts'
+
+const root = catalogueRootFromImportMeta(import.meta.url)
+let outDir: string
+
+beforeEach(async () => {
+  outDir = await mkdtemp(join(tmpdir(), 'ingest-equipment-'))
+})
+afterEach(async () => { await rm(outDir, { recursive: true, force: true }) })
+
+function availabilityCounts(records: Awaited<ReturnType<typeof ingestEquipment>>['technology']) {
+  const counts = { common_rare: 0, none_anomaly: 0, none_plain: 0, open: 0 }
+  for (const record of records) {
+    const window = record.attestations[0]!
+    const cell = window.note ?? ''
+    counts[classifyAvailability(cell)]++
+  }
+  return counts
+}
+
+it('writes 313 technology and 216 EQ source records', () => {
+  const result = ingestEquipment({ catalogueRoot: root, outDir })
+  expect(result.technology).toHaveLength(313)
+  expect(result.sources).toHaveLength(216)
+})
+
+it('availability classes sum to 313 (184 + 59 + 69 + 1)', () => {
+  const { technology } = ingestEquipment({ catalogueRoot: root, outDir })
+  expect(availabilityCounts(technology)).toEqual({
+    common_rare: 184, none_anomaly: 59, none_plain: 69, open: 1,
+  })
+})
+
+it('two runs to the same directory are byte-identical', async () => {
+  ingestEquipment({ catalogueRoot: root, outDir })
+  const first = await readFile(join(outDir, 'records/technology/bunsen.json'), 'utf8')
+  ingestEquipment({ catalogueRoot: root, outDir })
+  const second = await readFile(join(outDir, 'records/technology/bunsen.json'), 'utf8')
+  expect(second).toBe(first)
+})
+
+it('plain-none row bunsen gets absence attestation with estimate label', () => {
+  const { technology } = ingestEquipment({ catalogueRoot: root, outDir })
+  const bunsen = technology.find(r => r.id === 'catalogue/technology.bunsen')!
+  const window = bunsen.attestations[0]!
+  expect(window.what).toBe('absence')
+  expect(window.label).toBe('estimate')
+})
+
+it('none (anomaly) row balance-analytical gets open presence', () => {
+  const { technology } = ingestEquipment({ catalogueRoot: root, outDir })
+  const row = technology.find(r => r.id === 'catalogue/technology.balance-analytical')!
+  const window = row.attestations[0]!
+  expect(window.what).toBe('presence')
+  expect(window.label).toBe('open')
+})
+
+it('--check reports no diffs after a write', () => {
+  ingestEquipment({ catalogueRoot: root, outDir })
+  const check = ingestEquipment({ catalogueRoot: root, outDir, check: true })
+  expect(check.diffs).toEqual([])
+})
