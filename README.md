@@ -24,6 +24,8 @@ cat.get(id)          // one record, aliases resolved
 cat.window({ region, from, to, kinds })              // present, knownElsewhere, coverage
 cat.label(id, { lang: 'en', at?, year? })            // a name for display, never a gate; undefined if none in lang
 cat.date('1691-01-10', { place: 'catalogue/region.england' }) // calendar and year start read from the data
+catalogueId('region.england')  // 'catalogue/region.england'; ENGINE is 'catalogue'
+// also exported: schema.ts, load.ts, check.ts, dates.ts, regions.ts, window.ts (types, loadRecords, checkRecords, ...)
 ```
 
 ```

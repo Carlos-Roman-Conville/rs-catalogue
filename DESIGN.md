@@ -86,6 +86,16 @@ Iceland): a unit that tunes a mechanism may not read `held_out` rows; the P11 ev
 `harness`) reads them to score H3 and H4 (ROADMAP P11a's rule, enforced by §4 V5; names agreed with the History
 keeper 2026-10-31).
 
+**Native rows** (H1 England, task 5254; rulings in [NATIVE-PLAN.md](NATIVE-PLAN.md), "Rulings for native rows"): a
+native row cites `CAT-` source records only (`data/source/cat-*.json`, empty `derived_from`), each opened by its
+writer. (a) native means sourced directly, else `researched` / `low` per DESIGN-V4 (k); (b) a record may mix fixture
+and native rows, each held to its own basis; (c) a value no source gives is an observation `value: null`, `label:
+open`, citing the work searched, and its reason says the full text was read and names the parts read; a search that
+read less stays in the sheet as "not yet searched" and is not written (amended by 5233 after AUDIT-H1-2); (d) no
+native row in a script-ingested record unless the script keeps it; (e) a year-start style the code lacks is added
+by a code unit first; (f) an unknown start is `from: null`; (g) an interval's one `precision` is its coarsest bound's
+(DESIGN-V4 (m)). Audited by AUDIT-H1, -2, -3: **AUDIT-H1-3 pass 24/24** (Log).
+
 - **Inputs:** source documents, fixture files. **Outputs:** records. **State:** the data files (§2.3), versioned in git.
 - **Formulation:** data only; a JSON Schema plus cross-field checks (every attestation cites a source; every place
   resolves; every `ref` in another engine's data resolves to a live or aliased id).
@@ -248,6 +258,11 @@ read), `catalogue.window_bundle` (configuration code only), `catalogue.date`. Ov
 availability (feasibility to `knowledge.capability.state`), DUP-64 aggregation with the pirate journal label, DUP-65
 shared part with `economy.recipe.definition`.
 
+**Status (2026-11-01, task 5254): built.** `label` (N6, `src/label.ts`), `date` (N7, `src/date-reader.ts`; the
+§2.2 example runs on `data/` in `test/index.test.ts`), `catalogue_hash` with `npm run build` and `{ compiled }` (N8,
+`src/build.ts`; NATIVE-PLAN B3 ruling, 5252), `{ heldOut }` default `withhold` (N1, `src/benchmark.ts`), coverage
+(N9). README lists the calls.
+
 ### 2.3 Storage
 
 `Toolchain/catalogue/data/<kind>/<slug>.json` one record per file (small diffs, Composer-friendly units),
@@ -278,16 +293,33 @@ It proves the Catalogue alone; no pirate slice runs.
 
 **Next stage** (2026-11-01, task 5173): [NATIVE-PLAN.md](NATIVE-PLAN.md) plans step 2's native seed (H1 England 1270, rows sourced or `open`, never filled), V5 and `benchmark_role`, and the §2.2 gaps (`label`, `date`, the `dist/catalogue.json` build with `catalogue_hash`, the V7 coverage report), units N1-N10.
 
-**Step 2 not signed off** (2026-11-01, task 5204): N1-N9 are built, but AUDIT-H1 failed 4/6 (Log). Next units, in
-order: N5a fix (composer, from AUDIT-H1's "Fixes" list: R2/R3 drop `year_start_of_source`, R5 `calendar_of_source:
-julian`, R6 the 1270/79 population 4,400,000 researched / medium, sheet S1/S9/S10/S12, `cat-bckovl-2010` `gives`
-and PDF locator, the manor out of England's notes sentence); N5b re-audit AUDIT-H1-2 of the changed rows (a model
-that wrote neither the rows nor the fix); then N10 again, which signs off step 2 and plans H1 beyond D1, H2, H5,
-H3/H4.
+**Step 2 done** (2026-11-01, task 5254, N10): AUDIT-H1 fail 4/6, fixes 5232; AUDIT-H1-2 fail 2/6, fix 5245;
+**AUDIT-H1-3 pass 24/24** (`native/h1-england/AUDIT-H1-3.md`). D1 steps 1-3 hold.
+
+**Next stage** (2026-11-01, task 5254; NATIVE-PLAN "After D1"). One session each, in order; composer for anything a
+test or `scripts/check.ts` gates, opus for audits and rulings, sonnet for sourcing sheets. Records only from a sheet;
+every audit by a model that wrote neither the rows nor the fix; a failed audit gets a fix unit and a re-audit before
+the next row. `CHECK` below is `node --experimental-strip-types scripts/check.ts`.
+
+| # | Model | Work | Gate |
+|---|---|---|---|
+| X1 | sonnet | H1 sheet 2, England 1270: land use, livestock, wages and prices (Clark), towns, ships, climate, royal institutions; and S8 (a `CAT-` source for Julian reckoning in England before 1752) | `grep -q 'CAT-' native/h1-england/SHEET-2.md && grep -q 'S8' native/h1-england/SHEET-2.md` |
+| X2 | composer | records from SHEET-2 (S8 found: `calendar_of_source: julian` on both lady-day attestations) | `CHECK && node --experimental-strip-types scripts/ingest-equipment.ts --check && npx vitest run test/demo.test.ts` |
+| X3 | opus | AUDIT-H1-4 of every X2 row | `grep -qE 'AUDIT-H1-4 [a-z]+ [0-9]+/[0-9]+' native/h1-england/AUDIT-H1-4.md` |
+| X4 | sonnet | H1 sheet 3, trajectory 1270-1700: population, real wages, GDP per head, urban share, enclosure, tax revenue, plague mortality, wars, regime changes | `grep -q 'CAT-' native/h1-england/SHEET-3.md` |
+| X5 | composer | records from SHEET-3, all `development` | `CHECK && npx vitest run test/demo.test.ts` |
+| X6 | opus | AUDIT-H1-5 of X5 (10 % sample if over 60 rows) | `grep -qE 'AUDIT-H1-5 [a-z]+ [0-9]+/[0-9]+' native/h1-england/AUDIT-H1-5.md` |
+| X7 | sonnet | H2 sheet, Japan 1600 (Tokugawa), rows as A1-A8, `region.japan` if none exists | `grep -q 'CAT-' native/h2-japan/SHEET.md` |
+| X8 | composer | H2 records, `development` | `CHECK && npx vitest run test/benchmark.test.ts` |
+| X9 | opus | AUDIT-H2 of X8 | `grep -qE 'AUDIT-H2 [a-z]+ [0-9]+/[0-9]+' native/h2-japan/AUDIT-H2.md` |
+| X10-X12 | sonnet, composer, opus | H5 Iceland 874: sheet, records (`reserve`), AUDIT-H5, as X7-X9 under `native/h5-iceland/` | as X7-X9 |
+| X13 | opus | H3/H4 ruling: who may write and audit `held_out` rows (no tuning unit reads them; V5 guard) | `grep -q '(h) Held-out rows' NATIVE-PLAN.md` |
+| X14-X19 | sonnet, composer, opus | H3 Greenland 985, then H4 Copán 400: sheet, records (`held_out`), audit each, as X7-X9 | `CHECK && npx vitest run test/benchmark.test.ts` |
+| X20 | opus | keeper sign-off of the stage: DESIGN Log, HANDOFF | `grep -q 'AUDIT-H4' DESIGN.md` |
 
 ## 4. Validation plan (§11a: implemented ≠ integrated ≠ validated)
 
-The full validation plan (V4 rules, tests V1–V7, and lettered exceptions (a)–(l)) lives in [DESIGN-V4.md](DESIGN-V4.md).
+The full validation plan (V4 rules, tests V1–V7, and lettered exceptions (a)–(m)) lives in [DESIGN-V4.md](DESIGN-V4.md).
 
 ## 5. Registry: rows found and proposed
 
@@ -352,3 +384,4 @@ universal record moves to `data/` at once, because the economy units add observa
 | 2026-10-31 | Kernel keeper agreed the id scheme and K-O1 split; §2.2 gains consumer-declared ports, the load-time writer `catalogue.reference.ingest` and `catalogue_hash` in the snapshot |
 | 2026-10-31 | **Approved by Rex** through the controller, CAT-Q1–Q6 as proposed; repo and lane opened |
 | 2026-11-01 | Task 5204 (N10): **AUDIT-H1 fail 4/6** (`native/h1-england/AUDIT-H1.md`, task 5200), so D1 step 2 is not signed off. Pass: R1 `calendar.julian` to 1752-09-02, R4 `calendar.gregorian` from 1752-09-14. Fail: R2, R3 `calendar.lady-day-year-start` state `year_start_of_source: mar-25` for a 1908 encyclopedia and a 2026 press release that number years from 1 January; R5 `calendar.january-year-start` gives 1752-01-01 as `gregorian`, but the Act's date is old style (julian); R6 `region.england` 1270 population is `open`, but CAT-BCKOVL-2010 Table 23 gives 4.40 M for 1270/79. API built: `label` (N6), `date` (N7), `catalogue_hash` and `{ compiled }` (N8), `{ heldOut }` (N1), coverage (N9). Next: fix unit, re-audit by a model that wrote neither, then N10 again (§3) |
+| 2026-11-01 | Task 5254 (N10 again): **D1 step 2 signed off.** AUDIT-H1 fail 4/6 (5200) → fix 5232 (9625068); AUDIT-H1-2 fail 2/6 (5233; R2, R3 `precision: day`; rule (c) tightened, 6eb8e88) → fix 5245 (5b6ce99); **AUDIT-H1-3 pass 24/24** (5246, 37ac8ee). Precision ruling: NATIVE-PLAN (g), DESIGN-V4 (m). Open: SHEET S8 (a source for Julian before 1752). Next stage X1-X20 (§3) |

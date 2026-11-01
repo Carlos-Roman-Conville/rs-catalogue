@@ -160,6 +160,12 @@ fix 1, after AUDIT-C4-2).
   check 2, and a file a note names but no anchor cites is counted by check 7. `entity.piece-of-eight`'s 1704 note
   drops "the plantations" and "re-enacted", which come from RESEARCH §3 prose; see
   `fixtures/pirate-town/NOTE-RULINGS.md`.
+- **(m) An interval carries its coarsest bound's precision** (copied from NATIVE-PLAN (g), 5252; verdict from
+  `native/h1-england/AUDIT-H1-3.md`, "Precision ruling", pass 24/24; recorded by 5254). DESIGN §1.3 gives a date one
+  interval with one `precision`, not one per bound, so the field states the least precise bound.
+  `calendar.lady-day-year-start` R2 and R3 (`from: {year: 1155}`, `to: 1751-12-31`, `precision: year`) are right: the
+  sources give 1155 as a year only, so `day` would assert 1 January 1155, which no source states. The `to` keeps the
+  day the 1750 Act names, since a bound finer than the stated precision asserts nothing false. No data change.
 
 "Validated" for a reference catalogue means: a value's source was re-checked by someone other than its writer (V4)
 and, where a second independent source exists, the two agree within the interval stated. Disagreement is kept as two

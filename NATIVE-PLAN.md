@@ -92,7 +92,7 @@ N4 appends one sentence to its `notes` naming the native rows and NATIVE-PLAN (b
   null means always. Never stand in a one-day `from` for an unknown start (5177 wrote `calendar.julian` as present
   only on 2 September 1752). S7 is written `from: null, to: 1752-09-02`; when S8 finds a start, `from` takes it.
   An open-start absence window reaches back without limit; an open-start invention is never inside one.
-- **(g) An interval carries its coarsest bound's precision** (5252; review 1101-1229 fix 2; verdict copied from
+- **(g) An interval carries its coarsest bound's precision** (5252) (review 1101-1229 fix 2; verdict copied from
   `native/h1-england/AUDIT-H1-3.md`, "Precision ruling", pass 24/24). DESIGN §1.3 gives a date one interval with one
   `precision`, not one per bound, so the field states the least precise bound. `calendar.lady-day-year-start` R2 and
   R3 (`from: {year: 1155}`, `to: 1751-12-31`, `precision: year`) are right: the sources give 1155 as a year only, so
@@ -193,7 +193,7 @@ If N3's sheet records a year-start style the code lacks (rule (e)), N7 adds it w
 - Tests `test/build.test.ts`: two builds give the same bytes; shuffled load order and shuffled keys in a record give
   the same hash; one changed field changes it; `hash` equals sha256 of the written file; `{ compiled }` gives the
   same `get`, `window` and `catalogue_hash` as `data/`; an invalid record throws and writes nothing.
-- **Ruling: invented paths on a compiled snapshot (5252; review 1101-1229 fix 4).** `readCompiledCatalogue` gives
+- **Ruling: invented paths on a compiled snapshot (5252) (review 1101-1229 fix 4).** `readCompiledCatalogue` gives
   each record the path `data/<kind>/<slug>.json` (universal) or `fixtures/_compiled/<kind>/<slug>.json`, `kind` and
   `slug` taken from the record's own id. The invented paths stand; `checkRecords` needs no path-free mode and no
   code changes. Three rules in `src/check.ts` read `file` (lines 58-65): (1) a `data/` file sits in
