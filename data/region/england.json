@@ -907,7 +907,7 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "modern reconstruction, secondary; printed in million acres; the 1270 value (11.52) is T1 of SHEET-2 from the 2010 CAGE WP 35, this is a different working paper (WP 21) whose Table 1 gives the same 1270 row"
+        "reason": "modern reconstruction, secondary; printed in million acres; a different working paper from CAGE WP 35 (2010), whose Table 1 gives 11.52 for 1270 and 1300"
       },
       "benchmark_role": "development",
       "note": "Table 1, last column 'Total arable', 1300 (CAT-BCKOVL-2010-WP21)"
@@ -1177,7 +1177,7 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "as the arable rows"
+        "reason": "modern reconstruction, secondary; printed in million acres (Overton and Campbell tables, Medieval Accounts Database)"
       },
       "benchmark_role": "development",
       "note": "Table 1, 'Total sown', 1420 (CAT-BCKOVL-2010-WP21)"
@@ -2783,7 +2783,7 @@
       "label": "researched",
       "confidence": {
         "level": "low",
-        "reason": "as above; hoped for £50,000"
+        "reason": "Wikipedia, secondary; the year is not stated in the poll tax section and is placed after the Crown's 1379 request to Parliament; hoped for £50,000"
       },
       "benchmark_role": "development",
       "note": "CAT-WIKI-PEASANTS poll tax section: 'only raised £18,600'"
