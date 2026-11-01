@@ -27,6 +27,9 @@ adds one dated line under Done, and parks a disagreement with DESIGN.md under Bl
 - 2026-11-01: 2907 institution, region and period V4 fixes (392876d): 25 records; region nest dropped, see review 1101-0126; task in failed/.
 - 2026-11-01: 2908 fixture audit 3 (46b2d2d): AUDIT-3 says fail, 12 of 66 records.
 - 2026-11-01: 2928 V4 nesting rule in DESIGN.md §4: undated geographic `part_of` anchored by the referents plus the naming row; unstated steps kept, doubt in `notes`, never deleted for want of a row.
+- 2026-11-01: 2929 region nest restore (6e40ca4): region part_of nest and V4 anchors restored.
+- 2026-11-01: 2930 audit-3 records reanchor (b542b8e): non-region fixture rows re-anchored to V4.
+- 2026-11-01: 2931 fixture audit 4: AUDIT-4 says fail, 6 of 66 records (region.atlantic, region.england, region.jamaica, region.kingston, region.new-providence, practice.commercial-brewing); no record edited.
 
 ## Blocked
 
