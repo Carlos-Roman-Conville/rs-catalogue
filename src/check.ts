@@ -1,4 +1,6 @@
 import type { LoadedCatalogue } from './load.ts'
+import { createIdResolver } from './load.ts'
+import { partOfCycleIds } from './regions.ts'
 
 /** V1 integrity checks. All references follow aliases, including multi-hop historical ids. */
 export function checkRecords(catalogue: LoadedCatalogue): string[] {
@@ -48,6 +50,9 @@ export function checkRecords(catalogue: LoadedCatalogue): string[] {
         sources(row.sources, `${path}.sources`)
       })
     }
+  }
+  for (const id of partOfCycleIds(catalogue.records, createIdResolver(catalogue))) {
+    failures.push(`${id}: part_of cycle at an overlapping date`)
   }
   return failures.sort()
 }

@@ -66,3 +66,20 @@ it('returns deterministic sorted failure lines', async () => {
   expect(errors).toEqual([...errors].sort())
   expect(await check()).toEqual(errors)
 })
+
+it('rejects undated part_of cycles, including self loops and aliased edges', async () => {
+  await f.write('data/a.json', { ...record('a'), relations: [{ rel: 'part_of', to: 'old-b' }] })
+  await f.write('data/b.json', { ...record('b'), relations: [{ rel: 'part_of', to: record('a').id }] })
+  await f.write('data/self.json', { ...record('self'), relations: [{ rel: 'part_of', to: record('self').id }] })
+  await f.write('data/aliases.json', [{ old: 'old-b', new: record('b').id }])
+  expect((await check()).filter(line => line.includes('part_of cycle'))).toHaveLength(3)
+})
+it('rejects a dated cycle only when all edges share a date, including a shared endpoint', async () => {
+  const interval = (from: number, to: number) => ({ ...date(), from: { year: from }, to: { year: to } })
+  await f.write('data/a.json', { ...record('a'), relations: [{ rel: 'part_of', to: record('b').id, date: interval(1600, 1655) }] })
+  await f.write('data/b.json', { ...record('b'), relations: [{ rel: 'part_of', to: record('c').id, date: interval(1655, 1700) }] })
+  await f.write('data/c.json', { ...record('c'), relations: [{ rel: 'part_of', to: record('a').id, date: interval(1600, 1700) }] })
+  expect((await check()).filter(line => line.includes('part_of cycle'))).toHaveLength(3)
+  await f.write('data/c.json', { ...record('c'), relations: [{ rel: 'part_of', to: record('a').id, date: interval(1656, 1700) }] })
+  expect(await check()).toEqual([])
+})

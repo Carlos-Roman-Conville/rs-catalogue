@@ -1,5 +1,5 @@
 import { afterEach, beforeEach, expect, it } from 'vitest'
-import { loadRecords } from '../src/load.ts'
+import { loadRecords, loadRecordsSync } from '../src/load.ts'
 import { fixture, record } from './helpers.ts'
 
 let f: Awaited<ReturnType<typeof fixture>>
@@ -17,6 +17,10 @@ it('loads recursive data and fixture records sorted by id, excluding aliases and
 })
 it('treats missing catalogue directories and aliases as empty', async () => {
   expect(await loadRecords(f.root)).toEqual({ records: [], entries: [], aliases: [], failures: [] })
+})
+it('synchronous and asynchronous entry points load identical snapshots', async () => {
+  await f.write('data/example.json', record())
+  expect(loadRecordsSync(f.root)).toEqual(await loadRecords(f.root))
 })
 it('reports bad JSON with the relative file path and keeps loading', async () => {
   await f.write('data/bad.json', '{', true)
