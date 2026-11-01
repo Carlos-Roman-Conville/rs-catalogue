@@ -315,7 +315,7 @@ political relation (a `part_of` to a polity record, dated or not, such as New Pr
 **Region anchoring exceptions** (2026-11-01, review 1101-0223 fixes 1, 2 and 4; AUDIT-5 fails on
 `region.atlantic`, `region.jamaica`, `region.new-providence`, `practice.commercial-brewing`; (a) reworded and (d),
 (e) added 2026-11-01, review 1101-0317 fixes 1, 2 and 6, after AUDIT-7; (f) to (i) added 2026-11-01, review
-1101-0406 fixes 1 and 3, after AUDIT-8).
+1101-0406 fixes 1 and 3, after AUDIT-8; (j) and (k) added 2026-11-01, review 1101-0630 fix 2, after AUDIT-C4).
 
 - **(a) A geographic container no row names** (`region.atlantic`). A region record that is only a step in the
   geographic nesting (a sea, an ocean, an island group) may pass on the referents paragraph alone, as an exception
@@ -392,6 +392,24 @@ political relation (a `part_of` to a polity record, dated or not, such as New Pr
   keeps `label` (how a value was got) and `confidence` (how sure, with a reason) as separate fields and rule (a)
   relabels a referent-window bound `estimate` without lowering confidence, so `high` stays where the anchored row
   states the thing itself `researched` and only a bound comes from the referent window; no level changes.
+- **(j) A qualified period** (`region.jamaica`, "later 18th c."; added 2026-11-01, review 1101-0630 fix 2, after
+  AUDIT-C4). A qualified period ("later Nth c.", "early Nth c.", "mid-Nth c.") is stored as the whole named
+  century, `precision: century`, `circa: true`, with the qualifier kept verbatim in the observation's or
+  attestation's `note`; never as a half-century or any narrower interval. §1.3 stores "dates as intervals with
+  precision, never false points", and rule (a) says "a bound that no anchor states ... is never written": the row
+  states the century, so 1700–1799 at century precision is its own statement, while 1750 (or any split of
+  "later") is a bound no anchor states. `precision: century` says the bounds are the century's, not the claim's,
+  so the 1700 start is not read as a date the row gives. `date: null` with the qualifier in `note` stays allowed
+  (the equipment grammar's choice, INGEST-PLAN, for a script that cannot judge). `region.jamaica` passes with no
+  change; see `fixtures/pirate-town/C4-RULINGS.md`.
+- **(k) An unverified row** ("researched, unverified", "page not opened"; `region.port-royal`; added 2026-11-01,
+  review 1101-0630 fix 2). `label` says how a value was got and `confidence` how sure (§1.1, exception (i)): a
+  value a source states, read through a summary or cited without the page being opened, was got by research, so
+  it keeps `label: researched` and is not relabelled `estimate` (estimate means the value was derived or judged,
+  not that the citation is unchecked). The doubt goes in `confidence`: `level: low`, and the reason says what was
+  not opened or verified. V4 check 3 reads the row's label word (`researched`), and its qualifier ("unverified",
+  "late", "not opened") as a confidence ceiling of `low`. `region.port-royal` (low, "page not opened") and
+  `region.jamaica` (low, "EKU thesis not opened") pass with no change.
 
 "Validated" for a reference catalogue means: a value's source was re-checked by someone other than its writer (V4)
 and, where a second independent source exists, the two agree within the interval stated. Disagreement is kept as two
