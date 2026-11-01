@@ -48,6 +48,53 @@ it.each([
   expect(scanToolchain(root)).toEqual(['engine/src/main.ts:1: forbidden @rex/catalogue import (labels only)'])
 })
 
+it.each([
+  `import { window } from '@rex/catalogue/window'`,
+  `const { window } = await import('@rex/catalogue/window')`,
+  `const { window } = require('@rex/catalogue/window')`,
+])('rejects catalogue subpath imports: %s', source => {
+  write('engine/src/main.ts', source)
+  expect(scanToolchain(root)).toEqual(['engine/src/main.ts:1: forbidden @rex/catalogue import (labels only)'])
+})
+
+it.each([
+  `import { label as name } from '@rex/catalogue/window'`,
+  `const { label } = await import('@rex/catalogue/window')`,
+  `const { label: name } = require('@rex/catalogue/window')`,
+])('allows catalogue subpath imports naming only label: %s', source => {
+  write('engine/src/main.ts', source)
+  expect(scanToolchain(root)).toEqual([])
+})
+
+it.each([
+  `import { window } from '../../catalogue/src/window'`,
+  `const { window } = await import('../../catalogue/src/window')`,
+  `const { window } = require('../../catalogue/src/nested/../window.ts')`,
+])('rejects relative imports resolving into catalogue src: %s', source => {
+  write('engine/src/main.ts', source)
+  expect(scanToolchain(root)).toEqual(['engine/src/main.ts:1: forbidden @rex/catalogue import (labels only)'])
+})
+
+it.each([
+  `import { window } from './window'`,
+  `const { window } = await import('../../engine/src/window')`,
+  `const { window } = require('./nested/../window.ts')`,
+  `import { window } from '../../catalogue/src-other/window'`,
+  `import { window } from '@rex/catalogue-other/window'`,
+])('allows relative imports into another engine own src and unrelated paths: %s', source => {
+  write('engine/src/main.ts', source)
+  expect(scanToolchain(root)).toEqual([])
+})
+
+it.each([
+  `import { label } from '../../../catalogue/src/window'`,
+  `const { label } = await import('../../../catalogue/src/window')`,
+  `const { label } = require('../../../catalogue/src/window')`,
+])('allows relative catalogue imports naming only label from nested files: %s', source => {
+  write('engine/src/nested/main.ts', source)
+  expect(scanToolchain(root)).toEqual([])
+})
+
 it.each(['get', 'presence', 'date', 'year', 'attestation', 'window', 'available'])(
   'rejects catalogue.%s reads and input ports', quantity => {
     const id = `catalogue.${quantity}`

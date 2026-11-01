@@ -1,5 +1,5 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
-import { join } from 'node:path'
+import { dirname, join, resolve, sep } from 'node:path'
 
 /** Immediate engine directories only; dependencies and the catalogue itself are exempt. */
 export function toolchainEngines(root: string): string[] {
@@ -19,10 +19,18 @@ function tokens(source: string): Token[] {
     .map(match => ({ text: match[0], offset: match.index, quoted: /^["'`]/.test(match[0]) }))
 }
 
-function importFailures(source: string): number[] {
+function importFailures(source: string, file: string, root: string): number[] {
   const ts = tokens(source)
   const failures: number[] = []
   const text = (i: number) => ts[i]?.text
+  const catalogueSource = resolve(root, 'catalogue', 'src') + sep
+  const isCatalogue = (i: number): boolean => {
+    if (!ts[i]?.quoted) return false
+    const specifier = text(i).slice(1, -1)
+    if (specifier === '@rex/catalogue' || specifier.startsWith('@rex/catalogue/')) return true
+    return (specifier.startsWith('./') || specifier.startsWith('../')) &&
+      resolve(dirname(file), specifier).startsWith(catalogueSource)
+  }
   const namedLabels = (start: number, end: number, separator: string): boolean => {
     if (text(start) !== '{' || text(end - 1) !== '}') return false
     const names = ts.slice(start + 1, end - 1).map(t => t.text).join(' ')
@@ -34,7 +42,7 @@ function importFailures(source: string): number[] {
     if (ts[i].quoted || !['import', 'require', 'export'].includes(text(i))) continue
     if (text(i - 1) === '.') continue
     if (text(i + 1) === '(') {
-      if (!['"@rex/catalogue"', "'@rex/catalogue'", '`@rex/catalogue`'].includes(text(i + 2)) || text(i + 3) !== ')') continue
+      if (!isCatalogue(i + 2) || text(i + 3) !== ')') continue
       let start = i
       if (text(start - 1) === 'await') start--
       // A direct .label selection, or a label-only destructuring assignment, is safe.
@@ -53,7 +61,7 @@ function importFailures(source: string): number[] {
     let end = i + 1
     while (end < ts.length && ![';', 'from'].includes(text(end)) && !ts[end].quoted) end++
     const module = text(end) === 'from' ? end + 1 : end
-    if (!['"@rex/catalogue"', "'@rex/catalogue'"].includes(text(module))) continue
+    if (!isCatalogue(module)) continue
     const start = text(i + 1) === 'type' ? i + 2 : i + 1
     if (!namedLabels(start, end, 'as')) failures.push(ts[i].offset)
   }
@@ -101,7 +109,7 @@ export function scanToolchain(root: string): string[] {
         if (entry.isDirectory()) walk(file)
         else if (entry.isFile()) {
           const source = readFileSync(join(root, file), 'utf8')
-          for (const offset of importFailures(source)) {
+          for (const offset of importFailures(source, join(root, file), root)) {
             const line = source.slice(0, offset).split('\n').length
             failures.push(`${file}:${line}: forbidden @rex/catalogue import (labels only)`)
           }
