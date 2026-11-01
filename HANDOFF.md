@@ -17,6 +17,11 @@ adds one dated line under Done, and parks a disagreement with DESIGN.md under Bl
 - 2026-10-31: 2797 culture beliefs and customs (c02b0d1): creature/belief pairs per DESIGN 1.2.
 - 2026-10-31: 2798 culture institutions (ad95c90): 12 records.
 - 2026-10-31: 2799 starting-town trade and economy research (d6c264c): 18 records; not-found gaps kept in notes.
+- 2026-10-31: 2800 fixture audit 1 (3b0ca96): AUDIT-1 says fail, 64 of 66 records; task sits in failed/, audit is honest.
+- 2026-10-31: 2830 no-gate subpath and relative imports (e38f78a).
+- 2026-10-31: 2881 open-ended intervals (322ca2c): `to` omitted or null.
+- 2026-10-31: 2882 region fixtures open-ended (8a84675): three year-9999 ends are now `to: null`.
+- 2026-10-31: 2883 fixture review fixes (d8474de): no same_as on the three creatures, no game observation on chattel-slavery, port-royal counts are estimates.
 
 ## Blocked
 
