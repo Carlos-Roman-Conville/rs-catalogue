@@ -312,6 +312,7 @@ its V4 audit passes; then its universal records are promoted to `data/` with `de
 66 records stay under `fixtures/` until the equipment and economy ingest has passed its own V4 audits, then every
 universal record moves to `data/` at once, because the economy units add observations to six AUDIT-9 records and
 `src/drift.ts` checks `derived_from` only under `fixtures/*/records`, so a record promoted early would leave V6.
+**Promotion plan** (2026-11-01, task 5102): `fixtures/pirate-town/PROMOTE-PLAN.md` moves the 663 universal records to `data/<kind>/` (the 1 `game:pirate-ship` record stays), V6 checks `data/` records against every fixture manifest, no `data/sources.json` (source records are `data/source/`), units P1-P4.
 
 ## 7. Questions answered (CAT-Q)
 
