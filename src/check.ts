@@ -41,9 +41,24 @@ export function checkRecords(catalogue: LoadedCatalogue): string[] {
     const result = resolve(alias.old)
     if (result !== 'ok') failures.push(`alias ${alias.old}: ${result === 'cycle' ? 'alias cycle' : 'alias to missing id'}`)
   }
+  const recordById = new Map(catalogue.records.map(row => [row.id, row]))
+  function resolveId(id: string): string | undefined {
+    const seen = new Set<string>()
+    while (aliases.has(id)) {
+      if (seen.has(id)) return undefined
+      seen.add(id)
+      id = aliases.get(id)!
+    }
+    return ids.has(id) ? id : undefined
+  }
   const seen = new Set<string>()
   for (const { file, record: r } of catalogue.entries) {
     const report = (message: string) => failures.push(`${file}: ${message}`)
+    if (file.startsWith('data/') && file !== 'data/aliases.json') {
+      const dirMatch = /^data\/([^/]+)\/[^/]+\.json$/.exec(file)
+      if (!dirMatch || dirMatch[1] !== r.kind) report(`directory must be data/${r.kind}/`)
+      if (r.scope !== 'universal') report('game scope stays under fixtures/')
+    }
     const match = /^catalogue\/([a-z_]+)\.([a-z0-9]+(?:-[a-z0-9]+)*(?:\.[0-9]+)?)$/.exec(r.id)
     if (!match || match[1] !== r.kind) report(`invalid id ${r.id} for kind ${r.kind}`)
     else if (file.split('/').at(-1) !== `${match[2]}.json`) report(`file name must be ${match[2]}.json`)
@@ -51,7 +66,13 @@ export function checkRecords(catalogue: LoadedCatalogue): string[] {
     seen.add(r.id)
     if (r.scope.startsWith('game:') && r.provenance.includes('real')) report('game scope cannot have real provenance')
     const ref = (id: string | null | undefined, field: string) => {
-      if (id != null && resolve(id) !== 'ok') report(`${field}: unresolved reference ${id}`)
+      if (id == null) return
+      if (resolve(id) !== 'ok') report(`${field}: unresolved reference ${id}`)
+      else if (r.scope === 'universal') {
+        const targetId = resolveId(id)
+        const target = targetId == null ? undefined : recordById.get(targetId)
+        if (target?.scope.startsWith('game:')) report(`universal record references game-scoped ${targetId}`)
+      }
     }
     const sources = (values: string[], field: string) => values.forEach(id => ref(id, field))
     sources(r.sources, 'sources')

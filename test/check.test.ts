@@ -32,7 +32,7 @@ it('accepts a numeric id disambiguator and matching filename', async () => {
   expect(await check()).toEqual([])
 })
 it('rejects duplicate ids across native and fixture records', async () => {
-  await f.write('data/example.json', record())
+  await f.write('data/material/example.json', record())
   await f.write('fixtures/demo/records/example.json', record())
   expect((await check()).join()).toContain('duplicate id')
 })
@@ -74,17 +74,17 @@ it('rejects duplicate alias definitions', async () => {
 it('reports bad enum values from runtime validation', async () => expect(await checkRecord({ kind: 'bad' })).toContain('record.kind'))
 it('reports from > to', async () => expect(await checkRecord({ attestations: [{ ...attestation(), date: { ...date(), from: { year: 10 } } }] })).toContain('from > to'))
 it('returns deterministic sorted failure lines', async () => {
-  await f.write('data/z.json', record())
-  await f.write('data/a.json', record())
+  await f.write('data/material/z.json', record('z'))
+  await f.write('data/material/a.json', record('a'))
   const errors = await check()
   expect(errors).toEqual([...errors].sort())
   expect(await check()).toEqual(errors)
 })
 
 it('rejects undated part_of cycles, including self loops and aliased edges', async () => {
-  await f.write('data/a.json', { ...record('a'), relations: [{ rel: 'part_of', to: 'old-b' }] })
-  await f.write('data/b.json', { ...record('b'), relations: [{ rel: 'part_of', to: record('a').id }] })
-  await f.write('data/self.json', { ...record('self'), relations: [{ rel: 'part_of', to: record('self').id }] })
+  await f.write('data/material/a.json', { ...record('a'), relations: [{ rel: 'part_of', to: 'old-b' }] })
+  await f.write('data/material/b.json', { ...record('b'), relations: [{ rel: 'part_of', to: record('a').id }] })
+  await f.write('data/material/self.json', { ...record('self'), relations: [{ rel: 'part_of', to: record('self').id }] })
   await f.write('data/aliases.json', [{ old: 'old-b', new: record('b').id }])
   expect((await check()).filter(line => line.includes('part_of cycle'))).toHaveLength(3)
 })
@@ -104,6 +104,23 @@ async function writeCheckSource() {
     derived_from: [],
   })
 }
+
+it('accepts a record under data/<kind>/', async () => expect(await checkRecord({})).toBe(''))
+it('rejects a record not under data/<kind>/', async () => {
+  await f.write('data/example.json', record())
+  expect((await check()).join()).toContain('directory must be data/material/')
+})
+it('accepts universal scope under data/', async () => expect(await checkRecord({ scope: 'universal' })).toBe(''))
+it('rejects game scope under data/', async () => expect(await checkRecord({ scope: 'game:test' })).toContain('game scope stays under fixtures/'))
+it('accepts universal references to universal records', async () => {
+  await f.write('fixtures/demo/records/target.json', { ...record('target'), scope: 'universal' })
+  expect(await checkRecord({ relations: [{ rel: 'same_as', to: record('target').id }] })).toBe('')
+})
+it('rejects universal references to game-scoped records', async () => {
+  const gameId = 'catalogue/material.game-only'
+  await f.write('fixtures/demo/records/game-only.json', { ...record('game-only'), scope: 'game:demo' })
+  expect(await checkRecord({ relations: [{ rel: 'same_as', to: gameId }] })).toContain('universal record references game-scoped')
+})
 
 it('passes when a dated invention lies outside the absence window', async () => {
   await writeCheckSource()
@@ -133,10 +150,10 @@ it('rejects an absence window that contains the record\'s own dated invention', 
 
 it('rejects a dated cycle only when all edges share a date, including a shared endpoint', async () => {
   const interval = (from: number, to: number) => ({ ...date(), from: { year: from }, to: { year: to } })
-  await f.write('data/a.json', { ...record('a'), relations: [{ rel: 'part_of', to: record('b').id, date: interval(1600, 1655) }] })
-  await f.write('data/b.json', { ...record('b'), relations: [{ rel: 'part_of', to: record('c').id, date: interval(1655, 1700) }] })
-  await f.write('data/c.json', { ...record('c'), relations: [{ rel: 'part_of', to: record('a').id, date: interval(1600, 1700) }] })
+  await f.write('data/material/a.json', { ...record('a'), relations: [{ rel: 'part_of', to: record('b').id, date: interval(1600, 1655) }] })
+  await f.write('data/material/b.json', { ...record('b'), relations: [{ rel: 'part_of', to: record('c').id, date: interval(1655, 1700) }] })
+  await f.write('data/material/c.json', { ...record('c'), relations: [{ rel: 'part_of', to: record('a').id, date: interval(1600, 1700) }] })
   expect((await check()).filter(line => line.includes('part_of cycle'))).toHaveLength(3)
-  await f.write('data/c.json', { ...record('c'), relations: [{ rel: 'part_of', to: record('a').id, date: interval(1656, 1700) }] })
+  await f.write('data/material/c.json', { ...record('c'), relations: [{ rel: 'part_of', to: record('a').id, date: interval(1656, 1700) }] })
   expect(await check()).toEqual([])
 })
