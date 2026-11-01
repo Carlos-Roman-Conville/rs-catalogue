@@ -1,0 +1,11 @@
+Records to change: 7
+
+Plan only (task 3090): the changes DESIGN.md §4 region anchoring exceptions (f) to (i) require after AUDIT-8. No record was edited. Ruling (g) changes no record: `region.new-providence`'s `SOURCES.md` note names its own anchors' file and passes. Ruling (i) changes no confidence level: `estimate` with `high` is consistent. Ruling (h) applies to every Q5 trade record that takes the 1682 start without STL-CUN, not only `vintner-trade`; the five that already cite STL-CUN (blacksmithing, carpentry, cooperage, goldsmithing, merchant-storekeeping) do not change. Ruling (h) adds no `derived_from`: the Q5 trades row each record is anchored to already names STL-CUN (rule (c)).
+
+- catalogue/practice.faction-burial-alternatives: remove its one attestation (`attestations: []`); set `notes` to "Game fiction overlay; not a universal historical fact. Claim, attestation removed under DESIGN §4 (e) and (f): the factions add burial alternatives (consecrated ground, Holy Order; burial at sea, Free Pirates; bodies preserved or transformed, the cults, the Atlanteans, the Ghost Fleet), label fiction; the Alternatives row cites Rex (2026-10-30) and `../combat/COMBAT.md` §4e and names no source key." Provenance, scope and `derived_from` unchanged.
+- catalogue/practice.vintner-trade: add `catalogue/source.stl-cun` to the attestation's `sources` and the record's `sources` (before stl-psj); confidence reason → "Vintners and alehouse keepers (Blome and Taylor via STL-PSJ; STARTING_TOWN Q5 trades); 1682 is Hanson's list year (STL-CUN), not a statement about vintners; 1692 from the referents." Label stays estimate, level stays medium.
+- catalogue/practice.butchering: add `catalogue/source.stl-cun` to the attestation's and the record's `sources` (first); confidence reason gains "; 1682 is Hanson's list year (STL-CUN), not a statement about butchers; 1692 from the referents". Label estimate, level high unchanged.
+- catalogue/practice.clay-pipe-retailing: as butchering ("not a statement about the pipe shop").
+- catalogue/practice.cobbling: as butchering ("not a statement about cobblers").
+- catalogue/practice.daily-markets: as butchering ("not a statement about the markets"); level medium unchanged.
+- catalogue/practice.wood-turning: as butchering ("not a statement about wood turners").

@@ -308,7 +308,8 @@ political relation (a `part_of` to a polity record, dated or not, such as New Pr
 
 **Region anchoring exceptions** (2026-11-01, review 1101-0223 fixes 1, 2 and 4; AUDIT-5 fails on
 `region.atlantic`, `region.jamaica`, `region.new-providence`, `practice.commercial-brewing`; (a) reworded and (d),
-(e) added 2026-11-01, review 1101-0317 fixes 1, 2 and 6, after AUDIT-7).
+(e) added 2026-11-01, review 1101-0317 fixes 1, 2 and 6, after AUDIT-7; (f) to (i) added 2026-11-01, review
+1101-0406 fixes 1 and 3, after AUDIT-8).
 
 - **(a) A geographic container no row names** (`region.atlantic`). A region record that is only a step in the
   geographic nesting (a sea, an ocean, an island group) may pass on the referents paragraph alone, as an exception
@@ -361,6 +362,30 @@ political relation (a `part_of` to a polity record, dated or not, such as New Pr
   under rule (c) that source is a catalogue source record for a key its anchored row names. Where the row's keys
   have no source record yet (L, PHY-RATION, DV, CSP), the attestation is removed and the claim, the row's label and
   the keys stay in the record's `notes` until those keys are ingested as source records; no source is invented.
+- **(f) A fiction attestation** (`practice.faction-burial-alternatives`: `label: fiction`, `scope: game:pirate-ship`,
+  `sources: []`; added 2026-11-01, review 1101-0406 fix 1, after AUDIT-8). Rule (e) covers it: a fiction attestation
+  gets no exception, because its row (CULTURE.md §2 "Alternatives the factions add") names `../combat/COMBAT.md` §4e
+  and Rex, a game design file and a person, and neither is a catalogue source record, and making one would invent a
+  source kind; the record's fiction is already carried by `provenance: original_fiction`, `scope: game:pirate-ship`
+  and its `derived_from` anchor, so the attestation is removed and its claim, the `fiction` label and the row's
+  pointers (Rex 2026-10-30, `COMBAT.md` §4e, which the anchored row names, so check 7 holds) stay in `notes`.
+- **(g) A note naming its own anchor's file** (AUDIT-8 check 7 question; `region.new-providence`'s notes name
+  `SOURCES.md`). The self-naming reading holds: a note may name the file that its own `derived_from` anchors cite,
+  since the anchor's `file` field already names it, provided the note only says where the anchored rows sit or what
+  was searched there and supports no value, date or place; a file no anchor of the record cites is still counted.
+  `region.new-providence` passes with no change.
+- **(h) A bound tied to one key of a multi-key row** (`practice.vintner-trade`; review 1101-0406 fix 3). The Q5
+  trades row ties 1682 to "Hanson 1682 (STL-CUN)" only (Blome 1672 and Taylor 1687–88 are STL-PSJ's dates), so a Q5
+  record that takes the 1682 start cites `catalogue/source.stl-cun` in the attestation and record `sources`; no
+  new `derived_from` is needed, since the Q5 trades row it is anchored to names STL-CUN (rule (c)), and the label
+  stays `estimate` (relabelling would change nothing, and redating to 1672 or 1687 would be a different claim).
+  The row does not say which trades Hanson lists, so the confidence reason says the 1682 bound is Hanson's list
+  year, not a statement about that trade. The same holds for every Q5 record that takes 1682 without STL-CUN.
+- **(i) Label and confidence** (the eleven Q5 trade records; six carry `high`, five `medium`). An `estimate`
+  label is consistent with `confidence.level: high`, an estimate with high confidence being allowed because §1.1
+  keeps `label` (how a value was got) and `confidence` (how sure, with a reason) as separate fields and rule (a)
+  relabels a referent-window bound `estimate` without lowering confidence, so `high` stays where the anchored row
+  states the thing itself `researched` and only a bound comes from the referent window; no level changes.
 
 "Validated" for a reference catalogue means: a value's source was re-checked by someone other than its writer (V4)
 and, where a second independent source exists, the two agree within the interval stated. Disagreement is kept as two
