@@ -30,8 +30,10 @@
       "what": "presence",
       "place": null,
       "date": null,
-      "sources": [],
-      "label": "open",
+      "sources": [
+        "catalogue/source.stl-e"
+      ],
+      "label": "researched",
       "confidence": {
         "level": "high",
         "reason": "Pieces of eight the common money unit; coin scarce, barter common (CULTURE §4 Money; STL-E wages in pieces of eight)."
@@ -40,12 +42,19 @@
   ],
   "relations": [],
   "observations": [],
-  "sources": [],
+  "sources": [
+    "catalogue/source.stl-e"
+  ],
   "derived_from": [
     {
       "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/town/CULTURE.md",
       "anchor": "## 4. The economic situation at the start | Money",
       "sha256": "80837fd0f68bfdf4890c954463aafa84f2ca4aabeb1ffe6e77ca9602d679a51b"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Settlement sources (settlement keeper, 2026-10-30) | STL-E",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
     }
   ]
 }

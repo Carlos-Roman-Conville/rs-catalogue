@@ -22,7 +22,7 @@
   "scope": "universal",
   "attestations": [
     {
-      "what": "absence",
+      "what": "presence",
       "place": "catalogue/region.port-royal",
       "date": null,
       "sources": [
@@ -32,7 +32,8 @@
       "confidence": {
         "level": "medium",
         "reason": "Imported wine, brandy and rum punch; no brewer in any source read (STL-PSJ; STARTING_TOWN Q5 tavern brewhouse)."
-      }
+      },
+      "note": "Presence unknown: no commercial brewer attested in sources read (DESIGN §1.1)."
     }
   ],
   "relations": [],

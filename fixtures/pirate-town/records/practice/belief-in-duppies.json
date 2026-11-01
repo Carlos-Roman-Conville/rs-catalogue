@@ -25,22 +25,31 @@
       "what": "presence",
       "place": null,
       "date": null,
-      "sources": [],
-      "label": "open",
+      "sources": [
+        "catalogue/source.twn-afr"
+      ],
+      "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "African-Caribbean and sailors folk beliefs attested alongside omens (CULTURE.md)."
+        "reason": "African-Caribbean and sailors folk beliefs attested alongside omens (Folk belief row; TWN-AFR)."
       }
     }
   ],
   "relations": [],
   "observations": [],
-  "sources": [],
+  "sources": [
+    "catalogue/source.twn-afr"
+  ],
   "derived_from": [
     {
       "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/town/CULTURE.md",
       "anchor": "## 1. Starting beliefs and religious preference | Folk belief",
       "sha256": "80837fd0f68bfdf4890c954463aafa84f2ca4aabeb1ffe6e77ca9602d679a51b"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Town sources (town keeper, 2026-10-30) | TWN-AFR",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
     }
   ]
 }

@@ -43,7 +43,7 @@
         "level": "high",
         "reason": "Davenant 1699 prints Gregory King's corn shortfall table (ECON-DAV; STARTING_TOWN econ 5 curve)."
       },
-      "note": "Short 1/10 → price +3/10 above common; 2/10 → +8/10; 3/10 → +16/10; 4/10 → +28/10; 5/10 → +45/10."
+      "note": "Short 1/10 → price +3/10 above common; short 5/10 → +45/10."
     }
   ],
   "relations": [],

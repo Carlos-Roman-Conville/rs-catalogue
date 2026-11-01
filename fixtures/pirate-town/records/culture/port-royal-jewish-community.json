@@ -35,7 +35,7 @@
       }
     },
     {
-      "what": "absence",
+      "what": "presence",
       "place": "catalogue/region.jamaica",
       "date": {
         "from": {
@@ -51,12 +51,12 @@
       "sources": [
         "catalogue/source.twn-jew"
       ],
-      "label": "researched",
+      "label": "estimate",
       "confidence": {
-        "level": "high",
-        "reason": "1711 bar on Jews holding office (TWN-JEW)."
+        "level": "medium",
+        "reason": "1711 bar on Jews holding office (TWN-JEW); Jamaica from referents."
       },
-      "note": "Office-holding bar; community presence continues."
+      "note": "Office-holding bar only; community presence continues."
     }
   ],
   "relations": [],
@@ -69,6 +69,11 @@
       "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/town/CULTURE.md",
       "anchor": "## 1. Starting beliefs and religious preference | Minorities present",
       "sha256": "80837fd0f68bfdf4890c954463aafa84f2ca4aabeb1ffe6e77ca9602d679a51b"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
+      "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | The referents",
+      "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
     }
   ]
 }

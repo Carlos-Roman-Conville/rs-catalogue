@@ -25,18 +25,24 @@
       "what": "presence",
       "place": null,
       "date": null,
-      "sources": [],
-      "label": "open",
+      "sources": [
+        "catalogue/source.econ-tob",
+        "catalogue/source.econ-cm"
+      ],
+      "label": "researched",
       "confidence": {
-        "level": "low",
-        "reason": "STARTING_TOWN Open 3 is researched with GOODS key L, which is not yet a catalogue source row."
+        "level": "medium",
+        "reason": "Three sugar grades in trade (Open 3 row, researched; L; PHY-RATION; DV, CSP)."
       },
-      "note": "Economy keeper table: three sugar grades, beef and pork apart, logwood apart (L; PHY-RATION; DV, CSP). This record holds the classification claim only until L is ingested."
+      "note": "Economy keeper table: three sugar grades, beef and pork apart, logwood apart (L; PHY-RATION; DV, CSP). GOODS key L is not yet a catalogue source row."
     }
   ],
   "relations": [],
   "observations": [],
-  "sources": [],
+  "sources": [
+    "catalogue/source.econ-tob",
+    "catalogue/source.econ-cm"
+  ],
   "derived_from": [
     {
       "file": "../economy/RESEARCH.md",
@@ -47,6 +53,11 @@
       "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
       "anchor": "## Economy keeper research (2026-10-30; econ 1, 3, 4, 5, 6, GOODS Open 3–8, ECON-5 rows) | Open 3",
       "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
+    },
+    {
+      "file": "../economy/RESEARCH.md",
+      "anchor": "## 5. ECON-5: recipe quantities where period yields are documented | Tobacco",
+      "sha256": "68ca9f4aee850d303f0eb946b069a7344ad6815f43f10ad1b06c3c8f4c11f651"
     }
   ]
 }
