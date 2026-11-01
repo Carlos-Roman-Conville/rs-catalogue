@@ -65,6 +65,9 @@ export function checkRecords(catalogue: LoadedCatalogue): string[] {
     else if (file.split('/').at(-1) !== `${match[2]}.json`) report(`file name must be ${match[2]}.json`)
     if (seen.has(r.id)) report(`duplicate id ${r.id}`)
     seen.add(r.id)
+    if (r.id.startsWith('catalogue/source.cat-') && r.derived_from.length > 0) {
+      report(`${r.id}: native source record must have empty derived_from`)
+    }
     if (r.scope.startsWith('game:') && r.provenance.includes('real')) report('game scope cannot have real provenance')
     const ref = (id: string | null | undefined, field: string) => {
       if (id == null) return

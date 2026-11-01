@@ -176,6 +176,41 @@ async function writeCheckSource() {
 }
 
 it('accepts a record under data/<kind>/', async () => expect(await checkRecord({})).toBe(''))
+it('passes when a native CAT- source record has empty derived_from', async () => {
+  await f.write('data/source/cat-example.json', {
+    id: 'catalogue/source.cat-example',
+    kind: 'source',
+    source: { key: 'CAT-EXAMPLE', title: 'Example', gives: 'g', rights: 'r' },
+    names: [{ text: 'Example', lang: 'en', use: 'preferred' }],
+    classification: [],
+    provenance: ['real'],
+    scope: 'universal',
+    attestations: [],
+    observations: [],
+    relations: [],
+    sources: [],
+    derived_from: [],
+  })
+  expect(await check()).toEqual([])
+})
+
+it('rejects a native CAT- source record with non-empty derived_from', async () => {
+  await f.write('data/source/cat-bad.json', {
+    id: 'catalogue/source.cat-bad',
+    kind: 'source',
+    source: { key: 'CAT-BAD', title: 'Bad', gives: 'g', rights: 'r' },
+    names: [{ text: 'Bad', lang: 'en', use: 'preferred' }],
+    classification: [],
+    provenance: ['real'],
+    scope: 'universal',
+    attestations: [],
+    observations: [],
+    relations: [],
+    sources: [],
+    derived_from: [{ file: 'x.md', anchor: 'a', sha256: '0'.repeat(64) }],
+  })
+  expect((await check()).join('\n')).toContain('catalogue/source.cat-bad: native source record must have empty derived_from')
+})
 it('rejects a record not under data/<kind>/', async () => {
   await f.write('data/example.json', record())
   expect((await check()).join()).toContain('directory must be data/material/')

@@ -1,4 +1,4 @@
-import { mkdtemp, readdir, readFile, rm } from 'node:fs/promises'
+import { mkdtemp, readdir, readFile, rm, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import { tmpdir } from 'node:os'
 import { afterEach, beforeEach, expect, it } from 'vitest'
@@ -92,6 +92,29 @@ it('none (anomaly) row balance-analytical gets open presence', () => {
 
 it('--check reports no diffs after a write', () => {
   ingestEquipment({ catalogueRoot: root, outDir })
+  const check = ingestEquipment({ catalogueRoot: root, outDir, check: true })
+  expect(check.diffs).toEqual([])
+})
+
+it('keeps a native attestation on re-ingest and --check reports no drift', async () => {
+  ingestEquipment({ catalogueRoot: root, outDir })
+  const windmillPath = join(outDir, 'technology', 'windmill.json')
+  const windmill = JSON.parse(await readFile(windmillPath, 'utf8'))
+  const nativeAttestation = {
+    what: 'presence' as const,
+    place: 'catalogue/region.england',
+    date: { from: { year: 1270 }, to: { year: 1270 }, precision: 'year' as const, circa: false, calendar_of_source: 'unknown' as const },
+    sources: ['catalogue/source.cat-holt-mills'],
+    label: 'researched' as const,
+    confidence: { level: 'medium' as const, reason: 'native row for N2 test' },
+  }
+  windmill.attestations.push(nativeAttestation)
+  windmill.sources = [...new Set([...windmill.sources, 'catalogue/source.cat-holt-mills'])].sort()
+  await writeFile(windmillPath, `${JSON.stringify(windmill, null, 2)}\n`)
+  ingestEquipment({ catalogueRoot: root, outDir })
+  const after = JSON.parse(await readFile(windmillPath, 'utf8'))
+  expect(after.attestations).toContainEqual(nativeAttestation)
+  expect(after.sources).toContain('catalogue/source.cat-holt-mills')
   const check = ingestEquipment({ catalogueRoot: root, outDir, check: true })
   expect(check.diffs).toEqual([])
 })

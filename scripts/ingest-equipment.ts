@@ -77,6 +77,44 @@ function sourceId(key: string): string {
   return `catalogue/source.${key.toLowerCase()}`
 }
 
+/** Native catalogue sources (NATIVE-PLAN CAT- prefix); rows citing only these are kept on re-ingest. */
+function isNativeCatSourceId(id: string): boolean {
+  return id.startsWith('catalogue/source.cat-')
+}
+
+function evidenceRowIsNative(row: { sources: string[] }): boolean {
+  return row.sources.length > 0 && row.sources.every(isNativeCatSourceId)
+}
+
+function unionSourceIds(a: string[], b: string[]): string[] {
+  return [...new Set([...a, ...b])].sort((x, y) => x.localeCompare(y))
+}
+
+function loadExistingTechnology(outDir: string, slug: string): CatalogueRecord | null {
+  const path = join(outDir, 'technology', `${slug}.json`)
+  if (!existsSync(path)) return null
+  return JSON.parse(readFileSync(path, 'utf8')) as CatalogueRecord
+}
+
+function mergeNativeTechnologyRows(existing: CatalogueRecord | null, ingested: CatalogueRecord): CatalogueRecord {
+  if (!existing) return ingested
+  const nativeAttestations = existing.attestations.filter(evidenceRowIsNative)
+  const nativeObservations = existing.observations.filter(evidenceRowIsNative)
+  const nativeSources = existing.sources.filter(isNativeCatSourceId)
+  for (const row of [...nativeAttestations, ...nativeObservations]) {
+    for (const id of row.sources) {
+      if (isNativeCatSourceId(id)) nativeSources.push(id)
+    }
+  }
+  if (!nativeAttestations.length && !nativeObservations.length && !nativeSources.length) return ingested
+  return {
+    ...ingested,
+    attestations: [...ingested.attestations, ...nativeAttestations],
+    observations: [...ingested.observations, ...nativeObservations],
+    sources: unionSourceIds(ingested.sources, nativeSources),
+  }
+}
+
 export function extractEqKeys(...texts: string[]): string[] {
   const keys = new Set<string>()
   for (const text of texts) {
@@ -347,6 +385,7 @@ export function ingestEquipment(options: IngestOptions): IngestResult {
   const equipment = JSON.parse(jsonText) as { catalogue: { rows: string[][] } }
   const { order: sourceOrder, rows: sourceRows } = parseBodySources(sourcesText)
   const existingSlugs = existingTechnologySlugs(catalogueRoot)
+  const dataDir = outDir ?? join(catalogueRoot, DEFAULT_OUT)
 
   const technology: CatalogueRecord[] = []
   const keysNeeded = new Set<string>()
@@ -368,7 +407,9 @@ export function ingestEquipment(options: IngestOptions): IngestResult {
     if (SKIP_IDS.has(rowId)) continue
     const cols = mdRows.get(rowId)
     if (!cols) throw new Error(`markdown row missing for ${rowId}`)
-    technology.push(buildTechnologyRecord(rowId, cols, jsonRow, mdSha, jsonSha))
+    const slug = slugFromId(rowId)
+    const ingested = buildTechnologyRecord(rowId, cols, jsonRow, mdSha, jsonSha)
+    technology.push(mergeNativeTechnologyRows(loadExistingTechnology(dataDir, slug), ingested))
     for (const k of extractEqKeys(cols.join(' '), jsonRow.join(' '))) keysNeeded.add(k)
   }
 
