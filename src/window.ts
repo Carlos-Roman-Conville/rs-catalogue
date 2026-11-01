@@ -3,6 +3,7 @@ import type { LoadedCatalogue } from './load.ts'
 import { createWithholdGuard } from './benchmark.ts'
 import { createRegionIndex, dateRange, intersectDates } from './regions.ts'
 import { kinds } from './schema.ts'
+import { canonical } from './canonical.ts'
 import type { Attestation, CatalogueRecord, DatePoint, Evidence, Kind, Provenance } from './schema.ts'
 
 export interface WindowQuery {
@@ -34,18 +35,6 @@ const presence = new Set<Attestation['what']>(['presence', 'adoption', 'spread_t
 const defaultProvenance: readonly Provenance[] = ['real', 'prehistoric', 'mythological']
 const compare = (a: string, b: string) => a < b ? -1 : a > b ? 1 : 0
 
-// Canonical object keys and evidence ordering make JSON independent of file/key order.
-function canonical(value: unknown): unknown {
-  if (Array.isArray(value)) return value.map(canonical)
-  if (value !== null && typeof value === 'object') {
-    // Date intervals use one representation for an open-ended upper bound.
-    if ('from' in value && 'precision' in value && 'calendar_of_source' in value) {
-      value = { ...value, to: (value as { to?: DatePoint | null }).to ?? null }
-    }
-    return Object.fromEntries(Object.entries(value as object).sort(([a], [b]) => compare(a, b)).map(([key, v]) => [key, canonical(v)]))
-  }
-  return value
-}
 function sortedEvidence<T extends Evidence>(rows: T[]): T[] {
   return rows.map(row => canonical(row) as T).sort((a, b) => compare(JSON.stringify(a), JSON.stringify(b)))
 }

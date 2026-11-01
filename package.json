@@ -8,7 +8,8 @@
   "scripts": {
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "demo": "node --experimental-strip-types scripts/demo.ts"
+    "demo": "node --experimental-strip-types scripts/demo.ts",
+    "build": "node --experimental-strip-types scripts/build.ts"
   },
   "dependencies": {
     "@rex/kernel": "git+file:///E:/backups/reality-sim/git/kernel.git#v0.1.1"

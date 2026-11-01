@@ -2,6 +2,7 @@
 import { qualify } from '@rex/kernel'
 import { fileURLToPath } from 'node:url'
 import { filterWithheldRecord, createWithholdGuard } from './benchmark.ts'
+import { compileCatalogue, readCompiledCatalogue } from './build.ts'
 import { checkRecords } from './check.ts'
 import { createIdResolver, loadRecordsSync } from './load.ts'
 import { createDateReader } from './date-reader.ts'
@@ -24,6 +25,8 @@ export function catalogueId(local: string): string {
 
 export interface OpenOptions {
   heldOut?: 'withhold' | 'include'
+  /** Path to `dist/catalogue.json` (or equivalent); reads the snapshot instead of `data/`. */
+  compiled?: string
 }
 
 /** Load and validate a snapshot of native data and fixture records once, for configuration. */
@@ -32,15 +35,25 @@ export function openCatalogue(
   options: OpenOptions = {},
 ) {
   const heldOut = options.heldOut ?? 'withhold'
-  const catalogue = loadRecordsSync(repoRoot)
-  const failures = checkRecords(catalogue)
-  if (failures.length) throw new Error(`Invalid catalogue:\n${failures.join('\n')}`)
+  let catalogue
+  let catalogue_hash: string
+  if (options.compiled) {
+    const loaded = readCompiledCatalogue(options.compiled)
+    catalogue = loaded.catalogue
+    catalogue_hash = loaded.catalogue_hash
+  } else {
+    catalogue = loadRecordsSync(repoRoot)
+    const failures = checkRecords(catalogue)
+    if (failures.length) throw new Error(`Invalid catalogue:\n${failures.join('\n')}`)
+    catalogue_hash = compileCatalogue(catalogue).hash
+  }
   const resolve = createIdResolver(catalogue)
   const guard = createWithholdGuard(catalogue, heldOut)
   const records = new Map(catalogue.records.map(record => [record.id, record]))
   const { label } = createLabeler(catalogue)
   const { date } = createDateReader(catalogue)
   return {
+    catalogue_hash,
     get(id: string) {
       const record = records.get(resolve(id) ?? '')
       if (record === undefined) return undefined
