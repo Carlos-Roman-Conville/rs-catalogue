@@ -1,7 +1,8 @@
 # Catalogue: package handoff
 
 The keeper's handoff is `E:/AI Programs/HQ/handoffs/catalogue/HANDOFF.md`. This file is for belt units: each unit
-adds one dated line under Done, and parks a disagreement with DESIGN.md under Blocked.
+adds one dated line under Done, and parks a disagreement with DESIGN.md under Blocked. Toolchain packages use
+Done/Blocked headings instead of the template's State/Next/Blocked/Gotchas.
 
 ## Done
 
@@ -22,6 +23,7 @@ adds one dated line under Done, and parks a disagreement with DESIGN.md under Bl
 - 2026-11-01: 3040 DESIGN.md §4 exception (a) reworded: sea/ocean/island-group name, no dated `part_of`, undated unsourced `part_of` only; region.atlantic still meets it. 2026-10-31 lines folded.
 - 2026-11-01: 3041 (Composer) AUDIT-6 region exception (b) fixes (c6dff84): region.jamaica adds STL-LAW as an anchor, england `part_of` undated; region.new-providence drops england `part_of`.
 - 2026-11-01: 3042 fixture audit 7: AUDIT-7 says pass, 66 of 66 records; jamaica and new-providence now pass; AUDIT-6's TWN-ROG pardon note corrected to TWN-NAS; 1682–1692 referent-bound reading left open (AUDIT-7 open question); no record edited.
+- 2026-11-01: 3048 three rulings in DESIGN.md §4 exceptions: political relation = `part_of` to a polity record (region.atlantic still qualifies); 1692 end of the 11 Q5 trade records is the referent window (`estimate` + referents anchor); no unsourced attestation. Plan: FIXES-audit7-plan.md, 12 records.
 
 ## Blocked
 

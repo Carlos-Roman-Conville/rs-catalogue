@@ -302,25 +302,34 @@ Providence"), the relation holds as written. Where none does (New Providence in 
 Kingston in Jamaica, Jamaica in the Greater Antilles, Barbados in the Lesser Antilles), the relation is kept and
 the record's `notes` names it and says no anchor states it (the schema has no relation label, `src/schema.ts`,
 `relations`; rule (d)). Such a relation carries no `date` and no source key it is not anchored to. A nesting
-relation is never deleted only because no row states it: keep the evidence and say the doubt in `notes`. A dated
-or political relation (New Providence `part_of` England from 1718) is not geographic nesting and follows rule (a).
+relation is never deleted only because no row states it: keep the evidence and say the doubt in `notes`. A
+political relation (a `part_of` to a polity record, dated or not, such as New Providence `part_of` England from
+1718) is not geographic nesting and follows rule (a) and region exception (b).
 
 **Region anchoring exceptions** (2026-11-01, review 1101-0223 fixes 1, 2 and 4; AUDIT-5 fails on
-`region.atlantic`, `region.jamaica`, `region.new-providence`, `practice.commercial-brewing`).
+`region.atlantic`, `region.jamaica`, `region.new-providence`, `practice.commercial-brewing`; (a) reworded and (d),
+(e) added 2026-11-01, review 1101-0317 fixes 1, 2 and 6, after AUDIT-7).
 
 - **(a) A geographic container no row names** (`region.atlantic`). A region record that is only a step in the
   geographic nesting (a sea, an ocean, an island group) may pass on the referents paragraph alone, as an exception
   to rule (b), when all of these hold: its preferred name is a sea, an ocean or an island group, and it has no
-  political relation (no `part_of` with a `date`); it carries only names, kind and `part_of` relations to other
-  region records with no `date` and no `sources` (no attestation, observation, date or source key); and its
-  `notes` say "no row names X" (X the place). The reason is the nesting rule's: this package holds no gazetteer and
-  invents none, and a container the referents' places sit in is evidence enough for a name with no claim attached.
-  Any attestation, observation, date, source key or political relation (a dated `part_of`) on such a record needs
-  an anchored row as usual, and without one it is removed (the doubt goes in `notes`). `region.atlantic` as AUDIT-5 read it meets the terms and passes on its next
-  audit with no change, provided its notes carry the "no row names" line.
+  political relation; it carries only names, kind and `part_of` relations to other region records with no `date`
+  and no `sources` (no attestation, observation, date or source key); and its `notes` say "no row names X" (X the
+  place). A political relation is defined by what it points to, not by whether it has a `date`: it is a `part_of`
+  to a polity record, a region record whose preferred name is a state or crown rather than land or water
+  (`region.england`, whose notes call it a political region, is the only one in this fixture), so the undated
+  `region.jamaica` `part_of` England of exception (b) is still political. The test reads only the record itself:
+  the ids its `part_of` relations point to, its names, its notes and its empty fields. The reason is the nesting
+  rule's: this package holds no gazetteer and invents none, and a container the referents' places sit in is
+  evidence enough for a name with no claim attached. Any attestation, observation, date, source key or political
+  relation on such a record needs an anchored row as usual, and without one it is removed (the doubt goes in
+  `notes`). `region.atlantic` meets the terms and passes with no change: its only relation is an undated `part_of`
+  to `region.world` (not a polity record), it has no attestation, observation or source, and its notes carry "no
+  row names Atlantic Ocean".
 - **(b) A political `part_of`** (`region.jamaica` to England 1655, `region.new-providence` to England 1718). A
-  political relation is a dated claim and gets no exception: it holds only where an anchored row states the polity
-  over the place, and each date bound follows rule (a). `circa: true` is a date precision, not a source, and a note
+  political relation (a `part_of` to a polity record, exception (a)) is a claim whether or not it carries a date,
+  and gets no exception: it holds only where an anchored row states the polity over the place, and each date bound
+  it carries follows rule (a). `circa: true` is a date precision, not a source, and a note
   "no anchored row states England" does not anchor it. A search of the whole pirate-ship SOURCES.md (2026-11-01)
   for English rule of Jamaica or the Bahamas found:
   - **STL-LAW** ("English law in Jamaica: primogeniture, dower, Statute of Distributions 1670"; standard reference,
@@ -339,6 +348,19 @@ or political relation (New Providence `part_of` England from 1718) is not geogra
   (how a value is written), never supports a value, date or place. `practice.commercial-brewing`'s "(DESIGN §1.1)"
   points at the unknown-presence convention, so it passes; no record changes. Any other document (`TOWNS.md`,
   another repo's design file) is still counted.
+- **(d) A section intro that repeats the referents** (AUDIT-7 open question; the eleven Port Royal trade records
+  `practice.blacksmithing`, `butchering`, `carpentry`, `clay-pipe-retailing`, `cobbling`, `cooperage`,
+  `daily-markets`, `goldsmithing`, `merchant-storekeeping`, `vintner-trade`, `wood-turning`). The Settlement
+  section's intro ("The town keeper's referents (Port Royal before 1692, Nassau 1703–1718) apply") repeats the
+  referent window and is not the Q5 row's own statement of a date, as the V4 anchoring rule (2905) already says
+  ("repeated in the Q5 section intro"), so the 1692 end those records take is the referent window: each 1682–1692
+  attestation is labelled `estimate` and adds the referents paragraph as a second `derived_from` anchor, the 1682
+  start staying on the Q5 row. AUDIT-6 and AUDIT-7 passed them on the other reading; the next audit applies this one.
+- **(e) An unsourced attestation** (`practice.sugar-grade-distinction`: `label: open`, `sources: []`). V4 does not
+  allow an unsourced attestation, whatever its label: V1 and §1.1 require every attestation to cite a source, and
+  under rule (c) that source is a catalogue source record for a key its anchored row names. Where the row's keys
+  have no source record yet (L, PHY-RATION, DV, CSP), the attestation is removed and the claim, the row's label and
+  the keys stay in the record's `notes` until those keys are ingested as source records; no source is invented.
 
 "Validated" for a reference catalogue means: a value's source was re-checked by someone other than its writer (V4)
 and, where a second independent source exists, the two agree within the interval stated. Disagreement is kept as two
