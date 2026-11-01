@@ -66,7 +66,7 @@
       "sources": [
         "catalogue/source.twn-pr"
       ],
-      "label": "researched",
+      "label": "estimate",
       "confidence": {
         "level": "medium",
         "reason": "About 1,200 houses (TWN-PR; STARTING_TOWN Q1 household derivation)."
@@ -92,7 +92,7 @@
       "sources": [
         "catalogue/source.twn-pr"
       ],
-      "label": "researched",
+      "label": "estimate",
       "confidence": {
         "level": "medium",
         "reason": "53 acres (TWN-PR; STARTING_TOWN Q1 classes)."
@@ -150,22 +150,6 @@
         "reason": "Population and house count imply 5–8 per house; shop-house holds family and apprentice or servant (TWN-PR, TWN-BAR)."
       },
       "note": "STARTING_TOWN Q1 household row."
-    },
-    {
-      "quantity": "settlement.provision_farm_area",
-      "value": 10,
-      "unit": "acre",
-      "place": "catalogue/region.port-royal",
-      "date": null,
-      "sources": [
-        "catalogue/source.twn-dunn"
-      ],
-      "label": "estimate",
-      "confidence": {
-        "level": "low",
-        "reason": "Small-settler provision grounds ran to tens of acres (TWN-DUNN); game farm sized for town provisioning, not a sugar estate."
-      },
-      "note": "STARTING_TOWN Q1 farm row."
     }
   ],
   "relations": [

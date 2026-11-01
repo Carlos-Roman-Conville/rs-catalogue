@@ -47,21 +47,7 @@
     }
   ],
   "relations": [],
-  "observations": [
-    {
-      "quantity": "game.trade-in-enslaved-people",
-      "value": null,
-      "unit": null,
-      "place": null,
-      "date": null,
-      "sources": [],
-      "label": "open",
-      "confidence": {
-        "level": "low",
-        "reason": "GOODS Open 1 (Rex): whether the trade in enslaved people is in the game."
-      }
-    }
-  ],
+  "observations": [],
   "sources": [
     "catalogue/source.twn-bar",
     "catalogue/source.twn-dunn"
