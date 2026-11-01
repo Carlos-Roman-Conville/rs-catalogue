@@ -71,5 +71,5 @@
       "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
     }
   ],
-  "notes": "Political region for colonial membership edges. STL-MOR row names England (1700 wages). part_of world: no anchor states it (V4 nesting rule). Q10 hours observation removed: that row names London, not England; no catalogue/region.london record. Native H1 rows (population.total open, CAT-BCKOVL-2010) sit beside fixture derived_from anchors under NATIVE-PLAN rule (b)."
+  "notes": "Political region for colonial membership edges. STL-MOR row names England (1700 wages). part_of world: no anchor states it (V4 nesting rule). Q10 hours observation removed: that row names London, not England; no catalogue/region.london record. Native H1 rows (population.total open via CAT-BCKOVL-2010; calendar julian, lady-day-year-start, january-year-start, gregorian; institution.manor) sit beside fixture derived_from anchors under NATIVE-PLAN rule (b)."
 }
