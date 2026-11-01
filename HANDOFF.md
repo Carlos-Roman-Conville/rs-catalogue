@@ -15,6 +15,9 @@ Done/Blocked headings instead of the template's State/Next/Blocked/Gotchas.
 - 2026-11-01: 3091 (Composer) fixes from FIXES-audit8-plan (4562e8e): faction-burial-alternatives attestation removed (§4 (f)); STL-CUN and Hanson confidence note on six Q5 trade records (§4 (h)).
 - 2026-11-01: 3092 fixture audit 9: AUDIT-9 says pass, 66 of 66 (checks 1-10 and rulings A-D); faction-burial-alternatives passes; no record edited.
 - 2026-11-01: 5004 ingest plan (fixtures/pirate-town/INGEST-PLAN.md): equipment by one script (313 technology + 216 EQ-* source records; plain "none" = absence/estimate, "none (anomaly)" = unknown presence), economy 31 observations in 3 Composer units + audit; no src/ change; DESIGN §6: promotion after the whole fixture.
+- 2026-11-01: 5005 scripts/demo.ts (`npm run demo`): prints the Caribbean 1690-1720 and England 1270 windows, coverage, no-gate.
+- 2026-11-01: 5041-5042 equipment ingest script (scripts/ingest-equipment.ts) run: 313 technology and 216 EQ-* source records.
+- 2026-11-01: 5046 fixture audit E3 (fixtures/pirate-town/AUDIT-E3.md): pass, 54 of 54 sampled (32 technology, 22 EQ-*); the 8 plain-none rows and 6 anomaly rows checked; no record edited.
 
 ## Blocked
 
