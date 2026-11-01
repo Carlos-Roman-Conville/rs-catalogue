@@ -1,0 +1,63 @@
+{
+  "id": "catalogue/practice.tailoring",
+  "kind": "practice",
+  "names": [
+    {
+      "text": "Tailoring",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "practice"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [
+    {
+      "quantity": "wage.rate",
+      "value": 12,
+      "unit": "s/week",
+      "place": "catalogue/region.pennsylvania",
+      "date": {
+        "from": {
+          "year": 1698
+        },
+        "to": {
+          "year": 1698
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.econ-tho"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "Gabriel Thomas 1698 journeyman tailor wage (ECON-THO; RESEARCH.md §2 row 2)."
+      },
+      "note": "about; journeyman; with board"
+    }
+  ],
+  "sources": [
+    "catalogue/source.econ-tho"
+  ],
+  "derived_from": [
+    {
+      "file": "../economy/RESEARCH.md",
+      "anchor": "## 2. econ 6: wage levels per trade (researched + estimate) | Journeyman tailor",
+      "sha256": "68ca9f4aee850d303f0eb946b069a7344ad6815f43f10ad1b06c3c8f4c11f651"
+    }
+  ]
+}

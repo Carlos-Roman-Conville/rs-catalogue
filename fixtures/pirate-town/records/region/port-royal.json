@@ -150,6 +150,32 @@
         "reason": "Population and house count imply 5–8 per house; shop-house holds family and apprentice or servant (TWN-PR, TWN-BAR)."
       },
       "note": "STARTING_TOWN Q1 household row."
+    },
+    {
+      "quantity": "wage.rate",
+      "value": "comparable to those in England",
+      "unit": null,
+      "place": "catalogue/region.port-royal",
+      "date": {
+        "from": {
+          "year": 1680
+        },
+        "to": {
+          "year": 1689
+        },
+        "precision": "decade",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.econ-eku"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "John Taylor via EKU thesis summary; page not opened (ECON-EKU; RESEARCH.md §2 row 7)."
+      },
+      "note": "craftsmen; John Taylor via a thesis"
     }
   ],
   "relations": [
@@ -159,11 +185,17 @@
     }
   ],
   "sources": [
-    "catalogue/source.twn-pr",
+    "catalogue/source.econ-eku",
     "catalogue/source.twn-bar",
-    "catalogue/source.twn-dunn"
+    "catalogue/source.twn-dunn",
+    "catalogue/source.twn-pr"
   ],
   "derived_from": [
+    {
+      "file": "../economy/RESEARCH.md",
+      "anchor": "## 2. econ 6: wage levels per trade (researched + estimate) | Craftsmen, Port Royal",
+      "sha256": "68ca9f4aee850d303f0eb946b069a7344ad6815f43f10ad1b06c3c8f4c11f651"
+    },
     {
       "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
       "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | The referents",

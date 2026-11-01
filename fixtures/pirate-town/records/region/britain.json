@@ -1,0 +1,37 @@
+{
+  "id": "catalogue/region.britain",
+  "kind": "region",
+  "names": [
+    {
+      "text": "Britain",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "region"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "observations": [],
+  "relations": [],
+  "sources": [
+    "catalogue/source.econ-red"
+  ],
+  "derived_from": [
+    {
+      "file": "../economy/RESEARCH.md",
+      "anchor": "## 2. econ 6: wage levels per trade (researched + estimate) | Merchant seaman",
+      "sha256": "68ca9f4aee850d303f0eb946b069a7344ad6815f43f10ad1b06c3c8f4c11f651"
+    }
+  ],
+  "notes": "no row states its container"
+}

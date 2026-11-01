@@ -47,12 +47,45 @@
     }
   ],
   "relations": [],
-  "observations": [],
+  "observations": [
+    {
+      "quantity": "wage.rate",
+      "value": "5–6",
+      "unit": "s/day",
+      "place": "catalogue/region.pennsylvania",
+      "date": {
+        "from": {
+          "year": 1698
+        },
+        "to": {
+          "year": 1698
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.econ-tho"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "Gabriel Thomas 1698 house and ship carpenter wage (ECON-THO; RESEARCH.md §2 row 1)."
+      },
+      "note": "house and ship carpenter; 'constantly'"
+    }
+  ],
   "sources": [
+    "catalogue/source.econ-tho",
     "catalogue/source.stl-cun",
     "catalogue/source.stl-run"
   ],
   "derived_from": [
+    {
+      "file": "../economy/RESEARCH.md",
+      "anchor": "## 2. econ 6: wage levels per trade (researched + estimate) | House and ship carpenter, bricklayer, mason",
+      "sha256": "68ca9f4aee850d303f0eb946b069a7344ad6815f43f10ad1b06c3c8f4c11f651"
+    },
     {
       "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
       "anchor": "## Settlement keeper research (2026-10-30; Q5, Q10, Q15, Q7 rows) | Q5 trades present",

@@ -1,0 +1,121 @@
+{
+  "id": "catalogue/practice.seafaring",
+  "kind": "practice",
+  "names": [
+    {
+      "text": "Seafaring",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "practice"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [
+    {
+      "quantity": "wage.rate",
+      "value": 24,
+      "unit": "s/lunar month",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1653
+        },
+        "to": {
+          "year": 1797
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.econ-rn"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "high",
+        "reason": "Royal Navy able seaman pay set 1653, unchanged to 1797 (ECON-RN; RESEARCH.md §2 row 5)."
+      },
+      "note": "able seaman, Royal Navy"
+    },
+    {
+      "quantity": "wage.rate",
+      "value": 19,
+      "unit": "s/lunar month",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1653
+        },
+        "to": {
+          "year": 1797
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.econ-rn"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "high",
+        "reason": "Royal Navy ordinary seaman pay set 1653, unchanged to 1797 (ECON-RN; RESEARCH.md §2 row 5)."
+      },
+      "note": "ordinary seaman"
+    },
+    {
+      "quantity": "wage.rate",
+      "value": 25,
+      "unit": "s/month",
+      "place": "catalogue/region.britain",
+      "date": {
+        "from": {
+          "year": 1700
+        },
+        "to": {
+          "year": 1799
+        },
+        "precision": "century",
+        "circa": true,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.econ-red"
+      ],
+      "label": "estimate",
+      "confidence": {
+        "level": "low",
+        "reason": "Merchant seaman about 25s a month by mid-century; Rediker 1700–50 figures not opened (ECON-RED; RESEARCH.md §2 row 6)."
+      },
+      "note": "about; merchant seaman; by mid-century; higher in war"
+    }
+  ],
+  "sources": [
+    "catalogue/source.econ-red",
+    "catalogue/source.econ-rn"
+  ],
+  "derived_from": [
+    {
+      "file": "../economy/RESEARCH.md",
+      "anchor": "## 2. econ 6: wage levels per trade (researched + estimate) | Able seaman, Royal Navy",
+      "sha256": "68ca9f4aee850d303f0eb946b069a7344ad6815f43f10ad1b06c3c8f4c11f651"
+    },
+    {
+      "file": "../economy/RESEARCH.md",
+      "anchor": "## 2. econ 6: wage levels per trade (researched + estimate) | Merchant seaman",
+      "sha256": "68ca9f4aee850d303f0eb946b069a7344ad6815f43f10ad1b06c3c8f4c11f651"
+    }
+  ]
+}

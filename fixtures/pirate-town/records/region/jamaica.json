@@ -21,7 +21,34 @@
   ],
   "scope": "universal",
   "attestations": [],
-  "observations": [],
+  "observations": [
+    {
+      "quantity": "wage.rate",
+      "value": "20–30",
+      "unit": "£/year",
+      "place": "catalogue/region.jamaica",
+      "date": {
+        "from": {
+          "year": 1700
+        },
+        "to": {
+          "year": 1799
+        },
+        "precision": "century",
+        "circa": true,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.econ-eku"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Plantation white artisans £20–30 a year; EKU thesis not opened (ECON-EKU; RESEARCH.md §2 row 8)."
+      },
+      "note": "white plantation artisans, with keep; later 18th c."
+    }
+  ],
   "relations": [
     {
       "rel": "part_of",
@@ -32,8 +59,15 @@
       "to": "catalogue/region.england"
     }
   ],
-  "sources": [],
+  "sources": [
+    "catalogue/source.econ-eku"
+  ],
   "derived_from": [
+    {
+      "file": "../economy/RESEARCH.md",
+      "anchor": "## 2. econ 6: wage levels per trade (researched + estimate) | White plantation artisans",
+      "sha256": "68ca9f4aee850d303f0eb946b069a7344ad6815f43f10ad1b06c3c8f4c11f651"
+    },
     {
       "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
       "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | Q6 pattern",

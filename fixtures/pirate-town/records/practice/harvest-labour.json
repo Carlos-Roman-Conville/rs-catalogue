@@ -1,0 +1,63 @@
+{
+  "id": "catalogue/practice.harvest-labour",
+  "kind": "practice",
+  "names": [
+    {
+      "text": "Harvest labour",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "practice"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [
+    {
+      "quantity": "wage.rate",
+      "value": "3–4",
+      "unit": "s/day",
+      "place": "catalogue/region.pennsylvania",
+      "date": {
+        "from": {
+          "year": 1698
+        },
+        "to": {
+          "year": 1698
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.econ-tho"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "Gabriel Thomas 1698 harvest labour wage (ECON-THO; RESEARCH.md §2 row 4)."
+      },
+      "note": "with diet"
+    }
+  ],
+  "sources": [
+    "catalogue/source.econ-tho"
+  ],
+  "derived_from": [
+    {
+      "file": "../economy/RESEARCH.md",
+      "anchor": "## 2. econ 6: wage levels per trade (researched + estimate) | Harvest labourer",
+      "sha256": "68ca9f4aee850d303f0eb946b069a7344ad6815f43f10ad1b06c3c8f4c11f651"
+    }
+  ]
+}
