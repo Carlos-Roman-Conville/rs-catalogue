@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.stl-ehs",
+  "kind": "source",
+  "source": {
+    "key": "STL-EHS",
+    "title": "Economic History Society, \"The Royal Society and slavery in Jamaica, 1660 to 1714\"",
+    "gives": "probate inventories 1674–1721: poor artisans to wealthy planters",
+    "rights": "history",
+    "url": "https://ehs.org.uk/the-royal-society-and-slavery-in-jamaica-1660-to-1714/"
+  },
+  "names": [
+    {
+      "text": "STL-EHS",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Settlement sources (settlement keeper, 2026-10-30) | STL-EHS",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

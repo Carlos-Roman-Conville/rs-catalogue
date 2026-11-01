@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.stl-bar",
+  "kind": "source",
+  "source": {
+    "key": "STL-BAR",
+    "title": "Barbados genealogy, \"Slavery in the West Indies in the 18th century\" (quoting Beckford)",
+    "gives": "jobbers hired by the day at 15d",
+    "rights": "history (secondary)",
+    "url": "https://barbadosgen.wordpress.com/internet/chronicle-barbados/terri-englands-reference-center/slavery-west-indies-18th-century/"
+  },
+  "names": [
+    {
+      "text": "STL-BAR",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Settlement sources (settlement keeper, 2026-10-30) | STL-BAR",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

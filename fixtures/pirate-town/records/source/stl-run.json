@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.stl-run",
+  "kind": "source",
+  "source": {
+    "key": "STL-RUN",
+    "title": "Runaway slaves in Jamaica (I): eighteenth century, UF Digital Collections",
+    "gives": "runaways described as carpenter, cooper: the trades existed",
+    "rights": "history",
+    "url": "https://ufdcimages.uflib.ufl.edu/AA/00/02/11/44/00001/JamaicaRunawaySlaves-18thCentury.pdf"
+  },
+  "names": [
+    {
+      "text": "STL-RUN",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Settlement sources (settlement keeper, 2026-10-30) | STL-RUN",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

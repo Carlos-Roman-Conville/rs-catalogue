@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.stl-lilly",
+  "kind": "source",
+  "source": {
+    "key": "STL-LILLY",
+    "title": "Wikipedia, Christian Lilly",
+    "gives": "engineer at 10s a day by warrant of 4 Aug 1692; chief engineer at 20s",
+    "rights": "history (secondary)",
+    "url": "https://en.wikipedia.org/wiki/Christian_Lilly"
+  },
+  "names": [
+    {
+      "text": "STL-LILLY",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Settlement sources (settlement keeper, 2026-10-30) | STL-LILLY",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

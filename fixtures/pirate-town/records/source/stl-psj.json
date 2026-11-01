@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.stl-psj",
+  "kind": "source",
+  "source": {
+    "key": "STL-PSJ",
+    "title": "The Pirate Surgeon's Journal, \"Jamaican provisioning\" p. 2, quoting Taylor 1687 (ed. Buisseret 2010, pp. 217, 233), Blome 1672, Sloane 1707, Leslie 1741",
+    "gives": "three daily markets at Port Royal; imported flour, bread and brandy dear; vintners and alehouse keepers; provision farms",
+    "rights": "history (secondary quoting primary)",
+    "url": "https://piratesurgeon.com/pages/surgeon_pages/prov_jamaica2.html"
+  },
+  "names": [
+    {
+      "text": "STL-PSJ",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Settlement sources (settlement keeper, 2026-10-30) | STL-PSJ",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

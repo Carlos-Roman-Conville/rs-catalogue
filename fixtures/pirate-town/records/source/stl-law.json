@@ -1,0 +1,33 @@
+{
+  "id": "catalogue/source.stl-law",
+  "kind": "source",
+  "source": {
+    "key": "STL-LAW",
+    "title": "English law in Jamaica: primogeniture, dower, Statute of Distributions 1670",
+    "gives": "intestacy rules",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "STL-LAW",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Settlement sources (settlement keeper, 2026-10-30) | STL-LAW",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

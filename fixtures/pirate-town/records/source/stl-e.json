@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.stl-e",
+  "kind": "source",
+  "source": {
+    "key": "STL-E",
+    "title": "Exquemelin, Buccaneers of America (GOODS key E), ch. III and V",
+    "gives": "carpenter 100–150 and surgeon 200–250 pieces of eight a voyage; wound scale; salted boar sold to planters",
+    "rights": "history",
+    "url": "https://www.gutenberg.org/ebooks/26690"
+  },
+  "names": [
+    {
+      "text": "STL-E",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Settlement sources (settlement keeper, 2026-10-30) | STL-E",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

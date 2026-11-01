@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.stl-voth",
+  "kind": "source",
+  "source": {
+    "key": "STL-VOTH",
+    "title": "H.-J. Voth, \"Time and Work in Eighteenth-Century London\", JEH 1998",
+    "gives": "11 working hours in a 12-hour day; 208 working days in the 1750s",
+    "rights": "history",
+    "url": "https://www.jvoth.com/Time_and_Work_JEH.pdf"
+  },
+  "names": [
+    {
+      "text": "STL-VOTH",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Settlement sources (settlement keeper, 2026-10-30) | STL-VOTH",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

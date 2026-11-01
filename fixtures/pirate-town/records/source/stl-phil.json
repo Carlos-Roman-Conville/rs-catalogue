@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.stl-phil",
+  "kind": "source",
+  "source": {
+    "key": "STL-PHIL",
+    "title": "Encyclopedia of Greater Philadelphia, \"Artisans\"",
+    "gives": "apprentice, journeyman, master; journeymen paid by the day or piece; masters split work into steps",
+    "rights": "history (secondary)",
+    "url": "https://philadelphiaencyclopedia.org/essays/artisans/"
+  },
+  "names": [
+    {
+      "text": "STL-PHIL",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Settlement sources (settlement keeper, 2026-10-30) | STL-PHIL",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

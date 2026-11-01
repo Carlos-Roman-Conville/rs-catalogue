@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.stl-nasfort",
+  "kind": "source",
+  "source": {
+    "key": "STL-NASFORT",
+    "title": "West India Committee, \"Historical Memorandum relating to Fort in New Providence\"",
+    "gives": "houses of the period finished with palmetto leaf roofing; Fort Nassau built 1697; the fort repaired with the town; barracks the only buildings inside",
+    "rights": "history (secondary memorandum)",
+    "url": "https://westindiacommittee.org/historyheritageculture/wp-content/uploads/2021/12/Historical-Memorandum-relating-to-Fort-in-New-Providence.pdf"
+  },
+  "names": [
+    {
+      "text": "STL-NASFORT",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Settlement sources (settlement keeper, 2026-10-30) | STL-NASFORT",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

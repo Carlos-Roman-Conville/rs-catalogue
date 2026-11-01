@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.stl-mor",
+  "kind": "source",
+  "source": {
+    "key": "STL-MOR",
+    "title": "Richard B. Morris, \"The Emergence of American Labor\", ch. 1 (US Dept of Labor)",
+    "gives": "England 1700: unskilled 1s 2d, craftsman 2s a day; colonies double; Massachusetts 1630 wage caps",
+    "rights": "history",
+    "url": "https://www.dol.gov/general/aboutdol/history/chapter1"
+  },
+  "names": [
+    {
+      "text": "STL-MOR",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Settlement sources (settlement keeper, 2026-10-30) | STL-MOR",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

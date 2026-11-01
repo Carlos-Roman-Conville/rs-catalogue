@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.stl-nav",
+  "kind": "source",
+  "source": {
+    "key": "STL-NAV",
+    "title": "Customs of the Navy, \"Recruiting and conditions of service\"",
+    "gives": "able seaman 24s, ordinary 19s a month, c. 1660 to 1797",
+    "rights": "history (secondary)",
+    "url": "https://readyayeready.com/tradition/customs-of-the-navy/2-recruiting-and-conditions-of-service.php"
+  },
+  "names": [
+    {
+      "text": "STL-NAV",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Settlement sources (settlement keeper, 2026-10-30) | STL-NAV",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.stl-j",
+  "kind": "source",
+  "source": {
+    "key": "STL-J",
+    "title": "Johnson, General History (GOODS key J), Phillips's articles as transcribed",
+    "gives": "carpenter, master, boatswain, gunner 1¼ shares; captain 1½",
+    "rights": "history",
+    "url": "https://www.futilitycloset.com/2016/06/30/ground-rules/"
+  },
+  "names": [
+    {
+      "text": "STL-J",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Settlement sources (settlement keeper, 2026-10-30) | STL-J",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

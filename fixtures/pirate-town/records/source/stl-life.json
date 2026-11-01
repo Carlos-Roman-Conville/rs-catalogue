@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.stl-life",
+  "kind": "source",
+  "source": {
+    "key": "STL-LIFE",
+    "title": "Building component service lives (VALIDATION.md §4b): InterNACHI charts, thatch guides, an APCC coconut-palm abstract",
+    "gives": "palm thatch 4 to 10 years, reed 15 to 40, wood shingle 20 to 30, tile and slate over 50",
+    "rights": "modern and secondary",
+    "url": "https://www.nachi.org/life-expectancy.htm"
+  },
+  "names": [
+    {
+      "text": "STL-LIFE",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Settlement sources (settlement keeper, 2026-10-30) | STL-LIFE",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}
