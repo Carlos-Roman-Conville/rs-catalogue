@@ -86,6 +86,14 @@ function evidenceRowIsNative(row: { sources: string[] }): boolean {
   return row.sources.length > 0 && row.sources.every(isNativeCatSourceId)
 }
 
+/** Native technology record not produced by the fixture (NATIVE-PLAN A4 watermill-style). */
+function isNativeOnlyTechnologyRecord(record: CatalogueRecord): boolean {
+  if (record.kind !== 'technology' || record.derived_from.length !== 0) return false
+  const rows = [...record.attestations, ...record.observations]
+  if (!rows.length || !rows.every(evidenceRowIsNative)) return false
+  return record.sources.every(isNativeCatSourceId)
+}
+
 function unionSourceIds(a: string[], b: string[]): string[] {
   return [...new Set([...a, ...b])].sort((x, y) => x.localeCompare(y))
 }
@@ -231,8 +239,8 @@ function parseBodySources(text: string): { order: string[]; rows: Map<string, So
   return { order, rows }
 }
 
-function existingTechnologySlugs(root: string): Set<string> {
-  const dir = join(root, DEFAULT_OUT, 'technology')
+function existingTechnologySlugs(dataDir: string): Set<string> {
+  const dir = join(dataDir, 'technology')
   if (!existsSync(dir)) return new Set()
   return new Set(readdirSync(dir).filter(f => f.endsWith('.json')).map(f => f.replace(/\.json$/, '')))
 }
@@ -384,8 +392,8 @@ export function ingestEquipment(options: IngestOptions): IngestResult {
   const mdRows = parseEquipmentMarkdown(mdText)
   const equipment = JSON.parse(jsonText) as { catalogue: { rows: string[][] } }
   const { order: sourceOrder, rows: sourceRows } = parseBodySources(sourcesText)
-  const existingSlugs = existingTechnologySlugs(catalogueRoot)
   const dataDir = outDir ?? join(catalogueRoot, DEFAULT_OUT)
+  const existingSlugs = existingTechnologySlugs(dataDir)
 
   const technology: CatalogueRecord[] = []
   const keysNeeded = new Set<string>()
@@ -397,9 +405,10 @@ export function ingestEquipment(options: IngestOptions): IngestResult {
     ingestSlugs.add(slugFromId(rowId))
   }
   for (const slug of existingSlugs) {
-    if (!ingestSlugs.has(slug)) {
-      throw new Error(`a technology record exists that the ingest does not produce: ${slug}`)
-    }
+    if (ingestSlugs.has(slug)) continue
+    const existing = loadExistingTechnology(dataDir, slug)
+    if (existing && isNativeOnlyTechnologyRecord(existing)) continue
+    throw new Error(`a technology record exists that the ingest does not produce: ${slug}`)
   }
 
   for (const jsonRow of equipment.catalogue.rows) {
