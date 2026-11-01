@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-met-3",
+  "kind": "source",
+  "source": {
+    "key": "EQ-MET-3",
+    "title": "HMS (Historical Metallurgy Society) and Don Wagner: smelting and fining pages (web search digest)",
+    "gives": "bloomery 1,200 to 1,300 C at the base; fining turns cast iron to wrought iron and used enormous charcoal; sources disagree on the first blast furnace (12th, 13th or 14th c.) and finery data is scanty",
+    "url": "https://donwagner.dk/arch-iron/eu/fining-puddling-europe-eu.html",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "HMS (Historical Metallurgy Society) and Don Wagner: smelting and fining pages (web search digest)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-MET-3",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

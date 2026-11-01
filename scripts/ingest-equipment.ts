@@ -8,6 +8,7 @@ const MD_FILE = "../../Games/RPG's/pirate-ship/files/pirate-ship/science/SCIENTI
 const JSON_FILE = "../../Games/RPG's/pirate-ship/files/pirate-ship/body/data/equipment.json"
 const SOURCES_FILE = "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md"
 const MANIFEST = 'fixtures/pirate-town/manifest.json'
+const FIXTURE_ROOT = 'fixtures/pirate-town'
 const FIXTURE_RECORDS = 'fixtures/pirate-town/records'
 const SKIP_IDS = new Set(['tagged'])
 
@@ -326,14 +327,24 @@ export function ingestEquipment(options: IngestOptions): IngestResult {
 
   const technology: CatalogueRecord[] = []
   const keysNeeded = new Set<string>()
+  const ingestSlugs = new Set<string>()
+
+  for (const jsonRow of equipment.catalogue.rows) {
+    const rowId = normJsonId(jsonRow[0]!)
+    if (SKIP_IDS.has(rowId)) continue
+    ingestSlugs.add(slugFromId(rowId))
+  }
+  for (const slug of existingSlugs) {
+    if (!ingestSlugs.has(slug)) {
+      throw new Error(`slug collision with existing fixture record: ${slug}`)
+    }
+  }
 
   for (const jsonRow of equipment.catalogue.rows) {
     const rowId = normJsonId(jsonRow[0]!)
     if (SKIP_IDS.has(rowId)) continue
     const cols = mdRows.get(rowId)
     if (!cols) throw new Error(`markdown row missing for ${rowId}`)
-    const slug = slugFromId(rowId)
-    if (existingSlugs.has(slug)) throw new Error(`slug collision with existing fixture record: ${slug}`)
     technology.push(buildTechnologyRecord(rowId, cols, jsonRow, mdSha, jsonSha))
     for (const k of extractEqKeys(cols.join(' '), jsonRow.join(' '))) keysNeeded.add(k)
   }
@@ -376,7 +387,7 @@ export function ingestEquipment(options: IngestOptions): IngestResult {
 }
 
 function usage(): never {
-  console.error('usage: ingest-equipment.ts [--check] --out <dir>')
+  console.error('usage: ingest-equipment.ts [--check] [--out <dir>]')
   process.exit(1)
 }
 
@@ -386,9 +397,10 @@ if (isMain) {
   const check = args.includes('--check')
   const outIdx = args.indexOf('--out')
   const outRaw = outIdx === -1 ? undefined : args[outIdx + 1]
-  if (!outRaw || args.some(a => a === '--out' && !args[outIdx + 1])) usage()
+  if (outIdx !== -1 && !outRaw) usage()
   const root = catalogueRootFromImportMeta(import.meta.url)
-  const outDir = outRaw.startsWith('/') || /^[A-Za-z]:[\\/]/.test(outRaw) ? outRaw : join(root, outRaw)
+  const outRel = outRaw ?? FIXTURE_ROOT
+  const outDir = outRel.startsWith('/') || /^[A-Za-z]:[\\/]/.test(outRel) ? outRel : join(root, outRel)
   const result = ingestEquipment({ catalogueRoot: root, outDir, check: check || undefined })
   if (result.diffs.length) {
     for (const d of result.diffs) console.error(d)

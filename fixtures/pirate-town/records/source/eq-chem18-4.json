@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-chem18-4",
+  "kind": "source",
+  "source": {
+    "key": "EQ-CHEM18-4",
+    "title": "Wikipedia: Calorimeter",
+    "gives": "Lavoisier and Laplace ice calorimeter, winter 1782-83; melting ice measures heat; Black's latent heat 1761 led to the first ice calorimeters; name coined 1780 with a guinea pig; no precision given (open)",
+    "url": "https://en.wikipedia.org/wiki/Calorimeter",
+    "rights": "reference"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Calorimeter",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-CHEM18-4",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

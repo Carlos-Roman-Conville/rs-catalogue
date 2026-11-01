@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-met-8",
+  "kind": "source",
+  "source": {
+    "key": "EQ-MET-8",
+    "title": "Science Museum Group, Jan Verbruggen (Wikipedia, Grace's Guide, ERIH)",
+    "gives": "Verbruggen boring mill at the Royal Brass Foundry, Woolwich, 1770 (one source says 1763 for an earlier attempt); horizontal boring of solid-cast guns, from Maritz; The Hague 1750s; before that guns cast hollow on a core and finished in vertical borers; Woolwich foundry built 1716-17",
+    "url": "https://collection.sciencemuseumgroup.org.uk/objects/co46453/model-of-horse-power-gun-boring-machine",
+    "rights": "museum"
+  },
+  "names": [
+    {
+      "text": "Science Museum Group, Jan Verbruggen (Wikipedia, Grace's Guide, ERIH)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-MET-8",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

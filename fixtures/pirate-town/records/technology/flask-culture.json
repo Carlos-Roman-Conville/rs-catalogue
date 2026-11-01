@@ -1,0 +1,81 @@
+{
+  "id": "catalogue/technology.flask-culture",
+  "kind": "technology",
+  "names": [
+    {
+      "text": "Cell culture flasks",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "technology"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "place": "catalogue/region.atlantic",
+      "date": {
+        "from": {
+          "year": 1650
+        },
+        "to": {
+          "year": 1730
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.eq-bm20-flask"
+      ],
+      "note": "none (anomaly; glass flasks existed but not sterile media or incubators)",
+      "what": "presence",
+      "label": "open",
+      "confidence": {
+        "level": "low",
+        "reason": "availability 'none (anomaly)' is the game's time-anomaly mark, not a source of absence (DESIGN §6); window presence unknown"
+      }
+    },
+    {
+      "what": "invention",
+      "place": null,
+      "date": null,
+      "sources": [
+        "catalogue/source.eq-bm20-flask"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "conf_history low, SCIENTIFIC_EQUIPMENT.md §2 row flask_culture"
+      },
+      "note": "1920s Carrel flask; modern treated polystyrene T-flasks later (date open); credited to Alexis Carrel (Rockefeller Institute)"
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.eq-bm20-flask"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/science/SCIENTIFIC_EQUIPMENT.md",
+      "anchor": "## 2. The catalogue | flask_culture",
+      "sha256": "912e9658f93bcd4537fbc001c0042a651b2c94116447dd500a47266e50c0d0d2"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/body/data/equipment.json",
+      "anchor": "catalogue | flask_culture",
+      "sha256": "90e4b22328a99f8b855970f076a64f3bdbe09e5f82d622ea87001da98ccc70b8"
+    }
+  ],
+  "notes": "Ingested by scripts/ingest-equipment.ts from SCIENTIFIC_EQUIPMENT.md §2 and equipment.json row flask_culture. Credited to: Alexis Carrel (Rockefeller Institute). Skill: Natural philosophy. Capability columns stay with the game (CAT-Q1). availability 'none (anomaly)' is the game's time-anomaly mark, not a source of absence (DESIGN §6); window presence unknown"
+}

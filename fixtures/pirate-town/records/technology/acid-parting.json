@@ -1,0 +1,81 @@
+{
+  "id": "catalogue/technology.acid-parting",
+  "kind": "technology",
+  "names": [
+    {
+      "text": "Parting acids (aqua fortis and cementation)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "technology"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "place": "catalogue/region.atlantic",
+      "date": {
+        "from": {
+          "year": 1650
+        },
+        "to": {
+          "year": 1730
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.eq-meas-assay"
+      ],
+      "note": "rare: assayers and mints; chemical works",
+      "what": "presence",
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "conf_history medium, SCIENTIFIC_EQUIPMENT.md §2 row acid_parting"
+      }
+    },
+    {
+      "what": "earliest_evidence",
+      "place": null,
+      "date": null,
+      "sources": [
+        "catalogue/source.eq-meas-assay"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "conf_history medium, SCIENTIFIC_EQUIPMENT.md §2 row acid_parting"
+      },
+      "note": "nitric acid first described in Pseudo-Geber about 1300 or 1330; Albertus Magnus 13th c. claimed; large scale in Venice about two centuries later; Probierbuchlein early 16th c.; Biringuccio 1540 chapters; Agricola 1556 knew only nitric"
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.eq-meas-assay"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/science/SCIENTIFIC_EQUIPMENT.md",
+      "anchor": "## 2. The catalogue | acid_parting",
+      "sha256": "912e9658f93bcd4537fbc001c0042a651b2c94116447dd500a47266e50c0d0d2"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/body/data/equipment.json",
+      "anchor": "catalogue | acid_parting",
+      "sha256": "90e4b22328a99f8b855970f076a64f3bdbe09e5f82d622ea87001da98ccc70b8"
+    }
+  ],
+  "notes": "Ingested by scripts/ingest-equipment.ts from SCIENTIFIC_EQUIPMENT.md §2 and equipment.json row acid_parting. Credited to: -. Skill: Precious Metalworking (assay). Capability columns stay with the game (CAT-Q1)."
+}

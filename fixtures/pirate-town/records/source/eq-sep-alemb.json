@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-sep-alemb",
+  "kind": "source",
+  "source": {
+    "key": "EQ-SEP-ALEMB",
+    "title": "Wellcome Collection; Science Museum Group; alchemywebsite virtual museum (via web search of Moor's head still)",
+    "gives": "the 1660 Le Fevre woodcut of a Moor's head receiver; a water-cooled head; a Tunisian copper example dated 1750-1880",
+    "url": "https://collection.sciencemuseumgroup.org.uk/objects/co130345/alchemists-copper-still",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Wellcome Collection; Science Museum Group; alchemywebsite virtual museum (via web search of Moor's head still)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-SEP-ALEMB",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

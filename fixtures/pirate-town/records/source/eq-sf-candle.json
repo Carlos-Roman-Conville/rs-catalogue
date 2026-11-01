@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-sf-candle",
+  "kind": "source",
+  "source": {
+    "key": "EQ-SF-CANDLE",
+    "title": "Wikipedia Candle clock",
+    "gives": "You Jiangu 520; Alfred; al-Jazari 1206; 20 minutes a mark; horn lantern case",
+    "url": "https://en.wikipedia.org/wiki/Candle_clock",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Wikipedia Candle clock",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-SF-CANDLE",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-bm20-ecg",
+  "kind": "source",
+  "source": {
+    "key": "EQ-BM20-ECG",
+    "title": "Web search (nationalmaglab.org, Besterman WIMJ, IEEE Spectrum, Hektoen)",
+    "gives": "Lippmann capillary electrometer 1872 or 1873; Waller first human ECG May 1887; Einthoven string galvanometer 1901 (quartz string between magnet poles), electrocardiograph 1903, clinical use 1904 to 1905; P Q R S T labels",
+    "url": "https://nationalmaglab.org/magnet-academy/history-of-electricity-magnetism/museum/electrocardiograph-1903/; https://spectrum.ieee.org/forget-electrodes-the-first-ekg-machine-used-buckets-of-saline-solution-and-telephone-wire",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Web search (nationalmaglab.org, Besterman WIMJ, IEEE Spectrum, Hektoen)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-BM20-ECG",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

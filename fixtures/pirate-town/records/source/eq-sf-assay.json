@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-sf-assay",
+  "kind": "source",
+  "source": {
+    "key": "EQ-SF-ASSAY",
+    "title": "Web search (Ercker, Wikipedia; RCA charcoal assay furnace project) and Wikipedia Blowpipe (tool)",
+    "gives": "Ercker 1574 covers furnaces, cupels, balance; blowpipe analysis about 1738; Gahn's portable blowpipe",
+    "url": "https://en.wikipedia.org/wiki/Lazarus_Ercker; https://en.wikipedia.org/wiki/Blowpipe_(tool)",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Web search (Ercker, Wikipedia; RCA charcoal assay furnace project) and Wikipedia Blowpipe (tool)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-SF-ASSAY",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

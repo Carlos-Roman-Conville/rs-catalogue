@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-pf-firepiston",
+  "kind": "source",
+  "source": {
+    "key": "EQ-PF-FIREPISTON",
+    "title": "Web search (Wikipedia Fire piston; Fox 1969 paper; Univ. Bristol fire piston page; Britannica)",
+    "gives": "Southeast Asian origin, older than Austronesian settlement of Madagascar (c. 100 to 500 AD); European reinvention France 1802 (Mollet 1804), metal version patented in England 1807; whether Europe borrowed is debated; Ruffo 1745 claim unverified",
+    "url": "https://en.wikipedia.org/wiki/Fire_piston; https://gwern.net/doc/technology/1969-fox.pdf; https://www.britannica.com/science/fire-piston",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Web search (Wikipedia Fire piston; Fox 1969 paper; Univ. Bristol fire piston page; Britannica)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-PF-FIREPISTON",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

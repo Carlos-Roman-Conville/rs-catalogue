@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-chem18-5",
+  "kind": "source",
+  "source": {
+    "key": "EQ-CHEM18-5",
+    "title": "Web search: Woulfe bottle (Chemistry World, Oxford HSM, Faraday 1827 via wehd.com)",
+    "gives": "Woulfe's 1767 Philosophical Transactions paper: gases passed through water in a flask; Glauber described an earlier arrangement (Faraday 1827); the three-necked form is credited to Hassenfratz; Woulfe's birth year varies (c. 1727) between sources",
+    "url": "https://chemistryworld.com/opinion/woulfes-bottle/2500114.article",
+    "rights": "reference"
+  },
+  "names": [
+    {
+      "text": "Web search: Woulfe bottle (Chemistry World, Oxford HSM, Faraday 1827 via wehd.com)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-CHEM18-5",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-sf-comp",
+  "kind": "source",
+  "source": {
+    "key": "EQ-SF-COMP",
+    "title": "Wikipedia Compass",
+    "gives": "Europe about 1190, dry compass about 1300; Shen Kuo 1088; card, gimbal, binnacle; 32 points",
+    "url": "https://en.wikipedia.org/wiki/Compass",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Wikipedia Compass",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-SF-COMP",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

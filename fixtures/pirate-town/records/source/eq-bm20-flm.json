@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-bm20-flm",
+  "kind": "source",
+  "source": {
+    "key": "EQ-BM20-FLM",
+    "title": "Web search (Leica Microsystems milestones in incident light fluorescence microscopy, RMS Ploem)",
+    "gives": "Koehler and von Rohr first UV and fluorescence microscope (Koehler illumination 1893); Coons immunofluorescence 1941 to 1942, secondary antibodies 1950; Ploem multi-wavelength epi-illuminator with dichroic mirrors, 1967 paper (Leitz Ploemopak); mercury burner; matched filter sets predate Ploem (2025 review)",
+    "url": "https://www.leica-microsystems.com/science-lab/microscopy-basics/milestones-in-incident-light-fluorescence-microscopy; https://www.rms.org.uk/resource/j-s--ploem--web--pdf.html",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Web search (Leica Microsystems milestones in incident light fluorescence microscopy, RMS Ploem)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-BM20-FLM",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

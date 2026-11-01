@@ -1,0 +1,84 @@
+{
+  "id": "catalogue/technology.still-pot",
+  "kind": "technology",
+  "names": [
+    {
+      "text": "Pot still",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "technology"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "place": "catalogue/region.atlantic",
+      "date": {
+        "from": {
+          "year": 1650
+        },
+        "to": {
+          "year": 1730
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.eq-vess-rum",
+        "catalogue/source.eq-vess-wiki"
+      ],
+      "note": "common (every sugar plantation)",
+      "what": "presence",
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "conf_history low, SCIENTIFIC_EQUIPMENT.md §2 row still_pot"
+      }
+    },
+    {
+      "what": "earliest_evidence",
+      "place": null,
+      "date": null,
+      "sources": [
+        "catalogue/source.eq-vess-rum",
+        "catalogue/source.eq-vess-wiki"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "conf_history low, SCIENTIFIC_EQUIPMENT.md §2 row still_pot"
+      },
+      "note": "medieval descendant of the alembic (the page gives no date or inventor; open); Barbados: distilling noted from 1637, 'Rumbullion' named 1651, stills at the future Mount Gay by 1667, Ligon 1650 called the liquor 'hot, hellish and terrible'"
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.eq-vess-rum",
+    "catalogue/source.eq-vess-wiki"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/science/SCIENTIFIC_EQUIPMENT.md",
+      "anchor": "## 2. The catalogue | still_pot",
+      "sha256": "912e9658f93bcd4537fbc001c0042a651b2c94116447dd500a47266e50c0d0d2"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/body/data/equipment.json",
+      "anchor": "catalogue | still_pot",
+      "sha256": "90e4b22328a99f8b855970f076a64f3bdbe09e5f82d622ea87001da98ccc70b8"
+    }
+  ],
+  "notes": "Ingested by scripts/ingest-equipment.ts from SCIENTIFIC_EQUIPMENT.md §2 and equipment.json row still_pot. Credited to: open. Skill: Distilling. Capability columns stay with the game (CAT-Q1)."
+}

@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-surg-2",
+  "kind": "source",
+  "source": {
+    "key": "EQ-SURG-2",
+    "title": "RCP London on Hugh Chamberlen; JSTOR Daily on the concealed forceps; Nelson Museum, Secret of forceps; UCLouvain on Palfyn",
+    "gives": "the Chamberlen dates and the secret; disputed sale dates (1670, 1693, about 1730 to the 1740s); Palfyn 1721; the 1813 to 1815 find",
+    "url": "https://history.rcplondon.ac.uk/inspiring-physicians/hugh-chamberlen",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "RCP London on Hugh Chamberlen; JSTOR Daily on the concealed forceps; Nelson Museum, Secret of forceps; UCLouvain on Palfyn",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-SURG-2",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

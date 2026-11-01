@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-surg-5",
+  "kind": "source",
+  "source": {
+    "key": "EQ-SURG-5",
+    "title": "Museum of Healthcare on the pill machine; mohma.org pill tile; DEA Museum; Hong Kong Medical Journal on Wirz 1867",
+    "gives": "pill tiles (c. 1665, c. 1705 to 40); the pill machine (Germany about 1750); the spatula's use",
+    "url": "https://www.mohma.org/instruments/category/pharmacy/pill_tile/",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Museum of Healthcare on the pill machine; mohma.org pill tile; DEA Museum; Hong Kong Medical Journal on Wirz 1867",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-SURG-5",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-lem-fpaper",
+  "kind": "source",
+  "source": {
+    "key": "EQ-LEM-FPAPER",
+    "title": "Wikipedia Filter paper",
+    "gives": "Pharmacy soft paper charta emporetica, 1728 Cyclopaedia",
+    "url": "https://en.wikipedia.org/wiki/Filter_paper",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Wikipedia Filter paper",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-LEM-FPAPER",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-chem18-18",
+  "kind": "source",
+  "source": {
+    "key": "EQ-CHEM18-18",
+    "title": "Wikipedia: Analytical balance; web search (Whipple Museum, Science Museum Group, Encyclopedia.com on Fortin)",
+    "gives": "Black's mid-18th-century balance is the original analytical balance; Fortin built Lavoisier's balance (Whipple: finished 1788, sensitivity about 1/100 grain, 0.6 mg; Encyclopedia.com: arm one metre long, 1/400 ounce; the figures are not obviously compatible); Ramsden hydrostatic balance 1785-89, Royal Society 1789, under 0.01 grain; a French source dates Fortin's tresbuchet 1792",
+    "url": "https://en.wikipedia.org/wiki/Analytical_balance",
+    "rights": "reference"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Analytical balance; web search (Whipple Museum, Science Museum Group, Encyclopedia.com on Fortin)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-CHEM18-18",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

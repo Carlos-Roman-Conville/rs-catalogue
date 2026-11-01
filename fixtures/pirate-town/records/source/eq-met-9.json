@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-met-9",
+  "kind": "source",
+  "source": {
+    "key": "EQ-MET-9",
+    "title": "Wikipedia: Cannon",
+    "gives": "bronze guns preferred over iron for stability; demi-cannon about 1,500 kg firing 15 kg shot; 32-pounder long gun over 3 t; proof by powder; the casting details (loam moulds, Hogge 1543) were not on the part read (open)",
+    "url": "https://en.wikipedia.org/wiki/Cannon",
+    "rights": "reference"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Cannon",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-MET-9",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

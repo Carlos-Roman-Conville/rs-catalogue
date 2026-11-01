@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-bm20-flask",
+  "kind": "source",
+  "source": {
+    "key": "EQ-BM20-FLASK",
+    "title": "Web search (Smithsonian Carrel flask, embryo.asu.edu Carrel, Corning)",
+    "gives": "Carrel flask: glass, angled neck, Rockefeller Institute, 1920s to 1950s; modern T-flasks of treated polystyrene; Corning angled neck 1988; the 1965 plastic date not found",
+    "url": "https://si.edu/object/carrel-flask:nmah_1111997; https://embryo.asu.edu/pages/alexis-carrels-tissue-culture-techniques",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Web search (Smithsonian Carrel flask, embryo.asu.edu Carrel, Corning)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-BM20-FLASK",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

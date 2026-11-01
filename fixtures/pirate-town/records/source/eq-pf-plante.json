@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-pf-plante",
+  "kind": "source",
+  "source": {
+    "key": "EQ-PF-PLANTE",
+    "title": "Web search (National MagLab Plante battery 1859; ETHW Gaston Plante; Wikipedia Lead-acid battery)",
+    "gives": "Plante 1859 first rechargeable cell, lead plates in sulfuric acid, nine cells shown to the Academie 1860; Gautherot 1801 secondary current; six cells make 12 V (so about 2 V per cell)",
+    "url": "https://nationalmaglab.org/magnet-academy/history-of-electricity-magnetism/museum/plante-battery-1859/; https://ethw.org/Gaston_Plant%C3%A9; https://en.wikipedia.org/wiki/Lead%E2%80%93acid_battery",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Web search (National MagLab Plante battery 1859; ETHW Gaston Plante; Wikipedia Lead-acid battery)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-PF-PLANTE",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

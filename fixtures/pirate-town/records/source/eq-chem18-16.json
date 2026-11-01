@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-chem18-16",
+  "kind": "source",
+  "source": {
+    "key": "EQ-CHEM18-16",
+    "title": "Wikipedia: Burette; web search on Descroizilles (Chemistry World, Museo Galileo)",
+    "gives": "Wikipedia: Henry 1845, Gay-Lussac coined 'burette' 1824, Mohr 1855; Chemistry World and Museo Galileo: Descroizilles's chlorometer or berthollimetre 1791 (a graduated cylinder, indigo end point), alkalimeter 1806, Gay-Lussac side arm, Mohr clip 1850s. Dates disagree: usual date taken as 1791 for the ancestor",
+    "url": "https://en.wikipedia.org/wiki/Burette",
+    "rights": "reference"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Burette; web search on Descroizilles (Chemistry World, Museo Galileo)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-CHEM18-16",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "id": "catalogue/technology.balance-lavoisier",
+  "kind": "technology",
+  "names": [
+    {
+      "text": "Precision balance (Lavoisier, Ramsden)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "technology"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "place": "catalogue/region.atlantic",
+      "date": {
+        "from": {
+          "year": 1650
+        },
+        "to": {
+          "year": 1730
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.eq-chem18-18"
+      ],
+      "note": "none (assay balances of the period weigh to about a grain; the 1788 instrument is not makeable; open for the exact figure)",
+      "what": "absence",
+      "label": "estimate",
+      "confidence": {
+        "level": "medium",
+        "reason": "the row states none for 1650-1730 and its keys date or explain it; the window statement is the keeper's reading of the source, hence estimate"
+      }
+    },
+    {
+      "what": "invention",
+      "place": null,
+      "date": {
+        "from": {
+          "year": 1788
+        },
+        "to": {
+          "year": 1788
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.eq-chem18-18"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "conf_history medium, SCIENTIFIC_EQUIPMENT.md §2 row balance_lavoisier"
+      },
+      "note": "1788 (Fortin's balance for Lavoisier, Whipple record); Ramsden's analytical balance c. 1785-89; a French source dates Fortin's trebuchet 1792 (EQ-CHEM18-18); credited to Fortin (for Lavoisier); Ramsden"
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.eq-chem18-11",
+    "catalogue/source.eq-chem18-18"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/science/SCIENTIFIC_EQUIPMENT.md",
+      "anchor": "## 2. The catalogue | balance_lavoisier",
+      "sha256": "912e9658f93bcd4537fbc001c0042a651b2c94116447dd500a47266e50c0d0d2"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/body/data/equipment.json",
+      "anchor": "catalogue | balance_lavoisier",
+      "sha256": "90e4b22328a99f8b855970f076a64f3bdbe09e5f82d622ea87001da98ccc70b8"
+    }
+  ],
+  "notes": "Ingested by scripts/ingest-equipment.ts from SCIENTIFIC_EQUIPMENT.md §2 and equipment.json row balance_lavoisier. Credited to: Fortin (for Lavoisier); Ramsden. Skill: Natural philosophy. Capability columns stay with the game (CAT-Q1)."
+}

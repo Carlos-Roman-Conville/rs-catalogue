@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-meas-gauge",
+  "kind": "source",
+  "source": {
+    "key": "EQ-MEAS-GAUGE",
+    "title": "Science Museum Group: Everard gauger's slide rule; Antiques Trade Gazette; Slide Rule Museum paper on gauging",
+    "gives": "Everard 1683 or 1684, the 1689 rule, Isaac Carver, the 1643 excise, the two-slide 12 in stock",
+    "url": "https://collection.sciencemuseumgroup.org.uk/objects/co60705/everard-gaugers-slide-rule",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Science Museum Group: Everard gauger's slide rule; Antiques Trade Gazette; Slide Rule Museum paper on gauging",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-MEAS-GAUGE",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

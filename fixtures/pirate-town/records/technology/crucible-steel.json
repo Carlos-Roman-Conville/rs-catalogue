@@ -1,0 +1,91 @@
+{
+  "id": "catalogue/technology.crucible-steel",
+  "kind": "technology",
+  "names": [
+    {
+      "text": "Crucible steel process",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "technology"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "place": "catalogue/region.atlantic",
+      "date": {
+        "from": {
+          "year": 1650
+        },
+        "to": {
+          "year": 1730
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.eq-ind19med-cruc"
+      ],
+      "note": "none in England (Huntsman 1740 is after 1730); Sheffield made only shear steel from Swedish iron, about 200 t a year; Indian wootz ingots were a trade curiosity (open how far they came)",
+      "what": "absence",
+      "label": "estimate",
+      "confidence": {
+        "level": "medium",
+        "reason": "the row states none for 1650-1730 and its keys date or explain it; the window statement is the keeper's reading of the source, hence estimate"
+      }
+    },
+    {
+      "what": "invention",
+      "place": null,
+      "date": {
+        "from": {
+          "year": 1740
+        },
+        "to": {
+          "year": 1740
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.eq-ind19med-cruc"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "conf_history medium, SCIENTIFIC_EQUIPMENT.md §2 row crucible_steel"
+      },
+      "note": "1740 (Huntsman; page: developed in parallel in the 1740s); wootz crucible steel in India from the mid first millennium BC; credited to Benjamin Huntsman (wootz makers of South India and Sri Lanka earlier)"
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.eq-ind19med-cruc"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/science/SCIENTIFIC_EQUIPMENT.md",
+      "anchor": "## 2. The catalogue | crucible_steel",
+      "sha256": "912e9658f93bcd4537fbc001c0042a651b2c94116447dd500a47266e50c0d0d2"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/body/data/equipment.json",
+      "anchor": "catalogue | crucible_steel",
+      "sha256": "90e4b22328a99f8b855970f076a64f3bdbe09e5f82d622ea87001da98ccc70b8"
+    }
+  ],
+  "notes": "Ingested by scripts/ingest-equipment.ts from SCIENTIFIC_EQUIPMENT.md §2 and equipment.json row crucible_steel. Credited to: Benjamin Huntsman (wootz makers of South India and Sri Lanka earlier). Skill: Smelting, Smithing. Capability columns stay with the game (CAT-Q1)."
+}

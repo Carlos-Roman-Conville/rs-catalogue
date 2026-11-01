@@ -1,0 +1,81 @@
+{
+  "id": "catalogue/technology.barometer-portable",
+  "kind": "technology",
+  "names": [
+    {
+      "text": "Portable barometer",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "technology"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "place": "catalogue/region.atlantic",
+      "date": {
+        "from": {
+          "year": 1650
+        },
+        "to": {
+          "year": 1730
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.eq-sf-baro"
+      ],
+      "note": "rare: the instrument exists and is tested at sea in 1698 to 1700, not routine (Wikipedia)",
+      "what": "presence",
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "conf_history medium, SCIENTIFIC_EQUIPMENT.md §2 row barometer_portable"
+      }
+    },
+    {
+      "what": "invention",
+      "place": null,
+      "date": null,
+      "sources": [
+        "catalogue/source.eq-sf-baro"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "conf_history medium, SCIENTIFIC_EQUIPMENT.md §2 row barometer_portable"
+      },
+      "note": "Torricelli 1643, Perier's Puy de Dome ascent 1648; Hooke's marine barometer to the Royal Society 1668; Halley tested one at sea 1698 to 1700 (Wikipedia); credited to Torricelli; Perier; Hooke; Nairne (narrow-bore for Cook, 1772)"
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.eq-sf-baro"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/science/SCIENTIFIC_EQUIPMENT.md",
+      "anchor": "## 2. The catalogue | barometer_portable",
+      "sha256": "912e9658f93bcd4537fbc001c0042a651b2c94116447dd500a47266e50c0d0d2"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/body/data/equipment.json",
+      "anchor": "catalogue | barometer_portable",
+      "sha256": "90e4b22328a99f8b855970f076a64f3bdbe09e5f82d622ea87001da98ccc70b8"
+    }
+  ],
+  "notes": "Ingested by scripts/ingest-equipment.ts from SCIENTIFIC_EQUIPMENT.md §2 and equipment.json row barometer_portable. Credited to: Torricelli; Perier; Hooke; Nairne (narrow-bore for Cook, 1772). Skill: Natural philosophy. Capability columns stay with the game (CAT-Q1)."
+}

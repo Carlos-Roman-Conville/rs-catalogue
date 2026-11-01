@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-bm20-oxi",
+  "kind": "source",
+  "source": {
+    "key": "EQ-BM20-OXI",
+    "title": "Web search (PMC Ninety years of pulse oximetry, nippon.com, APSF)",
+    "gives": "Aoyagi (Nihon Kohden) idea 1972, patent 1974, ear oximeter 1975; Minolta fingertip 1977; Biox 1980 LED unit; ratio-of-ratios principle; wavelengths not confirmed by the source",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11330276; https://nippon.com/en/japan-topics/g00960",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Web search (PMC Ninety years of pulse oximetry, nippon.com, APSF)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-BM20-OXI",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

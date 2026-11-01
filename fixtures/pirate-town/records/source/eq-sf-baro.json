@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-sf-baro",
+  "kind": "source",
+  "source": {
+    "key": "EQ-SF-BARO",
+    "title": "Wikipedia Barometer",
+    "gives": "Torricelli 1643; Perier 1648; Hooke 1668; Halley 1698 to 1700; Nairne 1772",
+    "url": "https://en.wikipedia.org/wiki/Barometer",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Wikipedia Barometer",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-SF-BARO",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

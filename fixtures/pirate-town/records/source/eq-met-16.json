@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-met-16",
+  "kind": "source",
+  "source": {
+    "key": "EQ-MET-16",
+    "title": "South African History Online (Pinetown vats), SC Parks Otranto vats, Reza Vis on the two-vat system",
+    "gives": "17th c. Indian two-vat indigo (Finch, Pelsaert; steeping 16 to 48 hours); American plantation steeper and beater vats; indigo insoluble, reduced to dye, blue on oxidation in air",
+    "url": "https://schpr.sc.gov/index.php/Detail/objects/S10817708012",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "South African History Online (Pinetown vats), SC Parks Otranto vats, Reza Vis on the two-vat system",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-MET-16",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

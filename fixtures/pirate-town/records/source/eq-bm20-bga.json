@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-bm20-bga",
+  "kind": "source",
+  "source": {
+    "key": "EQ-BM20-BGA",
+    "title": "Web search (acutecaretesting.org, AACC/ADLM Severinghaus bio, Wood Library Museum)",
+    "gives": "Clark membrane O2 electrode conceived 1954, disclosed April 1956 (YSI made it); Stow CO2 electrode 1954, Stow-Severinghaus pCO2 electrode 1957; first apparatus shown spring 1957, J Appl Physiol 1958; three-function analyser 1959",
+    "url": "https://acutecaretesting.org/en/articles/the-invention-and-development-of-the-blood-gas-analysis-apparatus; https://www.woodlibrarymuseum.org/?p=4889",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Web search (acutecaretesting.org, AACC/ADLM Severinghaus bio, Wood Library Museum)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-BM20-BGA",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

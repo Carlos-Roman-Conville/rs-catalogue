@@ -1,0 +1,81 @@
+{
+  "id": "catalogue/technology.forceps-obstetric",
+  "kind": "technology",
+  "names": [
+    {
+      "text": "Obstetric forceps (Chamberlen)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "technology"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "place": "catalogue/region.atlantic",
+      "date": {
+        "from": {
+          "year": 1650
+        },
+        "to": {
+          "year": 1730
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.eq-surg-2"
+      ],
+      "note": "rare: a Chamberlen family secret for about two centuries; none on a ship (EQ-SURG-2: sources disagree on when it came out)",
+      "what": "presence",
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "conf_history medium, SCIENTIFIC_EQUIPMENT.md §2 row forceps_obstetric"
+      }
+    },
+    {
+      "what": "invention",
+      "place": null,
+      "date": null,
+      "sources": [
+        "catalogue/source.eq-surg-2"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "conf_history medium, SCIENTIFIC_EQUIPMENT.md §2 row forceps_obstetric"
+      },
+      "note": "late 16th c. (Peter Chamberlen the Elder, 1560 to 1631, by the usual story); Hugh Chamberlen tried to sell the secret in Paris in 1670; Palfyn showed his iron hands in 1721; a Dutch sale dated 1693 or about 1730 to the 1740s (sources differ); instruments found at Woodham Mortimer 1813 to 1815; credited to the Chamberlen family; Palfyn for a separate design"
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.eq-surg-2"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/science/SCIENTIFIC_EQUIPMENT.md",
+      "anchor": "## 2. The catalogue | forceps_obstetric",
+      "sha256": "912e9658f93bcd4537fbc001c0042a651b2c94116447dd500a47266e50c0d0d2"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/body/data/equipment.json",
+      "anchor": "catalogue | forceps_obstetric",
+      "sha256": "90e4b22328a99f8b855970f076a64f3bdbe09e5f82d622ea87001da98ccc70b8"
+    }
+  ],
+  "notes": "Ingested by scripts/ingest-equipment.ts from SCIENTIFIC_EQUIPMENT.md §2 and equipment.json row forceps_obstetric. Credited to: the Chamberlen family; Palfyn for a separate design. Skill: Surgery. Capability columns stay with the game (CAT-Q1)."
+}

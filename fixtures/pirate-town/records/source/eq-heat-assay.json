@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-heat-assay",
+  "kind": "source",
+  "source": {
+    "key": "EQ-HEAT-ASSAY",
+    "title": "Cupellation and assay furnaces: Agricola 1556 and Ercker 1574 via Royal College of Art 'Charcoal fire assaying' and Guirado et al. 2010, Historical Metallurgy",
+    "gives": "the muffle's role, litharge liquid over 890 C, charcoal-fired assay furnaces",
+    "url": "https://www.rca.ac.uk/research-innovation/projects/charcoal-fire-assaying/",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Cupellation and assay furnaces: Agricola 1556 and Ercker 1574 via Royal College of Art 'Charcoal fire assaying' and Guirado et al. 2010, Historical Metallurgy",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-HEAT-ASSAY",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

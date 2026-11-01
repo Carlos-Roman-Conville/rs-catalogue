@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-met-7",
+  "kind": "source",
+  "source": {
+    "key": "EQ-MET-7",
+    "title": "Wikipedia: Milled coinage; Screw press",
+    "gives": "Bramante's screw press for papal bullae; Aubin Olivier at the Paris mint 1551; Mestrelle in England 1560; Briot 1632; Blondeau 1662; hammered money not demonetised until 1695; no output figures (open)",
+    "url": "https://en.wikipedia.org/wiki/Milled_coinage",
+    "rights": "reference"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Milled coinage; Screw press",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-MET-7",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

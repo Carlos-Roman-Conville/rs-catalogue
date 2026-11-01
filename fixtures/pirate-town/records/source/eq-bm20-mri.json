@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-bm20-mri",
+  "kind": "source",
+  "source": {
+    "key": "EQ-BM20-MRI",
+    "title": "Web search (Smithsonian Magazine The Indomitable MRI, SUNY RF, humanprogress.org)",
+    "gives": "Lauterbur 1973 gradient imaging (Nature); Mansfield Nottingham finger 1977; Damadian Indomitable first human scan 3 July 1977, niobium-titanium superconducting magnet; Nobel 2003 to Lauterbur and Mansfield (credit disputed); field strength not found (physics: 0.5 to 3 T clinical)",
+    "url": "https://www.smithsonianmag.com/science-nature/the-indomitable-mri-29126670/; https://humanprogress.org/heroes-of-progress-pt-47-damadian-lauterbur-and-mansfield/",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Web search (Smithsonian Magazine The Indomitable MRI, SUNY RF, humanprogress.org)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-BM20-MRI",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

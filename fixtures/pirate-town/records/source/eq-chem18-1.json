@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-chem18-1",
+  "kind": "source",
+  "source": {
+    "key": "EQ-CHEM18-1",
+    "title": "Wikipedia: Pneumatic trough",
+    "gives": "Hales's trough in Vegetable Staticks 1727 is not on this page (see EQ-CHEM18-12); glass bottle inverted in a trough of water; mercury used usually only for water-soluble gases; Priestley shown with a trough",
+    "url": "https://en.wikipedia.org/wiki/Pneumatic_trough",
+    "rights": "reference"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Pneumatic trough",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-CHEM18-1",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

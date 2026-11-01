@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-ind19med-croo",
+  "kind": "source",
+  "source": {
+    "key": "EQ-IND19MED-CROO",
+    "title": "Wikipedia, Crookes tube",
+    "gives": "Geissler 1857; Hittorf 1869; Crookes 1869 to 1875; 1e-6 to 5e-8 atm; few kV to 100 kV; Ruhmkorff coil; platinum anode; Rontgen 8 Nov 1895",
+    "url": "https://en.wikipedia.org/wiki/Crookes_tube",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Wikipedia, Crookes tube",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-IND19MED-CROO",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

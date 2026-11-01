@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-bm20-inc",
+  "kind": "source",
+  "source": {
+    "key": "EQ-BM20-INC",
+    "title": "Web search (Thermo Fisher Forma Series II pages)",
+    "gives": "Water- or air-jacketed CO2 incubator, CO2 0 to 20 percent by thermal-conductivity or infrared sensor, heated door; no invention date found (open)",
+    "url": "https://www.thermofisher.com/order/catalog/product/3131",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Web search (Thermo Fisher Forma Series II pages)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-BM20-INC",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

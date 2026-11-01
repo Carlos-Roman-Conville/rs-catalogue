@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-vess-glass",
+  "kind": "source",
+  "source": {
+    "key": "EQ-VESS-GLASS",
+    "title": "Wikipedia: Glass onion; Country Life, 'Why are wine bottles all the same shape and colour'",
+    "gives": "Digby's c. 1632 coal-fired bottle, Mansell's 1623 monopoly, shaft-and-globe to onion by the 1670s",
+    "url": "https://en.wikipedia.org/wiki/Glass_onion",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Glass onion; Country Life, 'Why are wine bottles all the same shape and colour'",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-VESS-GLASS",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "catalogue/technology.lab-chymist",
+  "kind": "technology",
+  "names": [
+    {
+      "text": "The chymist's laboratory (the facility)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "technology"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "place": "catalogue/region.atlantic",
+      "date": {
+        "from": {
+          "year": 1650
+        },
+        "to": {
+          "year": 1730
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.eq-lem-text",
+        "catalogue/source.eq-lem-wiki"
+      ],
+      "note": "rare: a shop of apothecaries and chymists in the larger ports (Port Royal, Boston, Charleston by the early 1700s); none on a ship; a surgeon's chest holds a few vessels only (Campbell 1747: chymists are generally apothecaries)",
+      "what": "presence",
+      "label": "researched",
+      "confidence": {
+        "level": "high",
+        "reason": "conf_history high, SCIENTIFIC_EQUIPMENT.md §2 row lab_chymist"
+      }
+    },
+    {
+      "what": "invention",
+      "place": null,
+      "date": {
+        "from": {
+          "year": 1675
+        },
+        "to": {
+          "year": 1675
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.eq-lem-text",
+        "catalogue/source.eq-lem-wiki"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "high",
+        "reason": "conf_history high, SCIENTIFIC_EQUIPMENT.md §2 row lab_chymist"
+      },
+      "note": "1675 (Lemery's Cours de chymie, Paris; 13 editions in his lifetime; English by Walter Harris 1677, 3rd ed. 1698); Lemery lectured and ran a pharmacy in Paris from the 1670s; credited to Nicolas Lemery (the book describes it; the laboratory form is the usual one of his shop)"
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.eq-lem-text",
+    "catalogue/source.eq-lem-wiki"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/science/SCIENTIFIC_EQUIPMENT.md",
+      "anchor": "## 2. The catalogue | lab_chymist",
+      "sha256": "912e9658f93bcd4537fbc001c0042a651b2c94116447dd500a47266e50c0d0d2"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/body/data/equipment.json",
+      "anchor": "catalogue | lab_chymist",
+      "sha256": "90e4b22328a99f8b855970f076a64f3bdbe09e5f82d622ea87001da98ccc70b8"
+    }
+  ],
+  "notes": "Ingested by scripts/ingest-equipment.ts from SCIENTIFIC_EQUIPMENT.md §2 and equipment.json row lab_chymist. Credited to: Nicolas Lemery (the book describes it; the laboratory form is the usual one of his shop). Skill: Chymistry (Apothecary draws on it). Capability columns stay with the game (CAT-Q1)."
+}

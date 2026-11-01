@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-surg-3",
+  "kind": "source",
+  "source": {
+    "key": "EQ-SURG-3",
+    "title": "The surgeon's chest page (rootsweb); Hektoen International on Woodall; piratesurgeon.com Woodall's medicine chest; Springer edition of The Surgions Mate",
+    "gives": "the chest's contents (75+ instruments, a plaster box, cupping glasses, blood porringers, splints); Woodall 1617; the 1626 chests; the hand trepan",
+    "url": "https://sites.rootsweb.com/~mosmd/surgeonchest.htm",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "The surgeon's chest page (rootsweb); Hektoen International on Woodall; piratesurgeon.com Woodall's medicine chest; Springer edition of The Surgions Mate",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-SURG-3",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-met-15",
+  "kind": "source",
+  "source": {
+    "key": "EQ-MET-15",
+    "title": "Encyclopaedia Britannica 3rd ed. 1797 (tanning), Bampton and other tannery pages",
+    "gives": "oak-bark tanning takes 11 to 18 months, sometimes two years (1797); modern account 12 months in graded liquors and pits; bark dried two to three years",
+    "url": "https://jimclifford.ca/early_encyclopedia_britannica/articles/1797/eb_3rd_1797_018987.html",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Encyclopaedia Britannica 3rd ed. 1797 (tanning), Bampton and other tannery pages",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-MET-15",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

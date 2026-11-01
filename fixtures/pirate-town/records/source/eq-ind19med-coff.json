@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-ind19med-coff",
+  "kind": "source",
+  "source": {
+    "key": "EQ-IND19MED-COFF",
+    "title": "Wikipedia, Coffey still",
+    "gives": "Coffey patent 1830; Cellier-Blumenthal predecessor; steam at base; spirit above 90% ethanol; plates with valves and perforated trays; iron corroded early",
+    "url": "https://en.wikipedia.org/wiki/Coffey_still",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Wikipedia, Coffey still",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-IND19MED-COFF",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

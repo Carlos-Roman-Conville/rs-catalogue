@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-heat-ath",
+  "kind": "source",
+  "source": {
+    "key": "EQ-HEAT-ATH",
+    "title": "Athanor ('Slow Harry', Piger Henricus): Wikipedia and dictionary entries; Ercker 1574, English edition 1683",
+    "gives": "the self-feeding charcoal tower, Arabic at-tannur, the 1683 'Slow Harry' engraving",
+    "url": "https://www.wikipedia.org/wiki/Athanor",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Athanor ('Slow Harry', Piger Henricus): Wikipedia and dictionary entries; Ercker 1574, English edition 1683",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-HEAT-ATH",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

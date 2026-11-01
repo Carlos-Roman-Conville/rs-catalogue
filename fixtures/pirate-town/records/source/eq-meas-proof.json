@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-meas-proof",
+  "kind": "source",
+  "source": {
+    "key": "EQ-MEAS-PROOF",
+    "title": "Wikipedia: Alcohol proof; Difford's Guide on navy strength; Chowhound; sub13.net",
+    "gives": "gunpowder test described, 100 proof about 57 percent, Sikes law 1816 or 1818, Clarke dates in conflict",
+    "url": "https://en.wikipedia.org/wiki/Alcohol_proof",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Alcohol proof; Difford's Guide on navy strength; Chowhound; sub13.net",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-MEAS-PROOF",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

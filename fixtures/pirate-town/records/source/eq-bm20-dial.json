@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-bm20-dial",
+  "kind": "source",
+  "source": {
+    "key": "EQ-BM20-DIAL",
+    "title": "Web search (Fresenius, Lasker Foundation, OUP blog, ICAOT, ISHD, DaVita)",
+    "gives": "Kolff rotating-drum cellophane kidney 1943 or 1944, first success 1945; heparin purified 1937; Scribner and Quinton Teflon shunt 1960 (first patient March 1960); Abel 1913 and Haas 1924 not covered",
+    "url": "https://laskerfoundation.org/winners/hemodialysis-for-treating-end-stage-kidney-disease/; https://freseniusmedicalcare.com/en/media/insights/company-features/the-history-of-dialysis",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Web search (Fresenius, Lasker Foundation, OUP blog, ICAOT, ISHD, DaVita)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-BM20-DIAL",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-ind19med-mict",
+  "kind": "source",
+  "source": {
+    "key": "EQ-IND19MED-MICT",
+    "title": "Wikipedia, Microtome",
+    "gives": "Hand razor sections before; Adams 1770 then Cummings; Prichard 1835 table model; Purkyne; His 1865; paraffin sections 2 to 50 um",
+    "url": "https://en.wikipedia.org/wiki/Microtome",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Wikipedia, Microtome",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-IND19MED-MICT",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

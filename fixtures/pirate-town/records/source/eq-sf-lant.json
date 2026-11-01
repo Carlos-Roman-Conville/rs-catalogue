@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-sf-lant",
+  "kind": "source",
+  "source": {
+    "key": "EQ-SF-LANT",
+    "title": "Wikipedia Lantern",
+    "gives": "horn plates before glass; 1361; ship lanterns; Mary Rose; pirate code below-deck rule",
+    "url": "https://en.wikipedia.org/wiki/Lantern",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Wikipedia Lantern",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-SF-LANT",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

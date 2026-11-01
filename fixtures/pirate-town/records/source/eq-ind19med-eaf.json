@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-ind19med-eaf",
+  "kind": "source",
+  "source": {
+    "key": "EQ-IND19MED-EAF",
+    "title": "Wikipedia, Electric arc furnace",
+    "gives": "Petrov arc 1803; Pinchon 1853; Siemens patents 1878 to 79; Readman 1888 to 89; Heroult commercial 1907; arc about 3,000 C, 1,800 C industrial; 1 to 400 t; 440 kWh/t",
+    "url": "https://en.wikipedia.org/wiki/Electric_arc_furnace",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Wikipedia, Electric arc furnace",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-IND19MED-EAF",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

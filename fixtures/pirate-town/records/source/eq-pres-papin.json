@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-pres-papin",
+  "kind": "source",
+  "source": {
+    "key": "EQ-PRES-PAPIN",
+    "title": "Wikipedia: Denis Papin",
+    "gives": "digester 1679, safety valve, Royal Society",
+    "url": "https://en.wikipedia.org/wiki/Denis_Papin",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Denis Papin",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-PRES-PAPIN",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

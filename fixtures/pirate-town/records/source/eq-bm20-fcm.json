@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-bm20-fcm",
+  "kind": "source",
+  "source": {
+    "key": "EQ-BM20-FCM",
+    "title": "Wikipedia, Flow cytometry",
+    "gives": "Coulter 1953; Fulwyler 1965; Goehde fluorescence cytometer 1968; Becton Dickinson FACS 1974; name 1976; lamps then argon 488 nm laser; sheath-fluid hydrodynamic focusing; thousands of cells per second",
+    "url": "https://en.wikipedia.org/wiki/Flow_cytometry",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Wikipedia, Flow cytometry",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-BM20-FCM",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-pf-fuel",
+  "kind": "source",
+  "source": {
+    "key": "EQ-PF-FUEL",
+    "title": "Web search (FAO Comparison of energy values; POPS toolkit Annex 28; Univ. Melbourne and SASRI bagasse; Leiden peat thesis; Australian National Maritime Museum whale oil lamps)",
+    "gives": "Heating values MJ/kg: coke 23 to 32 (FAO 28.4), hard coal 29.3, anthracite 31.4, dry wood 18 to 20, air-dried 15.5, charcoal about 30.8 (one study); bagasse dry about 19.3 to 19.4 MJ/kg, 45 to 53 per cent moisture as fired; peat the Dutch main fuel, coal four times peat per unit (one source); whale oil main lamp fuel 18th and 19th c, kerosene from about 1860; no flame temperatures found",
+    "url": "https://www.fao.org/4/T0269e/t0269e0c.htm; https://toolkit.pops.int/Publish/Annexes/A_28_Annex28.html; https://austehc.unimelb.edu.au/tia/796.html; https://scholarlypublications.universiteitleiden.nl/access/item%3A4305617/view; https://collections.sea.museum/objects/42626/brass-whale-oil-lamp",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Web search (FAO Comparison of energy values; POPS toolkit Annex 28; Univ. Melbourne and SASRI bagasse; Leiden peat thesis; Australian National Maritime Museum whale oil lamps)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-PF-FUEL",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

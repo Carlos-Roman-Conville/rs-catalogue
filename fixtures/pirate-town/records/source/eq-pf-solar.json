@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-pf-solar",
+  "kind": "source",
+  "source": {
+    "key": "EQ-PF-SOLAR",
+    "title": "Web search (Wikipedia Solar desalination; UPC 2015 thesis on Chilean plants)",
+    "gives": "Charles Wilson's Las Salinas, Chile still 1872 (shallow wooden basins under glass; nationality disputed; one source says 1882); Chilean plants 1872 to 1907 first industrial-scale",
+    "url": "https://en.wikipedia.org/wiki/Solar_desalination; https://www.tdx.cat/handle/10803/394057",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Web search (Wikipedia Solar desalination; UPC 2015 thesis on Chilean plants)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-PF-SOLAR",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

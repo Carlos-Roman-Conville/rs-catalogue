@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-chem18-19",
+  "kind": "source",
+  "source": {
+    "key": "EQ-CHEM18-19",
+    "title": "Web search: glass retorts, alembics and pelican (Britannica 1778-1810 via jimclifford.ca; RSC)",
+    "gives": "Pelican: a one-piece glass alembic with two beaks returning condensate, little used by the late 1700s; retort is a long-necked flask; Le Febure Traite de Chimie 1646/1660 and French's Art of Distillation (publication year not stated, open); no date for the first glass still found (open)",
+    "url": "https://jimclifford.ca/early_encyclopedia_britannica/articles/1797/eb_3rd_1797_015528.html",
+    "rights": "reference"
+  },
+  "names": [
+    {
+      "text": "Web search: glass retorts, alembics and pelican (Britannica 1778-1810 via jimclifford.ca; RSC)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-CHEM18-19",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

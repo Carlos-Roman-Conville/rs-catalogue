@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-ind19med-ther",
+  "kind": "source",
+  "source": {
+    "key": "EQ-IND19MED-THER",
+    "title": "Wikipedia, Medical thermometer",
+    "gives": "Santorio 1612 to 1625; Allbutt 1866 to 67 six-inch thermometer, 5 min vs 20 min; Wunderlich 1868; maximum thermometer constriction; 35 to 42 C",
+    "url": "https://en.wikipedia.org/wiki/Medical_thermometer",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Wikipedia, Medical thermometer",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-IND19MED-THER",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

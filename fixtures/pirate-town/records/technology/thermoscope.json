@@ -1,0 +1,81 @@
+{
+  "id": "catalogue/technology.thermoscope",
+  "kind": "technology",
+  "names": [
+    {
+      "text": "Thermoscope and Florentine thermometer",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "technology"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "place": "catalogue/region.atlantic",
+      "date": {
+        "from": {
+          "year": 1650
+        },
+        "to": {
+          "year": 1730
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.eq-meas-wiki"
+      ],
+      "note": "rare: a philosophers' instrument",
+      "what": "presence",
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "conf_history medium, SCIENTIFIC_EQUIPMENT.md §2 row thermoscope"
+      }
+    },
+    {
+      "what": "invention",
+      "place": null,
+      "date": null,
+      "sources": [
+        "catalogue/source.eq-meas-wiki"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "conf_history medium, SCIENTIFIC_EQUIPMENT.md §2 row thermoscope"
+      },
+      "note": "thermoscope late 1500s (Galileo, Santorio; no surviving proof Galileo built one); Biancani diagram 1617; scale 1625 (Santorio); sealed brandy thermometer 1629 (Delmedigo); Ferdinando II de' Medici c. 1654; credited to Santorio; Ferdinando II de' Medici (c. 1654)"
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.eq-meas-wiki"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/science/SCIENTIFIC_EQUIPMENT.md",
+      "anchor": "## 2. The catalogue | thermoscope",
+      "sha256": "912e9658f93bcd4537fbc001c0042a651b2c94116447dd500a47266e50c0d0d2"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/body/data/equipment.json",
+      "anchor": "catalogue | thermoscope",
+      "sha256": "90e4b22328a99f8b855970f076a64f3bdbe09e5f82d622ea87001da98ccc70b8"
+    }
+  ],
+  "notes": "Ingested by scripts/ingest-equipment.ts from SCIENTIFIC_EQUIPMENT.md §2 and equipment.json row thermoscope. Credited to: Santorio; Ferdinando II de' Medici (c. 1654). Skill: Apothecary. Capability columns stay with the game (CAT-Q1)."
+}

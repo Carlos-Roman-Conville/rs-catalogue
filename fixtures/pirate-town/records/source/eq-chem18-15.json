@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-chem18-15",
+  "kind": "source",
+  "source": {
+    "key": "EQ-CHEM18-15",
+    "title": "Wikipedia: Argand lamp",
+    "gives": "Invented 1780 by Aime Argand; hollow wick, glass chimney; whale, seal, colza or olive oil by gravity feed; 6 to 10 candelas, Jefferson 'six or eight candles'; reached Jefferson 1784; Quinquet in France",
+    "url": "https://en.wikipedia.org/wiki/Argand_lamp",
+    "rights": "reference"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Argand lamp",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-CHEM18-15",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

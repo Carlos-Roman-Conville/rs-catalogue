@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-met-17",
+  "kind": "source",
+  "source": {
+    "key": "EQ-MET-17",
+    "title": "Wikipedia: Loom",
+    "gives": "warp-weighted loom; horizontal treadle loom; draw loom (Han China to Europe); flying shuttle patented by John Kay 1733; hand-thrown shuttle limits width to the weaver's armspan; 150 to 160 picks a minute for shuttle looms",
+    "url": "https://en.wikipedia.org/wiki/Loom",
+    "rights": "reference"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Loom",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-MET-17",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

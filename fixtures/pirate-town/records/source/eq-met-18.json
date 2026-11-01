@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-met-18",
+  "kind": "source",
+  "source": {
+    "key": "EQ-MET-18",
+    "title": "Wikipedia: Cooper (profession)",
+    "gives": "1298 English coopers organise; 1420 ordinance for a cooper's mark on casks; dry (slack) vs wet (tight) coopering; English cask sizes firkin 8, kilderkin 16, barrel 32, hogshead 52, butt 104 gallons; croze and adze named, other tools not given (open)",
+    "url": "https://en.wikipedia.org/wiki/Cooper_(profession)",
+    "rights": "reference"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Cooper (profession)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-MET-18",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

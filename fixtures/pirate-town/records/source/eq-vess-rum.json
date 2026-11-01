@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-vess-rum",
+  "kind": "source",
+  "source": {
+    "key": "EQ-VESS-RUM",
+    "title": "Wikipedia: Rum; Barbados Today on West Indies Rum Distillery",
+    "gives": "Barbados distilling from 1637, 'Rumbullion' 1651, Ligon 1650, stills by 1667; no source on worms",
+    "url": "https://barbadostoday.bb/2020/11/20/west-indies-rum-distillery-recapturing-the-rum-of-yesteryear/",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Rum; Barbados Today on West Indies Rum Distillery",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-VESS-RUM",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

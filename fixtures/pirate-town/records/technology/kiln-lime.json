@@ -1,0 +1,81 @@
+{
+  "id": "catalogue/technology.kiln-lime",
+  "kind": "technology",
+  "names": [
+    {
+      "text": "Lime kiln (clamp and draw kilns)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "technology"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "place": "catalogue/region.atlantic",
+      "date": {
+        "from": {
+          "year": 1650
+        },
+        "to": {
+          "year": 1730
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.eq-heat-lime"
+      ],
+      "note": "common (islands burn coral or shell lime for mortar and sugar-boiling)",
+      "what": "presence",
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "conf_history medium, SCIENTIFIC_EQUIPMENT.md §2 row kiln_lime"
+      }
+    },
+    {
+      "what": "earliest_evidence",
+      "place": null,
+      "date": null,
+      "sources": [
+        "catalogue/source.eq-heat-lime"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "conf_history medium, SCIENTIFIC_EQUIPMENT.md §2 row kiln_lime"
+      },
+      "note": "Roman (the source: no English lime kilns before the Romans); clamp kilns the temporary form; draw kilns later"
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.eq-heat-lime"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/science/SCIENTIFIC_EQUIPMENT.md",
+      "anchor": "## 2. The catalogue | kiln_lime",
+      "sha256": "912e9658f93bcd4537fbc001c0042a651b2c94116447dd500a47266e50c0d0d2"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/body/data/equipment.json",
+      "anchor": "catalogue | kiln_lime",
+      "sha256": "90e4b22328a99f8b855970f076a64f3bdbe09e5f82d622ea87001da98ccc70b8"
+    }
+  ],
+  "notes": "Ingested by scripts/ingest-equipment.ts from SCIENTIFIC_EQUIPMENT.md §2 and equipment.json row kiln_lime. Credited to: -. Skill: Masonry, Lime burning. Capability columns stay with the game (CAT-Q1)."
+}

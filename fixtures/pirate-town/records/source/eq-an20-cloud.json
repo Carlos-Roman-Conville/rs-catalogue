@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-an20-cloud",
+  "kind": "source",
+  "source": {
+    "key": "EQ-AN20-CLOUD",
+    "title": "Wikipedia, Cloud chamber",
+    "gives": "C.T.R. Wilson 1911, Nobel 1927; expansion chamber with water vapour; Langsdorf diffusion chamber 1936, alcohol, below -26 C; dry ice",
+    "url": "https://en.wikipedia.org/wiki/Cloud_chamber",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Wikipedia, Cloud chamber",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-AN20-CLOUD",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

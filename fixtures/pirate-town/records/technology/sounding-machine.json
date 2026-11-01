@@ -1,0 +1,81 @@
+{
+  "id": "catalogue/technology.sounding-machine",
+  "kind": "technology",
+  "names": [
+    {
+      "text": "Sounding machine",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "technology"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "place": "catalogue/region.atlantic",
+      "date": {
+        "from": {
+          "year": 1650
+        },
+        "to": {
+          "year": 1730
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.eq-sf-sound"
+      ],
+      "note": "none in practice 1650 to 1730: Hooke's device remained a Royal Society proposal; the lead line serves every ship",
+      "what": "absence",
+      "label": "estimate",
+      "confidence": {
+        "level": "medium",
+        "reason": "the row states none for 1650-1730 and its keys date or explain it; the window statement is the keeper's reading of the source, hence estimate"
+      }
+    },
+    {
+      "what": "invention",
+      "place": null,
+      "date": null,
+      "sources": [
+        "catalogue/source.eq-sf-sound"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "conf_history medium, SCIENTIFIC_EQUIPMENT.md §2 row sounding_machine"
+      },
+      "note": "Hooke's ball-and-weight device, shown 30 Sept 1663 and printed 1666 and 1667; Massey's machine 1802; Kelvin's 1876 (Royal Society; Wikipedia); credited to Robert Hooke; Edward Massey (1802); William Thomson (Kelvin)"
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.eq-sf-sound"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/science/SCIENTIFIC_EQUIPMENT.md",
+      "anchor": "## 2. The catalogue | sounding_machine",
+      "sha256": "912e9658f93bcd4537fbc001c0042a651b2c94116447dd500a47266e50c0d0d2"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/body/data/equipment.json",
+      "anchor": "catalogue | sounding_machine",
+      "sha256": "90e4b22328a99f8b855970f076a64f3bdbe09e5f82d622ea87001da98ccc70b8"
+    }
+  ],
+  "notes": "Ingested by scripts/ingest-equipment.ts from SCIENTIFIC_EQUIPMENT.md §2 and equipment.json row sounding_machine. Credited to: Robert Hooke; Edward Massey (1802); William Thomson (Kelvin). Skill: Shipwrighting. Capability columns stay with the game (CAT-Q1)."
+}

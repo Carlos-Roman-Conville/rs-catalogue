@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-chem18-6",
+  "kind": "source",
+  "source": {
+    "key": "EQ-CHEM18-6",
+    "title": "Wikipedia: Celsius",
+    "gives": "Celsius proposed 1742 an inverted scale (0 boiling, 100 freezing); Christin flipped it 1743, Linnaeus 1744; renamed from centigrade 1948",
+    "url": "https://en.wikipedia.org/wiki/Celsius",
+    "rights": "reference"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Celsius",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-CHEM18-6",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

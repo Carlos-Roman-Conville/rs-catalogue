@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-sep-sugar",
+  "kind": "source",
+  "source": {
+    "key": "EQ-SEP-SUGAR",
+    "title": "Richard Ligon, A True and Exact History of the Island of Barbados (1657, 2nd ed. 1673); Discovering Bristol curing-house plan",
+    "gives": "the grinding room, boiling room, curing house and still house with plans (search result only; the text was not read)",
+    "url": "https://gutenberg.org/cache/epub/70489/pg70489-images.html",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Richard Ligon, A True and Exact History of the Island of Barbados (1657, 2nd ed. 1673); Discovering Bristol curing-house plan",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-SEP-SUGAR",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

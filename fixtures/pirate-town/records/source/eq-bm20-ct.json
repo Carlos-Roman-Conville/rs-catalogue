@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-bm20-ct",
+  "kind": "source",
+  "source": {
+    "key": "EQ-BM20-CT",
+    "title": "Web search (ETHW IEEE Milestone, Smithsonian Magazine, IEEE Spectrum)",
+    "gives": "Hounsfield at EMI Hayes from 1967; first patient scan 1 October 1971 at Atkinson Morley Hospital; commercial EMI scanner end of 1973, 320 x 320 pixels; Cormack theory, Nobel 1979",
+    "url": "https://ethw.org/Milestones:First_Computerized_Tomography_(CT)_X-ray_Scanner,_1971; https://www.smithsonianmag.com/innovation/fifty-years-ago-the-first-ct-scan-let-doctors-see-inside-a-living-skull-180978792/",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Web search (ETHW IEEE Milestone, Smithsonian Magazine, IEEE Spectrum)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-BM20-CT",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

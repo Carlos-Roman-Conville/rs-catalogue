@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-surg-6",
+  "kind": "source",
+  "source": {
+    "key": "EQ-SURG-6",
+    "title": "Royal College of Physicians of Edinburgh on uroscopy; Shakespeare Birthplace Trust, Method in the Madness; Urology News history",
+    "gives": "the matula and the condemnation of uroscopy by the 1600s",
+    "url": "https://rcpe.ac.uk/taxonomy/term/1671",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Royal College of Physicians of Edinburgh on uroscopy; Shakespeare Birthplace Trust, Method in the Madness; Urology News history",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-SURG-6",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

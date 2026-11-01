@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-pf-coke",
+  "kind": "source",
+  "source": {
+    "key": "EQ-PF-COKE",
+    "title": "Web search (Grace's Guide Coalbrookdale Co / Abraham Darby; English Heritage Ironbridge; EBSCO coke smelting; Broseley journal)",
+    "gives": "Coalbrookdale furnace in blast 10 Jan 1709 (Darby I, ex Bristol copper smelting where coke was used); Grace's says 'first coke furnace' is not strictly correct but first in Europe to last; Smiles says charcoal at first, coke introduced gradually (sources disagree); Darby II expanded coke use from 1730",
+    "url": "https://www.gracesguide.co.uk/Coalbrookdale_Co; https://www.english-heritage.org.uk/visit/places/iron-bridge/history; https://www.ebsco.com/research-starters/history/invention-coke-smelting",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Web search (Grace's Guide Coalbrookdale Co / Abraham Darby; English Heritage Ironbridge; EBSCO coke smelting; Broseley journal)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-PF-COKE",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

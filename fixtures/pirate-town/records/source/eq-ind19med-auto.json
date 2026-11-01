@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-ind19med-auto",
+  "kind": "source",
+  "source": {
+    "key": "EQ-IND19MED-AUTO",
+    "title": "Wikipedia, Autoclave",
+    "gives": "Chamberland 1879; Papin digester 1679; steam 121 C at 1 atm gauge; 134 C 3 min",
+    "url": "https://en.wikipedia.org/wiki/Autoclave",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Wikipedia, Autoclave",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-IND19MED-AUTO",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-sep-cohob",
+  "kind": "source",
+  "source": {
+    "key": "EQ-SEP-COHOB",
+    "title": "Wikipedia: Cohobation; World Wide Words; OneLook dictionary entries",
+    "gives": "definition, the pelican, the Arabic root, the early 1600s English date, the modern verdict of no purification",
+    "url": "https://en.wikipedia.org/wiki/Cohobation",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Cohobation; World Wide Words; OneLook dictionary entries",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-SEP-COHOB",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

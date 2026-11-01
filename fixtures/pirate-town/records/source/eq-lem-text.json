@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-lem-text",
+  "kind": "source",
+  "source": {
+    "key": "EQ-LEM-TEXT",
+    "title": "Lemery, Cours de chymie (sourcelibrary.org OCR of the English translation)",
+    "gives": "Furnaces and vessels chapter: reverberatory furnace the most common (p. 47), cooled helm (p. 55), Mary's bath (p. 58), matrass uses and vessel of encounter (p. 61), glass funnels and mortars (p. 63), lutes (p. 70); no temperatures",
+    "url": "https://sourcelibrary.org/book/a-course-of-chymistry-lemery",
+    "rights": "primary text"
+  },
+  "names": [
+    {
+      "text": "Lemery, Cours de chymie (sourcelibrary.org OCR of the English translation)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-LEM-TEXT",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "catalogue/technology.proof-powder",
+  "kind": "technology",
+  "names": [
+    {
+      "text": "Gunpowder proof of spirits",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "technology"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "place": "catalogue/region.atlantic",
+      "date": {
+        "from": {
+          "year": 1650
+        },
+        "to": {
+          "year": 1730
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.eq-meas-proof",
+        "catalogue/source.eq-meas-wiki"
+      ],
+      "note": "common: sailors and traders",
+      "what": "presence",
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "conf_history medium, SCIENTIFIC_EQUIPMENT.md §2 row proof_powder"
+      }
+    },
+    {
+      "what": "earliest_evidence",
+      "place": null,
+      "date": null,
+      "sources": [
+        "catalogue/source.eq-meas-proof",
+        "catalogue/source.eq-meas-wiki"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "conf_history medium, SCIENTIFIC_EQUIPMENT.md §2 row proof_powder"
+      },
+      "note": "16th c. England (proof), the gunpowder test an early method; no firm date for the gunpowder test (Wikipedia, Difford's); hydrometer dates disagree (Clarke 1730 or 1770s; Sikes 1816 or 1818)"
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.eq-meas-proof",
+    "catalogue/source.eq-meas-wiki"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/science/SCIENTIFIC_EQUIPMENT.md",
+      "anchor": "## 2. The catalogue | proof_powder",
+      "sha256": "912e9658f93bcd4537fbc001c0042a651b2c94116447dd500a47266e50c0d0d2"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/body/data/equipment.json",
+      "anchor": "catalogue | proof_powder",
+      "sha256": "90e4b22328a99f8b855970f076a64f3bdbe09e5f82d622ea87001da98ccc70b8"
+    }
+  ],
+  "notes": "Ingested by scripts/ingest-equipment.ts from SCIENTIFIC_EQUIPMENT.md §2 and equipment.json row proof_powder. Credited to: -. Skill: Distilling. Capability columns stay with the game (CAT-Q1)."
+}

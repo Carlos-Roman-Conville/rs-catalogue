@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-meas-boyle",
+  "kind": "source",
+  "source": {
+    "key": "EQ-MEAS-BOYLE",
+    "title": "Boyle, Experiments and Considerations Touching Colours (1664, Project Gutenberg 14504); Hungarian analytical-chemistry history article (real.mtak.hu)",
+    "gives": "Experiment XLIX, syrup of violets turned red by acids; Jordan 1631 and Witty 1660 as earlier users",
+    "url": "https://www.gutenberg.org/ebooks/14504",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Boyle, Experiments and Considerations Touching Colours (1664, Project Gutenberg 14504); Hungarian analytical-chemistry history article (real.mtak.hu)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-MEAS-BOYLE",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

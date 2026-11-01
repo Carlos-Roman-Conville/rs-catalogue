@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-heat-lens",
+  "kind": "source",
+  "source": {
+    "key": "EQ-HEAT-LENS",
+    "title": "Francois Villette (Wikipedia); Tschirnhaus (MacTutor and the arXiv 'Discovery of European Porcelain Technology')",
+    "gives": "Tschirnhaus's 1686 mirror above 1,400 C; Villette melting pot-iron in 50 s; large lenses; Lavoisier's 89 cm lens",
+    "url": "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Villette",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Francois Villette (Wikipedia); Tschirnhaus (MacTutor and the arXiv 'Discovery of European Porcelain Technology')",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-HEAT-LENS",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

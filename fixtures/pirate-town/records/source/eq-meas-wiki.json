@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-meas-wiki",
+  "kind": "source",
+  "source": {
+    "key": "EQ-MEAS-WIKI",
+    "title": "Wikipedia: Thermometer; Barometer; Hourglass; Pendulum clock; Backstaff; Mariner's astrolabe; Chip log; Sounding line; Touchstone; Hydrometer; Litmus; Quadrant; Pocket watch; Balance spring; Weighing scale",
+    "gives": "dates, credits, materials and limits for the thermoscope to the Reaumur thermometer, the barometer, the sandglass, the pendulum clock, the watch, the navigation instruments, the log, the lead, the touchstone, the hydrometer, litmus and the balance",
+    "url": "https://en.wikipedia.org/wiki/Thermometer",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Thermometer; Barometer; Hourglass; Pendulum clock; Backstaff; Mariner's astrolabe; Chip log; Sounding line; Touchstone; Hydrometer; Litmus; Quadrant; Pocket watch; Balance spring; Weighing scale",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-MEAS-WIKI",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-heat-bath",
+  "kind": "source",
+  "source": {
+    "key": "EQ-HEAT-BATH",
+    "title": "Wikipedia: Bain-marie; Sand bath",
+    "gives": "Zosimos c. 300 AD crediting Mary the Jewess; Ulstad 1528; sand bath (qadr) and the Latin names for sand, ash, dry baths",
+    "url": "https://en.wikipedia.org/wiki/Bain-marie",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Bain-marie; Sand bath",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-HEAT-BATH",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

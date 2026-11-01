@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-pf-gas",
+  "kind": "source",
+  "source": {
+    "key": "EQ-PF-GAS",
+    "title": "Web search (National Gas Museum; The Chemical Engineer Old King Coal part 2; Grace's Guide Gas Lighting; Biggar Gasworks)",
+    "gives": "Winsor Pall Mall demonstration 1807; Gas Light and Coke Company Act 1810, charter and Westminster works 1812 to 1813 (sources differ); Murdoch favoured private plants; no 1812 calorific figure found",
+    "url": "https://www.nationalgasmuseum.org.uk/?p=102; https://www.thechemicalengineer.com/features/old-king-coal-part-2-coal-gases/; https://gracesguide.co.uk/Gas_Lighting",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Web search (National Gas Museum; The Chemical Engineer Old King Coal part 2; Grace's Guide Gas Lighting; Biggar Gasworks)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-PF-GAS",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

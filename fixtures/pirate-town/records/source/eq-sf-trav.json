@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-sf-trav",
+  "kind": "source",
+  "source": {
+    "key": "EQ-SF-TRAV",
+    "title": "Wikipedia Traverse board",
+    "gives": "Bourne 1571; pegs, compass rose; half-hour headings; quarter-knot speeds",
+    "url": "https://en.wikipedia.org/wiki/Traverse_board",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Wikipedia Traverse board",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-SF-TRAV",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "id": "catalogue/technology.spray-carbolic",
+  "kind": "technology",
+  "names": [
+    {
+      "text": "Carbolic spray (Lister)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "technology"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "place": "catalogue/region.atlantic",
+      "date": {
+        "from": {
+          "year": 1650
+        },
+        "to": {
+          "year": 1730
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.eq-ind19med-anti"
+      ],
+      "note": "none: no phenol and no germ theory",
+      "what": "absence",
+      "label": "estimate",
+      "confidence": {
+        "level": "medium",
+        "reason": "the row states none for 1650-1730 and its keys date or explain it; the window statement is the keeper's reading of the source, hence estimate"
+      }
+    },
+    {
+      "what": "invention",
+      "place": null,
+      "date": {
+        "from": {
+          "year": 1867
+        },
+        "to": {
+          "year": 1867
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.eq-ind19med-anti"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "conf_history medium, SCIENTIFIC_EQUIPMENT.md §2 row spray_carbolic"
+      },
+      "note": "1867 (Lister's paper); French surgeons used carbolic in the 1860s; credited to Joseph Lister"
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.eq-ind19med-anti"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/science/SCIENTIFIC_EQUIPMENT.md",
+      "anchor": "## 2. The catalogue | spray_carbolic",
+      "sha256": "912e9658f93bcd4537fbc001c0042a651b2c94116447dd500a47266e50c0d0d2"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/body/data/equipment.json",
+      "anchor": "catalogue | spray_carbolic",
+      "sha256": "90e4b22328a99f8b855970f076a64f3bdbe09e5f82d622ea87001da98ccc70b8"
+    }
+  ],
+  "notes": "Ingested by scripts/ingest-equipment.ts from SCIENTIFIC_EQUIPMENT.md §2 and equipment.json row spray_carbolic. Credited to: Joseph Lister. Skill: Surgery, Apothecary. Capability columns stay with the game (CAT-Q1)."
+}

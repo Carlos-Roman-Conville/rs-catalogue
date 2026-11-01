@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-an20-uvv",
+  "kind": "source",
+  "source": {
+    "key": "EQ-AN20-UVV",
+    "title": "Wikipedia, UV-vis spectroscopy; DU spectrophotometer; The Scientist",
+    "gives": "Lamps (tungsten 300 to 2500 nm, deuterium 190 to 400 nm); detectors; 1 cm cuvette; Beckman DU introduced July 1941 from Model D with Howard Cary; over 30,000 made 1941 to 1976",
+    "url": "https://en.wikipedia.org/wiki/Ultraviolet%E2%80%93visible_spectroscopy; https://en.wikipedia.org/wiki/DU_spectrophotometer; https://www.the-scientist.com/the-first-commercial-uv-vis-spectrometer-47756",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Wikipedia, UV-vis spectroscopy; DU spectrophotometer; The Scientist",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-AN20-UVV",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

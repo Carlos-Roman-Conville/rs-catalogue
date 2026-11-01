@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-pf-pearl",
+  "kind": "source",
+  "source": {
+    "key": "EQ-PF-PEARL",
+    "title": "Web search (ETHW Pearl Street Station 1882 milestone; Edison Illuminating Company)",
+    "gives": "Pearl Street, Manhattan, service from 4 Sep 1882, direct current, 59 customers at start, six 27-ton steam 'Jumbo' dynamos; Holborn Viaduct (London) earlier in 1882, temporary; voltage not found",
+    "url": "https://ethw.org/Milestones:Pearl_Street_Station,_1882; https://en.wikipedia.org/wiki/Edison_Illuminating_Company",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Web search (ETHW Pearl Street Station 1882 milestone; Edison Illuminating Company)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-PF-PEARL",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-sf-sound",
+  "kind": "source",
+  "source": {
+    "key": "EQ-SF-SOUND",
+    "title": "Wikipedia Sounding line and Royal Society picture library (Hooke's device)",
+    "gives": "Massey 1802, 150 fathoms; Kelvin 1876; Hooke shown 30 Sept 1663, printed 1666 and 1667; Moore 1678 report",
+    "url": "https://en.wikipedia.org/wiki/Sounding_line; https://pictures.royalsociety.org/image-rs-15288",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Wikipedia Sounding line and Royal Society picture library (Hooke's device)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-SF-SOUND",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

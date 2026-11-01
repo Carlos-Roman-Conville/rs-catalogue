@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-chem18-14",
+  "kind": "source",
+  "source": {
+    "key": "EQ-CHEM18-14",
+    "title": "Wikipedia: Watt steam engine",
+    "gives": "Separate condenser conceived 1765, patent 1769; first commercial engine Carron 1776; about 75% less fuel than Newcomen; low-pressure steam; Wilkinson's boring; sun-and-planet rotary 1781; horsepower unit c. 1784",
+    "url": "https://en.wikipedia.org/wiki/Watt_steam_engine",
+    "rights": "reference"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Watt steam engine",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-CHEM18-14",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

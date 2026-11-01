@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-met-1",
+  "kind": "source",
+  "source": {
+    "key": "EQ-MET-1",
+    "title": "Wikipedia: Blast furnace",
+    "gives": "earliest European blast furnaces (Durstel, Maerkische Sauerland, Lapphyttan, 12th-13th c.); first English furnace Queenstock, Buxted, about 1491; zone temperatures to about 1,200 C; Darby coke 1709; 18th c. furnaces about 360 t a year",
+    "url": "https://en.wikipedia.org/wiki/Blast_furnace",
+    "rights": "reference"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Blast furnace",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-MET-1",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

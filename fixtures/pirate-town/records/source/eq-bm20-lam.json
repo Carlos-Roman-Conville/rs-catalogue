@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-bm20-lam",
+  "kind": "source",
+  "source": {
+    "key": "EQ-BM20-LAM",
+    "title": "Wikipedia, Laminar flow cabinet; web search (Sandia newsreleases, chiphistory.org)",
+    "gives": "Stainless steel bench, HEPA curtain of air, UV-C lamp, not for pathogens; Whitfield (Sandia) laminar-flow cleanroom 1960 to 1962, filters 99.97 percent at 0.3 um; the 90 fpm figure not confirmed",
+    "url": "https://en.wikipedia.org/wiki/Laminar_flow_cabinet; https://newsreleases.sandia.gov/cleanroom_50th/",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Wikipedia, Laminar flow cabinet; web search (Sandia newsreleases, chiphistory.org)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-BM20-LAM",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

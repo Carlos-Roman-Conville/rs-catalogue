@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-chem18-12",
+  "kind": "source",
+  "source": {
+    "key": "EQ-CHEM18-12",
+    "title": "Wikipedia: Stephen Hales",
+    "gives": "Trough in Vegetable Staticks 1727, later modified by Brownrigg, Cavendish and Priestley; ventilators: large hand-worked bellows (windmill-driven for large ones), French edition 1744, installed in ships, prisons and mines, aerated Royal Navy lower decks against dry rot; capacity not given (open)",
+    "url": "https://en.wikipedia.org/wiki/Stephen_Hales",
+    "rights": "reference"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Stephen Hales",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-CHEM18-12",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-meas-mettler",
+  "kind": "source",
+  "source": {
+    "key": "EQ-MEAS-METTLER",
+    "title": "Mettler-Toledo company histories (University of Toronto archive copy; company-histories.com); Actualite Chimique 2024 (Societe Chimique de France); Lab Manager: Evolution of the Analytical Lab Balance",
+    "gives": "Erhard Mettler's single-pan substitution balance (1945 firm, production 1946 or first model 1947, sources differ) and the PT1200, the first fully electronic precision balance (1973 or 1974, 1,200 g, 0.01 g sensitivity); no source read for a 0.01 mg electronic balance",
+    "url": "https://www.labmanager.com/evolution-of-the-analytical-lab-balance-20022",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Mettler-Toledo company histories (University of Toronto archive copy; company-histories.com); Actualite Chimique 2024 (Societe Chimique de France); Lab Manager: Evolution of the Analytical Lab Balance",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-MEAS-METTLER",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

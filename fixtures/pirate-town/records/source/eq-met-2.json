@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-met-2",
+  "kind": "source",
+  "source": {
+    "key": "EQ-MET-2",
+    "title": "Wikipedia: Bloomery",
+    "gives": "bloomery below iron's melting point; blooms about 15 kg in the late 14th c., later to about 300 kg; water-driven bellows and hammers; last English bloomery about 1770; Catalan forges to the mid-19th c.",
+    "url": "https://en.wikipedia.org/wiki/Bloomery",
+    "rights": "reference"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Bloomery",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-MET-2",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-chem18-13",
+  "kind": "source",
+  "source": {
+    "key": "EQ-CHEM18-13",
+    "title": "Wikipedia: Newcomen atmospheric engine",
+    "gives": "First documented engine 1712 at Conygree, Tipton (Dudley Castle engine, drawn 1719); steam at no more than 1-2 psi; copper boiler with lead dome, brass then cast-iron cylinders (Hawarden c. 1714-15); replica cylinder 52 cm bore, over 2 m long; Savery 1698, Papin 1690; fuel-hungry; horsepower not given (open)",
+    "url": "https://en.wikipedia.org/wiki/Newcomen_atmospheric_engine",
+    "rights": "reference"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Newcomen atmospheric engine",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-CHEM18-13",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

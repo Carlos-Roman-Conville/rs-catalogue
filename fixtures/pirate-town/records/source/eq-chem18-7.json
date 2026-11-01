@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-chem18-7",
+  "kind": "source",
+  "source": {
+    "key": "EQ-CHEM18-7",
+    "title": "Wikipedia: Leyden jar",
+    "gives": "Von Kleist 11 Oct 1745; Cunaeus and Musschenbroek 1745-46 (report 20 Jan 1746); glass jar, tin foil, rod and chain; roughly 20,000 to 60,000 V, about 1 nF per pint; Guericke generator c. 1650, Bose prime conductor",
+    "url": "https://en.wikipedia.org/wiki/Leyden_jar",
+    "rights": "reference"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Leyden jar",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-CHEM18-7",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

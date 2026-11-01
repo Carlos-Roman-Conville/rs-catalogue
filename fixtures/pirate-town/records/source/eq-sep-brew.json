@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-sep-brew",
+  "kind": "source",
+  "source": {
+    "key": "EQ-SEP-BREW",
+    "title": "OED/wehd.com underback entry; Encyclopaedia Britannica 1778 and 1797 (jimclifford.ca); Brewery History Society wiki",
+    "gives": "1635 Kent underbacks, 1686 Essex mashing tub, copper preferred over lead, backmaker materials and hooped tuns",
+    "url": "https://jimclifford.ca/early_encyclopedia_britannica/articles/1797/eb_3rd_1797_004414.html",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "OED/wehd.com underback entry; Encyclopaedia Britannica 1778 and 1797 (jimclifford.ca); Brewery History Society wiki",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-SEP-BREW",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-an20-ms",
+  "kind": "source",
+  "source": {
+    "key": "EQ-AN20-MS",
+    "title": "Wikipedia, Mass spectrometry",
+    "gives": "Wien 1899; Thomson; Dempster 1918, Aston 1919; vacuum; 70 eV EI; 1 to 10 keV; resolution by analyser",
+    "url": "https://en.wikipedia.org/wiki/Mass_spectrometry",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Wikipedia, Mass spectrometry",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-AN20-MS",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

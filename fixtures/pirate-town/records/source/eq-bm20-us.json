@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-bm20-us",
+  "kind": "source",
+  "source": {
+    "key": "EQ-BM20-US",
+    "title": "Web search (Canadian Encyclopedia, SDMS transducer article, Dastur and Tank on Ian Donald)",
+    "gives": "Curie piezoelectricity 1880 to 1881; Langevin quartz sonar 1915 to 1918; Dussik 1942; Howry 1949; Donald and Brown Glasgow 1956 (some say 1958); 2 to 15 MHz probes",
+    "url": "https://thecanadianencyclopedia.ca/en/article/medical-ultrasound; https://www.sdms.org/docs/default-source/jdmspdf/ultrasound-transducers.pdf",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Web search (Canadian Encyclopedia, SDMS transducer article, Dastur and Tank on Ian Donald)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-BM20-US",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

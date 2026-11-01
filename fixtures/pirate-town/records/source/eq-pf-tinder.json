@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-pf-tinder",
+  "kind": "source",
+  "source": {
+    "key": "EQ-PF-TINDER",
+    "title": "Web search (Future Museum tinderbox; Science Museum Group; Wikipedia Tinderbox)",
+    "gives": "Tinderbox held flint, steel, char cloth and sulphur-tipped splints ('brimstones'); sparks are burning steel flakes; the process could take minutes and failed in damp; displaced by friction matches; no 17th-c household date found",
+    "url": "https://www.futuremuseum.co.uk/collections/life-work/social-history/home-life/housekeeping/tinderbox; https://collection.sciencemuseumgroup.org.uk/objects/co159067/tinder-box",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Web search (Future Museum tinderbox; Science Museum Group; Wikipedia Tinderbox)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-PF-TINDER",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

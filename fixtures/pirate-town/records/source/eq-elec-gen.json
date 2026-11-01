@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-elec-gen",
+  "kind": "source",
+  "source": {
+    "key": "EQ-ELEC-GEN",
+    "title": "Wikipedia: Electrostatic generator",
+    "gives": "Guericke sulphur globe 1663, Newton, Hauksbee about 1706",
+    "url": "https://en.wikipedia.org/wiki/Electrostatic_generator",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Electrostatic generator",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-ELEC-GEN",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

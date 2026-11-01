@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-chem18-11",
+  "kind": "source",
+  "source": {
+    "key": "EQ-CHEM18-11",
+    "title": "Wikipedia: Joseph Black",
+    "gives": "Black's c. 1750 student balance: light beam on a wedge fulcrum, a pan each arm, far more accurate than any other of the time; fixed air (CO2) from limestone; specific heat 1760; latent heat 1761",
+    "url": "https://en.wikipedia.org/wiki/Joseph_Black",
+    "rights": "reference"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Joseph Black",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-CHEM18-11",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

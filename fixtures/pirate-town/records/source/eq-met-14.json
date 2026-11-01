@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-met-14",
+  "kind": "source",
+  "source": {
+    "key": "EQ-MET-14",
+    "title": "Wikipedia: Ropewalk; History Hit on the Chatham Ropery; Good Old Boat",
+    "gives": "Chatham ropery built 1728 (other sources 1790 for the long building); ropewalks at Chatham and Rochefort at the end of the 17th c.; Copenhagen 980 ft walk early 17th c.; hemp hatchelled, spun, tarred",
+    "url": "https://en.wikipedia.org/wiki/Ropewalk",
+    "rights": "reference"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Ropewalk; History Hit on the Chatham Ropery; Good Old Boat",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-MET-14",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

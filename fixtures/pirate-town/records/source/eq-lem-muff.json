@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-lem-muff",
+  "kind": "source",
+  "source": {
+    "key": "EQ-LEM-MUFF",
+    "title": "Wikipedia Muffle furnace",
+    "gives": "Muffle isolates work from fuel; historic muffle kilns 750 to 950 C; modern 1200 C",
+    "url": "https://en.wikipedia.org/wiki/Muffle_furnace",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Wikipedia Muffle furnace",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-LEM-MUFF",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

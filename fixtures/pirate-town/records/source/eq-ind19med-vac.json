@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-ind19med-vac",
+  "kind": "source",
+  "source": {
+    "key": "EQ-IND19MED-VAC",
+    "title": "Wikipedia, Vacuum flask",
+    "gives": "Dewar 1892 (brass, evacuated gap, later glass, silvered); liquid nitrogen 77 K",
+    "url": "https://en.wikipedia.org/wiki/Vacuum_flask",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Wikipedia, Vacuum flask",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-IND19MED-VAC",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

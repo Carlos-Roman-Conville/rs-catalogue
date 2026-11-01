@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-bm20-cryo",
+  "kind": "source",
+  "source": {
+    "key": "EQ-BM20-CRYO",
+    "title": "Web search (embryo.asu.edu Polge, PMC2781087, UW Mechanical Engineering)",
+    "gives": "Polge, Smith and Parkes 1949 glycerol protects fowl sperm frozen; Smith 1950 red cells; Polge and Rowson bull semen; cryopreservation below about -140 C or -180 C; the -196 C and Dewar dates not found",
+    "url": "https://embryo.asu.edu/pages/ernest-john-christopher-polge-1926-2006; https://pmc.ncbi.nlm.nih.gov/articles/PMC2781087",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Web search (embryo.asu.edu Polge, PMC2781087, UW Mechanical Engineering)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-BM20-CRYO",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

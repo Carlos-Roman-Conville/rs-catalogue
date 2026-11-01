@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-heat-dung",
+  "kind": "source",
+  "source": {
+    "key": "EQ-HEAT-DUNG",
+    "title": "Source Library encyclopedia: Horse dung (as a heat source), venter equinus, fimus equinus",
+    "gives": "dung as a gentle constant heat for digestion; no temperature",
+    "url": "https://sourcelibrary.org/encyclopedia/Horse%20dung%20(as%20a%20heat%20source)",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Source Library encyclopedia: Horse dung (as a heat source), venter equinus, fimus equinus",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-HEAT-DUNG",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

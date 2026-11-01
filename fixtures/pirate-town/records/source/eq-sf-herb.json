@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-sf-herb",
+  "kind": "source",
+  "source": {
+    "key": "EQ-SF-HERB",
+    "title": "Wikipedia Herbarium",
+    "gives": "Ghini pressed plants between paper, garden at Pisa 1544; flimsies, blotters; labels",
+    "url": "https://en.wikipedia.org/wiki/Herbarium",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Wikipedia Herbarium",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-SF-HERB",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

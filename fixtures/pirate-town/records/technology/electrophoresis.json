@@ -1,0 +1,91 @@
+{
+  "id": "catalogue/technology.electrophoresis",
+  "kind": "technology",
+  "names": [
+    {
+      "text": "Electrophoresis apparatus",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "technology"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "place": "catalogue/region.atlantic",
+      "date": {
+        "from": {
+          "year": 1650
+        },
+        "to": {
+          "year": 1730
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.eq-an20-elec"
+      ],
+      "note": "none (anomaly; no DC supply; the 1801 effect was seen with a voltaic pile)",
+      "what": "presence",
+      "label": "open",
+      "confidence": {
+        "level": "low",
+        "reason": "availability 'none (anomaly)' is the game's time-anomaly mark, not a source of absence (DESIGN §6); window presence unknown"
+      }
+    },
+    {
+      "what": "invention",
+      "place": null,
+      "date": {
+        "from": {
+          "year": 1937
+        },
+        "to": {
+          "year": 1937
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.eq-an20-elec"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "conf_history medium, SCIENTIFIC_EQUIPMENT.md §2 row electrophoresis"
+      },
+      "note": "1937 (Tiselius moving boundary); filter paper and gel zone methods 1940s to 1950s; 1960s gels separate biomolecules; first observations 1801 (Gautherot), 1809 (Reuss); credited to Arne Tiselius"
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.eq-an20-elec"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/science/SCIENTIFIC_EQUIPMENT.md",
+      "anchor": "## 2. The catalogue | electrophoresis",
+      "sha256": "912e9658f93bcd4537fbc001c0042a651b2c94116447dd500a47266e50c0d0d2"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/body/data/equipment.json",
+      "anchor": "catalogue | electrophoresis",
+      "sha256": "90e4b22328a99f8b855970f076a64f3bdbe09e5f82d622ea87001da98ccc70b8"
+    }
+  ],
+  "notes": "Ingested by scripts/ingest-equipment.ts from SCIENTIFIC_EQUIPMENT.md §2 and equipment.json row electrophoresis. Credited to: Arne Tiselius. Skill: Chymistry. Capability columns stay with the game (CAT-Q1). availability 'none (anomaly)' is the game's time-anomaly mark, not a source of absence (DESIGN §6); window presence unknown"
+}

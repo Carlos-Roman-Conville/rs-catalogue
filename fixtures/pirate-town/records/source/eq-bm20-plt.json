@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-bm20-plt",
+  "kind": "source",
+  "source": {
+    "key": "EQ-BM20-PLT",
+    "title": "Wikipedia, Plate reader; web search (ddw-online.com, labmanager.com, newlifescientific.com)",
+    "gives": "Takatsy 1951 acrylic block of wells; moulded 96-well Microtiter by Cooke 1965; ELISA 1974; LabSystems Multiskan (no year found); 96-well 100 to 200 uL, 384 and 1536 wells 5 to 50 uL; absorbance, fluorescence, luminescence",
+    "url": "https://en.wikipedia.org/wiki/Plate_reader; https://www.ddw-online.com/the-microplate-market-past-present-and-future-1127-200904/",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Wikipedia, Plate reader; web search (ddw-online.com, labmanager.com, newlifescientific.com)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-BM20-PLT",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-chem18-2",
+  "kind": "source",
+  "source": {
+    "key": "EQ-CHEM18-2",
+    "title": "Wikipedia: Eudiometer",
+    "gives": "Landriani named it; Fontana and Volta (electrified, spark between platinum wires) followed; graduated tube over water or mercury; common sizes 50 and 100 mL; Ingenhousz 1785; precision not stated (open)",
+    "url": "https://en.wikipedia.org/wiki/Eudiometer",
+    "rights": "reference"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Eudiometer",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-CHEM18-2",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

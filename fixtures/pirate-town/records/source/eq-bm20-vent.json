@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-bm20-vent",
+  "kind": "source",
+  "source": {
+    "key": "EQ-BM20-VENT",
+    "title": "Wikipedia, Iron lung and Ventilator; web search (litfl.com Drinker, brewminate.com)",
+    "gives": "Drinker and Shaw 1927, first clinical use 12 Oct 1928 at Boston Children's; Emerson 1931 cheaper; Both respirator 1937; Bird Universal Medical Respirator 1955 pneumatic; Engstrom and positive-pressure lineage not found",
+    "url": "https://en.wikipedia.org/wiki/Iron_lung; https://en.wikipedia.org/wiki/Ventilator",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Wikipedia, Iron lung and Ventilator; web search (litfl.com Drinker, brewminate.com)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-BM20-VENT",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-pf-match",
+  "kind": "source",
+  "source": {
+    "key": "EQ-PF-MATCH",
+    "title": "Web search (Stockton heritage, phillumeny.com, Sigmalive on John Walker; Wikipedia Match)",
+    "gives": "Walker, Stockton-on-Tees chemist, friction match 1826 (head of antimony sulfide, potassium chlorate, gum, starch), first sales 1827, unpatented; Sauria's 'congreves'; 1830s lucifers; tinderbox decline",
+    "url": "https://heritage.stockton.gov.uk/articles/people/john-walker-inventor-of-the-friction-match; https://phillumeny.com/john-walker",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Web search (Stockton heritage, phillumeny.com, Sigmalive on John Walker; Wikipedia Match)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-PF-MATCH",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

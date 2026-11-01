@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-bm20-def",
+  "kind": "source",
+  "source": {
+    "key": "EQ-BM20-DEF",
+    "title": "Web search (Besterman WIMJ story of cardiac defibrillation, encyclopedia.com, engineering.nyu.edu)",
+    "gives": "Kouwenhoven early 1930s AC; Beck first human 1947 open chest; Zoll external 1956 (one source 1961); Lown DC capacitor 1962; 20 to 400 J, 150 to 400 J typical",
+    "url": "https://www.mona.uwi.edu/fms/wimj/system/files/article_pdfs/bestermann_the_story_of_cardiac_defibrillation.pdf; https://www.encyclopedia.com/manufacturing/news-wires-white-papers-and-books/external-defibrillator",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Web search (Besterman WIMJ story of cardiac defibrillation, encyclopedia.com, engineering.nyu.edu)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-BM20-DEF",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

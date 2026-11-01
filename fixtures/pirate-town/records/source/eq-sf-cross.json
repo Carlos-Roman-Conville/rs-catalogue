@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-sf-cross",
+  "kind": "source",
+  "source": {
+    "key": "EQ-SF-CROSS",
+    "title": "Wikipedia Cross-staff",
+    "gives": "Levi ben Gerson 14th c., Jacob ben Makir; Dee 1550s; Dutch backstaves dropped 1731; spiegelboog 1660",
+    "url": "https://en.wikipedia.org/wiki/Cross-staff",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Wikipedia Cross-staff",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-SF-CROSS",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

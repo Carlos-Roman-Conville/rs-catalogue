@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-an20-gaede",
+  "kind": "source",
+  "source": {
+    "key": "EQ-AN20-GAEDE",
+    "title": "Web search (epicsysinc.com, industrial-production.de, leybold.com founders page)",
+    "gives": "Gaede rotary mercury pump 1905 (Merano); oil-sealed rotary 1907 as forepump; Welch Micro-Deka 1934 oil seal between inlet and exhaust",
+    "url": "https://epicsysinc.com/blog/vacuum-pumps/; https://www.leybold.com/en/about-us/our-founders/",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Web search (epicsysinc.com, industrial-production.de, leybold.com founders page)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-AN20-GAEDE",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

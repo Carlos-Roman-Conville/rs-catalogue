@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-chem18-10",
+  "kind": "source",
+  "source": {
+    "key": "EQ-CHEM18-10",
+    "title": "Wikipedia: Blowpipe (tool)",
+    "gives": "Blowpipe in mineral analysis since about 1738 (Bergman's account); Swab first; Cronstedt translated 1770; Bergman De Tubo Ferruminatorio 1779 (English 1788); Gahn's portable pipe; Lavoisier blew oxygen through one 1782; jewellers' mouth blowpipe since antiquity",
+    "url": "https://en.wikipedia.org/wiki/Blowpipe_(tool)",
+    "rights": "reference"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Blowpipe (tool)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-CHEM18-10",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

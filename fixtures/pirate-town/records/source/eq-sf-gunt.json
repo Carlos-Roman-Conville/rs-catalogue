@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-sf-gunt",
+  "kind": "source",
+  "source": {
+    "key": "EQ-SF-GUNT",
+    "title": "Wikipedia Gunter's chain",
+    "gives": "1620; 66 ft; 100 links of 7.92 in; statutory by 1670s",
+    "url": "https://en.wikipedia.org/wiki/Gunter%27s_chain",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Wikipedia Gunter's chain",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-SF-GUNT",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

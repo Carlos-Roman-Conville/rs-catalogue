@@ -1,0 +1,91 @@
+{
+  "id": "catalogue/technology.balance-analytical",
+  "kind": "technology",
+  "names": [
+    {
+      "text": "Analytical balance (electronic)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "technology"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "place": "catalogue/region.atlantic",
+      "date": {
+        "from": {
+          "year": 1650
+        },
+        "to": {
+          "year": 1730
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.eq-meas-mettler"
+      ],
+      "note": "none (anomaly)",
+      "what": "presence",
+      "label": "open",
+      "confidence": {
+        "level": "low",
+        "reason": "availability 'none (anomaly)' is the game's time-anomaly mark, not a source of absence (DESIGN §6); window presence unknown"
+      }
+    },
+    {
+      "what": "invention",
+      "place": null,
+      "date": {
+        "from": {
+          "year": 1945
+        },
+        "to": {
+          "year": 1947
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.eq-meas-mettler"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "conf_history medium, SCIENTIFIC_EQUIPMENT.md §2 row balance_analytical"
+      },
+      "note": "1945 to 1947 for the single-pan substitution analytical balance (Mettler, Switzerland: production 1946 per one source, first model early 1947 per another); the first fully electronic precision balance, Mettler PT1200, 1973 or 1974 (sources differ; 1,200 g capacity, 0.01 g sensitivity); an electronic balance reading 0.01 mg is later and its date is open (no page read); credited to Erhard Mettler (single-pan substitution balance); Mettler (PT1200); the 0.01 mg electronic form: open"
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.eq-meas-mettler"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/science/SCIENTIFIC_EQUIPMENT.md",
+      "anchor": "## 2. The catalogue | balance_analytical",
+      "sha256": "912e9658f93bcd4537fbc001c0042a651b2c94116447dd500a47266e50c0d0d2"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/body/data/equipment.json",
+      "anchor": "catalogue | balance_analytical",
+      "sha256": "90e4b22328a99f8b855970f076a64f3bdbe09e5f82d622ea87001da98ccc70b8"
+    }
+  ],
+  "notes": "Ingested by scripts/ingest-equipment.ts from SCIENTIFIC_EQUIPMENT.md §2 and equipment.json row balance_analytical. Credited to: Erhard Mettler (single-pan substitution balance); Mettler (PT1200); the 0.01 mg electronic form: open. Skill: -. Capability columns stay with the game (CAT-Q1). availability 'none (anomaly)' is the game's time-anomaly mark, not a source of absence (DESIGN §6); window presence unknown"
+}

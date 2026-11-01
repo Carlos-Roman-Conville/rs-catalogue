@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-chem18-3",
+  "kind": "source",
+  "source": {
+    "key": "EQ-CHEM18-3",
+    "title": "Wikipedia: Gasometer",
+    "gives": "Lavoisier devised the first gas holder, the gazometre, to weigh gas in a pneumatic trough; Traite 1789; no date, materials or capacity given (open); Watt junior adapted it for coal gas",
+    "url": "https://en.wikipedia.org/wiki/Gasometer",
+    "rights": "reference"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Gasometer",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-CHEM18-3",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

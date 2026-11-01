@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-pf-lpg",
+  "kind": "source",
+  "source": {
+    "key": "EQ-PF-LPG",
+    "title": "Web search (Wikipedia Walter O. Snelling; Cenex history of propane)",
+    "gives": "Snelling identified propane in gasoline 1910; bottled liquefied gas reported NYT 31 Mar 1912; patent 1,056,845 in 1913; American Gasol Co; first recorded production 1922; sale price to Phillips single-source, not used",
+    "url": "https://en.wikipedia.org/wiki/Walter_O._Snelling; https://www.cenex.com/expert-advice-and-insights/history-of-propane",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Web search (Wikipedia Walter O. Snelling; Cenex history of propane)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-PF-LPG",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

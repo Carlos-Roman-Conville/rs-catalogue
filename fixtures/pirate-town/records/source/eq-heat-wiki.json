@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-heat-wiki",
+  "kind": "source",
+  "source": {
+    "key": "EQ-HEAT-WIKI",
+    "title": "Wikipedia: Bellows; Reverberatory furnace; Cupellation; Blowpipe (tool); Kiln; Burning glass; Candle; Oil lamp; Spirit lamp; Forge; Oven; Hearth; Bloomery; Lime kiln",
+    "gives": "dates, uses, fuels and temperatures for bellows, furnaces, kilns, lamps, candle, oven, forge, blowpipe and lens; where the page gave no figure the row says so",
+    "url": "https://en.wikipedia.org/wiki/Reverberatory_furnace",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Bellows; Reverberatory furnace; Cupellation; Blowpipe (tool); Kiln; Burning glass; Candle; Oil lamp; Spirit lamp; Forge; Oven; Hearth; Bloomery; Lime kiln",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-HEAT-WIKI",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

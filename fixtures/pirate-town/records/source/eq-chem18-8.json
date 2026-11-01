@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-chem18-8",
+  "kind": "source",
+  "source": {
+    "key": "EQ-CHEM18-8",
+    "title": "Wikipedia: Electrostatic generator; web search on Ramsden's machine (Banks journal, PATSTEC, Cuthbertson)",
+    "gives": "Ramsden plate machine 1768 (one source 1766); predecessors Guericke c. 1663, Hauksbee c. 1706, Winckler c. 1746 leather cushion; Banks 1768 notes an 8 inch plate and an amalgam cushion; a Teylers machine of 1783-84 gave a 61 cm spark (not Ramsden's own); Ramsden's own spark length open",
+    "url": "https://en.wikipedia.org/wiki/Electrostatic_generator",
+    "rights": "reference"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Electrostatic generator; web search on Ramsden's machine (Banks journal, PATSTEC, Cuthbertson)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-CHEM18-8",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

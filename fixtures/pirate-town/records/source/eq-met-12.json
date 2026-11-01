@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-met-12",
+  "kind": "source",
+  "source": {
+    "key": "EQ-MET-12",
+    "title": "Historic England (Oare Gunpowder Works), Mills Archive, St Martha Parish history",
+    "gives": "water-powered powder mills in England from the mid-16th c.; powder before that made by hand for at least 200 years; stamp mills replaced by edge-runner mills in the 1730s; pressing and corning introduced between the 16th and 19th c.",
+    "url": "https://historicengland.org.uk/listing/the-list/list-entry/1016497",
+    "rights": "heritage"
+  },
+  "names": [
+    {
+      "text": "Historic England (Oare Gunpowder Works), Mills Archive, St Martha Parish history",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-MET-12",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

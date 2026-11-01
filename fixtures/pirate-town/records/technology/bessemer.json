@@ -1,0 +1,91 @@
+{
+  "id": "catalogue/technology.bessemer",
+  "kind": "technology",
+  "names": [
+    {
+      "text": "Bessemer converter",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "technology"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "place": "catalogue/region.atlantic",
+      "date": {
+        "from": {
+          "year": 1650
+        },
+        "to": {
+          "year": 1730
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.eq-ind19med-bess"
+      ],
+      "note": "none: needs a powerful blast engine and pig iron in tonnage; the Wikipedia page says steel before was costly and small-scale",
+      "what": "absence",
+      "label": "estimate",
+      "confidence": {
+        "level": "medium",
+        "reason": "the row states none for 1650-1730 and its keys date or explain it; the window statement is the keeper's reading of the source, hence estimate"
+      }
+    },
+    {
+      "what": "invention",
+      "place": null,
+      "date": {
+        "from": {
+          "year": 1856
+        },
+        "to": {
+          "year": 1856
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.eq-ind19med-bess"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "conf_history medium, SCIENTIFIC_EQUIPMENT.md §2 row bessemer"
+      },
+      "note": "1856 (patent 1855 to 56; Kelly US priority patent 1857; first Sheffield production 1858); credited to Bessemer (Kelly and Mushet disputed)"
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.eq-ind19med-bess"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/science/SCIENTIFIC_EQUIPMENT.md",
+      "anchor": "## 2. The catalogue | bessemer",
+      "sha256": "912e9658f93bcd4537fbc001c0042a651b2c94116447dd500a47266e50c0d0d2"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/body/data/equipment.json",
+      "anchor": "catalogue | bessemer",
+      "sha256": "90e4b22328a99f8b855970f076a64f3bdbe09e5f82d622ea87001da98ccc70b8"
+    }
+  ],
+  "notes": "Ingested by scripts/ingest-equipment.ts from SCIENTIFIC_EQUIPMENT.md §2 and equipment.json row bessemer. Credited to: Bessemer (Kelly and Mushet disputed). Skill: Smelting. Capability columns stay with the game (CAT-Q1)."
+}

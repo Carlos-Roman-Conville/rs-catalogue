@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-bm20-seq",
+  "kind": "source",
+  "source": {
+    "key": "EQ-BM20-SEQ",
+    "title": "Wikipedia, DNA sequencer; web search (the-scientist.com, historyofinformation.com, philanthropyroundtable.org)",
+    "gives": "Sanger dideoxy 1975 (published 1977); Gilbert 1973; Hood/Smith four-dye machine 1986, ABI 370A sold 1986 or 1987; AB310 capillary 1995; 454 2005; Illumina 2006 to 2011; read lengths and accuracy",
+    "url": "https://en.wikipedia.org/wiki/DNA_sequencer; https://www.the-scientist.com/feature/the-automated-dna-sequencer-48442",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Wikipedia, DNA sequencer; web search (the-scientist.com, historyofinformation.com, philanthropyroundtable.org)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-BM20-SEQ",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

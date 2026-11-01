@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-bm20-bsc",
+  "kind": "source",
+  "source": {
+    "key": "EQ-BM20-BSC",
+    "title": "Web search (Lab Manager Evolution of biological safety cabinets, PMC358192, NuAire, Utah IBC)",
+    "gives": "Class I open-front exhaust, Class II laminar HEPA (A and B types, NCI design), Class III sealed glove box (prototype at Fort Detrick, Kaempf, year not found, one source); Class II grew from HEPA and clean-room technology",
+    "url": "https://www.labmanager.com/evolution-of-biological-safety-cabinets-18557; https://pmc.ncbi.nlm.nih.gov/articles/PMC358192",
+    "rights": "science"
+  },
+  "names": [
+    {
+      "text": "Web search (Lab Manager Evolution of biological safety cabinets, PMC358192, NuAire, Utah IBC)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-BM20-BSC",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

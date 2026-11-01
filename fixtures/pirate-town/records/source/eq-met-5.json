@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.eq-met-5",
+  "kind": "source",
+  "source": {
+    "key": "EQ-MET-5",
+    "title": "Wikipedia: Slitting mill; John Spilman; Godfrey Box",
+    "gives": "first English slitting mill by Godfrey Box at Dartford, 1590 to 1595 (sources differ); later mills about 1611 and 1627; water-powered rolling and slitting of bar into nail rod",
+    "url": "https://en.wikipedia.org/wiki/Slitting_mill",
+    "rights": "reference"
+  },
+  "names": [
+    {
+      "text": "Wikipedia: Slitting mill; John Spilman; Godfrey Box",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Body and world simulation sources (body-and-world keeper, 2026-10-29) | EQ-MET-5",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}
