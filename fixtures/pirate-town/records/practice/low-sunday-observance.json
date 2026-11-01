@@ -24,17 +24,7 @@
     {
       "what": "presence",
       "place": "catalogue/region.port-royal",
-      "date": {
-        "from": {
-          "year": 1670
-        },
-        "to": {
-          "year": 1692
-        },
-        "precision": "year",
-        "circa": false,
-        "calendar_of_source": "gregorian"
-      },
+      "date": null,
       "sources": [
         "catalogue/source.twn-pr"
       ],
@@ -43,36 +33,12 @@
         "level": "medium",
         "reason": "Port Royal reputation and tavern count imply low church attendance (TWN-PR)."
       }
-    },
-    {
-      "what": "presence",
-      "place": "catalogue/region.nassau",
-      "date": {
-        "from": {
-          "year": 1703
-        },
-        "to": {
-          "year": 1718
-        },
-        "precision": "year",
-        "circa": false,
-        "calendar_of_source": "gregorian"
-      },
-      "sources": [
-        "catalogue/source.twn-nas"
-      ],
-      "label": "estimate",
-      "confidence": {
-        "level": "low",
-        "reason": "Run-down pirate port poorer still than Port Royal (CULTURE.md)."
-      }
     }
   ],
   "relations": [],
   "observations": [],
   "sources": [
-    "catalogue/source.twn-pr",
-    "catalogue/source.twn-nas"
+    "catalogue/source.twn-pr"
   ],
   "derived_from": [
     {

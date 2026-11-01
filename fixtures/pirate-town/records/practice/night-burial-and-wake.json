@@ -23,7 +23,7 @@
   "attestations": [
     {
       "what": "presence",
-      "place": "catalogue/region.jamaica",
+      "place": null,
       "date": null,
       "sources": [
         "catalogue/source.twn-afr"

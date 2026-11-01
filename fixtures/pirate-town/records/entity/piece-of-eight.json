@@ -28,22 +28,10 @@
   "attestations": [
     {
       "what": "presence",
-      "place": "catalogue/region.caribbean",
-      "date": {
-        "from": {
-          "year": 1690
-        },
-        "to": {
-          "year": 1720
-        },
-        "precision": "year",
-        "circa": true,
-        "calendar_of_source": "gregorian"
-      },
-      "sources": [
-        "catalogue/source.stl-e"
-      ],
-      "label": "researched",
+      "place": null,
+      "date": null,
+      "sources": [],
+      "label": "open",
       "confidence": {
         "level": "high",
         "reason": "Pieces of eight the common money unit; coin scarce, barter common (CULTURE §4 Money; STL-E wages in pieces of eight)."
@@ -52,9 +40,7 @@
   ],
   "relations": [],
   "observations": [],
-  "sources": [
-    "catalogue/source.stl-e"
-  ],
+  "sources": [],
   "derived_from": [
     {
       "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/town/CULTURE.md",

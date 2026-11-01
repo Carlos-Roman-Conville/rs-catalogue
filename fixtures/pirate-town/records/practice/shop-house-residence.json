@@ -29,17 +29,7 @@
     {
       "what": "presence",
       "place": "catalogue/region.port-royal",
-      "date": {
-        "from": {
-          "year": 1680
-        },
-        "to": {
-          "year": 1692
-        },
-        "precision": "year",
-        "circa": true,
-        "calendar_of_source": "gregorian"
-      },
+      "date": null,
       "sources": [
         "catalogue/source.twn-pr"
       ],

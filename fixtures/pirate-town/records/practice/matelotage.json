@@ -23,18 +23,8 @@
   "attestations": [
     {
       "what": "presence",
-      "place": "catalogue/region.caribbean",
-      "date": {
-        "from": {
-          "year": 1690
-        },
-        "to": {
-          "year": 1720
-        },
-        "precision": "year",
-        "circa": true,
-        "calendar_of_source": "gregorian"
-      },
+      "place": null,
+      "date": null,
       "sources": [
         "catalogue/source.twn-mat",
         "catalogue/source.twn-code"

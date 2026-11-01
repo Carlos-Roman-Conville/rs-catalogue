@@ -24,17 +24,7 @@
     {
       "what": "presence",
       "place": "catalogue/region.port-royal",
-      "date": {
-        "from": {
-          "year": 1670
-        },
-        "to": {
-          "year": 1692
-        },
-        "precision": "year",
-        "circa": false,
-        "calendar_of_source": "gregorian"
-      },
+      "date": null,
       "sources": [
         "catalogue/source.twn-jew"
       ],

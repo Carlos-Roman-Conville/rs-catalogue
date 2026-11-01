@@ -23,23 +23,10 @@
   "attestations": [
     {
       "what": "presence",
-      "place": "catalogue/region.caribbean",
-      "date": {
-        "from": {
-          "year": 1690
-        },
-        "to": {
-          "year": 1720
-        },
-        "precision": "year",
-        "circa": true,
-        "calendar_of_source": "gregorian"
-      },
-      "sources": [
-        "catalogue/source.econ-tob",
-        "catalogue/source.econ-cm"
-      ],
-      "label": "estimate",
+      "place": null,
+      "date": null,
+      "sources": [],
+      "label": "open",
       "confidence": {
         "level": "low",
         "reason": "STARTING_TOWN Open 3 is researched with GOODS key L, which is not yet a catalogue source row."
@@ -49,10 +36,7 @@
   ],
   "relations": [],
   "observations": [],
-  "sources": [
-    "catalogue/source.econ-tob",
-    "catalogue/source.econ-cm"
-  ],
+  "sources": [],
   "derived_from": [
     {
       "file": "../economy/RESEARCH.md",

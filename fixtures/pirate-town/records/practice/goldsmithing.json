@@ -26,13 +26,13 @@
       "place": "catalogue/region.port-royal",
       "date": {
         "from": {
-          "year": 1680
+          "year": 1682
         },
         "to": {
           "year": 1692
         },
         "precision": "year",
-        "circa": true,
+        "circa": false,
         "calendar_of_source": "gregorian"
       },
       "sources": [

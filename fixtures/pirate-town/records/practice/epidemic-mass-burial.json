@@ -43,19 +43,6 @@
         "level": "high",
         "reason": "Dead unburied in the harbour after the 1692 earthquake (TWN-PR)."
       }
-    },
-    {
-      "what": "presence",
-      "place": "catalogue/region.jamaica",
-      "date": null,
-      "sources": [
-        "catalogue/source.twn-pr"
-      ],
-      "label": "researched",
-      "confidence": {
-        "level": "medium",
-        "reason": "Mass graves outside town in fever years (TWN-PR)."
-      }
     }
   ],
   "relations": [],

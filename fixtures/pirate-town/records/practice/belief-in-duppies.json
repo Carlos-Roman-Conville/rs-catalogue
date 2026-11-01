@@ -23,12 +23,10 @@
   "attestations": [
     {
       "what": "presence",
-      "place": "catalogue/region.jamaica",
+      "place": null,
       "date": null,
-      "sources": [
-        "catalogue/source.twn-afr"
-      ],
-      "label": "researched",
+      "sources": [],
+      "label": "open",
       "confidence": {
         "level": "medium",
         "reason": "African-Caribbean and sailors folk beliefs attested alongside omens (CULTURE.md)."
@@ -37,9 +35,7 @@
   ],
   "relations": [],
   "observations": [],
-  "sources": [
-    "catalogue/source.twn-afr"
-  ],
+  "sources": [],
   "derived_from": [
     {
       "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/town/CULTURE.md",
