@@ -22,7 +22,12 @@
   "scope": "universal",
   "attestations": [],
   "observations": [],
-  "relations": [],
+  "relations": [
+    {
+      "rel": "part_of",
+      "to": "catalogue/region.caribbean"
+    }
+  ],
   "sources": [],
   "derived_from": [
     {
@@ -36,5 +41,5 @@
       "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
     }
   ],
-  "notes": "Geographic nesting estimate; part_of caribbean removed (no keeper row). Q1 household cites Barbados (TWN-BAR)."
+  "notes": "Geographic nesting estimate. part_of caribbean: no anchor states it (V4 nesting rule). Q1 household cites Barbados (TWN-BAR) but not this edge."
 }

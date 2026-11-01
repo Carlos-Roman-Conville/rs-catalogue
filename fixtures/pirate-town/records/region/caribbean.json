@@ -22,12 +22,17 @@
   "scope": "universal",
   "attestations": [],
   "observations": [],
-  "relations": [],
+  "relations": [
+    {
+      "rel": "part_of",
+      "to": "catalogue/region.atlantic"
+    }
+  ],
   "sources": [],
   "derived_from": [
     {
       "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
-      "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | Q6",
+      "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | Q6 pattern",
       "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
     },
     {
@@ -36,5 +41,5 @@
       "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
     }
   ],
-  "notes": "Geographic nesting estimate; part_of atlantic removed (no keeper row). Q6 row names English Caribbean towns."
+  "notes": "Geographic nesting estimate. part_of atlantic: no anchor states it (V4 nesting rule)."
 }

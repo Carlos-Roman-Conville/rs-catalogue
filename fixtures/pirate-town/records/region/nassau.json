@@ -49,7 +49,12 @@
       "note": "Butcher and farm detail is game fiction in CULTURE §6."
     }
   ],
-  "relations": [],
+  "relations": [
+    {
+      "rel": "part_of",
+      "to": "catalogue/region.new-providence"
+    }
+  ],
   "sources": [
     "catalogue/source.twn-nas",
     "catalogue/source.twn-rog",
@@ -65,7 +70,17 @@
       "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
       "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | The referents",
       "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Town sources (town keeper, 2026-10-30) | TWN-NAS",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Town sources (town keeper, 2026-10-30) | TWN-ROG",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
     }
   ],
-  "notes": "part_of new-providence removed (no keeper row)."
+  "notes": "part_of new-providence anchored on referents (Nassau, New Providence)."
 }

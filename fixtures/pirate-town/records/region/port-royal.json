@@ -105,10 +105,10 @@
       "place": "catalogue/region.port-royal",
       "date": {
         "from": {
-          "year": 1688
+          "year": 1692
         },
         "to": {
-          "year": 1688
+          "year": 1692
         },
         "precision": "year",
         "circa": true,
@@ -120,7 +120,7 @@
       "label": "estimate",
       "confidence": {
         "level": "medium",
-        "reason": "6,500–10,000 people in ~1,200 houses (TWN-PR; STARTING_TOWN Q1 household)."
+        "reason": "6,500–10,000 people in ~1,200 houses (TWN-PR population dated 1692; STARTING_TOWN Q1 household derivation)."
       },
       "note": "Household size 6 derived as 5–8 per house."
     },

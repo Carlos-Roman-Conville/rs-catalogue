@@ -37,7 +37,12 @@
     }
   ],
   "observations": [],
-  "relations": [],
+  "relations": [
+    {
+      "rel": "part_of",
+      "to": "catalogue/region.jamaica"
+    }
+  ],
   "sources": [
     "catalogue/source.stl-king"
   ],
@@ -48,5 +53,5 @@
       "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
     }
   ],
-  "notes": "part_of jamaica removed (STL-KING row does not state the edge)."
+  "notes": "part_of jamaica: no anchor states it (V4 nesting rule). STL-KING row names Kingston but not this edge."
 }
