@@ -46,7 +46,128 @@
       "note": "1692 earthquake attestation; not a change of membership in Jamaica."
     }
   ],
-  "observations": [],
+  "observations": [
+    {
+      "quantity": "settlement.house_count",
+      "value": 1200,
+      "unit": null,
+      "place": "catalogue/region.port-royal",
+      "date": {
+        "from": {
+          "year": 1688
+        },
+        "to": {
+          "year": 1688
+        },
+        "precision": "year",
+        "circa": true,
+        "calendar_of_source": "gregorian"
+      },
+      "sources": [
+        "catalogue/source.twn-pr"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "About 1,200 houses (TWN-PR; STARTING_TOWN Q1 household derivation)."
+      },
+      "note": "Source gives a range via ~600 brick and ~600 timber houses (Q1 classes)."
+    },
+    {
+      "quantity": "settlement.land_area",
+      "value": 53,
+      "unit": "acre",
+      "place": "catalogue/region.port-royal",
+      "date": {
+        "from": {
+          "year": 1688
+        },
+        "to": {
+          "year": 1688
+        },
+        "precision": "year",
+        "circa": true,
+        "calendar_of_source": "gregorian"
+      },
+      "sources": [
+        "catalogue/source.twn-pr"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "53 acres (TWN-PR; STARTING_TOWN Q1 classes)."
+      }
+    },
+    {
+      "quantity": "settlement.population",
+      "value": "6500-10000",
+      "unit": null,
+      "place": "catalogue/region.port-royal",
+      "date": {
+        "from": {
+          "year": 1688
+        },
+        "to": {
+          "year": 1688
+        },
+        "precision": "year",
+        "circa": true,
+        "calendar_of_source": "gregorian"
+      },
+      "sources": [
+        "catalogue/source.twn-pr"
+      ],
+      "label": "estimate",
+      "confidence": {
+        "level": "medium",
+        "reason": "6,500–10,000 people in ~1,200 houses (TWN-PR; STARTING_TOWN Q1 household)."
+      },
+      "note": "Household size 6 derived as 5–8 per house."
+    },
+    {
+      "quantity": "settlement.household_size",
+      "value": 6,
+      "unit": "person",
+      "place": "catalogue/region.port-royal",
+      "date": {
+        "from": {
+          "year": 1688
+        },
+        "to": {
+          "year": 1688
+        },
+        "precision": "year",
+        "circa": true,
+        "calendar_of_source": "gregorian"
+      },
+      "sources": [
+        "catalogue/source.twn-pr",
+        "catalogue/source.twn-bar"
+      ],
+      "label": "estimate",
+      "confidence": {
+        "level": "medium",
+        "reason": "Population and house count imply 5–8 per house; shop-house holds family and apprentice or servant (TWN-PR, TWN-BAR)."
+      },
+      "note": "STARTING_TOWN Q1 household row."
+    },
+    {
+      "quantity": "settlement.provision_farm_area",
+      "value": 10,
+      "unit": "acre",
+      "place": "catalogue/region.port-royal",
+      "date": null,
+      "sources": [
+        "catalogue/source.twn-dunn"
+      ],
+      "label": "estimate",
+      "confidence": {
+        "level": "low",
+        "reason": "Small-settler provision grounds ran to tens of acres (TWN-DUNN); game farm sized for town provisioning, not a sugar estate."
+      },
+      "note": "STARTING_TOWN Q1 farm row."
+    }
+  ],
   "relations": [
     {
       "rel": "part_of",
@@ -54,13 +175,36 @@
     }
   ],
   "sources": [
-    "catalogue/source.twn-pr"
+    "catalogue/source.twn-pr",
+    "catalogue/source.twn-bar",
+    "catalogue/source.twn-dunn"
   ],
   "derived_from": [
     {
       "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
       "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | The referents",
       "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
+      "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | Q1 household",
+      "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
+      "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | Q1 classes",
+      "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
+      "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | Q1 farm",
+      "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
+      "anchor": "## Settlement keeper research (2026-10-30; Q5, Q10, Q15, Q7 rows) | Not found",
+      "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
     }
-  ]
+  ],
+  "notes": "Not found in sources opened: Jamaica or Barbados per-trade day rates 1690–1720; a Port Royal rent in money; an artisan's shop inventory (STL-EHS, STL-PBB)."
 }

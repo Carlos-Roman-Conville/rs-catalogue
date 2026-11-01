@@ -1,0 +1,62 @@
+{
+  "id": "catalogue/practice.cooperage",
+  "kind": "practice",
+  "names": [
+    {
+      "text": "Cooperage",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "practice"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.port-royal",
+      "date": {
+        "from": {
+          "year": 1680
+        },
+        "to": {
+          "year": 1692
+        },
+        "precision": "year",
+        "circa": true,
+        "calendar_of_source": "gregorian"
+      },
+      "sources": [
+        "catalogue/source.stl-cun",
+        "catalogue/source.stl-run"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "Coopers among Port Royal craftsmen (STL-CUN list; runaway notices STL-RUN)."
+      }
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.stl-cun",
+    "catalogue/source.stl-run"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
+      "anchor": "## Settlement keeper research (2026-10-30; Q5, Q10, Q15, Q7 rows) | Q5 trades present",
+      "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
+    }
+  ]
+}

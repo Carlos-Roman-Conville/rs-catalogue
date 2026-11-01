@@ -1,0 +1,62 @@
+{
+  "id": "catalogue/practice.piece-rate-and-day-labor",
+  "kind": "practice",
+  "names": [
+    {
+      "text": "Piece-rate and day labour",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "practice"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1700
+        },
+        "to": {
+          "year": 1720
+        },
+        "precision": "year",
+        "circa": true,
+        "calendar_of_source": "gregorian"
+      },
+      "sources": [
+        "catalogue/source.stl-phil",
+        "catalogue/source.stl-bar"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "Journeymen paid by the day or piece; masters split work among hands; plantation jobbers hired by the day (STL-PHIL, STL-BAR; STARTING_TOWN Q15)."
+      }
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.stl-phil",
+    "catalogue/source.stl-bar"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
+      "anchor": "## Settlement keeper research (2026-10-30; Q5, Q10, Q15, Q7 rows) | Q15",
+      "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
+    }
+  ]
+}

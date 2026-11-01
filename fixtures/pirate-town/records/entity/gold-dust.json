@@ -1,0 +1,62 @@
+{
+  "id": "catalogue/entity.gold-dust",
+  "kind": "entity",
+  "names": [
+    {
+      "text": "Gold dust",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "entity"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.caribbean",
+      "date": {
+        "from": {
+          "year": 1690
+        },
+        "to": {
+          "year": 1720
+        },
+        "precision": "year",
+        "circa": true,
+        "calendar_of_source": "gregorian"
+      },
+      "sources": [
+        "catalogue/source.econ-atk",
+        "catalogue/source.econ-rac"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "Gold dust traded by the troy ounce, not ledger coin (ECON-ATK, ECON-RAC; STARTING_TOWN econ 1)."
+      }
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.econ-atk",
+    "catalogue/source.econ-rac"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
+      "anchor": "## Economy keeper research (2026-10-30; econ 1, 3, 4, 5, 6, GOODS Open 3–8, ECON-5 rows) | econ 1",
+      "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
+    }
+  ]
+}
