@@ -1,0 +1,55 @@
+{
+  "id": "catalogue/calendar.gregorian",
+  "kind": "calendar",
+  "names": [
+    {
+      "text": "Gregorian calendar",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "calendar"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "adoption",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1752,
+          "month": 9,
+          "day": 14
+        },
+        "precision": "day",
+        "circa": false,
+        "calendar_of_source": "gregorian",
+        "year_start_of_source": "jan-1"
+      },
+      "sources": [
+        "catalogue/source.cat-act-1750"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "high",
+        "reason": "Act text opened"
+      },
+      "note": "Gregorian reckoning from 14 September 1752; the day after 2 September 1752 shall be called, reckoned, and accounted to be the fourteenth day of September (CAT-ACT-1750 s. 1)."
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.cat-act-1750"
+  ],
+  "derived_from": []
+}

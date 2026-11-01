@@ -1,0 +1,30 @@
+{
+  "id": "catalogue/source.cat-bckovl-2010",
+  "kind": "source",
+  "source": {
+    "key": "CAT-BCKOVL-2010",
+    "title": "British economic growth: 1270-1870 (CAGE Working Paper 35)",
+    "author": "S. N. Broadberry, B. M. S. Campbell, A. Klein, M. Overton, B. van Leeuwen",
+    "year": 2010,
+    "gives": "Only the abstract page was read: it gives no 1270 population figure (S1 open). Population, land use and yield tables are in the full text, not yet read",
+    "url": "https://wrap.warwick.ac.uk/57581/",
+    "rights": "in copyright, cited only; openly hosted by the University of Warwick repository"
+  },
+  "names": [
+    {
+      "text": "British economic growth: 1270-1870 (CAGE Working Paper 35)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": []
+}

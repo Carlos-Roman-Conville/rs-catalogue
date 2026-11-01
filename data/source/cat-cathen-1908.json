@@ -1,0 +1,30 @@
+{
+  "id": "catalogue/source.cat-cathen-1908",
+  "kind": "source",
+  "source": {
+    "key": "CAT-CATHEN-1908",
+    "title": "General Chronology, section \"Beginning of the year\", in The Catholic Encyclopedia",
+    "author": "J. Gerard",
+    "year": 1908,
+    "gives": "England's year start by period: 25 March or 25 December before 1066, 1 January 1087-1155, 25 March 1155-1752 (S9)",
+    "url": "https://www.newadvent.org/cathen/03738a.htm",
+    "rights": "public domain (published 1908)"
+  },
+  "names": [
+    {
+      "text": "General Chronology, section \"Beginning of the year\", in The Catholic Encyclopedia",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": []
+}

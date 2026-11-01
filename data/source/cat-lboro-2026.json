@@ -1,0 +1,30 @@
+{
+  "id": "catalogue/source.cat-lboro-2026",
+  "kind": "source",
+  "source": {
+    "key": "CAT-LBORO-2026",
+    "title": "Lady Day: March 25 was the start of the year in England and Wales until 1752",
+    "author": "Loughborough University Media Centre",
+    "year": 2026,
+    "gives": "A second statement of the 1155-1752 span (S10)",
+    "url": "https://www.lboro.ac.uk/media-centre/press-releases/2026/march/lady-day-march-25-was-start-of-year-until-1752/",
+    "rights": "in copyright, cited only"
+  },
+  "names": [
+    {
+      "text": "Lady Day: March 25 was the start of the year in England and Wales until 1752",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": []
+}

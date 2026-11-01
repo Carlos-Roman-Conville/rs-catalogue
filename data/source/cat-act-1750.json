@@ -1,0 +1,30 @@
+{
+  "id": "catalogue/source.cat-act-1750",
+  "kind": "source",
+  "source": {
+    "key": "CAT-ACT-1750",
+    "title": "Calendar (New Style) Act 1750 (24 Geo. 2 c. 23)",
+    "author": "Parliament of Great Britain",
+    "year": 1750,
+    "gives": "The last old-style day in England (2 September 1752), Gregorian from 14 September 1752, 1 January 1752 as the year's first day (S7, S11, S12, S13)",
+    "url": "https://www.legislation.gov.uk/apgb/Geo2/24/23?view=plain",
+    "rights": "UK legislation, Crown copyright; the page fetched showed no licence line, so N4 confirms the legislation.gov.uk terms (Open Government Licence expected)"
+  },
+  "names": [
+    {
+      "text": "Calendar (New Style) Act 1750 (24 Geo. 2 c. 23)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": []
+}

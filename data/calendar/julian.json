@@ -1,0 +1,60 @@
+{
+  "id": "catalogue/calendar.julian",
+  "kind": "calendar",
+  "names": [
+    {
+      "text": "Julian calendar",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "calendar"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1752,
+          "month": 9,
+          "day": 2
+        },
+        "to": {
+          "year": 1752,
+          "month": 9,
+          "day": 2
+        },
+        "precision": "day",
+        "circa": false,
+        "calendar_of_source": "julian",
+        "year_start_of_source": "mar-25"
+      },
+      "sources": [
+        "catalogue/source.cat-act-1750"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "high",
+        "reason": "Act text opened and read; it names the last old-style day and says the next is 14 September"
+      },
+      "note": "Julian reckoning in use; last old-style day (Act s. 1 and preamble, CAT-ACT-1750). Interval start open (native/h1-england/SHEET.md S8)."
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.cat-act-1750"
+  ],
+  "derived_from": []
+}

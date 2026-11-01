@@ -1,0 +1,117 @@
+{
+  "id": "catalogue/calendar.lady-day-year-start",
+  "kind": "calendar",
+  "names": [
+    {
+      "text": "Lady Day year start",
+      "lang": "en",
+      "use": "preferred"
+    },
+    {
+      "text": "Annunciation style",
+      "lang": "en",
+      "use": "alternate"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "calendar"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1155
+        },
+        "to": {
+          "year": 1752
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown",
+        "year_start_of_source": "mar-25"
+      },
+      "sources": [
+        "catalogue/source.cat-cathen-1908"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "a 1908 encyclopedia article, secondary; says 24 March was the last day of one year and 25 March the first of the next; also says 1 January was \"commonly spoken of as New Year's Day\" in the same period"
+      },
+      "note": "Annunciation style (25 March); from 1155 till the reform of the calendar in 1752 (CAT-CATHEN-1908, \"Beginning of the year\" in General Chronology)."
+    },
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1155
+        },
+        "to": {
+          "year": 1752
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown",
+        "year_start_of_source": "mar-25"
+      },
+      "sources": [
+        "catalogue/source.cat-lboro-2026"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "a university press release that links a longer article not opened; same start year as S9, so it agrees but may not be independent (the Wikipedia Lady Day article, also read, cites the S9 encyclopedia). Kept as its own row"
+      },
+      "note": "Annunciation style (25 March); for 600 years between 1155 until 1752 in England and Wales (CAT-LBORO-2026 press release of 25 March 2026)."
+    },
+    {
+      "what": "presence",
+      "place": "catalogue/region.england",
+      "date": {
+        "from": {
+          "year": 1751,
+          "month": 12,
+          "day": 31
+        },
+        "to": {
+          "year": 1751,
+          "month": 12,
+          "day": 31
+        },
+        "precision": "day",
+        "circa": false,
+        "calendar_of_source": "julian",
+        "year_start_of_source": "mar-25"
+      },
+      "sources": [
+        "catalogue/source.cat-act-1750"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "high",
+        "reason": "Act text opened"
+      },
+      "note": "ends 31 December 1751; the old reckoning is not used from and after the last day of December 1751; 1 January 1752 is the first of the year of our Lord 1752 (CAT-ACT-1750 s. 1)."
+    }
+  ],
+  "relations": [],
+  "observations": [],
+  "sources": [
+    "catalogue/source.cat-act-1750",
+    "catalogue/source.cat-cathen-1908",
+    "catalogue/source.cat-lboro-2026"
+  ],
+  "derived_from": []
+}
