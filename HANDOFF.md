@@ -14,6 +14,7 @@ Done/Blocked headings instead of the template's State/Next/Blocked/Gotchas.
 - 2026-11-01 plan: 5173 NATIVE-PLAN (plan only, no record or code): H1 England 1270 rows A1-A8 (population on `region.england`, six crops, plough and draught animals, mills, manor, Julian, Lady Day, the 1752 reform), each sourced or `open`; native rulings (a)-(e) (`CAT-` sources, mixed records, open rows cite the work searched); V5 (role check, `heldOut` guard, static scan); API `label`, `date`, `dist/catalogue.json` build with `catalogue_hash`, V7 report; units N1-N10.
 - 2026-11-01: 5195 NATIVE-PLAN ruling (f) open start: `DateInterval.from` nullable (schema, regions `dateRange`, check), tests; N4 redo writes S7 julian as `from: null`.
 - 2026-11-01: 5174-5204 N1-N10: V5 heldOut, ingest keeps native rows, H1 sheet and records, AUDIT-H1, `label`, `date`, `catalogue_hash`/`{ compiled }`/build, coverage; 5204 README API, DESIGN Log; step 2 not signed off.
+- 2026-11-01: 5205 kernel pin v0.1.1 (b6f95bf); 5243 date reader England 1752 gap hard-code removed (5e30d62); 5252 NATIVE-PLAN rulings: B3 compiled-snapshot paths stand, no code; (g) interval precision = coarsest bound (AUDIT-H1-3).
 
 ## Blocked
 
