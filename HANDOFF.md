@@ -22,6 +22,8 @@ Done/Blocked headings instead of the template's State/Next/Blocked/Gotchas.
 - 2026-11-01: 5045 economy ingest unit C3 (yields): 9 observations.
 - 2026-11-01: 5046 fixture audit E3 (fixtures/pirate-town/AUDIT-E3.md): pass, 54 of 54 sampled (32 technology, 22 EQ-*); the 8 plain-none rows and 6 anomaly rows checked; no record edited.
 - 2026-11-01: 5070 absence rulings (fixtures/pirate-town/ABSENCE-RULINGS.md): of 11 plain-none rows, 5 keep absence, 6 unknown presence; check.ts to flag an absence window containing the record's own dated invention; DESIGN §1.6 classifier rulings go in the script's per-row list, never record hand edits. Next task applies them.
+- 2026-11-01: 5071-5072 absence rulings applied (6660871): six plain-none records now unknown presence; check.ts rejects an absence window containing a dated invention; 5 keep absence.
+- 2026-11-01: 5073 fixture audit E4 (fixtures/pirate-town/AUDIT-E4.md): pass, 11 of 11 slugs; six changed records and five unchanged keep-absence rows checked; no record edited.
 
 ## Blocked
 
