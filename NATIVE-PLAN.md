@@ -79,7 +79,10 @@ N4 appends one sentence to its `notes` naming the native rows and NATIVE-PLAN (b
   `confidence.level: low`, the reason naming what was searched (work and locator) and that it gives no value for
   the date. It cites the source searched, so V4 can re-open it and confirm the value is not there (this keeps
   DESIGN-V4 (e): no unsourced row). An attestation with nothing found is not written at all; the search goes in the
-  sourcing sheet. Open rows are gap markers: they count in coverage, never seed anything.
+  sourcing sheet. Open rows are gap markers: they count in coverage, never seed anything. An `open` row's reason
+  names the parts of the cited work that were read (tables, pages, sections) and says the full text was read; a
+  search that read less (an abstract, a record page, a table it could not read; N3 marked S1 `open` from the
+  abstract alone) stays in the sheet as "not yet searched" and is not written to `data/` (review 1101-1140 fix 5).
 - **(d) Script-ingested records.** A native row never goes into a record `scripts/ingest-equipment.ts` writes until
   N2 makes the script keep native rows; otherwise the next ingest deletes it and `--check` fails.
 - **(e) A year-start style the code lacks** is added to `src/dates.ts` and to `year_start_of_source` in
