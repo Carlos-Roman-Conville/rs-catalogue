@@ -1,0 +1,53 @@
+{
+  "id": "catalogue/material.pearl",
+  "kind": "material",
+  "names": [
+    {
+      "text": "Pearl",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [
+    {
+      "scheme": "catalogue",
+      "path": [
+        "material"
+      ]
+    }
+  ],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [
+    {
+      "quantity": "tax.rate",
+      "value": 0.2,
+      "unit": "1",
+      "place": "catalogue/region.pearl-coast",
+      "date": null,
+      "sources": [
+        "catalogue/source.econ-war"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "low",
+        "reason": "Spanish crown fifth of pearl production; secondary summary only (ECON-WAR; SOURCES row)."
+      },
+      "note": "the crown's fifth of production"
+    }
+  ],
+  "sources": [
+    "catalogue/source.econ-war"
+  ],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Economy sources (economy keeper, 2026-10-30) | ECON-WAR",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

@@ -47,7 +47,138 @@
     }
   ],
   "relations": [],
-  "observations": [],
+  "observations": [
+    {
+      "quantity": "price.rise_above_common",
+      "value": 0.3,
+      "unit": "1",
+      "place": null,
+      "date": {
+        "from": {
+          "year": 1699
+        },
+        "to": {
+          "year": 1699
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.econ-dav"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "King–Davenant table row 1/10 (ECON-DAV; RESEARCH.md §1)."
+      },
+      "note": "harvest short by 1/10"
+    },
+    {
+      "quantity": "price.rise_above_common",
+      "value": 0.8,
+      "unit": "1",
+      "place": null,
+      "date": {
+        "from": {
+          "year": 1699
+        },
+        "to": {
+          "year": 1699
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.econ-dav"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "King–Davenant table row 2/10 (ECON-DAV; RESEARCH.md §1)."
+      },
+      "note": "harvest short by 2/10"
+    },
+    {
+      "quantity": "price.rise_above_common",
+      "value": 1.6,
+      "unit": "1",
+      "place": null,
+      "date": {
+        "from": {
+          "year": 1699
+        },
+        "to": {
+          "year": 1699
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.econ-dav"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "King–Davenant table row 3/10 (ECON-DAV; RESEARCH.md §1)."
+      },
+      "note": "harvest short by 3/10"
+    },
+    {
+      "quantity": "price.rise_above_common",
+      "value": 2.8,
+      "unit": "1",
+      "place": null,
+      "date": {
+        "from": {
+          "year": 1699
+        },
+        "to": {
+          "year": 1699
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.econ-dav"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "King–Davenant table row 4/10 (ECON-DAV; RESEARCH.md §1)."
+      },
+      "note": "harvest short by 4/10"
+    },
+    {
+      "quantity": "price.rise_above_common",
+      "value": 4.5,
+      "unit": "1",
+      "place": null,
+      "date": {
+        "from": {
+          "year": 1699
+        },
+        "to": {
+          "year": 1699
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.econ-dav"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "King–Davenant table row 5/10 (ECON-DAV; RESEARCH.md §1)."
+      },
+      "note": "harvest short by 5/10"
+    }
+  ],
   "sources": [
     "catalogue/source.econ-dav"
   ],
@@ -56,6 +187,31 @@
       "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
       "anchor": "## Economy keeper research (2026-10-30; econ 1, 3, 4, 5, 6, GOODS Open 3–8, ECON-5 rows) | econ 5 curve",
       "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
+    },
+    {
+      "file": "../economy/RESEARCH.md",
+      "anchor": "## 1. econ 5: the price formula (researched + estimate) | 1/10",
+      "sha256": "68ca9f4aee850d303f0eb946b069a7344ad6815f43f10ad1b06c3c8f4c11f651"
+    },
+    {
+      "file": "../economy/RESEARCH.md",
+      "anchor": "## 1. econ 5: the price formula (researched + estimate) | 2/10",
+      "sha256": "68ca9f4aee850d303f0eb946b069a7344ad6815f43f10ad1b06c3c8f4c11f651"
+    },
+    {
+      "file": "../economy/RESEARCH.md",
+      "anchor": "## 1. econ 5: the price formula (researched + estimate) | 3/10",
+      "sha256": "68ca9f4aee850d303f0eb946b069a7344ad6815f43f10ad1b06c3c8f4c11f651"
+    },
+    {
+      "file": "../economy/RESEARCH.md",
+      "anchor": "## 1. econ 5: the price formula (researched + estimate) | 4/10",
+      "sha256": "68ca9f4aee850d303f0eb946b069a7344ad6815f43f10ad1b06c3c8f4c11f651"
+    },
+    {
+      "file": "../economy/RESEARCH.md",
+      "anchor": "## 1. econ 5: the price formula (researched + estimate) | 5/10",
+      "sha256": "68ca9f4aee850d303f0eb946b069a7344ad6815f43f10ad1b06c3c8f4c11f651"
     }
   ]
 }

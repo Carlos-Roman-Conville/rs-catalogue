@@ -41,20 +41,137 @@
     }
   ],
   "relations": [],
-  "observations": [],
+  "observations": [
+    {
+      "quantity": "money.rated_value",
+      "value": 4,
+      "unit": "s",
+      "place": "catalogue/region.jamaica",
+      "date": {
+        "from": {
+          "year": 1681
+        },
+        "to": {
+          "year": 1759
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.econ-boj"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "high",
+        "reason": "Jamaica 1681 Act rated Peruvian pieces of eight at 4s, repealed 1759 (ECON-BOJ; SOURCES row)."
+      },
+      "note": "Peruvian"
+    },
+    {
+      "quantity": "money.rated_value",
+      "value": 4.5,
+      "unit": "s sterling",
+      "place": null,
+      "date": {
+        "from": {
+          "year": 1704
+        },
+        "to": {
+          "year": 1704
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.econ-ans"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "Queen Anne 1704 proclamation summary (ECON-ANS; SOURCES row)."
+      },
+      "note": "4s 6d sterling"
+    },
+    {
+      "quantity": "money.rated_value",
+      "value": 5,
+      "unit": "s",
+      "place": "catalogue/region.jamaica",
+      "date": {
+        "from": {
+          "year": 1681
+        },
+        "to": {
+          "year": 1759
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.econ-boj"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "high",
+        "reason": "Jamaica 1681 Act rated Spanish and Mexican pieces of eight at 5s, repealed 1759 (ECON-BOJ; SOURCES row)."
+      },
+      "note": "Spanish and Mexican"
+    },
+    {
+      "quantity": "money.rated_value",
+      "value": 6,
+      "unit": "s",
+      "place": null,
+      "date": {
+        "from": {
+          "year": 1704
+        },
+        "to": {
+          "year": 1704
+        },
+        "precision": "year",
+        "circa": false,
+        "calendar_of_source": "unknown"
+      },
+      "sources": [
+        "catalogue/source.econ-ans"
+      ],
+      "label": "researched",
+      "confidence": {
+        "level": "medium",
+        "reason": "Queen Anne 1704 proclamation summary (ECON-ANS; SOURCES row)."
+      },
+      "note": "full weight; the plantations; re-enacted by the Act of 1707"
+    }
+  ],
   "sources": [
+    "catalogue/source.econ-ans",
+    "catalogue/source.econ-boj",
     "catalogue/source.stl-e"
   ],
   "derived_from": [
     {
-      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/town/CULTURE.md",
-      "anchor": "## 4. The economic situation at the start | Money",
-      "sha256": "80837fd0f68bfdf4890c954463aafa84f2ca4aabeb1ffe6e77ca9602d679a51b"
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Economy sources (economy keeper, 2026-10-30) | ECON-ANS",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Economy sources (economy keeper, 2026-10-30) | ECON-BOJ",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
     },
     {
       "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
       "anchor": "## Settlement sources (settlement keeper, 2026-10-30) | STL-E",
       "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/town/CULTURE.md",
+      "anchor": "## 4. The economic situation at the start | Money",
+      "sha256": "80837fd0f68bfdf4890c954463aafa84f2ca4aabeb1ffe6e77ca9602d679a51b"
     }
   ]
 }
