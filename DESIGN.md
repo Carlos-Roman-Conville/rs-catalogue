@@ -268,6 +268,8 @@ Kernel only (ids, units). No engine. **Read by:** every engine for labels and `r
 
 It proves the Catalogue alone; no pirate slice runs.
 
+**Next stage** (2026-11-01, task 5173): [NATIVE-PLAN.md](NATIVE-PLAN.md) plans step 2's native seed (H1 England 1270, rows sourced or `open`, never filled), V5 and `benchmark_role`, and the §2.2 gaps (`label`, `date`, the `dist/catalogue.json` build with `catalogue_hash`, the V7 coverage report), units N1-N10.
+
 ## 4. Validation plan (§11a: implemented ≠ integrated ≠ validated)
 
 The full validation plan (V4 rules, tests V1–V7, and lettered exceptions (a)–(l)) lives in [DESIGN-V4.md](DESIGN-V4.md).
