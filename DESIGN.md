@@ -310,12 +310,13 @@ or political relation (New Providence `part_of` England from 1718) is not geogra
 
 - **(a) A geographic container no row names** (`region.atlantic`). A region record that is only a step in the
   geographic nesting (a sea, an ocean, an island group) may pass on the referents paragraph alone, as an exception
-  to rule (b), when all of these hold: its kind is physical; it carries only names, kind and undated geographic
-  `part_of` relations (no attestation, observation, date or source key); and its `notes` say "no row names X"
-  (X the place). The reason is the nesting rule's: this package holds no gazetteer and invents none, and a container
-  the referents' places sit in is evidence enough for a name with no claim attached. Any attestation, observation,
-  date, source key or political relation on such a record needs an anchored row as usual, and without one it is
-  removed (the doubt goes in `notes`). `region.atlantic` as AUDIT-5 read it meets the terms and passes on its next
+  to rule (b), when all of these hold: its preferred name is a sea, an ocean or an island group, and it has no
+  political relation (no `part_of` with a `date`); it carries only names, kind and `part_of` relations to other
+  region records with no `date` and no `sources` (no attestation, observation, date or source key); and its
+  `notes` say "no row names X" (X the place). The reason is the nesting rule's: this package holds no gazetteer and
+  invents none, and a container the referents' places sit in is evidence enough for a name with no claim attached.
+  Any attestation, observation, date, source key or political relation (a dated `part_of`) on such a record needs
+  an anchored row as usual, and without one it is removed (the doubt goes in `notes`). `region.atlantic` as AUDIT-5 read it meets the terms and passes on its next
   audit with no change, provided its notes carry the "no row names" line.
 - **(b) A political `part_of`** (`region.jamaica` to England 1655, `region.new-providence` to England 1718). A
   political relation is a dated claim and gets no exception: it holds only where an anchored row states the polity
