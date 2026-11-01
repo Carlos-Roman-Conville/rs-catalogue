@@ -30,7 +30,9 @@ adds one dated line under Done, and parks a disagreement with DESIGN.md under Bl
 - 2026-11-01: 2929 region nest restore (6e40ca4): region part_of nest and V4 anchors restored.
 - 2026-11-01: 2930 audit-3 records reanchor (b542b8e): non-region fixture rows re-anchored to V4.
 - 2026-11-01: 2931 fixture audit 4: AUDIT-4 says fail, 6 of 66 records (region.atlantic, region.england, region.jamaica, region.kingston, region.new-providence, practice.commercial-brewing); no record edited.
+- 2026-11-01: 2970 AUDIT-4 region and practice anchor fixes (f001049): region nest and practice anchors fixed after fixture audit 4.
 - 2026-11-01: 2971 unknown-presence note in DESIGN.md §1.1: `what: presence`, `label: open`, `confidence: low`, reason in `notes`; no `unknown` label.
+- 2026-11-01: 2972 fixture audit 5: AUDIT-5 says fail, 4 of 66 records (region.atlantic, region.jamaica, region.new-providence, practice.commercial-brewing); no record edited.
 
 ## Blocked
 
