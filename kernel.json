@@ -1,0 +1,13 @@
+{
+  "processes": [
+    {
+      "id": "catalogue.load",
+      "mechanisms": ["catalogue.reference.ingest"],
+      "writes": [],
+      "reads": [],
+      "period": "load",
+      "phase": "configuration"
+    }
+  ],
+  "ports": []
+}

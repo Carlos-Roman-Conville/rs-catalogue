@@ -1,0 +1,22 @@
+{
+  "name": "@rex/catalogue",
+  "version": "0.0.1",
+  "description": "The universal reference catalogue: entities, substances, organisms, technologies, institutions, practices and phenomena with stable ids, names, classification, dated and placed attestations, observations, sources and provenance. Tags, never unlocks: read by configuration code and for labels, never as a gate.",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@rex/kernel": "file:../kernel"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.2",
+    "vitest": "^5.0.5"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  }
+}
