@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.econ-rac",
+  "kind": "source",
+  "source": {
+    "key": "ECON-RAC",
+    "title": "Royal African Company (Wikipedia)",
+    "gives": "the Company's gold went to the Mint, 1668–1772; gold exports 1676–1700 about equal in value to the slave exports",
+    "rights": "aggregator",
+    "url": "https://en.wikipedia.org/wiki/Royal_African_Company"
+  },
+  "names": [
+    {
+      "text": "Royal African Company (Wikipedia)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Economy sources (economy keeper, 2026-10-30) | ECON-RAC",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

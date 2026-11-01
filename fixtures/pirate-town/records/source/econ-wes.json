@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.econ-wes",
+  "kind": "source",
+  "source": {
+    "key": "ECON-WES",
+    "title": "Jean M. West, \"Sugar and Slavery: Molasses to Rum to Slaves\" (teaching text)",
+    "gives": "a gallon and a half of molasses fermented and distilled to one gallon of rum; a hogshead of sugar an acre expected",
+    "rights": "aggregator",
+    "url": "https://www.bolsagrande.org/ourpages/auto/2010/9/8/65734005/ch_%2007%20Sugar%20and%20Slavery.pdf"
+  },
+  "names": [
+    {
+      "text": "Jean M. West, \"Sugar and Slavery: Molasses to Rum to Slaves\" (teaching text)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Economy sources (economy keeper, 2026-10-30) | ECON-WES",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

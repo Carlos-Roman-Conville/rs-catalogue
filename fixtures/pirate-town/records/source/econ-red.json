@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.econ-red",
+  "kind": "source",
+  "source": {
+    "key": "ECON-RED",
+    "title": "Marcus Rediker, *Between the Devil and the Deep Blue Sea* (1987), pp. 117–124 (merchant wages 1700–1750); a Korean study's abstract on 18th-century British merchant seamen",
+    "gives": "about 25s a month by mid-century; far higher in war",
+    "rights": "history",
+    "url": "https://db.koreascholar.com/Article/Detail/260445"
+  },
+  "names": [
+    {
+      "text": "Marcus Rediker, *Between the Devil and the Deep Blue Sea* (1987), pp. 117–124 (merchant wages 1700–1750); a Korean study's abstract on 18th-century British merchant seamen",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Economy sources (economy keeper, 2026-10-30) | ECON-RED",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

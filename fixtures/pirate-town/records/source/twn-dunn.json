@@ -1,0 +1,33 @@
+{
+  "id": "catalogue/source.twn-dunn",
+  "kind": "source",
+  "source": {
+    "key": "TWN-DUNN",
+    "title": "Dunn, Sugar and Slaves (1972)",
+    "gives": "planter society; short lives, few surviving children; small settlers' holdings",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Dunn, Sugar and Slaves (1972)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Town sources (town keeper, 2026-10-30) | TWN-DUNN",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

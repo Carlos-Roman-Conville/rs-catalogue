@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.econ-salt",
+  "kind": "source",
+  "source": {
+    "key": "ECON-SALT",
+    "title": "Rick Atkinson, *The British Are Coming* (2019), reader's note",
+    "gives": "about two bushels of salt to 1,000 lb of pork; beef needing more",
+    "rights": "aggregator",
+    "url": "https://www.goodreads.com/notes/42274931-the-british-are-coming/1047634-ned-m-campbell/b928c4cb-aeb3-47c5-8845-54d2974037e0"
+  },
+  "names": [
+    {
+      "text": "Rick Atkinson, *The British Are Coming* (2019), reader's note",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Economy sources (economy keeper, 2026-10-30) | ECON-SALT",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

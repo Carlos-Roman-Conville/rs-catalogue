@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.econ-ans",
+  "kind": "source",
+  "source": {
+    "key": "ECON-ANS",
+    "title": "American Numismatic Society, Long Table 220, \"How many shillings in a piece of eight?\"; Mossman via Noonans",
+    "gives": "Queen Anne's 1704 proclamation: 6s for a full-weight piece of eight against 4s 6d sterling; Act of 1707",
+    "rights": "history",
+    "url": "https://numismatics.org/lt220/"
+  },
+  "names": [
+    {
+      "text": "American Numismatic Society, Long Table 220, \"How many shillings in a piece of eight?\"; Mossman via Noonans",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Economy sources (economy keeper, 2026-10-30) | ECON-ANS",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

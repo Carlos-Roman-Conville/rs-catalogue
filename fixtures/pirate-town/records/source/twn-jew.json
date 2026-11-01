@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.twn-jew",
+  "kind": "source",
+  "source": {
+    "key": "TWN-JEW",
+    "title": "Wikipedia, History of the Jews in Jamaica; Heritage Florida on the Port Royal cemetery excavation",
+    "gives": "burials apart, carried by boat to Hunt's Bay; stones in Hebrew and Portuguese; 1711 bar on office; 18% of Kingston by 1720",
+    "rights": "history",
+    "url": "https://en.wikipedia.org/wiki/History_of_the_Jews_in_Jamaica"
+  },
+  "names": [
+    {
+      "text": "Wikipedia, History of the Jews in Jamaica; Heritage Florida on the Port Royal cemetery excavation",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Town sources (town keeper, 2026-10-30) | TWN-JEW",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

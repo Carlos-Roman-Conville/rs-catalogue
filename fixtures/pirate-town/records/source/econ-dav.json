@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.econ-dav",
+  "kind": "source",
+  "source": {
+    "key": "ECON-DAV",
+    "title": "Charles Davenant, *An Essay upon the Probable Methods of Making a People Gainers in the Balance of Trade* (1699), the King–Davenant table, as reproduced with Jevons' and Wicksteed's fits by the History of Economic Thought website",
+    "gives": "harvest deficit of 1/10 to 5/10 → price +3/10 to +45/10; Jevons p = 0.824/(x−0.12)²",
+    "rights": "history",
+    "url": "https://www.hetwebsite.net/het/essays/theorem/kingdavenant.htm"
+  },
+  "names": [
+    {
+      "text": "Charles Davenant, *An Essay upon the Probable Methods of Making a People Gainers in the Balance of Trade* (1699), the King–Davenant table, as reproduced with Jevons' and Wicksteed's fits by the History of Economic Thought website",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Economy sources (economy keeper, 2026-10-30) | ECON-DAV",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

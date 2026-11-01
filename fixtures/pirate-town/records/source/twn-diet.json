@@ -1,0 +1,33 @@
+{
+  "id": "catalogue/source.twn-diet",
+  "kind": "source",
+  "source": {
+    "key": "TWN-DIET",
+    "title": "Period Caribbean diet: salt meat, fish, turtle, cassava, plantain",
+    "gives": "the town's food",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "Period Caribbean diet: salt meat, fish, turtle, cassava, plantain",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Town sources (town keeper, 2026-10-30) | TWN-DIET",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

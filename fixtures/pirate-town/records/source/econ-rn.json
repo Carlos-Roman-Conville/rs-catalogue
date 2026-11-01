@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.econ-rn",
+  "kind": "source",
+  "source": {
+    "key": "ECON-RN",
+    "title": "Royal Navy pay list of 1653 and later resolutions, via Customs of the Navy and the Pepys Diary encyclopaedia",
+    "gives": "able seaman 24s a lunar month, ordinary seaman 19s, unchanged to 1797",
+    "rights": "history",
+    "url": "https://readyayeready.com/tradition/customs-of-the-navy/2-recruiting-and-conditions-of-service.php"
+  },
+  "names": [
+    {
+      "text": "Royal Navy pay list of 1653 and later resolutions, via Customs of the Navy and the Pepys Diary encyclopaedia",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Economy sources (economy keeper, 2026-10-30) | ECON-RN",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

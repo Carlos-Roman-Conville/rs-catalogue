@@ -1,0 +1,33 @@
+{
+  "id": "catalogue/source.twn-law",
+  "kind": "source",
+  "source": {
+    "key": "TWN-LAW",
+    "title": "English common law in the colonies: primogeniture on intestacy, widow's dower, escheat; 1700 Act for the More Effectual Suppression of Piracy (forfeiture); Anglican burial rite",
+    "gives": "the inheritance and forfeiture rules",
+    "rights": "history"
+  },
+  "names": [
+    {
+      "text": "English common law in the colonies: primogeniture on intestacy, widow's dower, escheat; 1700 Act for the More Effectual Suppression of Piracy (forfeiture); Anglican burial rite",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Town sources (town keeper, 2026-10-30) | TWN-LAW",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.econ-tho",
+  "kind": "source",
+  "source": {
+    "key": "ECON-THO",
+    "title": "Gabriel Thomas, *An Historical and Geographical Account of the Province and Country of Pensilvania* (1698), transcription",
+    "gives": "carpenters, bricklayers, masons 5s–6s a day; journeyman tailors about 12s a week with board; shoemakers 2s a pair; harvest labour 3s–4s a day with diet",
+    "rights": "history",
+    "url": "https://minnstate.pressbooks.pub/ushistory1/chapter/poor-mans-paradise-1698/"
+  },
+  "names": [
+    {
+      "text": "Gabriel Thomas, *An Historical and Geographical Account of the Province and Country of Pensilvania* (1698), transcription",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Economy sources (economy keeper, 2026-10-30) | ECON-THO",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

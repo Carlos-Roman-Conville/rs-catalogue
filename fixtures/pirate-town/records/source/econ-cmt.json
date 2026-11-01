@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.econ-cmt",
+  "kind": "source",
+  "source": {
+    "key": "ECON-CMT",
+    "title": "Colonial molasses trade (Wikipedia), citing Wayne Curtis",
+    "gives": "New England c. 1770: 6.5 million gallons of molasses imported, about 5 million gallons of rum made",
+    "rights": "aggregator",
+    "url": "https://en.wikipedia.org/wiki/Colonial_molasses_trade"
+  },
+  "names": [
+    {
+      "text": "Colonial molasses trade (Wikipedia), citing Wayne Curtis",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Economy sources (economy keeper, 2026-10-30) | ECON-CMT",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

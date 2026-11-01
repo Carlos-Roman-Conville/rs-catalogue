@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.twn-burn",
+  "kind": "source",
+  "source": {
+    "key": "TWN-BURN",
+    "title": "Burnard 1991, \"Inheritance and independence: women's status in early colonial Jamaica\", WMQ; Burnard, Family continuity and female independence in Jamaica 1665–1734",
+    "gives": "wills favouring widows and daughters under high mortality",
+    "rights": "history",
+    "url": "https://resolve.cambridge.org/core/journals/continuity-and-change/article/family-continuity-and-female-independence-in-jamaica-16651734/D6A060E01F9F2ACF576EEBB12AE457BE"
+  },
+  "names": [
+    {
+      "text": "Burnard 1991, \"Inheritance and independence: women's status in early colonial Jamaica\", WMQ; Burnard, Family continuity and female independence in Jamaica 1665–1734",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Town sources (town keeper, 2026-10-30) | TWN-BURN",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

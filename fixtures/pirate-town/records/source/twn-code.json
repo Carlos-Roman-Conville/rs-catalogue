@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.twn-code",
+  "kind": "source",
+  "source": {
+    "key": "TWN-CODE",
+    "title": "Wikipedia, Pirate code (Roberts's articles, 1724 General History)",
+    "gives": "articles per cruise; shares by rank; compensation for wounds, lesser hurts in proportion; elected captain and quartermaster",
+    "rights": "history",
+    "url": "https://en.wikipedia.org/wiki/Pirate_code"
+  },
+  "names": [
+    {
+      "text": "Wikipedia, Pirate code (Roberts's articles, 1724 General History)",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Town sources (town keeper, 2026-10-30) | TWN-CODE",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

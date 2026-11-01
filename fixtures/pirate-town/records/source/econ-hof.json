@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.econ-hof",
+  "kind": "source",
+  "source": {
+    "key": "ECON-HOF",
+    "title": "Hopewell Furnace NHS, charcoal making",
+    "gives": "a good collier made 35–40 bushels of charcoal a cord; a pit held about 30 cords",
+    "rights": "history (18th–19th c.)",
+    "url": "https://www.nps.gov/hofu/learn/historyculture/charcoal-making.htm"
+  },
+  "names": [
+    {
+      "text": "Hopewell Furnace NHS, charcoal making",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Economy sources (economy keeper, 2026-10-30) | ECON-HOF",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}

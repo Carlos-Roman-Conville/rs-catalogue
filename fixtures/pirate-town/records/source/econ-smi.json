@@ -1,0 +1,34 @@
+{
+  "id": "catalogue/source.econ-smi",
+  "kind": "source",
+  "source": {
+    "key": "ECON-SMI",
+    "title": "Adam Smith, *Wealth of Nations* (1776), appendix on the herring bounty",
+    "gives": "two bushels of Scots salt assumed to cure a barrel of herring",
+    "rights": "history (late)",
+    "url": "https://tha.de/~harsch/anglica/Chronology/18thC/Smith/smi_w45a.html"
+  },
+  "names": [
+    {
+      "text": "Adam Smith, *Wealth of Nations* (1776), appendix on the herring bounty",
+      "lang": "en",
+      "use": "preferred"
+    }
+  ],
+  "classification": [],
+  "provenance": [
+    "real"
+  ],
+  "scope": "universal",
+  "attestations": [],
+  "relations": [],
+  "observations": [],
+  "sources": [],
+  "derived_from": [
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Economy sources (economy keeper, 2026-10-30) | ECON-SMI",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
+    }
+  ]
+}
