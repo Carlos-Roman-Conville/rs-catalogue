@@ -20,20 +20,7 @@
     "real"
   ],
   "scope": "universal",
-  "attestations": [
-    {
-      "what": "presence",
-      "place": null,
-      "date": null,
-      "sources": [],
-      "label": "open",
-      "confidence": {
-        "level": "medium",
-        "reason": "Three sugar grades in trade (Open 3 row, researched; L; PHY-RATION; DV, CSP)."
-      },
-      "note": "Open 3 row label is researched; keys L, PHY-RATION, DV, CSP are not yet catalogue source rows. Economy keeper table: three sugar grades, beef and pork apart, logwood apart (L; PHY-RATION; DV, CSP)."
-    }
-  ],
+  "attestations": [],
   "relations": [],
   "observations": [],
   "sources": [],
@@ -49,5 +36,5 @@
       "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
     }
   ],
-  "notes": "keys L, PHY-RATION, DV, CSP are not yet catalogue source rows"
+  "notes": "Three sugar grades in trade, beef and pork apart, logwood apart (Economy keeper table; L; PHY-RATION; DV, CSP). Open 3 row label is researched. Keys L, PHY-RATION, DV, CSP are not yet catalogue source rows; attestation removed until those keys are ingested as source records."
 }
