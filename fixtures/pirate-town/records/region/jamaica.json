@@ -34,9 +34,7 @@
         "from": {
           "year": 1655
         },
-        "to": {
-          "year": 9999
-        },
+        "to": null,
         "precision": "year",
         "circa": false,
         "calendar_of_source": "gregorian"
