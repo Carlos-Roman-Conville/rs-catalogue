@@ -14,6 +14,7 @@ Done/Blocked headings instead of the template's State/Next/Blocked/Gotchas.
 - 2026-11-01: 3090 four rulings in DESIGN.md §4 (f)-(i): fiction attestation gets no exception (faction-burial-alternatives loses it); self-naming of the anchor's own file passes (new-providence); a Q5 record taking 1682 cites STL-CUN; estimate with high confidence is consistent. Plan: FIXES-audit8-plan.md, 7 records.
 - 2026-11-01: 3091 (Composer) fixes from FIXES-audit8-plan (4562e8e): faction-burial-alternatives attestation removed (§4 (f)); STL-CUN and Hanson confidence note on six Q5 trade records (§4 (h)).
 - 2026-11-01: 3092 fixture audit 9: AUDIT-9 says pass, 66 of 66 (checks 1-10 and rulings A-D); faction-burial-alternatives passes; no record edited.
+- 2026-11-01: 5004 ingest plan (fixtures/pirate-town/INGEST-PLAN.md): equipment by one script (313 technology + 216 EQ-* source records; plain "none" = absence/estimate, "none (anomaly)" = unknown presence), economy 31 observations in 3 Composer units + audit; no src/ change; DESIGN §6: promotion after the whole fixture.
 
 ## Blocked
 

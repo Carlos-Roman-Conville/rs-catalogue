@@ -428,6 +428,10 @@ V4 on each batch. **Fiction rows are not universal facts:** the priest `istj-m`,
 and the time anomalies go under `scope: game:pirate-ship` with `original_fiction`, or are skipped (CAT-Q2). Rows the
 pirate files mark **(open, Rex)** are ingested as open and never filled. The fixture stays under `fixtures/` until
 its V4 audit passes; then its universal records are promoted to `data/` with `derived_from` kept.
+**Promotion is after the whole fixture** (2026-11-01, task 5004, `fixtures/pirate-town/INGEST-PLAN.md` (e)): AUDIT-9's
+66 records stay under `fixtures/` until the equipment and economy ingest has passed its own V4 audits, then every
+universal record moves to `data/` at once, because the economy units add observations to six AUDIT-9 records and
+`src/drift.ts` checks `derived_from` only under `fixtures/*/records`, so a record promoted early would leave V6.
 
 ## 7. Questions answered (CAT-Q)
 
