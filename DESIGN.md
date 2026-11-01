@@ -74,6 +74,11 @@ interval; `label` researched / estimate / fiction; `confidence` high / medium / 
 evidence is never recorded as absence**: `absence` needs a source that says the thing was not there (e.g. "no brewer
 in any source read" stays `presence: unknown` with a note, not `absence`).
 
+Unknown presence is written within the label enum (`src/schema.ts`: researched / estimate / fiction / open): an
+attestation with `what: presence`, `label: open` and `confidence: low`, the reason (what was searched, what was not
+found) in the confidence reason and the record's `notes`. There is no `unknown` label or `what` value; a WORK file
+must not ask for one.
+
 **Observation** `{quantity, value, unit, place, date, source, label, confidence, benchmark_role?}`: `quantity` a
 registry quantity id where one exists (`registry/quantities.json`), else a proposed one; units by the Kernel's
 dimensions. `benchmark_role` ∈ development (H1 England, H2 Tokugawa), held_out (H3 Greenland, H4 Copán), reserve (H5
