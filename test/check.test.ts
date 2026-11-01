@@ -88,6 +88,76 @@ it('rejects undated part_of cycles, including self loops and aliased edges', asy
   await f.write('data/aliases.json', [{ old: 'old-b', new: record('b').id }])
   expect((await check()).filter(line => line.includes('part_of cycle'))).toHaveLength(3)
 })
+
+async function writeEnglandRegion() {
+  await f.write('data/region/england.json', {
+    ...record('england'),
+    id: 'catalogue/region.england',
+    kind: 'region',
+    source: undefined,
+    relations: [],
+  })
+}
+
+async function writeGreenlandRegion() {
+  await f.write('data/region/greenland.json', {
+    ...record('greenland'),
+    id: 'catalogue/region.greenland',
+    kind: 'region',
+    source: undefined,
+    relations: [],
+  })
+}
+
+const englandObs = (patch: object = {}) => ({
+  ...observation(),
+  place: 'catalogue/region.england',
+  date: { ...date(), from: { year: 1300 }, to: { year: 1300 } },
+  ...patch,
+})
+
+it('passes a missing benchmark_role in a development window', async () => {
+  await writeEnglandRegion()
+  expect(await checkRecord({ observations: [englandObs()] })).toBe('')
+})
+
+it('rejects a benchmark_role outside every active window', async () => {
+  await writeEnglandRegion()
+  expect(await checkRecord({
+    observations: [englandObs({
+      date: { ...date(), from: { year: 1086 }, to: { year: 1086 } },
+      benchmark_role: 'development',
+    })],
+  })).toContain('outside every benchmark window')
+})
+
+it('rejects a benchmark_role mismatch inside a development window', async () => {
+  await writeEnglandRegion()
+  expect(await checkRecord({ observations: [englandObs({ benchmark_role: 'held_out' })] })).toContain('mismatch with H1')
+})
+
+it('rejects a missing benchmark_role inside a held_out window', async () => {
+  await writeGreenlandRegion()
+  expect(await checkRecord({
+    observations: [{
+      ...observation(),
+      place: 'catalogue/region.greenland',
+      date: { ...date(), from: { year: 1100 }, to: { year: 1100 } },
+    }],
+  })).toContain('required in held_out window H3')
+})
+
+it('passes a held_out benchmark_role inside the held_out window', async () => {
+  await writeGreenlandRegion()
+  expect(await checkRecord({
+    observations: [{
+      ...observation(),
+      place: 'catalogue/region.greenland',
+      date: { ...date(), from: { year: 1100 }, to: { year: 1100 } },
+      benchmark_role: 'held_out',
+    }],
+  })).toBe('')
+})
 async function writeCheckSource() {
   await f.write('data/source/fix.json', {
     id: 'catalogue/source.fix',

@@ -1,5 +1,6 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { dirname, join, resolve, sep } from 'node:path'
+import { HARNESS_PATHS } from './benchmark.ts'
 
 /** Immediate engine directories only; dependencies and the catalogue itself are exempt. */
 export function toolchainEngines(root: string): string[] {
@@ -68,6 +69,26 @@ function importFailures(source: string, file: string, root: string): number[] {
   return failures
 }
 
+function heldOutIncludeFailures(source: string, file: string, root: string): number[] {
+  const ts = tokens(source)
+  const failures: number[] = []
+  const text = (i: number) => ts[i]?.text
+  const catalogueTest = resolve(root, 'catalogue', 'test') + sep
+  if (resolve(file).startsWith(catalogueTest)) return failures
+  const relative = file.startsWith(root) ? file.slice(root.length).replace(/^[/\\]/, '').replaceAll('\\', '/') : file.replaceAll('\\', '/')
+  if (HARNESS_PATHS.includes(relative)) return failures
+  for (let i = 0; i < ts.length; i++) {
+    if (text(i) !== 'heldOut') continue
+    let j = i + 1
+    while (j < ts.length && text(j) !== ':' && text(j) !== 'include' && !ts[j]?.quoted) j++
+    if (text(j) !== ':') continue
+    j++
+    while (j < ts.length && text(j) !== 'include' && !ts[j]?.quoted) j++
+    if (ts[j]?.quoted && text(j).slice(1, -1) === 'include') failures.push(ts[i].offset)
+  }
+  return failures
+}
+
 function kernelFailures(value: unknown, path: string, failures: string[]): void {
   if (!value || typeof value !== 'object') return
   if (Array.isArray(value)) {
@@ -108,10 +129,15 @@ export function scanToolchain(root: string): string[] {
         const file = `${relative}/${entry.name}`
         if (entry.isDirectory()) walk(file)
         else if (entry.isFile()) {
-          const source = readFileSync(join(root, file), 'utf8')
-          for (const offset of importFailures(source, join(root, file), root)) {
+          const absolute = join(root, file)
+          const source = readFileSync(absolute, 'utf8')
+          for (const offset of importFailures(source, absolute, root)) {
             const line = source.slice(0, offset).split('\n').length
             failures.push(`${file}:${line}: forbidden @rex/catalogue import (labels only)`)
+          }
+          for (const offset of heldOutIncludeFailures(source, absolute, root)) {
+            const line = source.slice(0, offset).split('\n').length
+            failures.push(`${file}:${line}: forbidden heldOut include (harness only)`)
           }
         }
       }

@@ -1,6 +1,7 @@
+import { activeBenchmarkWindows, checkObservationBenchmarkRole } from './benchmark.ts'
 import type { LoadedCatalogue } from './load.ts'
 import { createIdResolver } from './load.ts'
-import { partOfCycleIds } from './regions.ts'
+import { createRegionIndex, partOfCycleIds } from './regions.ts'
 import type { Attestation, DateInterval } from './schema.ts'
 
 const INVENTION_ATTESTATION_WHATS = new Set<Attestation['what']>(['invention', 'earliest_evidence'])
@@ -28,7 +29,7 @@ export function checkRecords(catalogue: LoadedCatalogue): string[] {
     if (aliases.has(alias.old)) failures.push(`alias ${alias.old}: duplicate alias`)
     aliases.set(alias.old, alias.new)
   }
-  function resolve(id: string): 'ok' | 'cycle' | 'missing' {
+  function resolveAlias(id: string): 'ok' | 'cycle' | 'missing' {
     const seen = new Set<string>()
     while (aliases.has(id)) {
       if (seen.has(id)) return 'cycle'
@@ -38,7 +39,7 @@ export function checkRecords(catalogue: LoadedCatalogue): string[] {
     return ids.has(id) ? 'ok' : 'missing'
   }
   for (const alias of catalogue.aliases) {
-    const result = resolve(alias.old)
+    const result = resolveAlias(alias.old)
     if (result !== 'ok') failures.push(`alias ${alias.old}: ${result === 'cycle' ? 'alias cycle' : 'alias to missing id'}`)
   }
   const recordById = new Map(catalogue.records.map(row => [row.id, row]))
@@ -67,7 +68,7 @@ export function checkRecords(catalogue: LoadedCatalogue): string[] {
     if (r.scope.startsWith('game:') && r.provenance.includes('real')) report('game scope cannot have real provenance')
     const ref = (id: string | null | undefined, field: string) => {
       if (id == null) return
-      if (resolve(id) !== 'ok') report(`${field}: unresolved reference ${id}`)
+      if (resolveAlias(id) !== 'ok') report(`${field}: unresolved reference ${id}`)
       else if (r.scope === 'universal') {
         const targetId = resolveId(id)
         const target = targetId == null ? undefined : recordById.get(targetId)
@@ -98,7 +99,17 @@ export function checkRecords(catalogue: LoadedCatalogue): string[] {
       })
     })
   }
-  for (const id of partOfCycleIds(catalogue.records, createIdResolver(catalogue))) {
+  const resolve = createIdResolver(catalogue)
+  const regions = createRegionIndex(catalogue.records, resolve)
+  const benchmarkWindows = activeBenchmarkWindows(catalogue.records, resolve)
+  for (const { file, record: r } of catalogue.entries) {
+    const report = (message: string) => failures.push(`${file}: ${message}`)
+    r.observations.forEach((observation, index) => {
+      const message = checkObservationBenchmarkRole(observation, benchmarkWindows, regions, resolve)
+      if (message) report(`observations[${index}]: ${message}`)
+    })
+  }
+  for (const id of partOfCycleIds(catalogue.records, resolve)) {
     failures.push(`${id}: part_of cycle at an overlapping date`)
   }
   return failures.sort()

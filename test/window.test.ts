@@ -96,8 +96,8 @@ it('defaults to provenance intersection and universal scope, with explicit addit
   await material('prehistoric', { provenance: ['prehistoric'] })
   await material('myth', { provenance: ['mythological', 'fantasy'] })
   await material('fantasy', { provenance: ['fantasy'] })
-  await material('game', { provenance: ['mythological'], scope: 'game:test' })
-  await material('other-game', { provenance: ['mythological'], scope: 'game:other' })
+  await f.write('fixtures/demo/records/game.json', { ...record('game'), provenance: ['mythological'], scope: 'game:test', attestations: [evidence()] })
+  await f.write('fixtures/demo/records/other-game.json', { ...record('other-game'), provenance: ['mythological'], scope: 'game:other', attestations: [evidence()] })
   const cat = openCatalogue(f.root)
   expect(ids(cat.window(query).present)).toEqual(['myth', 'prehistoric', 'real'].map(materialId))
   expect(ids(cat.window({ ...query, scope: 'game:test' }).present)).toEqual(['game', 'myth', 'prehistoric', 'real'].map(materialId))
@@ -128,8 +128,8 @@ it('coverage counts present records, weak-only matching evidence and local undat
   await material('filtered', { provenance: ['fantasy'], attestations: [evidence({ date: null })] })
   const result = openCatalogue(f.root).window({ ...query, kinds: ['material', 'technology'] })
   expect(result.coverage).toEqual([
-    { kind: 'material', present: 4, onlyEstimateFictionOpen: 3, undated: 2 },
-    { kind: 'technology', present: 0, onlyEstimateFictionOpen: 0, undated: 0 },
+    { kind: 'material', present: 4, onlyEstimateFictionOpen: 3, undated: 2, withheld: 0 },
+    { kind: 'technology', present: 0, onlyEstimateFictionOpen: 0, undated: 0, withheld: 0 },
   ])
   expect(ids(result.present)).not.toContain(materialId('undated'))
 })
@@ -160,4 +160,36 @@ it('get and window resolve alias chains and returned records cannot mutate the s
   expect(ids(result.present)).toEqual([materialId('local')])
   result.present[0].attestations.length = 0
   expect(cat.window(query).present[0].attestations).toHaveLength(1)
+})
+
+const heldOutInterval = (from = 1000, to = from) => ({ ...date(), from: { year: from }, to: { year: to } })
+
+async function writeGreenlandHeldOutFixture() {
+  await write({ ...record('greenland'), id: regionId('greenland'), kind: 'region', source: undefined, relations: [] })
+  await material('visible', { attestations: [evidence({ place: regionId('port-royal') })] })
+  await material('held-dated', {
+    attestations: [evidence({ place: regionId('greenland'), date: heldOutInterval(1100) })],
+    observations: [{ ...observation(), place: regionId('greenland'), date: heldOutInterval(1100), benchmark_role: 'held_out' }],
+  })
+  await material('held-undated', { attestations: [evidence({ place: regionId('greenland'), date: null })] })
+}
+
+it('withhold drops held-out placed evidence from get and window and counts withheld coverage', async () => {
+  await writeGreenlandHeldOutFixture()
+  const withheld = openCatalogue(f.root)
+  expect(withheld.get(materialId('held-dated'))?.attestations).toEqual([])
+  expect(withheld.get(materialId('held-dated'))?.observations).toEqual([])
+  expect(withheld.get(materialId('held-undated'))?.attestations).toEqual([])
+  const result = withheld.window({ ...query, region: regionId('greenland'), from: { year: 985 }, to: { year: 1450 }, kinds: ['material'] })
+  expect(ids(result.present)).toEqual([])
+  expect(result.coverage).toEqual([{ kind: 'material', present: 0, onlyEstimateFictionOpen: 0, undated: 0, withheld: 3 }])
+})
+
+it('heldOut include exposes held-out evidence and leaves withheld coverage at zero', async () => {
+  await writeGreenlandHeldOutFixture()
+  const included = openCatalogue(f.root, { heldOut: 'include' })
+  expect(included.get(materialId('held-dated'))?.observations).toHaveLength(1)
+  const result = included.window({ ...query, region: regionId('greenland'), from: { year: 985 }, to: { year: 1450 }, kinds: ['material'] })
+  expect(ids(result.present)).toEqual([materialId('held-dated')])
+  expect(result.coverage[0].withheld).toBe(0)
 })

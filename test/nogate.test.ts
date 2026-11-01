@@ -142,3 +142,8 @@ it('reports malformed kernel JSON and deterministic sorted failures with CLI exi
   expect(result.status).toBe(1)
   expect(result.stderr).toContain(failures.join('\n'))
 })
+
+it('rejects heldOut include in engine src unless the path is in HARNESS_PATHS', () => {
+  write('engine/src/tuner.ts', `openCatalogue(root, { heldOut: 'include' })`)
+  expect(scanToolchain(root)).toEqual(['engine/src/tuner.ts:1: forbidden heldOut include (harness only)'])
+})
