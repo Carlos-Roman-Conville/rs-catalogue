@@ -29,16 +29,7 @@
     },
     {
       "rel": "part_of",
-      "to": "catalogue/region.england",
-      "date": {
-        "from": {
-          "year": 1655
-        },
-        "to": null,
-        "precision": "year",
-        "circa": true,
-        "calendar_of_source": "gregorian"
-      }
+      "to": "catalogue/region.england"
     }
   ],
   "sources": [],
@@ -52,7 +43,12 @@
       "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/STARTING_TOWN.md",
       "anchor": "## Town keeper research (2026-10-30; group 1 and group 4 rows) | The referents",
       "sha256": "a5eb0a4c87f92707cfffcf16696de5a95cb7a5bcff5df4490afcc0b8708aefea"
+    },
+    {
+      "file": "../../Games/RPG's/pirate-ship/files/pirate-ship/SOURCES.md",
+      "anchor": "## Settlement sources (settlement keeper, 2026-10-30) | STL-LAW",
+      "sha256": "df71d1fcdae945ee13ffa44b6fee686bc15e08cf9b6dc14a6c4e69a99bb334a6"
     }
   ],
-  "notes": "Referents name Port Royal, Jamaica. part_of greater-antilles: no anchor states it (V4 nesting rule). part_of england from 1655: no anchored row states England; kept as political membership estimate."
+  "notes": "Referents name Port Royal, Jamaica. part_of greater-antilles: no anchor states it (V4 nesting rule). part_of england: catalogue/source.stl-law anchor states English law in Jamaica; the 1655 bound is in no anchored row; STL-LAW cited by key, not opened."
 }
