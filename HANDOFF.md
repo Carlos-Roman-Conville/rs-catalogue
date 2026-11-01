@@ -23,6 +23,10 @@ adds one dated line under Done, and parks a disagreement with DESIGN.md under Bl
 - 2026-10-31: 2882 region fixtures open-ended (8a84675): three year-9999 ends are now `to: null`.
 - 2026-10-31: 2883 fixture review fixes (d8474de): no same_as on the three creatures, no game observation on chattel-slavery, port-royal counts are estimates.
 - 2026-11-01: 2905 V4 anchoring rule in DESIGN.md §4: referent-window dates are `estimate` with the referents paragraph as a second anchor; keys only from anchored rows; relation doubt in `notes`.
+- 2026-11-01: 2906 practice, culture and entity V4 fixes (04cc746): 39 records, 8 labels set to open.
+- 2026-11-01: 2907 institution, region and period V4 fixes (392876d): 25 records; region nest dropped, see review 1101-0126; task in failed/.
+- 2026-11-01: 2908 fixture audit 3 (46b2d2d): AUDIT-3 says fail, 12 of 66 records.
+- 2026-11-01: 2928 V4 nesting rule in DESIGN.md §4: undated geographic `part_of` anchored by the referents plus the naming row; unstated steps kept, doubt in `notes`, never deleted for want of a row.
 
 ## Blocked
 

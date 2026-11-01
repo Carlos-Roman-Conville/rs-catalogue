@@ -288,6 +288,18 @@ ingested record to:
   supported if any of the record's anchors states it under these terms, and the label check accepts `estimate`
   for anything taken from the referent window.
 
+**V4 nesting rule** (2026-11-01, review 1101-0126). An undated geographic `part_of` relation (Nassau in New
+Providence in the Bahamas in the Caribbean in the Atlantic in the world; Port Royal and Kingston in Jamaica in the
+Greater Antilles; Barbados in the Lesser Antilles) is anchored by the referents paragraph plus the row that names
+the place, not by a gazetteer: this package holds no gazetteer or atlas source and SOURCES.md is another repo's,
+so none is invented. Where an anchor states the nesting (the referents name "Port Royal, Jamaica" and "Nassau, New
+Providence"), the relation holds as written. Where none does (New Providence in the Bahamas and every step above,
+Kingston in Jamaica, Jamaica in the Greater Antilles, Barbados in the Lesser Antilles), the relation is kept and
+the record's `notes` names it and says no anchor states it (the schema has no relation label, `src/schema.ts`,
+`relations`; rule (d)). Such a relation carries no `date` and no source key it is not anchored to. A nesting
+relation is never deleted only because no row states it: keep the evidence and say the doubt in `notes`. A dated
+or political relation (New Providence `part_of` England from 1718) is not geographic nesting and follows rule (a).
+
 "Validated" for a reference catalogue means: a value's source was re-checked by someone other than its writer (V4)
 and, where a second independent source exists, the two agree within the interval stated. Disagreement is kept as two
 attestations, never averaged (PLATFORM §4: competing explanations are kept).
