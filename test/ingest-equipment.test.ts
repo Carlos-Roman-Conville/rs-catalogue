@@ -1,4 +1,4 @@
-import { mkdtemp, readFile, rm } from 'node:fs/promises'
+import { mkdtemp, readdir, readFile, rm } from 'node:fs/promises'
 import { join } from 'node:path'
 import { tmpdir } from 'node:os'
 import { afterEach, beforeEach, expect, it } from 'vitest'
@@ -39,12 +39,31 @@ it('availability classes sum to 313 (184 + 59 + 69 + 1)', () => {
   })
 })
 
+async function recordJsonPaths(base: string): Promise<string[]> {
+  const recordsDir = join(base, 'records')
+  const paths: string[] = []
+  async function walk(dir: string) {
+    for (const entry of await readdir(dir, { withFileTypes: true })) {
+      const path = join(dir, entry.name)
+      if (entry.isDirectory()) await walk(path)
+      else if (entry.isFile() && entry.name.endsWith('.json')) paths.push(path)
+    }
+  }
+  await walk(recordsDir)
+  return paths.sort()
+}
+
 it('two runs to the same directory are byte-identical', async () => {
   ingestEquipment({ catalogueRoot: root, outDir })
-  const first = await readFile(join(outDir, 'records/technology/bunsen.json'), 'utf8')
+  const paths = await recordJsonPaths(outDir)
+  const firstByPath = new Map(
+    await Promise.all(paths.map(async path => [path, await readFile(path)] as const)),
+  )
   ingestEquipment({ catalogueRoot: root, outDir })
-  const second = await readFile(join(outDir, 'records/technology/bunsen.json'), 'utf8')
-  expect(second).toBe(first)
+  for (const path of paths) {
+    const second = await readFile(path)
+    expect(second.equals(firstByPath.get(path)!)).toBe(true)
+  }
 })
 
 it('plain-none row bunsen gets absence attestation with estimate label', () => {

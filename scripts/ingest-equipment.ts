@@ -336,7 +336,7 @@ export function ingestEquipment(options: IngestOptions): IngestResult {
   }
   for (const slug of existingSlugs) {
     if (!ingestSlugs.has(slug)) {
-      throw new Error(`slug collision with existing fixture record: ${slug}`)
+      throw new Error(`a technology record exists that the ingest does not produce: ${slug}`)
     }
   }
 
