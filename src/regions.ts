@@ -7,7 +7,7 @@ type Graph = Map<string, Edge[]>
 const always: DateRange = [-Infinity, Infinity]
 
 /** Inclusive Gregorian bounds. Partial endpoints cover the whole stated year/month. */
-export function dateRange(from: DatePoint, to: DatePoint): DateRange {
+export function dateRange(from: DatePoint, to?: DatePoint | null): DateRange {
   function endpoint(point: DatePoint, end: boolean): number {
     if (point.day !== undefined && point.month === undefined) throw new RangeError('Day requires month')
     const month = point.month ?? (end ? 12 : 1)
@@ -15,7 +15,7 @@ export function dateRange(from: DatePoint, to: DatePoint): DateRange {
     const days = [31, leap ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     return gregorianToJdn(point.year, month, point.day ?? (end ? days[month - 1]! : 1))
   }
-  const range: DateRange = [endpoint(from, false), endpoint(to, true)]
+  const range: DateRange = [endpoint(from, false), to == null ? Infinity : endpoint(to, true)]
   if (range[0] > range[1]) throw new RangeError('from > to')
   return range
 }

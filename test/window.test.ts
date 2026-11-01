@@ -22,6 +22,36 @@ beforeEach(async () => {
 })
 afterEach(async () => { await f.close() })
 const ids = (records: CatalogueRecord[]) => records.map(r => r.id)
+it.each([undefined, null])('open-ended evidence matches windows at and after from, never before (to=%s)', async to => {
+  const d = { ...interval(1700), to }
+  await material('ongoing', { attestations: [evidence({ date: d })], observations: [{ ...observation(), place: regionId('port-royal'), date: d }] })
+  const cat = openCatalogue(f.root)
+  expect(cat.window({ ...query, from: { year: 1699 }, to: { year: 1699 } }).present).toEqual([])
+  for (const year of [1700, 10000]) {
+    const result = cat.window({ ...query, from: { year }, to: { year } })
+    expect(ids(result.present)).toEqual([materialId('ongoing')])
+    expect(result.present[0].observations).toHaveLength(1)
+  }
+})
+it('open-ended omitted and null ends have identical canonical JSON for all interval fields', async () => {
+  async function snapshot(to: undefined | null) {
+    const d = { ...interval(1700), to }
+    await material('ongoing', {
+      attestations: [evidence({ date: d })],
+      observations: [{ ...observation(), place: regionId('port-royal'), date: d }],
+      relations: [{ rel: 'part_of', to: regionId('caribbean'), date: d }],
+    })
+    return JSON.stringify(openCatalogue(f.root).window(query))
+  }
+  expect(await snapshot(undefined)).toBe(await snapshot(null))
+})
+it('open-ended support leaves closed intervals bounded and their dates unchanged', async () => {
+  const d = interval(1700, 1720)
+  await material('closed', { attestations: [evidence({ date: d })] })
+  const cat = openCatalogue(f.root)
+  expect(cat.window(query).present[0].attestations[0].date).toEqual(d)
+  expect(cat.window({ ...query, from: { year: 1721 }, to: { year: 1721 } }).present).toEqual([])
+})
 
 it('matches all six presence statements and only matching observations and attestations', async () => {
   for (const what of ['presence', 'adoption', 'spread_to', 'origin', 'invention', 'earliest_evidence'] as const) await material(what.replaceAll('_', '-'), { attestations: [evidence({ what })] })

@@ -10,6 +10,20 @@ const check = async () => checkRecords(await loadRecords(f.root))
 async function checkRecord(patch: object) { await f.write('data/material/example.json', { ...record(), ...patch }); return (await check()).join('\n') }
 
 it('passes an empty catalogue', async () => expect(await check()).toEqual([]))
+it.each([undefined, null])('open-ended dates are valid under check for evidence and relations (to=%s)', async to => {
+  const d = { ...date(), from: { year: 1655 }, to }
+  await f.write('data/material/parent.json', record('parent'))
+  expect(await checkRecord({
+    attestations: [{ ...attestation(), date: d }],
+    observations: [{ ...observation(), date: d }],
+    relations: [{ rel: 'part_of', to: record('parent').id, date: d }],
+  })).toBe('')
+})
+it('open-ended cycle detection still rejects relations overlapping in the far future', async () => {
+  await f.write('data/material/a.json', { ...record('a'), relations: [{ rel: 'part_of', to: record('b').id, date: { ...date(), to: null } }] })
+  await f.write('data/material/b.json', { ...record('b'), relations: [{ rel: 'part_of', to: record('a').id, date: { ...date(), from: { year: 10000 }, to: undefined } }] })
+  expect((await check()).filter(line => line.includes('part_of cycle'))).toHaveLength(2)
+})
 it('reports bad JSON', async () => { await f.write('data/example.json', '{', true); expect((await check()).join()).toContain('bad JSON') })
 it.each(['material.example', 'catalogue/material.Bad', 'catalogue/material.a/b', 'catalogue/material.a.b', 'catalogue/region.example'])('rejects id syntax or kind mismatch: %s', async id => expect(await checkRecord({ id })).toContain('invalid id'))
 it('rejects a file name unequal to the local slug', async () => expect(await checkRecord({ id: 'catalogue/material.other' })).toContain('file name must be other.json'))

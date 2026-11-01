@@ -8,6 +8,14 @@ let f: Awaited<ReturnType<typeof fixture>>
 beforeEach(async () => { f = await fixture() })
 afterEach(async () => { await f.close() })
 const id = (slug: string) => `catalogue/region.${slug}`
+it.each([undefined, null])('open-ended membership includes from and later windows but not earlier ones (to=%s)', async to => {
+  await region('caribbean')
+  await region('jamaica', [{ rel: 'part_of', to: id('caribbean'), date: { ...date(), from: { year: 1655 }, to } }])
+  expect(await descendants('caribbean', 1654)).toEqual([id('caribbean')])
+  for (const year of [1655, 1700, 10000]) {
+    expect(await descendants('caribbean', year)).toEqual(['caribbean', 'jamaica'].map(id))
+  }
+})
 const during = (from: number, to: number) => ({ ...date(), from: { year: from }, to: { year: to } })
 const part = (slug: string, from?: number, to?: number): Relation => ({ rel: 'part_of', to: id(slug), ...(from === undefined ? {} : { date: during(from, to!) }) })
 async function region(slug: string, relations: Relation[] = []) {
