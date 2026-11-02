@@ -1123,7 +1123,7 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "modern reconstruction, secondary; printed in million acres; a different working paper from CAGE WP 35 (2010), whose Table 1 gives 11.52 for 1270 and 1300"
+        "reason": "modern reconstruction, secondary; printed in million acres (Overton and Campbell tables, Medieval Accounts Database)"
       },
       "benchmark_role": "development",
       "note": "Table 1, 'Total sown', 1300 (CAT-BCKOVL-2010-WP21)"
@@ -1150,7 +1150,7 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "modern reconstruction, secondary; printed in million acres; the 1270 value (11.52) is T1 of SHEET-2 from the 2010 CAGE WP 35, this is a different working paper (WP 21) whose Table 1 gives the same 1270 row"
+        "reason": "modern reconstruction, secondary; printed in million acres (Overton and Campbell tables, Medieval Accounts Database)"
       },
       "benchmark_role": "development",
       "note": "Table 1, 'Total sown', 1380 (CAT-BCKOVL-2010-WP21)"
@@ -1204,7 +1204,7 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "modern reconstruction, secondary; printed in million acres; the 1270 value (11.52) is T1 of SHEET-2 from the 2010 CAGE WP 35, this is a different working paper (WP 21) whose Table 1 gives the same 1270 row"
+        "reason": "modern reconstruction, secondary; printed in million acres (Overton and Campbell tables, Medieval Accounts Database)"
       },
       "benchmark_role": "development",
       "note": "Table 1, 'Total sown', 1450 (CAT-BCKOVL-2010-WP21)"
@@ -1231,7 +1231,7 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "modern reconstruction, secondary; printed in million acres; the 1270 value (11.52) is T1 of SHEET-2 from the 2010 CAGE WP 35, this is a different working paper (WP 21) whose Table 1 gives the same 1270 row"
+        "reason": "modern reconstruction, secondary; printed in million acres (Overton and Campbell tables, Medieval Accounts Database)"
       },
       "benchmark_role": "development",
       "note": "Table 1, 'Total sown', 1500 (CAT-BCKOVL-2010-WP21)"
@@ -1258,7 +1258,7 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "modern reconstruction, secondary; printed in million acres; the 1270 value (11.52) is T1 of SHEET-2 from the 2010 CAGE WP 35, this is a different working paper (WP 21) whose Table 1 gives the same 1270 row"
+        "reason": "modern reconstruction, secondary; printed in million acres (Overton and Campbell tables, Medieval Accounts Database)"
       },
       "benchmark_role": "development",
       "note": "Table 1, 'Total sown', 1600 (CAT-BCKOVL-2010-WP21)"
@@ -1312,7 +1312,7 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "modern reconstruction, secondary; printed in million acres; a different working paper from CAGE WP 35 (2010), whose Table 1 gives 11.52 for 1270 and 1300"
+        "reason": "modern reconstruction, secondary; printed in million acres (Overton and Campbell tables, Medieval Accounts Database)"
       },
       "benchmark_role": "development",
       "note": "Table 1, 'Total sown', 1700 (CAT-BCKOVL-2010-WP21)"
