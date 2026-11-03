@@ -1,4 +1,4 @@
-export const kinds = ['entity', 'substance', 'material', 'organism', 'technology', 'institution', 'practice', 'phenomenon', 'region', 'period', 'culture', 'calendar', 'source'] as const
+export const kinds = ['entity', 'substance', 'material', 'product', 'organism', 'technology', 'institution', 'practice', 'phenomenon', 'region', 'period', 'culture', 'calendar', 'source'] as const
 export type Kind = typeof kinds[number]
 export const provenanceClasses = ['real', 'prehistoric', 'mythological', 'fantasy', 'science_fiction', 'original_fiction'] as const
 export type Provenance = typeof provenanceClasses[number]
@@ -27,17 +27,20 @@ export interface Attestation extends Evidence {
   culture?: string
 }
 export interface Observation extends Evidence {
+  conversion?: 'exact' | 'empirical'
   quantity: string; value: number | string | null; unit: string | null
   benchmark_role?: 'development' | 'held_out' | 'reserve'
 }
 export interface Relation {
-  rel: 'is_a' | 'part_of' | 'made_of' | 'variant_of' | 'same_as' | 'documented_prerequisite'
+  rel: 'is_a' | 'part_of' | 'made_of' | 'made_by' | 'variant_of' | 'same_as' | 'documented_prerequisite'
   to: string; date?: DateInterval; sources?: string[]
 }
 export interface Source {
   key: string; title: string; author?: string; year?: number; gives: string; url?: string; rights: string
 }
 interface RecordFields {
+  /** A product is a made thing in one stated condition; other kinds omit this field. */
+  condition?: string
   id: string; names: Name[]; classification: { scheme: string; path: string[] }[]
   provenance: Provenance[]; scope: 'universal' | `game:${string}`
   attestations: Attestation[]; relations: Relation[]; observations: Observation[]; sources: string[]
@@ -104,9 +107,10 @@ const record = object({
   scope: (v, p, e) => { if (v !== 'universal' && !(typeof v === 'string' && /^game:[a-z0-9]+(-[a-z0-9]+)*$/.test(v))) fail(p, 'universal or game:<slug>', e) },
   attestations: array(object({ ...evidence, what: enumeration(['origin', 'earliest_evidence', 'discovery', 'invention', 'identification', 'adoption', 'presence', 'absence', 'spread_to']), culture: optional(string) })),
   observations: array(object({ ...evidence, quantity: string, unit: nullable(string),
+    conversion: optional(enumeration(['exact', 'empirical'])),
     value: (v, p, e) => { if (v !== null && typeof v !== 'string' && !(typeof v === 'number' && Number.isFinite(v))) fail(p, 'finite number|string|null', e) },
     benchmark_role: optional(enumeration(['development', 'held_out', 'reserve'])) })),
-  relations: array(object({ rel: enumeration(['is_a', 'part_of', 'made_of', 'variant_of', 'same_as', 'documented_prerequisite']), to: string, date: optional(interval), sources: optional(strings) })),
+  relations: array(object({ rel: enumeration(['is_a', 'part_of', 'made_of', 'made_by', 'variant_of', 'same_as', 'documented_prerequisite']), to: string, date: optional(interval), sources: optional(strings) })),
   sources: strings, derived_from: array(object({ file: string, anchor: string,
     sha256: (v, p, e) => { if (typeof v !== 'string' || !/^[a-fA-F0-9]{64}$/.test(v)) fail(p, 'SHA-256 hex digest', e) } })), notes: optional(string),
 })
@@ -115,6 +119,11 @@ const record = object({
 export function validateRecord(value: unknown): string[] {
   const errors: string[] = []
   record(value, 'record', errors)
+  if (value !== null && typeof value === 'object' && 'kind' in value && value.kind === 'product') {
+    object({ condition: string })(value, 'record', errors)
+  } else if (value !== null && typeof value === 'object' && 'condition' in value && value.condition !== undefined) {
+    errors.push('record.condition: only allowed for kind product')
+  }
   if (value !== null && typeof value === 'object' && 'kind' in value && value.kind === 'source') {
     object({ source: object({ key: string, title: string, author: optional(string), year: optional(integer), gives: string, url: optional(string), rights: string }) })(value, 'record', errors)
   } else if (value !== null && typeof value === 'object' && 'source' in value && value.source !== undefined) {

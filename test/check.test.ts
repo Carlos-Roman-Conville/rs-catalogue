@@ -298,3 +298,45 @@ it('rejects a dated cycle only when all edges share a date, including a shared e
   await f.write('data/material/c.json', { ...record('c'), relations: [{ rel: 'part_of', to: record('a').id, date: interval(1656, 1700) }] })
   expect(await check()).toEqual([])
 })
+
+async function checkProduct(relations: object[]) {
+  await f.write('data/product/bread.json', { ...record('bread'), id: 'catalogue/product.bread', kind: 'product', condition: 'day of baking', relations })
+  return (await check()).join('\n')
+}
+const ingredient = { rel: 'made_of', to: 'catalogue/material.example' }
+it.each(['organism', 'product', 'substance', 'material'])('accepts a product made_of %s through aliases, with zero or one made_by', async kind => {
+  await f.write('data/material/example.json', record())
+  const id = `catalogue/${kind}.ingredient`
+  await f.write(`data/${kind}/ingredient.json`, { ...record('ingredient'), id, kind,
+    ...(kind === 'product' ? { condition: 'dried', relations: [ingredient] } : {}) })
+  await f.write('data/practice/baking.json', { ...record('baking'), id: 'catalogue/practice.baking', kind: 'practice' })
+  await f.write('data/product/stale.json', { ...record('stale'), id: 'catalogue/product.stale', kind: 'product', condition: 'stale', relations: [ingredient] })
+  await f.write('data/aliases.json', [{ old: 'old-ingredient', new: 'older-ingredient' }, { old: 'older-ingredient', new: id },
+    { old: 'baking', new: 'catalogue/practice.baking' }, { old: 'stale', new: 'catalogue/product.stale' }])
+  const relations = [{ rel: 'made_of', to: 'old-ingredient' }, { rel: 'variant_of', to: 'stale' }]
+  expect(await checkProduct(relations)).toBe('')
+  expect(await checkProduct([...relations, { rel: 'made_by', to: 'baking' }])).toBe('')
+})
+it('requires at least one made_of on a product', async () => {
+  expect(await checkProduct([])).toContain('catalogue/product.bread: made_of: product requires at least one relation')
+})
+it.each(['made_of', 'made_by', 'variant_of'])('rejects a product %s to a region through aliases', async rel => {
+  await f.write('data/material/example.json', record())
+  await f.write('data/region/place.json', { ...record('place'), id: 'catalogue/region.place', kind: 'region' })
+  await f.write('data/aliases.json', [{ old: 'place', new: 'catalogue/region.place' }])
+  const rule = rel === 'made_of' ? 'organism|product|substance|material' : rel === 'made_by' ? 'practice' : 'another product'
+  expect(await checkProduct([ingredient, { rel, to: 'place' }])).toContain(`catalogue/product.bread: relations[1] ${rel}: product must resolve to ${rule} record`)
+})
+it('rejects two made_by relations even when both target practices', async () => {
+  await f.write('data/material/example.json', record())
+  for (const slug of ['baking', 'boiling']) await f.write(`data/practice/${slug}.json`, { ...record(slug), id: `catalogue/practice.${slug}`, kind: 'practice' })
+  expect(await checkProduct([ingredient, { rel: 'made_by', to: 'catalogue/practice.baking' }, { rel: 'made_by', to: 'catalogue/practice.boiling' }])).toContain('catalogue/product.bread: made_by: product allows at most one relation')
+})
+it('rejects variant_of pointing to the same product', async () => {
+  await f.write('data/material/example.json', record())
+  expect(await checkProduct([ingredient, { rel: 'variant_of', to: 'catalogue/product.bread' }])).toContain('variant_of: product must resolve to another product record')
+})
+it.each(['made_of', 'made_by', 'variant_of'])('names the product and rule for an unresolved %s', async rel => {
+  await f.write('data/material/example.json', record())
+  expect(await checkProduct([ingredient, { rel, to: 'missing' }])).toContain(`catalogue/product.bread: relations[1] ${rel}: product must resolve to`)
+})

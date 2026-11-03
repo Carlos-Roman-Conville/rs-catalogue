@@ -32,3 +32,11 @@ it.each(['{', '{}', '[null]', '[{"old":"x","new":2}]'])('reports malformed alias
   await f.write('data/aliases.json', text, true)
   expect((await loadRecords(f.root)).failures.join()).toContain('data/aliases.json')
 })
+
+it('loads a product from its kind directory with its condition', async () => {
+  const product = { ...record('bread'), id: 'catalogue/product.bread', kind: 'product', condition: 'day of baking' }
+  await f.write('data/product/bread.json', product)
+  const loaded = await loadRecords(f.root)
+  expect(loaded.failures).toEqual([])
+  expect(loaded.entries).toEqual([{ file: 'data/product/bread.json', record: product }])
+})

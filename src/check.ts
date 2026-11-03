@@ -82,6 +82,20 @@ export function checkRecords(catalogue: LoadedCatalogue): string[] {
     sources(r.sources, 'sources')
     r.names.forEach((name, i) => { ref(name.region, `names[${i}].region`); ref(name.period, `names[${i}].period`) })
     r.relations.forEach((rel, i) => { ref(rel.to, `relations[${i}].to`); sources(rel.sources ?? [], `relations[${i}].sources`) })
+    if (r.kind === 'product') {
+      if (!r.relations.some(rel => rel.rel === 'made_of')) report(`${r.id}: made_of: product requires at least one relation`)
+      if (r.relations.filter(rel => rel.rel === 'made_by').length > 1) report(`${r.id}: made_by: product allows at most one relation`)
+      r.relations.forEach((rel, i) => {
+        const allowed = rel.rel === 'made_of' ? ['organism', 'product', 'substance', 'material']
+          : rel.rel === 'made_by' ? ['practice'] : rel.rel === 'variant_of' ? ['product'] : undefined
+        if (!allowed) return
+        const targetId = resolveId(rel.to)
+        const target = targetId === undefined ? undefined : recordById.get(targetId)
+        if (!target || !allowed.includes(target.kind) || (rel.rel === 'variant_of' && target.id === r.id)) {
+          report(`${r.id}: relations[${i}] ${rel.rel}: product must resolve to ${rel.rel === 'variant_of' ? 'another product' : allowed.join('|')} record`)
+        }
+      })
+    }
     for (const field of ['attestations', 'observations'] as const) {
       r[field].forEach((row, i) => {
         const path = `${field}[${i}]`

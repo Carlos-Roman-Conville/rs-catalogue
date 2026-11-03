@@ -4,7 +4,7 @@ import { attestation, date, observation, record } from './helpers.ts'
 
 describe('record schema', () => {
   it.each(kinds)('accepts kind %s and requires source metadata for source', kind => {
-    const r = { ...record(), kind, ...(kind === 'source' ? { source: { key: 'TEST', title: 'Test', gives: 'Fixture', rights: 'Test only' } } : {}) }
+    const r = { ...record(), kind, ...(kind === 'product' ? { condition: 'freshly baked' } : {}), ...(kind === 'source' ? { source: { key: 'TEST', title: 'Test', gives: 'Fixture', rights: 'Test only' } } : {}) }
     expect(isCatalogueRecord(r)).toBe(true)
   })
   it('requires source object for source kind', () => expect(validateRecord({ ...record(), kind: 'source' }).join()).toContain('record.source'))
@@ -52,4 +52,20 @@ describe('record schema', () => {
       expect(validateRecord({ ...record(), attestations: [{ ...attestation(), date: { ...date(), from } }] }).length).toBeGreaterThan(0)
     }
   })
+})
+
+it.each([undefined, '', '  ', null, 42])('requires a non-empty product condition: %s', condition => {
+  expect(validateRecord({ ...record(), kind: 'product', condition })).toContain('record.condition: expected non-empty string')
+})
+it.each(kinds.filter(kind => kind !== 'product'))('rejects condition on %s', kind => {
+  expect(validateRecord({ ...record(), kind, condition: 'fresh' })).toContain('record.condition: only allowed for kind product')
+})
+it.each([undefined, 'exact', 'empirical'])('accepts conversion %s', conversion => {
+  expect(validateRecord({ ...record(), observations: [{ ...observation(), conversion }] })).toEqual([])
+})
+it('rejects invalid conversion', () => {
+  expect(validateRecord({ ...record(), observations: [{ ...observation(), conversion: 'guessed' }] })).toContain('record.observations[0].conversion: expected exact|empirical')
+})
+it('accepts made_by', () => {
+  expect(validateRecord({ ...record(), relations: [{ rel: 'made_by', to: 'catalogue/practice.baking' }] })).toEqual([])
 })
