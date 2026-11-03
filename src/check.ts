@@ -1,4 +1,5 @@
 import { activeBenchmarkWindows, checkObservationBenchmarkRole } from './benchmark.ts'
+import { observationLineage } from './evidence.ts'
 import type { LoadedCatalogue } from './load.ts'
 import { createIdResolver } from './load.ts'
 import { createRegionIndex, partOfCycleIds } from './regions.ts'
@@ -23,6 +24,27 @@ function absenceWindowContainsInvention(absence: Attestation, invention: Attesta
 /** V1 integrity checks. All references follow aliases, including multi-hop historical ids. */
 export function checkRecords(catalogue: LoadedCatalogue): string[] {
   const failures = [...catalogue.failures]
+  const rows = catalogue.records.flatMap(record => record.observations.map((row, index) => ({
+    row, key: `${record.id}.observations[${index}]`, lineage: observationLineage(record.id, index, row),
+  })))
+  const fitted = new Map<string, Map<string, Set<string>>>()
+  for (const { row, key, lineage } of rows) {
+    for (const use of row.uses ?? []) {
+      if (use.role !== 'calibration' && use.role !== 'selection') continue
+      if (!fitted.has(lineage)) fitted.set(lineage, new Map())
+      const mechanisms = fitted.get(lineage)!
+      if (!mechanisms.has(use.mechanism)) mechanisms.set(use.mechanism, new Set())
+      mechanisms.get(use.mechanism)!.add(key)
+    }
+  }
+  for (const { row, key, lineage } of rows) {
+    const mechanisms = new Set(row.uses?.filter(use => use.role === 'validation').map(use => use.mechanism))
+    for (const mechanism of mechanisms) {
+      for (const fittedKey of fitted.get(lineage)?.get(mechanism) ?? []) {
+        failures.push(`${key}: validation conflicts with calibration/selection on ${fittedKey} for mechanism ${mechanism}, lineage ${lineage}`)
+      }
+    }
+  }
   const ids = new Set(catalogue.records.map(record => record.id))
   const aliases = new Map<string, string>()
   for (const alias of catalogue.aliases) {

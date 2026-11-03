@@ -7,6 +7,40 @@ let f: Awaited<ReturnType<typeof fixture>>
 beforeEach(async () => { f = await fixture() })
 afterEach(async () => { await f.close() })
 const check = async () => checkRecords(await loadRecords(f.root))
+const use = (role: string, mechanism = 'life.energy.balance', model_version = 'v1') => ({ role, mechanism, model_version, unit: '5488' })
+
+it.each(['calibration', 'selection'])('rejects validation of a lineage used for %s at any version', async role => {
+  await f.write('data/material/fit.json', { ...record('fit'), observations: [
+    { ...observation(), lineage: 'primary', uses: [use(role), use(role, 'life.energy.balance', 'v2')] },
+  ] })
+  const errors = await checkRecord({ observations: [{ ...observation(), lineage: 'primary', uses: [use('validation', 'life.energy.balance', 'v3')] }] })
+  for (const text of ['catalogue/material.example.observations[0]', 'catalogue/material.fit.observations[0]', 'life.energy.balance', 'lineage primary']) expect(errors).toContain(text)
+})
+it('allows validation by another mechanism and context on the fitted row', async () => {
+  expect(await checkRecord({ observations: [
+    { ...observation(), lineage: 'primary', uses: [use('calibration'), use('context')] },
+    { ...observation(), lineage: 'primary', uses: [use('validation', 'other.mechanism')] },
+    { ...observation(), uses: [] },
+  ] })).toBe('')
+})
+it('guards an unlabelled row itself and copies naming its default key', async () => {
+  const fitted = { ...observation(), uses: [use('calibration'), use('validation')] }
+  expect(await checkRecord({ observations: [fitted] })).toContain('lineage catalogue/material.example.observations[0]')
+  expect(await checkRecord({ observations: [
+    { ...fitted, uses: [use('calibration')] },
+    { ...observation(), lineage: 'catalogue/material.example.observations[0]', uses: [use('validation')] },
+  ] })).toContain('validation conflicts')
+  expect(await checkRecord({ observations: [
+    { ...fitted, uses: [use('calibration')] }, { ...observation(), uses: [use('validation')] },
+  ] })).toBe('')
+})
+it.each([
+  { uses: [use('unknown')] }, { uses: 'invalid' }, { uses: [{ ...use('context'), mechanism: '' }] },
+  { uses: [{ ...use('context'), model_version: 1 }] }, { uses: [{ ...use('context'), unit: 5488 }] },
+  { lineage: '' }, { shared: [1] }, { shared: 'group' },
+])('rejects malformed use-record fields: %j', async patch => {
+  expect(await checkRecord({ observations: [{ ...observation(), ...patch }] })).toContain('record.observations[0]')
+})
 async function checkRecord(patch: object) { await f.write('data/material/example.json', { ...record(), ...patch }); return (await check()).join('\n') }
 
 it('passes an empty catalogue', async () => expect(await check()).toEqual([]))

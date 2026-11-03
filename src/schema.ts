@@ -31,6 +31,9 @@ export interface Attestation extends Evidence {
   culture?: string
 }
 export interface Observation extends Evidence {
+  uses?: { mechanism: string; model_version: string; role: 'calibration' | 'selection' | 'validation' | 'context'; unit: string }[]
+  lineage?: string
+  shared?: string[]
   conversion?: 'exact' | 'empirical'
   quantity: string; value: number | string | null; unit: string | null
   benchmark_role?: 'development' | 'held_out' | 'reserve'
@@ -119,6 +122,9 @@ const record = object({
   scope: (v, p, e) => { if (v !== 'universal' && !(typeof v === 'string' && /^game:[a-z0-9]+(-[a-z0-9]+)*$/.test(v))) fail(p, 'universal or game:<slug>', e) },
   attestations: array(object({ ...evidence, what: enumeration(['origin', 'earliest_evidence', 'discovery', 'invention', 'identification', 'adoption', 'presence', 'absence', 'spread_to']), culture: optional(string) })),
   observations: array(object({ ...evidence, quantity: string, unit: nullable(string),
+    uses: optional(array(object({ mechanism: string, model_version: string,
+      role: enumeration(['calibration', 'selection', 'validation', 'context']), unit: string }))),
+    lineage: optional(string), shared: optional(strings),
     conversion: optional(enumeration(['exact', 'empirical'])),
     value: (v, p, e) => { if (v !== null && typeof v !== 'string' && !(typeof v === 'number' && Number.isFinite(v))) fail(p, 'finite number|string|null', e) },
     benchmark_role: optional(enumeration(['development', 'held_out', 'reserve'])) })),
