@@ -287,7 +287,7 @@
       "label": "researched",
       "confidence": {
         "level": "low",
-        "reason": "Wikipedia table \"Population 1086-1700\", source line names Broadberry et al. 2010 (\"English Medieval Population: Reconciling Time Series and Cross Sectional Evidence\", a different paper from CAT-BCKOVL-2010) and Wrigley and Schofield; the cited paper itself was not opened, so cited-through. It differs from S1 (4.40 M, 1270/79 average), hence its own row"
+        "reason": "Wikipedia table \"Population 1086-1700\", source line names Broadberry et al. 2010 (\"English Medieval Population: Reconciling Time Series and Cross Sectional Evidence\", a different paper from CAT-BCKOVL-2010) and Wrigley and Schofield; the cited paper itself was not opened, so cited-through"
       },
       "note": "CAT-WIKI-DEMOENG \"Population 1086-1700\" table, 1279: 4,430,000",
       "benchmark_role": "development"
@@ -718,7 +718,7 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "modern reconstruction, secondary (the WP 21 population series, manorial tenants and Wrigley et al. 1997, as Table 16 is sourced); this is the table's decade column (Table 19 'Population (mlns)'), a separate series from Table 16, so e.g. 1300/09 4.72 and the 1300 annual 4.73 are two rows"
+        "reason": "modern reconstruction, secondary (the WP 21 population series, manorial tenants and Wrigley et al. 1997, as Table 16 is sourced); this is the table's decade column"
       },
       "benchmark_role": "development",
       "note": "Table 19, p. 55 (PDF p. 56), 1300/09: 4.72 million (CAT-BCKOVL-2010-WP21)"
@@ -826,7 +826,7 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "modern reconstruction, secondary (WP 21's own population estimates: manorial tenants and Wrigley et al. 1997, as Table 16 is sourced; Table 19's source note names no population series, so that it is the Table 16 series is inferred from the shared decade labels and the text's 4.72 million average for 1300/09, not stated); this is the table's decade column (Table 19 'Population (mlns)'), a separate series from Table 16, so e.g. 1300/09 4.72 and the 1300 annual 4.73 are two rows"
+        "reason": "modern reconstruction, secondary (the WP 21 population series, manorial tenants and Wrigley et al. 1997, as Table 16 is sourced); this is the table's decade column"
       },
       "benchmark_role": "development",
       "note": "Table 19, p. 55 (PDF p. 56), 1450/59: 1.93 million (CAT-BCKOVL-2010-WP21)"
@@ -1069,7 +1069,7 @@
       "label": "researched",
       "confidence": {
         "level": "medium",
-        "reason": "modern reconstruction, secondary; printed in million acres; the 1270 value (11.52) is T1 of SHEET-2 from the 2010 CAGE WP 35, this is a different working paper (WP 21) whose Table 1 gives the same 1270 row"
+        "reason": "modern reconstruction, secondary; printed in million acres (Overton and Campbell tables, Medieval Accounts Database)"
       },
       "benchmark_role": "development",
       "note": "Table 1, last column 'Total arable', 1650 (CAT-BCKOVL-2010-WP21)"
@@ -2517,7 +2517,7 @@
       "label": "researched",
       "confidence": {
         "level": "low",
-        "reason": "Wikipedia reporting other authors (cited through, rule a); authors differ so each is its own row; the page's own pre-plague population range is 3 to 7 million"
+        "reason": "Wikipedia reporting other authors (cited through, rule a)"
       },
       "benchmark_role": "development",
       "note": "CAT-WIKI-BLACKDEATHENG '62.5 per cent'; same source implies 3,750,000 deaths on a population of 6 million"
@@ -2832,7 +2832,7 @@
       "label": "open",
       "confidence": {
         "level": "low",
-        "reason": "no opened work gives English crown revenue for any year in 1270-1700: CAT-WIKI-TAXUK and CAT-WIKI-FISCAL give no English crown revenue total for any year from 1270 to 1700; the fiscal page's 1558-59 figure of 160,000 pounds is a combined grant of two fifteenths and tenths plus a subsidy, not a crown revenue total, and its 'just under 900,000 pounds' is the king's annual revenue 'before the Civil War', with no year stated, so no value is taken"
+        "reason": "no opened work gives English crown revenue for any year in 1270-1700: CAT-WIKI-TAXUK and CAT-WIKI-FISCAL give no English crown revenue total for any year from 1270 to 1700; the fiscal page's 1558-59 figure of 160,000 pounds is a combined grant of two fifteenths and tenths plus a subsidy, not a crown revenue total, and its 'just under 900,000 pounds' is the king's annual revenue 'before the Civil War', with no year stated, so no value is taken; CAT-WIKI-TAXUK was read to its first 100,000 of 149,927 characters and CAT-WIKI-FISCAL to its first 100,000 of 156,003 characters"
       },
       "benchmark_role": "development"
     },
