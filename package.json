@@ -10,7 +10,8 @@
     "typecheck": "tsc --noEmit",
     "demo": "node --experimental-strip-types scripts/demo.ts",
     "build": "node --experimental-strip-types scripts/build.ts",
-    "coverage": "node --experimental-strip-types scripts/coverage.ts"
+    "coverage": "node --experimental-strip-types scripts/coverage.ts",
+    "check-refs": "node --experimental-strip-types scripts/check-refs.ts"
   },
   "dependencies": {
     "@rex/kernel": "git+file:///E:/backups/reality-sim/git/kernel.git#v0.1.1"
