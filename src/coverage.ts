@@ -48,6 +48,7 @@ export interface CoverageRowFound extends CoverageRowBase {
   regionFound: true
   kind: Kind
   records: number
+  possible: number
   labels: LabelCounts
   undated: number
   withheld: number
@@ -113,6 +114,7 @@ export function coverageReport(
         regionFound: true,
         kind,
         records: coverage.present,
+        possible: coverage.possible,
         labels: countLabels(result),
         undated: coverage.undated,
         withheld: coverage.withheld,
@@ -130,12 +132,12 @@ export function coverageReport(
 
 export function formatCoverageMarkdown(rows: readonly CoverageRow[]): string {
   const header = [
-    '| window | region | regionFound | kind | records | researched | estimate | fiction | open | undated | withheld | dev | held_out | reserve |',
-    '| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |',
+    '| window | region | regionFound | kind | records | possible | researched | estimate | fiction | open | undated | withheld | dev | held_out | reserve |',
+    '| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |',
   ]
   const lines = rows.map(row => {
     if (!row.regionFound) {
-      return `| ${row.window} | ${row.region} | false | | | | | | | | | | | |`
+      return `| ${row.window} | ${row.region} | false | | | | | | | | | | | | |`
     }
     const { labels, benchmarkRole } = row
     return `| ${[
@@ -144,6 +146,7 @@ export function formatCoverageMarkdown(rows: readonly CoverageRow[]): string {
       'true',
       row.kind,
       row.records,
+      row.possible,
       labels.researched,
       labels.estimate,
       labels.fiction,

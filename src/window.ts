@@ -1,7 +1,7 @@
 import { createIdResolver } from './load.ts'
 import type { LoadedCatalogue } from './load.ts'
 import { createWithholdGuard } from './benchmark.ts'
-import { createRegionIndex, dateRange, intersectDates } from './regions.ts'
+import { createRegionIndex, dateRange, overlapDates } from './regions.ts'
 import { kinds } from './schema.ts'
 import { canonical } from './canonical.ts'
 import type { Attestation, CatalogueRecord, DatePoint, Evidence, Kind, Provenance } from './schema.ts'
@@ -19,15 +19,22 @@ export interface WindowQuery {
 export interface KindCoverage {
   kind: Kind
   present: number
+  possible: number
   onlyEstimateFictionOpen: number
   /** Number of eligible, locally placed presence attestations with no date, not records. */
   undated: number
   /** Attestation and observation rows dropped by the held-out guard. */
   withheld: number
 }
+type WindowEvidence<T> = T extends CatalogueRecord ? Omit<T, 'attestations' | 'observations'> & {
+  attestations: (Attestation & { overlap: 'confirmed' | 'possible' })[]
+  observations: (CatalogueRecord['observations'][number] & { overlap: 'confirmed' | 'possible' })[]
+} : never
+export type WindowEntry = WindowEvidence<CatalogueRecord>
 export interface WindowResult {
-  present: CatalogueRecord[]
-  knownElsewhere: CatalogueRecord[]
+  present: WindowEntry[]
+  possible: WindowEntry[]
+  knownElsewhere: WindowEntry[]
   coverage: KindCoverage[]
 }
 
@@ -38,8 +45,8 @@ const compare = (a: string, b: string) => a < b ? -1 : a > b ? 1 : 0
 function sortedEvidence<T extends Evidence>(rows: T[]): T[] {
   return rows.map(row => canonical(row) as T).sort((a, b) => compare(JSON.stringify(a), JSON.stringify(b)))
 }
-function entry(record: CatalogueRecord, attestations: Attestation[], observations: CatalogueRecord['observations']): CatalogueRecord {
-  return canonical({ ...record, attestations: sortedEvidence(attestations), observations: sortedEvidence(observations) }) as CatalogueRecord
+function entry(record: CatalogueRecord, attestations: WindowEntry['attestations'], observations: WindowEntry['observations']): WindowEntry {
+  return canonical({ ...record, attestations: sortedEvidence(attestations), observations: sortedEvidence(observations) }) as WindowEntry
 }
 
 export interface WindowQueryOptions {
@@ -61,16 +68,14 @@ export function createWindowQuery(
     const selectedKinds = [...new Set(query.kinds ?? kinds)].sort()
     const provenance = new Set(query.provenance ?? defaultProvenance)
     const scopes = new Set(['universal', ...(typeof query.scope === 'string' ? [query.scope] : query.scope ?? [])])
-    const coverage = selectedKinds.map(kind => ({ kind, present: 0, onlyEstimateFictionOpen: 0, undated: 0, withheld: 0 }))
+    const coverage = selectedKinds.map(kind => ({ kind, present: 0, possible: 0, onlyEstimateFictionOpen: 0, undated: 0, withheld: 0 }))
     const byKind = new Map(coverage.map(row => [row.kind, row]))
-    const result: WindowResult = { present: [], knownElsewhere: [], coverage }
+    const result: WindowResult = { present: [], possible: [], knownElsewhere: [], coverage }
     const local = (row: Evidence) => row.place !== null && places.has(resolve(row.place) ?? '')
-    const inWindow = (row: Evidence) => row.date !== null && !!intersectDates(range, dateRange(row.date.from, row.date.to))
-    const countWithheld = (rows: Evidence[], counts: KindCoverage, filter: (row: Evidence) => boolean) => {
-      for (const row of rows) {
-        if (filter(row) && guard.isWithheld(row)) counts.withheld++
-      }
-    }
+    const overlap = (row: Evidence) => row.date === null ? 'none' : overlapDates(row.date, range)
+    const elsewhere = (row: Evidence) => row.place !== null && resolve(row.place) !== undefined && !local(row)
+    const annotate = <T extends Evidence>(rows: T[]): (T & { overlap: 'confirmed' | 'possible' })[] =>
+      rows.map(row => ({ ...row, overlap: overlap(row) as 'confirmed' | 'possible' }))
     for (const record of records) {
       const counts = byKind.get(record.kind)
       if (!counts || !scopes.has(record.scope) || !record.provenance.some(p => provenance.has(p))) continue
@@ -81,17 +86,22 @@ export function createWindowQuery(
           else counts.undated++
         }
       }
-      countWithheld(attestations, counts, row => local(row) && inWindow(row))
-      countWithheld(record.observations, counts, row => local(row) && inWindow(row))
-      const matching = attestations.filter(row => local(row) && inWindow(row) && !guard.isWithheld(row))
-      const observations = record.observations.filter(row => local(row) && inWindow(row) && !guard.isWithheld(row))
+      const matching = annotate(attestations.filter(row => local(row) && overlap(row) !== 'none' && !guard.isWithheld(row)))
+      const observations = annotate(record.observations.filter(row => local(row) && overlap(row) !== 'none' && !guard.isWithheld(row)))
+      for (const row of [...attestations, ...record.observations]) {
+        if (local(row) && overlap(row) !== 'none' && guard.isWithheld(row)) counts.withheld++
+      }
       if (matching.length || observations.length) {
-        result.present.push(entry(record, matching, observations))
-        counts.present++
-        if ([...matching, ...observations].every(row => row.label !== 'researched')) counts.onlyEstimateFictionOpen++
+        const confirmed = [...matching, ...observations].some(row => row.overlap === 'confirmed')
+        result[confirmed ? 'present' : 'possible'].push(entry(record, matching, observations))
+        counts[confirmed ? 'present' : 'possible']++
+        if (confirmed && [...matching, ...observations].filter(row => row.overlap === 'confirmed').every(row => row.label !== 'researched')) counts.onlyEstimateFictionOpen++
       } else if (query.includeKnownElsewhere) {
-        const elsewhere = attestations.filter(row => row.place !== null && resolve(row.place) !== undefined && !local(row) && inWindow(row))
-        if (elsewhere.length) result.knownElsewhere.push(entry(record, elsewhere, []))
+        // Possible overlap does not establish known-elsewhere membership.
+        const rows = attestations.filter(row => elsewhere(row) && overlap(row) === 'confirmed')
+        for (const row of rows) if (guard.isWithheld(row)) counts.withheld++
+        const visible = annotate(rows.filter(row => !guard.isWithheld(row)))
+        if (visible.length) result.knownElsewhere.push(entry(record, visible, []))
       }
     }
     return result

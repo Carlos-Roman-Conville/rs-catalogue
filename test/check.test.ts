@@ -10,8 +10,8 @@ const check = async () => checkRecords(await loadRecords(f.root))
 async function checkRecord(patch: object) { await f.write('data/material/example.json', { ...record(), ...patch }); return (await check()).join('\n') }
 
 it('passes an empty catalogue', async () => expect(await check()).toEqual([]))
-it.each([undefined, null])('open-ended dates are valid under check for evidence and relations (to=%s)', async to => {
-  const d = { ...date(), from: { year: 1655 }, to }
+it.each([undefined, null])('unknown-ended dates are valid under check for evidence and relations (to=%s)', async to => {
+  const d = { ...date(), from: { year: 1655 }, to, end_basis: 'unknown' }
   await f.write('data/material/parent.json', record('parent'))
   expect(await checkRecord({
     attestations: [{ ...attestation(), date: d }],
@@ -20,8 +20,8 @@ it.each([undefined, null])('open-ended dates are valid under check for evidence 
   })).toBe('')
 })
 it('open-ended cycle detection still rejects relations overlapping in the far future', async () => {
-  await f.write('data/material/a.json', { ...record('a'), relations: [{ rel: 'part_of', to: record('b').id, date: { ...date(), to: null } }] })
-  await f.write('data/material/b.json', { ...record('b'), relations: [{ rel: 'part_of', to: record('a').id, date: { ...date(), from: { year: 10000 }, to: undefined } }] })
+  await f.write('data/material/a.json', { ...record('a'), relations: [{ rel: 'part_of', to: record('b').id, date: { ...date(), to: null, end_basis: 'open' }, note: 'Synthetic membership continues indefinitely' }] })
+  await f.write('data/material/b.json', { ...record('b'), relations: [{ rel: 'part_of', to: record('a').id, date: { ...date(), from: { year: 10000 }, to: undefined, end_basis: 'open' }, note: 'Synthetic membership continues indefinitely' }] })
   expect((await check()).filter(line => line.includes('part_of cycle'))).toHaveLength(2)
 })
 it('reports bad JSON', async () => { await f.write('data/example.json', '{', true); expect((await check()).join()).toContain('bad JSON') })
@@ -281,12 +281,12 @@ it('an open-start absence window contains an earlier invention; an open-start in
   await writeCheckSource()
   const src = 'catalogue/source.fix'
   const rows = (window: object, invention: object) => ({ attestations: [
-    { ...attestation(), what: 'absence', label: 'estimate', date: window, sources: [src] },
-    { ...attestation(), what: 'invention', label: 'researched', date: invention, sources: [src] },
+    { ...attestation(), what: 'absence', label: 'estimate', date: window, sources: [src], note: 'Synthetic absence extends indefinitely before its end' },
+    { ...attestation(), what: 'invention', label: 'researched', date: invention, sources: [src], note: 'Synthetic invention interval extends indefinitely before its end' },
   ] })
-  const open = { ...date(), from: null, to: { year: 1730 } }
+  const open = { ...date(), from: null, start_basis: 'open', to: { year: 1730 } }
   expect(await checkRecord(rows(open, { ...date(), from: { year: 1000 }, to: { year: 1000 } }))).toContain('absence window contains attestations[1]')
-  expect(await checkRecord(rows(open, { ...date(), from: null, to: { year: 1000 } }))).toBe('')
+  expect(await checkRecord(rows(open, { ...date(), from: null, start_basis: 'open', to: { year: 1000 } }))).toBe('')
 })
 
 it('rejects a dated cycle only when all edges share a date, including a shared endpoint', async () => {

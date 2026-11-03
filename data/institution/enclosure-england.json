@@ -25,6 +25,8 @@
       "what": "presence",
       "place": "catalogue/region.england",
       "date": {
+        "start_basis": "unknown",
+        "end_basis": "unknown",
         "from": null,
         "to": null,
         "precision": "century",

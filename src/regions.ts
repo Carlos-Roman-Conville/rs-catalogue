@@ -1,13 +1,13 @@
 import { gregorianToJdn } from './dates.ts'
-import type { CatalogueRecord, DatePoint } from './schema.ts'
+import type { CatalogueRecord, DateInterval, DatePoint } from './schema.ts'
 
 export type DateRange = readonly [number, number]
 type Edge = { id: string; range: DateRange }
 type Graph = Map<string, Edge[]>
 const always: DateRange = [-Infinity, Infinity]
 
-/** Inclusive Gregorian bounds. Partial endpoints cover the whole stated year/month; a null end is open. */
-export function dateRange(from: DatePoint | null, to?: DatePoint | null): DateRange {
+/** Inclusive Gregorian bounds for a known interval; partial endpoints cover the stated year/month. */
+export function dateRange(from: DatePoint, to: DatePoint): DateRange {
   function endpoint(point: DatePoint, end: boolean): number {
     if (point.day !== undefined && point.month === undefined) throw new RangeError('Day requires month')
     const month = point.month ?? (end ? 12 : 1)
@@ -15,7 +15,7 @@ export function dateRange(from: DatePoint | null, to?: DatePoint | null): DateRa
     const days = [31, leap ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     return gregorianToJdn(point.year, month, point.day ?? (end ? days[month - 1]! : 1))
   }
-  const range: DateRange = [from == null ? -Infinity : endpoint(from, false), to == null ? Infinity : endpoint(to, true)]
+  const range: DateRange = [endpoint(from, false), endpoint(to, true)]
   if (range[0] > range[1]) throw new RangeError('from > to')
   return range
 }
@@ -23,6 +23,29 @@ export function dateRange(from: DatePoint | null, to?: DatePoint | null): DateRa
 export function intersectDates(a: DateRange, b: DateRange): DateRange | undefined {
   const from = Math.max(a[0], b[0]), to = Math.min(a[1], b[1])
   return from <= to ? [from, to] : undefined
+}
+
+export type DateOverlap = 'confirmed' | 'possible' | 'none'
+
+/** The documented core, without converting an unknown endpoint into an open interval. */
+export function confirmedDateRange(date: DateInterval): DateRange {
+  const start = date.from == null ? undefined : dateRange(date.from, date.from)
+  const end = date.to == null ? undefined : dateRange(date.to, date.to)
+  if (!start && !end && (date.start_basis !== 'open' || date.end_basis !== 'open')) return [Infinity, -Infinity]
+  return [start?.[0] ?? (date.start_basis === 'open' ? -Infinity : end![0]),
+    end?.[1] ?? (date.end_basis === 'open' ? Infinity : start![1])]
+}
+
+/** Closed, inclusive overlap in JDN days; uncertainty extends possibility only. */
+export function overlapDates(date: DateInterval, window: DateRange): DateOverlap {
+  if (intersectDates(confirmedDateRange(date), window)) return 'confirmed'
+  const reach: DateRange = [
+    date.from != null ? dateRange(date.from, date.from)[0]
+      : date.start_basis !== 'open' && date.from_earliest ? dateRange(date.from_earliest, date.from_earliest)[0] : -Infinity,
+    date.to != null ? dateRange(date.to, date.to)[1]
+      : date.end_basis !== 'open' && date.to_latest ? dateRange(date.to_latest, date.to_latest)[1] : Infinity,
+  ]
+  return intersectDates(reach, window) ? 'possible' : 'none'
 }
 
 function graphOf(records: readonly CatalogueRecord[], resolve: (id: string) => string | undefined, reverse: boolean): Graph {
@@ -34,7 +57,8 @@ function graphOf(records: readonly CatalogueRecord[], resolve: (id: string) => s
       if (parent === undefined || !graph.has(parent)) continue
       graph.get(reverse ? parent : record.id)!.push({
         id: reverse ? record.id : parent,
-        range: relation.date ? dateRange(relation.date.from, relation.date.to) : always,
+        // Possible overlap does not establish region membership.
+        range: relation.date ? confirmedDateRange(relation.date) : always,
       })
     }
   }

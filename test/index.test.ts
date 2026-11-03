@@ -15,15 +15,15 @@ it('opens the default repository synchronously', () => {
   expect(typeof openCatalogue().window).toBe('function')
 })
 
-it('reads 1691-01-10 in England per DESIGN §2.2', () => {
+it('does not infer England calendar from an unknown start', () => {
   const cat = openCatalogue()
   expect(cat.date('1691-01-10', { place: 'catalogue/region.england' })).toEqual({
-    date: { year: 1692, month: 1, day: 20 },
-    shifted: true,
-    approximate: false,
-    calendar: 'julian',
-    yearStart: 'mar-25',
-    basis: ['catalogue/calendar.julian', 'catalogue/calendar.lady-day-year-start'],
+    date: { year: 1691, month: 1, day: 10 },
+    shifted: false,
+    approximate: true,
+    calendar: 'unknown',
+    yearStart: 'unknown',
+    basis: ['catalogue/calendar.lady-day-year-start'],
     conflict: false,
   })
 })

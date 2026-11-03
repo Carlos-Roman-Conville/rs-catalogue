@@ -4,10 +4,14 @@ export const provenanceClasses = ['real', 'prehistoric', 'mythological', 'fantas
 export type Provenance = typeof provenanceClasses[number]
 export type DatePoint = { year: number; month?: number; day?: number }
 export interface DateInterval {
-  /** Null means an open start: in force before any date a source states. */
+  /** Null requires start_basis: unknown, or open with a note explaining its meaning. */
   from: DatePoint | null
-  /** Omitted or null means the interval still holds, with no end date. */
+  /** Null or omitted requires end_basis: unknown, or open with an explanatory note. */
   to?: DatePoint | null
+  start_basis?: 'unknown' | 'open'
+  end_basis?: 'unknown' | 'open'
+  from_earliest?: DatePoint
+  to_latest?: DatePoint
   precision: 'day' | 'month' | 'year' | 'decade' | 'century' | 'millennium'
   circa: boolean
   calendar_of_source: 'gregorian' | 'julian' | 'unknown' | 'other'
@@ -33,7 +37,7 @@ export interface Observation extends Evidence {
 }
 export interface Relation {
   rel: 'is_a' | 'part_of' | 'made_of' | 'made_by' | 'variant_of' | 'same_as' | 'documented_prerequisite'
-  to: string; date?: DateInterval; sources?: string[]
+  to: string; date?: DateInterval; sources?: string[]; note?: string
 }
 export interface Source {
   key: string; title: string; author?: string; year?: number; gives: string; url?: string; rights: string
@@ -79,11 +83,19 @@ const point: Validator = (v, p, e) => {
 const interval: Validator = (v, p, e) => {
   const before = e.length
   object({ from: nullable(point), to: optional(nullable(point)), precision: enumeration(['day', 'month', 'year', 'decade', 'century', 'millennium']),
+    start_basis: optional(enumeration(['unknown', 'open'])), end_basis: optional(enumeration(['unknown', 'open'])),
+    from_earliest: optional(point), to_latest: optional(point),
     circa: (v, p, e) => { if (typeof v !== 'boolean') fail(p, 'boolean', e) },
     calendar_of_source: enumeration(['gregorian', 'julian', 'unknown', 'other']),
     year_start_of_source: optional(enumeration(['jan-1', 'mar-25'])) })(v, p, e)
   if (e.length !== before) return
-  const { from, to } = v as DateInterval
+  const d = v as DateInterval
+  const { from, to } = d
+  for (const [bound, basis, limit] of [[from, 'start_basis', 'from_earliest'], [to, 'end_basis', 'to_latest']] as const) {
+    if (bound == null && d[basis] === undefined) fail(`${p}.${basis}`, 'unknown|open for missing bound', e)
+    if (bound != null && d[basis] !== undefined) fail(`${p}.${basis}`, 'absent for given bound', e)
+    if (d[limit] !== undefined && (bound != null || d[basis] !== 'unknown')) fail(`${p}.${limit}`, 'only with an unknown bound', e)
+  }
   if (from == null || to == null) return
   // Missing components denote the beginning of the stated year/month; no JS Date epoch limits.
   const a = [from.year, from.month ?? 1, from.day ?? 1]
@@ -128,6 +140,18 @@ export function validateRecord(value: unknown): string[] {
     object({ source: object({ key: string, title: string, author: optional(string), year: optional(integer), gives: string, url: optional(string), rights: string }) })(value, 'record', errors)
   } else if (value !== null && typeof value === 'object' && 'source' in value && value.source !== undefined) {
     errors.push('record.source: only allowed for kind source')
+  }
+  if (value !== null && typeof value === 'object') {
+    for (const field of ['attestations', 'observations', 'relations'] as const) {
+      const rows = (value as Record<string, unknown>)[field]
+      if (!Array.isArray(rows)) continue
+      rows.forEach((row, i) => {
+        if (row?.date && (row.date.start_basis === 'open' || row.date.end_basis === 'open') &&
+          (typeof row.note !== 'string' || !row.note.trim())) {
+          fail(`record.${field}[${i}].note`, 'non-empty note explaining open bound', errors)
+        }
+      })
+    }
   }
   return errors.sort()
 }

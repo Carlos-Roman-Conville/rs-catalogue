@@ -101,6 +101,7 @@
       "what": "presence",
       "place": "catalogue/region.england",
       "date": {
+        "start_basis": "unknown",
         "from": null,
         "to": {
           "year": 1558

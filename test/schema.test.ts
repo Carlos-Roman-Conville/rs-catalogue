@@ -35,9 +35,9 @@ describe('record schema', () => {
     const r = { ...record(), attestations: [{ ...attestation(), date: d }], observations: [{ ...observation(), date: d }], relations: [{ rel: 'part_of', to: 'test', date: d }] }
     expect(validateRecord(r).filter(line => line.includes('from > to'))).toHaveLength(3)
   })
-  it('accepts an open start, alone or with an open end, and still requires the from key', () => {
+  it('accepts an unknown start, alone or with an unknown end, and still requires the from key', () => {
     for (const to of [{ year: 1752, month: 9, day: 2 }, null, undefined]) {
-      const d = { ...date(), from: null, to }
+      const d = { ...date(), from: null, to, start_basis: 'unknown', ...(to == null ? { end_basis: 'unknown' } : {}) }
       expect(validateRecord({ ...record(), attestations: [{ ...attestation(), date: d }], relations: [{ rel: 'part_of', to: 'test', date: d }] })).toEqual([])
     }
     const { from: _, ...missing } = date()
@@ -68,4 +68,22 @@ it('rejects invalid conversion', () => {
 })
 it('accepts made_by', () => {
   expect(validateRecord({ ...record(), relations: [{ rel: 'made_by', to: 'catalogue/practice.baking' }] })).toEqual([])
+})
+
+it('requires explicit bases only for missing bounds and notes for open intervals', () => {
+  const check = (d: object, note?: string) => validateRecord({ ...record(), attestations: [{ ...attestation(), date: d, note }] })
+  for (const to of [null, undefined]) {
+    expect(check({ ...date(), to }).join()).toContain('end_basis')
+    expect(check({ ...date(), to, end_basis: 'unknown' })).toEqual([])
+    expect(check({ ...date(), to, end_basis: 'open' }).join()).toContain('note')
+    expect(check({ ...date(), to, end_basis: 'open' }, '  ').join()).toContain('note')
+    expect(check({ ...date(), to, end_basis: 'open' }, 'Still in force at the source date')).toEqual([])
+  }
+  expect(check({ ...date(), end_basis: 'unknown' }).join()).toContain('absent for given bound')
+  expect(check({ ...date(), start_basis: 'unknown' }).join()).toContain('absent for given bound')
+  expect(check({ ...date(), from: null }).join()).toContain('start_basis')
+  expect(check({ ...date(), from: null, start_basis: 'unknown', from_earliest: { year: -100 } })).toEqual([])
+  expect(check({ ...date(), to: null, end_basis: 'unknown', to_latest: { year: 1300 } })).toEqual([])
+  expect(check({ ...date(), to: null, end_basis: 'unknown', to_latest: { year: 1300, month: 13 } }).join()).toContain('1..12')
+  expect(check({ ...date(), to_latest: { year: 1300 } }).join()).toContain('only with an unknown bound')
 })

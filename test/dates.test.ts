@@ -1,5 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import { fromSource, gregorianToJdn, julianToJdn, jdnToGregorian, jdnToJulian } from '../src/index.ts'
+import { dateRange, overlapDates } from '../src/regions.ts'
+import { date as intervalDefaults } from './helpers.ts'
+import type { DateInterval } from '../src/schema.ts'
 
 describe('date normalisation (DESIGN 1.3, V3)', () => {
   // Published anchors: USNO Julian Date Converter and JDN formula page,
@@ -100,4 +103,38 @@ describe('date normalisation (DESIGN 1.3, V3)', () => {
     }
     expect(() => fromSource({ year: 2000, day: 1 }, { calendar: 'julian', yearStart: 'jan-1' })).toThrow(RangeError)
   })
+})
+
+
+it('distinguishes documented cores, unknown reach, explicit openness and point dates', () => {
+  const unknown: DateInterval = { ...intervalDefaults(), from: { year: 1200 }, to: null, end_basis: 'unknown' }
+  const at = (year: number) => dateRange({ year }, { year })
+  expect(overlapDates(unknown, at(1200))).toBe('confirmed')
+  expect(overlapDates(unknown, at(1900))).toBe('possible')
+  expect(overlapDates(unknown, at(1199))).toBe('none')
+  const bounded = { ...unknown, to_latest: { year: 1300 } }
+  expect(overlapDates(bounded, at(1290))).toBe('possible')
+  expect(overlapDates(bounded, at(1300))).toBe('possible')
+  expect(overlapDates(bounded, at(1301))).toBe('none')
+  expect(overlapDates(bounded, at(1900))).toBe('none')
+  expect(overlapDates({ ...unknown, end_basis: 'open' }, at(1900))).toBe('confirmed')
+  const point = { ...intervalDefaults(), from: { year: 1275 }, to: { year: 1275 } }
+  expect(overlapDates(point, dateRange({ year: 1270 }, { year: 1279 }))).toBe('confirmed')
+  expect(overlapDates(point, dateRange({ year: 1280 }, { year: 1289 }))).toBe('none')
+})
+it('uses inclusive endpoints and limits unknown starts symmetrically', () => {
+  const row = { ...intervalDefaults(), from: { year: 1200 }, to: { year: 1269, month: 12, day: 31 } }
+  const window = dateRange({ year: 1270, month: 1, day: 1 }, { year: 1270 })
+  expect(overlapDates(row, window)).toBe('none')
+  expect(overlapDates({ ...row, to: { year: 1270 } }, window)).toBe('confirmed')
+  const start: DateInterval = { ...row, from: null, start_basis: 'unknown', from_earliest: { year: 1250 } }
+  expect(overlapDates(start, dateRange({ year: 1249 }, { year: 1249 }))).toBe('none')
+  expect(overlapDates(start, dateRange({ year: 1250 }, { year: 1250 }))).toBe('possible')
+  expect(overlapDates(start, dateRange(row.to, row.to))).toBe('confirmed')
+  expect(overlapDates({ ...start, start_basis: 'open', from_earliest: undefined }, window)).toBe('none')
+  expect(overlapDates({ ...start, start_basis: 'open', from_earliest: undefined }, dateRange({ year: -10000 }, { year: -10000 }))).toBe('confirmed')
+  const neither: DateInterval = { ...intervalDefaults(), from: null, to: null, start_basis: 'unknown', end_basis: 'unknown' }
+  expect(overlapDates(neither, window)).toBe('possible')
+  expect(overlapDates({ ...neither, start_basis: 'open', end_basis: 'open' }, window)).toBe('confirmed')
+  expect(overlapDates({ ...neither, start_basis: 'open' }, window)).toBe('possible')
 })

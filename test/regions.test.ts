@@ -1,6 +1,6 @@
 import { afterEach, beforeEach, expect, it } from 'vitest'
 import { loadRecords, createIdResolver } from '../src/load.ts'
-import { createRegionIndex, dateRange, intersectDates } from '../src/regions.ts'
+import { createRegionIndex, dateRange, intersectDates, confirmedDateRange } from '../src/regions.ts'
 import type { CatalogueRecord, Relation } from '../src/schema.ts'
 import { date, fixture, record } from './helpers.ts'
 
@@ -10,7 +10,7 @@ afterEach(async () => { await f.close() })
 const id = (slug: string) => `catalogue/region.${slug}`
 it.each([undefined, null])('open-ended membership includes from and later windows but not earlier ones (to=%s)', async to => {
   await region('caribbean')
-  await region('jamaica', [{ rel: 'part_of', to: id('caribbean'), date: { ...date(), from: { year: 1655 }, to } }])
+  await region('jamaica', [{ rel: 'part_of', to: id('caribbean'), date: { ...date(), from: { year: 1655 }, to, end_basis: 'open' }, note: 'Membership continues indefinitely in this synthetic example' }])
   expect(await descendants('caribbean', 1654)).toEqual([id('caribbean')])
   for (const year of [1655, 1700, 10000]) {
     expect(await descendants('caribbean', year)).toEqual(['caribbean', 'jamaica'].map(id))
@@ -18,12 +18,12 @@ it.each([undefined, null])('open-ended membership includes from and later window
 })
 it('open-start membership includes every window up to to, and both ends open is always', async () => {
   await region('caribbean')
-  await region('jamaica', [{ rel: 'part_of', to: id('caribbean'), date: { ...date(), from: null, to: { year: 1700 } } }])
-  await region('cuba', [{ rel: 'part_of', to: id('caribbean'), date: { ...date(), from: null, to: null } }])
+  await region('jamaica', [{ rel: 'part_of', to: id('caribbean'), date: { ...date(), from: null, to: { year: 1700 }, start_basis: 'open' }, note: 'Membership predates the example' }])
+  await region('cuba', [{ rel: 'part_of', to: id('caribbean'), date: { ...date(), from: null, to: null, start_basis: 'open', end_basis: 'open' }, note: 'Timeless synthetic membership' }])
   for (const year of [-10000, 1700]) expect(await descendants('caribbean', year)).toEqual(['caribbean', 'cuba', 'jamaica'].map(id))
   expect(await descendants('caribbean', 1701)).toEqual(['caribbean', 'cuba'].map(id))
-  expect(dateRange(null, null)).toEqual([-Infinity, Infinity])
-  expect(intersectDates(dateRange(null, { year: 1752, month: 9, day: 2 }), dateRange({ year: 1752, month: 9, day: 14 }))).toBeUndefined()
+  expect(confirmedDateRange({ ...date(), from: null, to: null, start_basis: 'open', end_basis: 'open' })).toEqual([-Infinity, Infinity])
+  expect(intersectDates(confirmedDateRange({ ...date(), from: null, to: { year: 1752, month: 9, day: 2 }, start_basis: 'open' }), dateRange({ year: 1752, month: 9, day: 14 }, { year: 1752 }))).toBeUndefined()
 })
 const during = (from: number, to: number) => ({ ...date(), from: { year: from }, to: { year: to } })
 const part = (slug: string, from?: number, to?: number): Relation => ({ rel: 'part_of', to: id(slug), ...(from === undefined ? {} : { date: during(from, to!) }) })
@@ -92,4 +92,12 @@ it('walks ancestors along a transitive dated path', async () => {
   await region('port-royal', [part('jamaica', 1650, 1710)])
   expect(await ancestors('port-royal', 1660)).toEqual(['caribbean', 'jamaica', 'port-royal'].map(id))
   expect(await ancestors('port-royal', 1590)).toEqual([id('port-royal')])
+})
+
+it('unknown membership bounds do not make possible descendants or ancestors members', async () => {
+  await region('caribbean')
+  await region('jamaica', [{ rel: 'part_of', to: id('caribbean'), date: { ...date(), from: { year: 1200 }, to: null, end_basis: 'unknown' } }])
+  expect(await descendants('caribbean', 1200)).toEqual(['caribbean', 'jamaica'].map(id))
+  expect(await descendants('caribbean', 1900)).toEqual([id('caribbean')])
+  expect(await ancestors('jamaica', 1900)).toEqual([id('jamaica')])
 })

@@ -23,8 +23,8 @@ beforeEach(async () => {
 afterEach(async () => { await f.close() })
 const ids = (records: CatalogueRecord[]) => records.map(r => r.id)
 it.each([undefined, null])('open-ended evidence matches windows at and after from, never before (to=%s)', async to => {
-  const d = { ...interval(1700), to }
-  await material('ongoing', { attestations: [evidence({ date: d })], observations: [{ ...observation(), place: regionId('port-royal'), date: d }] })
+  const d = { ...interval(1700), to, end_basis: 'open' as const }
+  await material('ongoing', { attestations: [evidence({ date: d, note: 'Still in force at the source date' })], observations: [{ ...observation(), place: regionId('port-royal'), date: d, note: 'Still in force at the source date' }] })
   const cat = openCatalogue(f.root)
   expect(cat.window({ ...query, from: { year: 1699 }, to: { year: 1699 } }).present).toEqual([])
   for (const year of [1700, 10000]) {
@@ -35,20 +35,20 @@ it.each([undefined, null])('open-ended evidence matches windows at and after fro
 })
 it('open-ended omitted and null ends have identical canonical JSON for all interval fields', async () => {
   async function snapshot(to: undefined | null) {
-    const d = { ...interval(1700), to }
+    const d = { ...interval(1700), to, end_basis: 'open' as const }
     await material('ongoing', {
-      attestations: [evidence({ date: d })],
-      observations: [{ ...observation(), place: regionId('port-royal'), date: d }],
-      relations: [{ rel: 'part_of', to: regionId('caribbean'), date: d }],
+      attestations: [evidence({ date: d, note: 'Still in force at the source date' })],
+      observations: [{ ...observation(), place: regionId('port-royal'), date: d, note: 'Still in force at the source date' }],
+      relations: [{ rel: 'part_of', to: regionId('caribbean'), date: d, note: 'Synthetic ongoing membership' }],
     })
     return JSON.stringify(openCatalogue(f.root).window(query))
   }
   expect(await snapshot(undefined)).toBe(await snapshot(null))
 })
 it('open-start evidence matches windows at and before to, never after, and sorts deterministically', async () => {
-  const d = { ...interval(), from: null, to: { year: 1700 } }
-  await material('old-style', { attestations: [evidence({ date: interval(1690) }), evidence({ date: d })] })
-  await material('always', { attestations: [evidence({ date: { ...interval(), from: null, to: null } })] })
+  const d = { ...interval(), from: null, to: { year: 1700 }, start_basis: 'open' as const }
+  await material('old-style', { attestations: [evidence({ date: interval(1690) }), evidence({ date: d, note: 'Still in force at the source date' })] })
+  await material('always', { attestations: [evidence({ date: { ...interval(), from: null, to: null, start_basis: 'open', end_basis: 'open' }, note: 'Timeless synthetic evidence' })] })
   const cat = openCatalogue(f.root)
   for (const year of [-5000, 1700]) {
     expect(ids(cat.window({ ...query, from: { year }, to: { year } }).present)).toEqual(['always', 'old-style'].map(materialId))
@@ -59,7 +59,7 @@ it('open-start evidence matches windows at and before to, never after, and sorts
 })
 it('open-ended support leaves closed intervals bounded and their dates unchanged', async () => {
   const d = interval(1700, 1720)
-  await material('closed', { attestations: [evidence({ date: d })] })
+  await material('closed', { attestations: [evidence({ date: d, note: 'Still in force at the source date' })] })
   const cat = openCatalogue(f.root)
   expect(cat.window(query).present[0].attestations[0].date).toEqual(d)
   expect(cat.window({ ...query, from: { year: 1721 }, to: { year: 1721 } }).present).toEqual([])
@@ -140,8 +140,8 @@ it('coverage counts present records, weak-only matching evidence and local undat
   await material('filtered', { provenance: ['fantasy'], attestations: [evidence({ date: null })] })
   const result = openCatalogue(f.root).window({ ...query, kinds: ['material', 'technology'] })
   expect(result.coverage).toEqual([
-    { kind: 'material', present: 4, onlyEstimateFictionOpen: 3, undated: 2, withheld: 0 },
-    { kind: 'technology', present: 0, onlyEstimateFictionOpen: 0, undated: 0, withheld: 0 },
+    { kind: 'material', present: 4, possible: 0, onlyEstimateFictionOpen: 3, undated: 2, withheld: 0 },
+    { kind: 'technology', present: 0, possible: 0, onlyEstimateFictionOpen: 0, undated: 0, withheld: 0 },
   ])
   expect(ids(result.present)).not.toContain(materialId('undated'))
 })
@@ -194,7 +194,7 @@ it('withhold drops held-out placed evidence from get and window and counts withh
   expect(withheld.get(materialId('held-undated'))?.attestations).toEqual([])
   const result = withheld.window({ ...query, region: regionId('greenland'), from: { year: 985 }, to: { year: 1450 }, kinds: ['material'] })
   expect(ids(result.present)).toEqual([])
-  expect(result.coverage).toEqual([{ kind: 'material', present: 0, onlyEstimateFictionOpen: 0, undated: 0, withheld: 3 }])
+  expect(result.coverage).toEqual([{ kind: 'material', present: 0, possible: 0, onlyEstimateFictionOpen: 0, undated: 0, withheld: 3 }])
 })
 
 it('heldOut include exposes held-out evidence and leaves withheld coverage at zero', async () => {
@@ -204,4 +204,43 @@ it('heldOut include exposes held-out evidence and leaves withheld coverage at ze
   const result = included.window({ ...query, region: regionId('greenland'), from: { year: 985 }, to: { year: 1450 }, kinds: ['material'] })
   expect(ids(result.present)).toEqual([materialId('held-dated')])
   expect(result.coverage[0].withheld).toBe(0)
+})
+
+it('returns unknown endpoints as possible evidence and only confirmed evidence establishes presence', async () => {
+  const unknown = { ...interval(1200), to: null, end_basis: 'unknown' as const }
+  await material('uncertain', { attestations: [evidence({ date: unknown })] })
+  await material('bounded', { attestations: [evidence({ date: { ...unknown, to_latest: { year: 1300 } } })] })
+  await material('ongoing', { attestations: [evidence({ date: { ...unknown, end_basis: 'open' }, note: 'Still in force at the source date' })] })
+  await material('point', { attestations: [evidence({ date: interval(1275) })] })
+  await material('mixed', { attestations: [evidence({ date: unknown }), evidence({ date: interval(1900) })] })
+  const cat = openCatalogue(f.root)
+  const at = (from: number, to = from) => cat.window({ ...query, from: { year: from }, to: { year: to } })
+  const later = at(1900)
+  expect(ids(later.present)).toEqual(['mixed', 'ongoing'].map(materialId))
+  expect(ids(later.possible)).toEqual([materialId('uncertain')])
+  expect(later.possible[0].attestations[0].overlap).toBe('possible')
+  expect(later.present.find(r => r.id === materialId('ongoing'))!.attestations[0].overlap).toBe('confirmed')
+  expect(later.present.find(r => r.id === materialId('mixed'))!.attestations.map(r => r.overlap).sort()).toEqual(['confirmed', 'possible'])
+  expect(later.coverage[0]).toMatchObject({ present: 2, possible: 1 })
+  expect(ids(at(1290).possible)).toContain(materialId('bounded'))
+  expect(ids(at(1270, 1279).present)).toContain(materialId('point'))
+  expect(ids(at(1280, 1289).present)).not.toContain(materialId('point'))
+})
+it('withholds confirmed elsewhere and local possible rows, counting every dropped candidate', async () => {
+  await writeGreenlandHeldOutFixture()
+  await material('held-uncertain', { attestations: [evidence({ place: regionId('greenland'), date: { ...interval(1100), to: null, end_basis: 'unknown' } })] })
+  const elsewhereQuery = { ...query, from: { year: 1100 }, to: { year: 1100 }, includeKnownElsewhere: true }
+  const hidden = openCatalogue(f.root).window(elsewhereQuery)
+  expect(hidden.knownElsewhere).toEqual([])
+  expect(hidden.possible).toEqual([])
+  expect(hidden.coverage[0].withheld).toBe(2)
+  const shown = openCatalogue(f.root, { heldOut: 'include' }).window(elsewhereQuery)
+  expect(ids(shown.knownElsewhere)).toEqual(['held-dated', 'held-uncertain'].map(materialId))
+  expect(shown.knownElsewhere[0].attestations[0].overlap).toBe('confirmed')
+  expect(shown.coverage[0].withheld).toBe(0)
+  const later = { ...query, region: regionId('greenland'), from: { year: 1900 }, to: { year: 1900 } }
+  const blocked = openCatalogue(f.root).window(later)
+  expect(blocked.possible).toEqual([])
+  expect(blocked.coverage[0].withheld).toBe(2) // dated uncertainty plus the undated attestation
+  expect(ids(openCatalogue(f.root, { heldOut: 'include' }).window(later).possible)).toEqual([materialId('held-uncertain')])
 })

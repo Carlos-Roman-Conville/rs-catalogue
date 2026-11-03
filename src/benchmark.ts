@@ -1,4 +1,4 @@
-import { dateRange, intersectDates, createRegionIndex } from './regions.ts'
+import { dateRange, overlapDates, createRegionIndex } from './regions.ts'
 import type { LoadedCatalogue } from './load.ts'
 import { createIdResolver } from './load.ts'
 import type { CatalogueRecord, DatePoint, Evidence, Observation } from './schema.ts'
@@ -61,7 +61,8 @@ export function observationInBenchmarkWindow(
   if (observation.place === null) return false
   if (!placeInWindowRegion(observation.place, window, regions, resolve)) return false
   if (observation.date === null) return true
-  return !!intersectDates(dateRange(window.from, window.to), dateRange(observation.date.from, observation.date.to))
+  // Possible overlap does not establish benchmark-window membership.
+  return overlapDates(observation.date, dateRange(window.from, window.to)) === 'confirmed'
 }
 
 /** Evidence withheld from tuning units when `heldOut` is `withhold`. */
@@ -74,7 +75,8 @@ export function evidenceInHeldOutWindow(
   if (window.role !== 'held_out' || row.place === null) return false
   if (!placeInWindowRegion(row.place, window, regions, resolve)) return false
   if (row.date === null) return true
-  return !!intersectDates(dateRange(window.from, window.to), dateRange(row.date.from, row.date.to))
+  // Possible overlap does not establish held-out-window membership.
+  return overlapDates(row.date, dateRange(window.from, window.to)) === 'confirmed'
 }
 
 export function checkObservationBenchmarkRole(

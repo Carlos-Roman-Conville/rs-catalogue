@@ -1,5 +1,5 @@
 import { createIdResolver, type LoadedCatalogue } from './load.ts'
-import { createRegionIndex, dateRange, intersectDates } from './regions.ts'
+import { createRegionIndex, dateRange, overlapDates } from './regions.ts'
 import type { Name } from './schema.ts'
 
 export interface LabelOptions {
@@ -29,8 +29,8 @@ export function createLabeler(catalogue: LoadedCatalogue) {
     const window = dateRange({ year }, { year })
     for (const attestation of period.attestations) {
       if (attestation.what !== 'presence' || attestation.date == null) continue
-      const range = dateRange(attestation.date.from, attestation.date.to)
-      if (intersectDates(range, window)) return true
+      // Possible overlap does not establish period membership for a name.
+      if (overlapDates(attestation.date, window) === 'confirmed') return true
     }
     return false
   }

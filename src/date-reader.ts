@@ -5,7 +5,7 @@ import {
   type SourceCalendar,
 } from './dates.ts'
 import { createIdResolver, type LoadedCatalogue } from './load.ts'
-import { createRegionIndex, dateRange, intersectDates } from './regions.ts'
+import { createRegionIndex, dateRange, overlapDates } from './regions.ts'
 import type { Attestation, CatalogueRecord, DatePoint } from './schema.ts'
 
 export type YearStart = SourceCalendar['yearStart']
@@ -47,7 +47,8 @@ function writtenRange(point: DatePoint) {
 
 function attestationCovers(attestation: Attestation, point: DatePoint): boolean {
   if (attestation.date == null) return false
-  return intersectDates(dateRange(attestation.date.from, attestation.date.to), writtenRange(point)) !== undefined
+  // Possible overlap cannot select a calendar or year-start convention.
+  return overlapDates(attestation.date, writtenRange(point)) === 'confirmed'
 }
 
 export function createDateReader(catalogue: LoadedCatalogue) {

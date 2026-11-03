@@ -51,6 +51,7 @@
       "what": "adoption",
       "place": "catalogue/region.england",
       "date": {
+        "end_basis": "unknown",
         "from": {
           "year": 1295,
           "month": 11

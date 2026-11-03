@@ -25,6 +25,7 @@
       "what": "adoption",
       "place": "catalogue/region.england",
       "date": {
+        "end_basis": "unknown",
         "from": {
           "year": 1752,
           "month": 9,
